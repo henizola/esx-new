@@ -1,0 +1,103 @@
+import React, { ReactNode } from "react";
+import Card from "@/components/Card/Card";
+import Banner from "@/components/Banner/banner";
+import image from "/public/images/who-we-are.png";
+import whoweare from "/public/images/who-we-are-circle.png";
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import { GoldBanner } from "@/components/Banner/GoldBanner";
+import LinkButton from "@/components/Button/LinkButton";
+import ExpandableCard from "@/components/Card/ExpandableCard";
+
+interface MembersDirectoryProps {
+  setStep: (value: number) => void;
+  step: number;
+}
+
+const MembersDirectory: React.FC<MembersDirectoryProps> = ({
+  setStep,
+  step,
+}) => {
+  const items = [
+    "Trade on ESX",
+    "Members Directory",
+    "Direct Market Access",
+    "Listed Lecurities",
+    "Market Data",
+    "Indices",
+    "Market Announcements",
+    "Fees & Taxation",
+    "Tendor",
+  ];
+  const members = [
+    "Securities Broker",
+    "Securities Dealer",
+    "Securities Broker Dealer",
+    "Securities Broker (Investment Bank)",
+    "Any other category as may be specified by The Exchange from time to time",
+  ];
+
+  return (
+    <div className="flex flex-col w-full">
+      <Banner
+        backgroundImage={image}
+        title="Members"
+        description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
+      />
+      <div className="flex w-full  px-28 py-7">
+        <Card width="w-[30%] mr-5 flex flex-col text-left  py-10 px-5">
+          <h6 className="ml-2 mb-4">{"Equity Market > Trade"}</h6>{" "}
+          {items.map((item, index) => (
+            <button
+              key={index}
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: step === index ? "16px" : "14px",
+                fontWeight: step === index ? "400" : "300",
+              }}
+              onClick={() => setStep(index)}
+            >
+              {item}
+            </button>
+          ))}
+        </Card>
+        <div className="grid grid-cols-1 gap-3 w-[100%]">
+          <Card width="flex flex-col ">
+           
+              <div className="py-[20px] px-[20px] col-span-1 flex flex-col gap-4 order-1">
+                <h1 className="text-black text-3xl ">Members</h1>
+                <p className="  font-sans font-normal mt-2 pt-0 leading-6 text-black">
+                  ESX provides the following categories of membership license.
+                </p>
+                <hr className="  border border-0.5 border-primary-golden" />
+
+                <div className="divide divide-y-2 divide-primary-golden/40">
+                  {members.map((member, i) => (
+                    <ExpandableCard
+                    key={i}
+                      className="bg-transparent py-2 rounded-none  "
+                      question={member}
+                    >
+                      typically 6-9 months - however this depends on the
+                      company’s IPO readiness (prepared financial statements,
+                      company documents etc.).
+                    </ExpandableCard>
+                  ))}
+                </div>
+
+               
+
+                {/* <LinkButton href="#">View More</LinkButton> */}
+              </div>
+             
+          </Card>
+         
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MembersDirectory;

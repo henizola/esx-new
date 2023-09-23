@@ -9,31 +9,10 @@ import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
 import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import ExpandableCard from "@/components/Card/ExpandableCard";
 interface ListingFaqsProps {
   setStep: (value: number) => void;
   step: number;
-}
-interface FaqCardProps {
-  question: string;
-  answer: string;
-}
-
-function FaqCard({ question, answer }: FaqCardProps) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="bg-gray/10 p-[20px] flex flex-col gap-4 transition-all  rounded ">
-      <div className="rounded flex justify-between items-center">
-        <h1 className="text-black text-[19px] not-italic font-normal leading-[normal] ">
-          {question}
-        </h1>
-        <ChevronDownIcon onClick={() => setOpen(prev => !prev)} className={`w-10 h-10 p-2 rounded-full hover:bg-white/80 ${open ? 'rotate-180' : ''}`} />
-      </div>
-      {
-        open && <span className="">{answer}</span>
-      }
-      
-    </div>
-  );
 }
 
 const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
@@ -86,18 +65,21 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
             </p>
             <hr className="  border border-gray/30" />
             <main className=" space-y-6">
-              <FaqCard
-                question="What is an IPO?"
-                answer="typically 6-9 months - however this depends on the company’s IPO readiness (prepared financial statements, company documents etc.)."
-              />
-              <FaqCard
-                question="What is an IPO?"
-                answer="typically 6-9 months - however this depends on the company’s IPO readiness (prepared financial statements, company documents etc.)."
-              />
-              <FaqCard
-                question="What is an IPO?"
-                answer="typically 6-9 months - however this depends on the company’s IPO readiness (prepared financial statements, company documents etc.)."
-              />
+              <ExpandableCard question="What is an IPO?">
+                typically 6-9 months - however this depends on the company’s IPO
+                readiness (prepared financial statements, company documents
+                etc.).
+              </ExpandableCard>
+              <ExpandableCard question="What is an IPO?">
+                typically 6-9 months - however this depends on the company’s IPO
+                readiness (prepared financial statements, company documents
+                etc.).
+              </ExpandableCard>
+              <ExpandableCard question="What is an IPO?">
+                typically 6-9 months - however this depends on the company’s IPO
+                readiness (prepared financial statements, company documents
+                etc.).
+              </ExpandableCard>
             </main>
           </Card>
         </div>
