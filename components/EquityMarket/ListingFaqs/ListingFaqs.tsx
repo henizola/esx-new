@@ -1,0 +1,110 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import manager from "/public/images/manager.png";
+import sliderbannerImage from "/public/images/slider-background.png";
+import bannerImage from "/public/images/about-banner.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
+import CustomSlider from "../../Slider/Slider";
+import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+interface ListingFaqsProps {
+  setStep: (value: number) => void;
+  step: number;
+}
+interface FaqCardProps {
+  question: string;
+  answer: string;
+}
+
+function FaqCard({ question, answer }: FaqCardProps) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="bg-gray/10 p-[20px] flex flex-col gap-4 transition-all  rounded ">
+      <div className="rounded flex justify-between items-center">
+        <h1 className="text-black text-[19px] not-italic font-normal leading-[normal] ">
+          {question}
+        </h1>
+        <ChevronDownIcon onClick={() => setOpen(prev => !prev)} className={`w-10 h-10 p-2 rounded-full hover:bg-white/80 ${open ? 'rotate-180' : ''}`} />
+      </div>
+      {
+        open && <span className="">{answer}</span>
+      }
+      
+    </div>
+  );
+}
+
+const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
+  const items = [
+    "Market Segment",
+    "Listing Rules",
+    "Listing FAOs",
+    "Listing Companies",
+    "Notice to Issuers",
+    "Other Products",
+  ];
+
+  return (
+    <div className="flex flex-col w-full p-0 m-0">
+      <Banner
+        backgroundImage={bannerImage}
+        title="Frequently asked questions"
+        description=""
+      />
+      <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
+        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
+          <h6 className="ml-2 mb-4 text-lg text-gray-600">
+            {"Equity Market > Listing"}
+          </h6>
+          {items.map((item, index) => (
+            <button
+              key={index}
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: step === index ? "16px" : "14px",
+                fontWeight: step === index ? "400" : "300",
+              }}
+              onClick={() => setStep(index)}
+            >
+              {item}
+            </button>
+          ))}
+        </Card>
+        <div className="col-span-5 space-y-8">
+          <Card width="w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]">
+            <h1 className="text-black text-[40px] not-italic font-normal leading-[normal]">
+              Frequently asked questions
+            </h1>
+            <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              reiciendis autem ea qui in, suscipit eum, quidem tenetur iure
+              possimus fugit dolor, dolores nisi tempora nihil inventore
+              voluptatem. Expedita, harum?
+            </p>
+            <hr className="  border border-gray/30" />
+            <main className=" space-y-6">
+              <FaqCard
+                question="What is an IPO?"
+                answer="typically 6-9 months - however this depends on the company’s IPO readiness (prepared financial statements, company documents etc.)."
+              />
+              <FaqCard
+                question="What is an IPO?"
+                answer="typically 6-9 months - however this depends on the company’s IPO readiness (prepared financial statements, company documents etc.)."
+              />
+              <FaqCard
+                question="What is an IPO?"
+                answer="typically 6-9 months - however this depends on the company’s IPO readiness (prepared financial statements, company documents etc.)."
+              />
+            </main>
+          </Card>
+        </div>
+      </div>
+      {/* <CustomSlider slides={slides} /> */}
+    </div>
+  );
+};
+
+export default ListingFaqs;
