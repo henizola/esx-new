@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import report2 from "../../public/images/Reports1.png";
-import report3 from "../../public/images/Reports2.png";
-import report1 from "../../public/images/Reports5.png";
-import report4 from "../../public/images/Reports7.png";
+import report2 from "/public/images/Reports1.png";
+import report3 from "/public/images/Reports2.png";
+import report1 from "/public/images/Reports5.png";
+import report4 from "/public/images/Reports7.png";
 
 import Link from "next/link";
-import reportsBanner from "../../public/images/Reports6.png";
-import Banner from "../Banner/banner";
-import Card from "../Card/Card";
+import reportsBanner from "/public/images/Reports6.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
 
 interface ReportsProps {
   setStep: (value: number) => void;

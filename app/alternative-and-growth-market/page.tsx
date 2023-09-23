@@ -1,13 +1,43 @@
-export default function Home() {
+"use client";
+
+import BenefitsForIssuers from "@/components/AlternativeAndGrowth/BenefitsForIssuers/page";
+import CroudCrowdex from "@/components/AlternativeAndGrowth/Crowdex/page";
+import Investors from "@/components/AlternativeAndGrowth/Investors/page";
+import Issuers from "@/components/AlternativeAndGrowth/Issuers/page";
+import AlternativeAndGrowth from "@/components/AlternativeAndGrowth/OverView/page";
+import SideMenu from "@/components/SideMenu/SideMenu";
+import { useNumber } from "@/context/nav.context";
+
+export default function Page() {
+  const { currentPage, setNumber } = useNumber();
+
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left'>
-        <div className='group rounded-lg border border-transparent px-5 py-4 transition-colors  border-gray-300  bg-gray-100  dark:border-neutral-700  dark:bg-neutral-800/30'>
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Alternative and growth market Page
-          </h2>
-        </div>
-      </div>
+    <main className='flex  flex-col items-center p-0'>
+      <SideMenu state={currentPage}>
+        {[
+          <AlternativeAndGrowth
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <CroudCrowdex
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <BenefitsForIssuers
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <Issuers setStep={setNumber} step={currentPage} key={currentPage} />,
+          <Investors
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+        ]}
+      </SideMenu>
     </main>
   );
 }

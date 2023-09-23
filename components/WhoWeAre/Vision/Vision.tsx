@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import Card from "../Card/Card";
-import Banner from "../Banner/banner";
-import image from "../../public/images/vision-banner.png";
-import values from "../../public/images/value.png";
-import mission from "../../public/images/mission.png";
-import vision from "../../public/images/vision.png";
+import Card from "../../Card/Card";
+import Banner from "../../Banner/banner";
+import image from "/public/images/vision-banner.png";
+import values from "/public/images/value.png";
+import mission from "/public/images/mission.png";
+import vision from "/public/images/vision.png";
 import Link from "next/link";
 import Image from "next/image";
 

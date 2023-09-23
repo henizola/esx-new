@@ -1,16 +1,16 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import member1 from "../../public/images/member1.png";
-import member2 from "../../public/images/member8.png";
-import member3 from "../../public/images/member9.png";
-import member4 from "../../public/images/member6.png";
-import member5 from "../../public/images/member7.png";
-import member6 from "../../public/images/member12.png";
-import member7 from "../../public/images/member11.png";
-import organization from "../../public/images/organization-banner.png";
-import Banner from "../Banner/banner";
-import Card from "../Card/Card";
+import member1 from "/public/images/member1.png";
+import member2 from "/public/images/member8.png";
+import member3 from "/public/images/member9.png";
+import member4 from "/public/images/member6.png";
+import member5 from "/public/images/member7.png";
+import member6 from "/public/images/member12.png";
+import member7 from "/public/images/member11.png";
+import organization from "/public/images/organization-banner.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
 
 interface OrganizationProps {
   setStep: (value: number) => void;

@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import manager from "../../public/images/manager.png";
-import sliderbannerImage from "../../public/images/slider-background.png";
-import bannerImage from "../../public/images/about-banner.png";
-import Banner from "../Banner/banner";
-import Card from "../Card/Card";
-import CustomSlider from "../Slider/Slider";
+import manager from "/public/images/manager.png";
+import sliderbannerImage from "/public/images/slider-background.png";
+import bannerImage from "/public/images/about-banner.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
+import CustomSlider from "../../Slider/Slider";
 interface WelcomeMessageProps {
   setStep: (value: number) => void;
   step: number;

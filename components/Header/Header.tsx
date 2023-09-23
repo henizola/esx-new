@@ -3,8 +3,9 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import logo from "../../public/images/logo.png";
+import logo from "/public/images/logo.png";
 import { useNumber } from "@/context/nav.context";
+import Link from "next/link";
 
 interface MenuItem {
   name: string;
@@ -31,7 +32,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
   const { setNumber } = useNumber();
   return (
     <div className={`group relative`} onMouseEnter={openSubMenu}>
-      <a
+      <Link
         href={item.href}
         className={`group  flex items-center justify-between px-4 py-5 text-sm relative`}
         onMouseEnter={openSubMenu}
@@ -45,7 +46,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
           </span>
         )}
         <span className='absolute w-full h-1 bg-transparent transition-transform transform scale-x-0 group-hover:scale-x-100'></span>
-      </a>
+      </Link>
       {hasSubMenu && showSubMenu && (
         <div
           style={{ listStyle: "none" }}
@@ -71,8 +72,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
 
           <div className='grid grid-cols-4  pt-10 '>
             {item.submenu!.map((subItem) => (
-              <div key={subItem.name}>
-                <a
+              <div key={subItem.name} className='flex flex-col'>
+                <Link
                   href={subItem.href}
                   onClick={() => {
                     setNumber(subItem.value ? subItem.value : 0);
@@ -86,23 +87,23 @@ const MenuItem: React.FC<MenuItemProps> = ({
                     {" "}
                     {subItem.name}
                   </span>
-                  {subItem.submenu?.map((subItem) => (
-                    <div key={subItem.name}>
-                      <a
-                        href={subItem.href}
-                        onClick={() => {
-                          setNumber(subItem.value ? subItem.value : 0);
-                          closeSubMenu();
-                        }}
-                        className={`${
-                          subItem.current ? "bg-blue-200" : "hover:underline"
-                        }  py-2 text-s block w-fit broder text-white`}
-                      >
-                        {subItem.name}
-                      </a>
-                    </div>
-                  ))}
-                </a>
+                </Link>
+                {subItem.submenu?.map((subItem) => (
+                  <div key={subItem.name}>
+                    <Link
+                      href={subItem.href}
+                      onClick={() => {
+                        setNumber(subItem.value ? subItem.value : 0);
+                        closeSubMenu();
+                      }}
+                      className={`${
+                        subItem.current ? "bg-blue-200" : "hover:underline"
+                      }  px-4 py-2  text-s block w-fit broder text-white`}
+                    >
+                      {subItem.name}
+                    </Link>
+                  </div>
+                ))}
               </div>
             ))}
           </div>
@@ -117,35 +118,42 @@ const navigation: MenuItem[] = [
     name: "About Us",
     href: "/",
     current: false,
+    value: 0,
     submenu: [
       {
         name: "Welcome message",
-        href: "/#welcome-message",
+        href: "/",
         current: false,
         value: 0,
       },
       { name: "Overview", href: "/#overview", current: false, value: 1 },
       {
         name: "Vision & Mission Statement",
-        href: "#",
+        href: "/",
         current: false,
         value: 2,
       },
-      { name: "Organizational Structure", href: "#", current: false, value: 3 },
       {
         name: "Meet our Team",
-        href: "#",
+        href: "/",
         current: false,
-        value: 4,
+        value: 3,
         submenu: [
-          { name: "Board of Directors", href: "#", current: false, value: 4 },
-          { name: "Management", href: "#", current: false, value: 5 },
-          { name: "Staff", href: "#", current: false, value: 6 },
+          {
+            name: "Organizational Structure",
+            href: "#",
+            current: false,
+            value: 3,
+          },
+
+          { name: "Board of Directors", href: "/", current: false, value: 4 },
+          { name: "Management", href: "/", current: false, value: 5 },
+          { name: "Staff", href: "/", current: false, value: 6 },
         ],
       },
-      { name: "ESX Reports", href: "#", current: false, value: 6 },
-      { name: "Careers", href: "#", current: false, value: 7 },
-      { name: "Tenders", href: "#", current: false, value: 8 },
+      { name: "ESX Reports", href: "/", current: false, value: 6 },
+      { name: "Careers", href: "/", current: false, value: 7 },
+      { name: "Tenders", href: "/", current: false, value: 8 },
     ],
   },
   {
@@ -262,13 +270,13 @@ const navigation: MenuItem[] = [
   },
   {
     name: "Fixed Income Market",
-    href: "/fixed-income-market", // Replace with the actual URL if applicable
+    href: "/fixed-income-market",
     current: false, // Change to true if this section is currently active
     submenu: [
       { name: "Overview", href: "/fixed-income-market", current: false },
       {
         name: "Instruments",
-        href: "/fixed-income-market", // Replace with the actual URL if applicable
+        href: "/fixed-income-market",
         current: false,
         submenu: [
           {
@@ -295,7 +303,7 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Listing and Admission to Trading",
-        href: "/fixed-income-market", // Replace with the actual URL if applicable
+        href: "/fixed-income-market",
         current: false,
         submenu: [
           {
@@ -317,7 +325,7 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Trading",
-        href: "/fixed-income-market", // Replace with the actual URL if applicable
+        href: "/fixed-income-market",
         current: false,
         submenu: [
           {
@@ -359,7 +367,7 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Members",
-        href: "/members", // Replace with the actual URL if applicable
+        href: "/members",
         current: false,
         submenu: [
           { name: "How to Become a Member", href: "/members", current: false },
@@ -369,7 +377,7 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Trading and Operations",
-        href: "/members", // Replace with the actual URL if applicable
+        href: "/members",
         current: false,
         submenu: [
           {
@@ -385,7 +393,7 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Regulatory Framework",
-        href: "/members", // Replace with the actual URL if applicable
+        href: "/members",
         current: false,
         submenu: [
           {
@@ -401,44 +409,51 @@ const navigation: MenuItem[] = [
 
   {
     name: "Alternative and Growth Market",
-    href: "/alternative-and-growth-market", // Replace with the actual URL if applicable
-    current: false, // Change to true if this section is currently active
+    href: "/alternative-and-growth-market",
+    value: 0,
+    current: false,
     submenu: [
       {
         name: "Overview",
         href: "/alternative-and-growth-market",
         current: false,
+        value: 0,
       },
       {
         name: "Crowdex",
-        href: "/alternative-and-growth-market", // Replace with the actual URL if applicable
+        href: "/alternative-and-growth-market",
         current: false,
+        value: 1,
         submenu: [
           {
             name: "What is CrowdEx?",
             href: "/alternative-and-growth-market",
             current: false,
+            value: 1,
           },
           {
             name: "Benefits for Issuers",
             href: "/alternative-and-growth-market",
             current: false,
+            value: 2,
           },
           {
             name: "Issuers",
             href: "/alternative-and-growth-market",
             current: false,
+            value: 3,
           },
           {
             name: "Investors",
             href: "/alternative-and-growth-market",
             current: false,
+            value: 4,
           },
         ],
       },
       {
         name: "FactorEx",
-        href: "/alternative-and-growth-market", // Replace with the actual URL if applicable
+        href: "/alternative-and-growth-market",
         current: false,
         submenu: [
           {
@@ -465,7 +480,7 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Capital Market Accelerator",
-        href: "/alternative-and-growth-market", // Replace with the actual URL if applicable
+        href: "/alternative-and-growth-market",
         current: false,
         submenu: [
           {
@@ -484,7 +499,7 @@ const navigation: MenuItem[] = [
   },
   {
     name: "News and Media ",
-    href: "/news-and-media ", // Replace with the actual URL if applicable
+    href: "/news-and-media ",
     current: false, // Change to true if this section is currently active
     submenu: [
       { name: "Latest News", href: "/news-and-media", current: false },
@@ -497,7 +512,7 @@ const navigation: MenuItem[] = [
   },
   {
     name: "ESX Academy",
-    href: "/esx-academy", // Replace with the actual URL if applicable
+    href: "/esx-academy",
     current: false, // Change to true if this section is currently active
     submenu: [
       { name: "Overview", href: "/esx-academy", current: false },

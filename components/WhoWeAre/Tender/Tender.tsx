@@ -2,19 +2,19 @@
 import React from "react";
 
 import Image from "next/image";
-import reportsBanner from "../../public/images/Management.png";
-import backgroundImage from "../../public/images/Career-Banner.png";
-import careear from "../../public/images/career-1.png";
-import icon1 from "../../public/images/icon1.png";
-import icon2 from "../../public/images/icon2.png";
-import icon3 from "../../public/images/icon3.png";
-import icon4 from "../../public/images/icon4.png";
-import Banner from "../Banner/banner";
-import Card from "../Card/Card";
-import Testimonials from "../Testimonials/Testimonials";
-import Accordion from "../Accordion/Accordion";
+import reportsBanner from "/public/images/Management.png";
+import backgroundImage from "/public/images/Career-Banner.png";
+import careear from "/public/images/career-1.png";
+import icon1 from "/public/images/icon1.png";
+import icon2 from "/public/images/icon2.png";
+import icon3 from "/public/images/icon3.png";
+import icon4 from "/public/images/icon4.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
+import Testimonials from "../../Testimonials/Testimonials";
+import Accordion from "../../Accordion/Accordion";
 import Link from "next/link";
-import Pagination from "../Paginnation/Pagination";
+import Pagination from "../../Paginnation/Pagination";
 
 interface TendersProps {
   setStep: (value: number) => void;

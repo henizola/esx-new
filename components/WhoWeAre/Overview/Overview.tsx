@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Card from "../Card/Card";
-import Banner from "../Banner/banner";
-import image from "../../public/images/who-we-are.png";
-import whoweare from "../../public/images/who-we-are-circle.png";
+import Card from "../../Card/Card";
+import Banner from "../../Banner/banner";
+import image from "/public/images/who-we-are.png";
+import whoweare from "/public/images/who-we-are-circle.png";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import member1 from "../../public/images/board1.png";
-import member2 from "../../public/images/board2.png";
-import member3 from "../../public/images/board3.png";
-import organization from "../../public/images/organization-banner.png";
-import Banner from "../Banner/banner";
-import Card from "../Card/Card";
+import member1 from "/public/images/board1.png";
+import member2 from "/public/images/board2.png";
+import member3 from "/public/images/board3.png";
+import organization from "/public/images/organization-banner.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
 
 interface BoardMembersProps {
   setStep: (value: number) => void;

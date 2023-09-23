@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import member1 from "../../public/images/management1.png";
-import member2 from "../../public/images/management2.png";
-import member3 from "../../public/images/management3.png";
-import management from "../../public/images/Management.png";
-import Banner from "../Banner/banner";
-import Card from "../Card/Card";
+import member1 from "/public/images/management1.png";
+import member2 from "/public/images/management2.png";
+import member3 from "/public/images/management3.png";
+import management from "/public/images/Management.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
 
 interface ManagementProps {
   setStep: (value: number) => void;
