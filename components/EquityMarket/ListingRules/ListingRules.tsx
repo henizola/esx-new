@@ -1,0 +1,234 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import manager from "/public/images/manager.png";
+import sliderbannerImage from "/public/images/slider-background.png";
+import bannerImage from "/public/images/about-banner.png";
+import Banner from "../../Banner/banner";
+import Card from "../../Card/Card";
+import CustomSlider from "../../Slider/Slider";
+interface ListingRulesProps {
+  setStep: (value: number) => void;
+  step: number;
+}
+
+const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
+  const items = [
+    "Market Segment",
+    "Listing Rules",
+    "Listing FAOs",
+    "Listing Companies",
+    "Notice to Issuers",
+    "Other Products",
+  ];
+
+
+  return (
+    <div className="flex flex-col w-full p-0 m-0">
+      <Banner
+        backgroundImage={bannerImage}
+        title="Listing Rules"
+        description="As an issuer listing on ESX provides you Wlth access to large pool of long-term capital that IS critical to finance your growth ambitions"
+      />
+      <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
+        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
+          <h6 className="ml-2 mb-4 text-lg text-gray-600">
+            {"Equity Market > Listing"}
+          </h6>
+          {items.map((item, index) => (
+            <button
+              key={index}
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: step === index ? "16px" : "14px",
+                fontWeight: step === index ? "400" : "300",
+              }}
+              onClick={() => setStep(index)}
+            >
+              {item}
+            </button>
+          ))}
+        </Card>
+        <div className="col-span-5 space-y-8">
+          <Card width="w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]">
+            <h1 className="text-black text-[40px] not-italic font-normal leading-[normal]">
+              Listing rules
+            </h1>
+            <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              Listing provides access to a new source of finance that
+              compliments your other sources of capital, such as bank lending,
+              as it requires no guarantees or collateral to raise capital from
+              the public, issuing share securities bears no interest payment.
+            </p>
+            <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              Indeed, listing is more than just raising capital - it is a
+              strategic decision that boosts the company’s national and global
+              profile, improves the company’s overall governance, and standing
+              as a sustainable business enterprise.
+            </p>
+          </Card>
+          <div className="grid sm:grid-cols-5 gap-8">
+            <div className="col-span-3 flex flex-col gap-8">
+              <Card width=" ">
+                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
+                  Listing Rules and Requirements
+                </h1>
+                <main className="py-[20px] px-[20px] space-y-6">
+                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
+                    How to become a listed company
+                  </h1>
+                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                    To be listed on the ESX equity market, issuers will be
+                    required to comply with pre-set listing rules and be subject
+                    to continuous obligations.
+                  </p>
+                  <Link href="#" className="flex text-[16px] mt-5">
+                    View more
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 mt-1.5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </Link>
+                </main>
+              </Card>
+              <Card width=" ">
+                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
+                  Listing Rules and Requirements
+                </h1>
+                <main className="py-[20px] px-[20px] space-y-6">
+                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
+                    ESX Main Market Segment
+                  </h1>
+                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                    An Issuer seeking to list its equity shares on ESX Main
+                    Market Segment shall have;
+                  </p>
+                  <Link href="#" className="flex text-[16px] mt-5">
+                    View more
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 mt-1.5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </Link>
+                </main>
+              </Card>
+              <Card width=" ">
+                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
+                  Listing Rules and Requirements
+                </h1>
+                <main className="py-[20px] px-[20px] space-y-6">
+                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
+                    ESX Enterprise Growth Market
+                  </h1>
+                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                    An Issuer seeking to list its equity shares on ESX Main
+                    Market Segment shall have;
+                  </p>
+                  <Link href="#" className="flex text-[16px] mt-5">
+                    View more
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 mt-1.5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </Link>
+                </main>
+              </Card>
+            </div>
+            <Card width="col-span-2 flex flex-col ">
+              <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-xl not-italic font-normal leading-[normal]">
+                Listing on ESX may take the following two main forms:
+              </h1>
+              <main className="py-[20px] px-[20px] space-y-6">
+                <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
+                  Initial public offering (IPO)
+                </h1>
+                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  An IPO is the process when a private company offers its shares
+                  of ownership to the public for the first time.
+                </p>
+                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  It is essentially the transition of a company from private to
+                  public ownership.{" "}
+                </p>
+                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  May take the form of offer for sale or offer for subscription{" "}
+                </p>
+                <hr className="  border border-gray/30" />
+              </main>
+              <main className="py-[20px] px-[20px] space-y-6">
+                <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
+                  Listing by introduction (direct listing)
+                </h1>
+                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  It is the most streamlined avenue to list on ESX, giving
+                  companies an opportunity to introduce their securities to
+                  ESX’s efficient and reliable secondary market infrastructures.
+                </p>
+                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  This method of listing is followed when a company does not
+                  intend to raise capital/issue additional shares up on listing
+                  and rather aims to provide liquidity for investors in the
+                  secondary market.
+                </p>
+              </main>
+            </Card>
+          </div>
+          <div className="flex flex-col">
+            <Card width=" w">
+              <div className="p-1  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]" />
+              <main className="py-[20px] px-[20px] flex flex-col gap-2 space-y-6">
+                <p className="text-gray/80 text-lg not-italic font-normal leading-[normal]">
+                  For details of ESX listing rules, please refer to following
+                  documents
+                </p>
+
+                <Link
+                  href="#"
+                  className="px-3 py-1 ml-auto text-white bg-primary-blue rounded-md text-base not-italic font-normal "
+                >
+                  ESX listing rules
+                </Link>
+              </main>
+            </Card>
+          </div>
+        </div>
+      </div>
+      {/* <CustomSlider slides={slides} /> */}
+    </div>
+  );
+};
+
+export default ListingRules;
+
