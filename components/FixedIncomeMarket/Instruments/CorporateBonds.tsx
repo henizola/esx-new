@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import overview from "../../../public/images/overview.png";
+import Card from "../../Card/Card";
 
 function CorporateBonds() {
   const lists = [
@@ -12,31 +13,37 @@ function CorporateBonds() {
 
   return (
     <div>
-      <h1 className="font-normal text-[30px]">CorporateBonds</h1>
-      <div className="flex w-full">
-        <div className="w-[38%] h-[100%]">
+      <Card width="w-[100%] h-full flex flex-row">
+        <div className="w-[38%] min-h-full">
           <Image
             height={200}
             width={200}
             src={overview.src}
-            alt="tbills"
-            className="w-full object-cover h-[100%]"
+            alt="overview"
+            className="w-full object-cover h-full"
           />
         </div>
+        <div className="w-[62%] flex px-5 pt-10  flex-col">
+          <h1 className="text-[40px] font-sans font-light mt-0 pt-0 border-b border-black">
+            Corporate Bonds{" "}
+          </h1>
 
-        <div className="bg-white py-10 px-5 w-1/2">
-          {lists.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className=" py-5 p font-normal font-sans border-b border-black"
-              >
-                {item}
-              </div>
-            );
-          })}
+          <div className="pl-7 ">
+            {lists.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`py-5 font-normal text-[14px] font-sans ${
+                    lists.length - 1 !== index && "border-b border-black"
+                  }`}
+                >
+                  {item}
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </Card>
     </div>
   );
 }

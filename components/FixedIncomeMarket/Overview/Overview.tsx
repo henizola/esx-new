@@ -23,9 +23,9 @@ const Overview = () => {
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
-      <div className="flex w-full  px-28 py-7">
-        <div className="flex flex-col w-full">
-          <Card width="w-[100%] h-[380px] flex flex-row">
+      <div className="flex w-full  ">
+        <div className="flex flex-col w-full gap-5">
+          <Card width="w-[100%]  flex flex-row">
             <div className="w-[38%] h-[100%]">
               <Image
                 height={200}
@@ -35,15 +35,15 @@ const Overview = () => {
                 className="w-full object-cover h-[100%]"
               />
             </div>
-            <div className="w-[62%] flex  flex-col ml-10 mt-0 px-5 p-8">
-              <p className="text-[12px] font-sans font-normal mt-0 py-6">
+            <div className="w-[62%] flex  flex-col py-7 px-5">
+              <p className="text-[12px] font-sans font-normal pb-6">
                 Overview{" "}
               </p>
-              <h1 className="text-[40px] font-sans font-light mt-0 pt-0">
+              <h1 className="text-[30px] font-sans font-light pb-6">
                 Fixed income market{" "}
               </h1>
 
-              <p className="text-[16px] font-sans font-normal mt-2 pt-0 leading-6 text-[#707377]">
+              <p className="text-[16px] font-sans font-[400] mt-2 pt-0 leading-6 text-[#707377] pb-14">
                 The ESX Fixed Income Market is a market where participants buy
                 and sell debt securities, either directly from the issuer
                 through the primary market, or afterwards through the secondary
@@ -71,8 +71,8 @@ const Overview = () => {
               </Link>
             </div>
           </Card>
-          <Card width="w-[100%] my-3 p-4">
-            <div className="flex py-5 mx-10">
+          <Card width="w-[100%] px-6 py-7">
+            <div className="flex ">
               <div className="w-[100%] flex  flex-col  mt-0 pt-0">
                 <h1 className="text-[24px] font-sans font-normal mt-0 pt-0">
                   The following instruments are listed and traded in ESX’s Fixed

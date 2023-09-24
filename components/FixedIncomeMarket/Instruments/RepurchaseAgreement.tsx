@@ -18,7 +18,7 @@ const RepurchaseAgreement = () => {
   ];
   return (
     <div className="flex flex-col w-full p-0 m-0">
-      <div className="flex w-full py-7">
+      <div className="flex w-full ">
         <div className="flex flex-col w-full">
           <Card width="w-[100%] h-full flex flex-row">
             <div className="w-[38%] h-[100%]">
@@ -30,17 +30,19 @@ const RepurchaseAgreement = () => {
                 className="w-full object-cover h-[100%]"
               />
             </div>
-            <div className="w-[62%] flex  flex-col ml-10 mt-0 px-5 p-8">
-              <h1 className="text-[40px] font-sans font-light mt-0 pt-0">
+            <div className="w-[62%] flex px-5 pt-10  flex-col">
+              <h1 className="text-[40px] font-sans font-light mt-0 pt-0  border-b border-black">
                 Corporate Bonds{" "}
               </h1>
 
-              <div className="">
+              <div className="pl-7">
                 {lists.map((item, index) => {
                   return (
                     <div
                       key={index}
-                      className="py-5 font-normal text-[14px] font-sans border-t border-black"
+                      className={`py-5 font-normal text-[14px] font-sans ${
+                        lists.length - 1 !== index && "border-b border-black"
+                      }`}
                     >
                       {item}
                     </div>

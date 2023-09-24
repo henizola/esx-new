@@ -12,26 +12,29 @@ function TbillsAndBonds() {
     "Treasury Bonds are safe, long-term debt securities issued by the Ethiopian government to investors with a maturity period of more than one year.",
   ];
   return (
-    <div className="w-full bg-white">
+    <Card width="flex flex-col  w-full h-full">
       <div className="bg-[#00205B] w-full h-full">
-        <h1 className="text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
+        <h1 className="text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
           T-bills and bonds
         </h1>
       </div>
-      <div className="flex w-full">
-        <div className="flex flex-col  w-[56%] justify-between px-5 pb-5">
-          <div className="bg-white py-10  ">
+      <div className="flex h-full ">
+        <div className="min-h-full bg-white pt-10 px-5 flex flex-col justify-between  ">
+          <div>
             {tbils.map((tbil, index) => {
               return (
-                <div
+                <p
                   key={index}
-                  className=" py-10 p font-normal font-sans border-b border-black"
+                  className={` py-5 text-[14px] font-sans ${
+                    tbils.length - 1 !== index && "border-b border-black "
+                  }`}
                 >
                   {tbil}
-                </div>
+                </p>
               );
             })}
           </div>
+
           <Link href="#" className="flex text-[16px] font-semibold mt-5 pb-5">
             View more{" "}
             <svg
@@ -50,17 +53,17 @@ function TbillsAndBonds() {
             </svg>
           </Link>
         </div>
-        <div className="w-1/2 h-[100%]">
+        <div className="min-w-[38%] min-h-full ">
           <Image
             height={200}
             width={200}
             src={tbills.src}
             alt="tbills"
-            className="w-full object-cover h-[100%] "
+            className="w-[100%] h-[100%] object-fill "
           />
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 

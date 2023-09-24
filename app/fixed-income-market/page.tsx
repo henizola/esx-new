@@ -10,6 +10,7 @@ import bannerImage from "../../public/images/about-banner.png";
 import Banner from "@/components/Banner/banner";
 import ListingAndAdmission from "@/components/FixedIncomeMarket/ListingAndAdmission";
 import { menus } from "@/components/FixedIncomeMarket/menuData";
+import Trading from "@/components/FixedIncomeMarket/Trading";
 
 type Page = {
   menu: string[];
@@ -17,7 +18,7 @@ type Page = {
 };
 
 export default function Home() {
-  const [mainMenuIndex, setMainMenuIndex] = useState<number>(1);
+  const [mainMenuIndex, setMainMenuIndex] = useState<number>(0);
   const [subMenuIndex, setSubMenuIndex] = useState<number>(0);
 
   const mainMenuItems = menus.map((menu) => menu.name);
@@ -36,6 +37,9 @@ export default function Home() {
         return <Instruments index={subIndex} />;
       case 2:
         return <ListingAndAdmission index={subIndex} />;
+
+      case 3:
+        return <Trading index={subIndex} />;
       default:
         return null;
     }
