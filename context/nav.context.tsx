@@ -3,7 +3,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 
 // Define the shape of your context data
 interface NavContextData {
-  currentPage: number;
+  number: number;
   setNumber: (newNumber: number) => void;
 }
 
@@ -25,15 +25,10 @@ interface NumberProviderProps {
 }
 
 export function NumberProvider({ children }: NumberProviderProps) {
-  const [currentPage, setCurrentPage] = useState(0);
-
-  const setNumber = (number: number) => {
-    console.log("i am called", number);
-    setCurrentPage(number);
-  };
+  const [number, setNumber] = useState(0);
 
   const value: NavContextData = {
-    currentPage,
+    number,
     setNumber,
   };
 

@@ -1,49 +1,33 @@
 "use client";
 
+import BoardMembers from "@/components/BoardMembers/BoardMembers";
+import Careers from "@/components/Careers/Careers";
+import Management from "@/components/Management/Management";
+import Organization from "@/components/Organization/Organization";
+import Reports from "@/components/Reports/Reports";
 import SideMenu from "@/components/SideMenu/SideMenu";
-import BoardMembers from "@/components/WhoWeAre/BoardMembers/BoardMembers";
-import Careers from "@/components/WhoWeAre/Careers/Careers";
-import Management from "@/components/WhoWeAre/Management/Management";
-import Organization from "@/components/WhoWeAre/Organization/Organization";
-import OverView from "@/components/WhoWeAre/Overview/Overview";
-import Reports from "@/components/WhoWeAre/Reports/Reports";
-import Tenders from "@/components/WhoWeAre/Tender/Tender";
-import Vision from "@/components/WhoWeAre/Vision/Vision";
-import WelcomeMessage from "@/components/WhoWeAre/WelcomeMessage/WelcomeMessage";
+import Tenders from "@/components/Tender/Tender";
+import Vision from "@/components/Vision/Vision";
+import WelcomeMessage from "@/components/WelcomeMessage/WelcomeMessage";
+import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
 import { useNumber } from "@/context/nav.context";
 
 export default function Home() {
-  const { currentPage, setNumber } = useNumber();
+  const { number, setNumber } = useNumber();
 
   return (
     <main className='flex  flex-col items-center p-0'>
-      <SideMenu state={currentPage}>
+      <SideMenu state={number}>
         {[
-          <WelcomeMessage
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <OverView setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Vision setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Organization
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <BoardMembers
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <Management
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <Reports setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Careers setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Tenders setStep={setNumber} step={currentPage} key={currentPage} />,
+          <WelcomeMessage setStep={setNumber} step={number} key={number} />,
+          <WhoWeAre setStep={setNumber} step={number} key={number} />,
+          <Vision setStep={setNumber} step={number} key={number} />,
+          <Organization setStep={setNumber} step={number} key={number} />,
+          <BoardMembers setStep={setNumber} step={number} key={number} />,
+          <Management setStep={setNumber} step={number} key={number} />,
+          <Reports setStep={setNumber} step={number} key={number} />,
+          <Careers setStep={setNumber} step={number} key={number} />,
+          <Tenders setStep={setNumber} step={number} key={number} />,
         ]}
       </SideMenu>
     </main>
