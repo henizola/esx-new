@@ -1,0 +1,44 @@
+/* components/CustomSlider.css */
+
+/* Style the dots */
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Adjust the vertical position as needed */
+
+  padding: 0;
+}
+
+/* Style each individual dot */
+.slick-dots li {
+  margin: 0 5px; /* Adjust the spacing between dots as needed */
+}
+
+/* Style the arrow buttons */
+.slick-prev,
+.slick-next {
+  font-size: 0px; /* Adjust the font size as needed */
+  color: #333; /* Set the color of the arrows */
+  height: 50px !important;
+  width: 50px !important;
+}
+
+/* Optionally, you can add additional styles for the arrows, such as positioning */
+.slick-prev {
+  left: 10%;
+  z-index: 999; /* Adjust the horizontal position of the previous arrow */
+}
+
+.slick-next {
+  right: 10%;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 16px;
+  color: rgba(168, 150, 91, 1);
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
