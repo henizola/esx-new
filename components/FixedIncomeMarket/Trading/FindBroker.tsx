@@ -44,22 +44,24 @@ function FindBroker() {
         </div>
       </div>
       <div className=" flex w-full items-center justify-center">
-        <div className="w-[50%]  p-10 h-[400px] flex flex-col bg-primary-blue">
-          <h1 className="text-left text-[40px] text-white">Sign Up</h1>
+        <div className="w-[90%] px-24 h-[450px] flex flex-col bg-primary-blue">
+          <h1 className="text-left text-[32px] text-white font-semibold font-sans pt-16 pb-5">
+            Sign Up
+          </h1>
 
           <input
             className="text border w-[460px] border-round-md border-white rounded-md p-3 bg-primary-blue mt-5"
-            placeholder="Name"
+            placeholder="Username"
           />
           <input
             className="text border w-[460px] border-round-md border-white rounded-md p-3 bg-primary-blue mt-5"
-            placeholder="Name"
+            placeholder="Email"
           />
           <input
             className="text border w-[460px] border-round-md border-white rounded-md p-3 bg-primary-blue mt-5"
-            placeholder="Name"
+            placeholder="Password"
           />
-          <span className="text-right w-[460px] mt-6 cursor-pointer text-[16px] font-light text-white">
+          <span className="text-right w-[460px] pt-7 pb-10 cursor-pointer text-[20px] font-medium text-white font-sans">
             Subscribe
           </span>
         </div>

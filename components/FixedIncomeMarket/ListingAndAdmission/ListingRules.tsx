@@ -11,6 +11,10 @@ function ListingRules() {
     "The Listing Requirements, and in particular the Continuing Obligations, promote investor confidence in standards of disclosure and corporate governance in the conduct of Issuers affairs and in the market as a whole",
     "That the business of The Exchange is carried on with due regard to the public interest",
   ];
+  const sublists = [
+    "Whether you are a startup entrepreneur or ",
+    "other matters affecting an Issuer’s constitution or the rights of holders of securities",
+  ];
   return (
     <div className=" w-full h-[100%] flex ">
       <div className="w-[100%] flex flex-col  mt-0 pt-0 bg-white py-9">
@@ -21,8 +25,15 @@ function ListingRules() {
         </div>
         {lists.map((item, index) => {
           return (
-            <div className="w-[100%] relative flex items-center text-[15px] font-sans font-light mt-2 px-5 leading-6 gap-2">
-              <div>
+            <div
+              key={index}
+              className={`flex items-center w-[100%] relative text-[15px] font-sans font-light mt-2 px-5 leading-6 gap-2`}
+            >
+              <div
+                className={` h-full flex  ${
+                  index === 3 ? " items-start pt-6  " : "items-center"
+                }`}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -36,9 +47,36 @@ function ListingRules() {
                   />
                 </svg>
               </div>
-              <p key={index} className=" py-4 text-[16px] border-b border-gray">
-                {item}
-              </p>
+              <div className="flex flex-col border-b border-gray">
+                <p className=" py-4 text-[16px] ">{item}</p>
+                {index === 3 && (
+                  <div className="mx-4">
+                    {sublists.map((subitem, index) => {
+                      return (
+                        <div className="relative flex items-center text-[15px] font-sans font-light text-gray mt-2 pl-[180px] pr-16 leading-6 gap-2">
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              className="w-5 h-5"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                          <p key={index} className=" py-2 text-[16px]">
+                            {subitem}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
             </div>
           );
         })}

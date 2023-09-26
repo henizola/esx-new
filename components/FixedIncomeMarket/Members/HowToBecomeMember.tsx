@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+type Step = "Step 1" | "Step 2" | "Step 3" | "Step 4";
 
 function HowToBecomeMember() {
-  const lists = ["Step 1", "Step 2", "Step 3", "Step 4"];
+  const [selectedStep, setSelectedStep] = useState<Step>("Step 1");
+  const lists: any = ["Step 1", "Step 2", "Step 3", "Step 4"];
   const lists2 = [
     "Proof of payment of the applicable fees prescribed by The Exchange",
     "A copy of the certificate of commercial registration and/or investment permit issued by the relevant government body",
@@ -30,17 +32,26 @@ function HowToBecomeMember() {
           Ethiopian Capital Market Authority are eligible to become a trading
           member of the exchange.
         </p>
-        <div className="flex pl-5 w-full">
-          {lists.map((item, index) => {
+        <div className="flex pl-5 pb-7 w-full">
+          {lists.map((item: Step, index: number) => {
             return (
-              <div className="flex flex-col py-5 pr-10 w-full">
+              <div
+                className="flex flex-col py-5 w-full hover:cursor-pointer"
+                onClick={() => setSelectedStep(item)}
+              >
                 <p
                   key={index}
-                  className="font-normal text-[20px] font-sans text-[#001F59]"
+                  className={`font-normal text-[20px] font-sans text-[#001F59] ${
+                    item === selectedStep && "font-semibold"
+                  }`}
                 >
                   {item}
                 </p>
-                <div className="bg-[#CFCFCF] w-[200px] h-1 pr-5"></div>
+                <div
+                  className={` w-[150px] h-1 ${
+                    item === selectedStep ? "bg-[#A8965B] h-2 " : "bg-[#CFCFCF]"
+                  }`}
+                ></div>
               </div>
             );
           })}
@@ -54,7 +65,7 @@ function HowToBecomeMember() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className=" h-[20px]   "
+              className="h-[20px]"
             >
               <path
                 fillRule="evenodd"
@@ -63,15 +74,15 @@ function HowToBecomeMember() {
               />
             </svg>
           </div>
-          <p className=" py-4 text-[16px]">
-            An application for a membership licese shall be made in such a
+          <p className="py-4 text-[16px]">
+            An application for a membership license shall be made in such a
             manner as prescribed by the exchange membership rules.
           </p>
         </div>
       </div>
 
       <div className="bg-white mt-5">
-        <h1 className="font-normal text-[32px] font-sans pl-5 pr-20 pt-8 pb-8 border-b">
+        <h1 className="font-normal text-[32px] font-sans ml-5 mr-20 pt-8 pb-8 border-b">
           The applicant shall provide the following in evidence:{" "}
         </h1>
         <div className="pl-5 pr-20">

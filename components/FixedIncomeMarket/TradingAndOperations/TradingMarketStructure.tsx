@@ -29,24 +29,26 @@ function TradingMarketStructure() {
           </p>
         </div>
       </Card>
-      <div className="grid grid-cols-2 gap-5 mt-5 ">
-        <Card width="w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] border-t-4 border-[#A8965B]">
+      <div className="grid grid-cols-2 gap-5 mt-5">
+        <Card width="w-[100%] mt-0 py-5 px-5 flex flex-col flex-grow border-t-4 border-[#A8965B]">
           <div className="flex items-center">
-            <h2 className="text-[19px] font-normal pr-7">Trading calendar</h2>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-5 h-5 mt-1.5 text-[#A8965B]"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
+            <h2 className="text-[24px] font-normal pr-7">Trading calendar</h2>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-6 h-6 mt-1.5 text-[#A8965B]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
           </div>
           <p className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
             The Exchange shall open for trading on all business days in
@@ -56,7 +58,7 @@ function TradingMarketStructure() {
             Trading shall be conducted at specified times as may be determined
             by The Exchange.
           </p>
-          <Link href="#" className="flex text-[16px] mt-5 px-0 ">
+          <Link href="#" className="flex text-[16px] pt-16 px-0 ">
             View more{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,25 +76,27 @@ function TradingMarketStructure() {
             </svg>
           </Link>
         </Card>
-        <Card width="w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] border-t-4 border-[#A8965B]">
-          <div className="flex pr-24">
-            <h2 className="text-[19px] font-normal pr-7">
-              Public Holidays / Closign Days (2023 -2024){" "}
+        <Card width="w-[100%] mt-0 py-5 px-5 flex flex-col flex-grow border-t-4 border-[#A8965B]">
+          <div className="flex pr-16">
+            <h2 className="text-[24px] font-normal">
+              Public Holidays / Closing Days (2023 -2024){" "}
             </h2>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 mt-1.5 text-[#A8965B]"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
+            <div className="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-6 h-6 mt-11 text-[#A8965B]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
           </div>
           <p className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
             Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
@@ -108,7 +112,7 @@ function TradingMarketStructure() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-4 h-4 mt-1.5"
+              className="w-5 h-5 mt-1.5"
             >
               <path
                 strokeLinecap="round"

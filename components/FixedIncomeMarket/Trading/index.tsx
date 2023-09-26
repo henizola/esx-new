@@ -20,7 +20,7 @@ const SelectedPage = ({ index }: { index: number }) => {
 
 function Trading({ index }: { index: number }) {
   return (
-    <div>
+    <div className="h-full">
       <SelectedPage index={index} />
     </div>
   );

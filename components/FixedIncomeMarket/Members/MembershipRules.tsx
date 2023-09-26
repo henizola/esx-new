@@ -38,7 +38,7 @@ function MembershipRules() {
           })}
         </div>
         <Card width="w-[100%] mr-0 flex flex-col text-left p-4 py-14 ">
-          <div className="bg-[#F0F0F0]">
+          <div className="bg-[#F0F0F0] w-[70%] mx-auto">
             <p className=" text-[#707377] text-[16px] font-normal font-sans italic py-3 w-[100%] text-center">
               For details of ESX membership rules, please refer to following
               documents
@@ -52,14 +52,16 @@ function MembershipRules() {
         </Card>
       </div>
       <div className="grid grid-cols-2 gap-5 mt-5 ">
-        <Card width="w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] ">
-          <h2 className="text-[19px] font-normal">
-            Access to the trading platform{" "}
-          </h2>
-          <p className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
-            Members can access ESX’s Automated Trading System by connecting
-            directly or through third party backoffice and trading platforms.
-          </p>
+        <Card width="w-[100%] mt-0 py-5 px-5 flex  flex-col  flex-grow justify-between ">
+          <div>
+            <h2 className="text-[19px] font-normal">
+              Access to the trading platform{" "}
+            </h2>
+            <p className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
+              Members can access ESX’s Automated Trading System by connecting
+              directly or through third party backoffice and trading platforms.
+            </p>
+          </div>
           <Link href="#" className="flex text-[16px] mt-5 px-0 ">
             View more{" "}
             <svg

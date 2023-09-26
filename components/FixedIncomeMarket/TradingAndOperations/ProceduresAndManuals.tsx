@@ -5,11 +5,11 @@ import Image from "next/image";
 
 function ProceduresAndManuals() {
   return (
-    <Card width="w-[100%] p-4">
-      <div className="flex py-10 mx-10">
-        <div className="w-[60%] ">
-          <div className="w-[100%] flex  flex-col  mt-6 pt-0">
-            <h1 className="text-[30px] font-sans font-normal mt-0 pt-0 pb-5 border-b">
+    <Card width="w-[100%]">
+      <div className="flex items-center">
+        <div className="w-[60%] px-5 py-9">
+          <div className="w-[100%] flex flex-col">
+            <h1 className="text-[30px] font-sans font-normal border-b pb-5">
               Procedures & manuals{" "}
             </h1>
             <p className="w-[90%]  text-[16px] font-sans font-normal mt-2 pt-5 leading-6 text-gray">
@@ -26,14 +26,14 @@ function ProceduresAndManuals() {
             </button>
           </div>
         </div>
-        <div className="w-[38%] ml-[3%]">
+        <div className="w-[38%]">
           {" "}
           <Image
             height={300}
             width={200}
             src={whoweare.src}
             alt="manager"
-            className="w-[100%] border object-cover rounded-full  border-"
+            className="w-[100%] border object-cover rounded-full"
           />
         </div>
       </div>
