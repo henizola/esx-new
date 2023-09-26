@@ -2,6 +2,7 @@
 
 import SideMenu from "@/components/SideMenu/SideMenu";
 import TheAcademy from "@/components/TheAcademy";
+import Courses from "@/components/Courses";
 import BoardMembers from "@/components/WhoWeAre/BoardMembers/BoardMembers";
 import Careers from "@/components/WhoWeAre/Careers/Careers";
 import Management from "@/components/WhoWeAre/Management/Management";
@@ -13,6 +14,7 @@ import Vision from "@/components/WhoWeAre/Vision/Vision";
 import WelcomeMessage from "@/components/WhoWeAre/WelcomeMessage/WelcomeMessage";
 import { useNumber } from "@/context/nav.context";
 
+
 export default function Home() {
   const { currentPage, setNumber } = useNumber();
 
@@ -21,6 +23,11 @@ export default function Home() {
       <SideMenu state={currentPage}>
         {[
           <TheAcademy
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <Courses
             setStep={setNumber}
             step={currentPage}
             key={currentPage}

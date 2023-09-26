@@ -18,7 +18,7 @@ const TheAcademy: React.FC<ReportsProps> = ({ setStep, step }) => {
     "Overview",
     "Courses and programs",
     "ESX Training Academy Calendar",
-    "FAQ's",
+    "FAQ",
   ];
 
   return (
@@ -31,15 +31,15 @@ const TheAcademy: React.FC<ReportsProps> = ({ setStep, step }) => {
       />
       <div className='flex w-full  px-28 py-7'>
         <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
-          <h6 className='ml-2 mb-4'>ESX Academy</h6>{" "}
+          <h6 className='ml-2 mb-4 font-semibold opacity-50'>ESX Academy</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
               className={`  text-left ml-10 my-2 font-light border-b border-black `}
               style={{
-                borderBottom: "0.7px solid black",
+                borderBottom: step === index ? "1.5px solid black" : "0.25px solid black",
                 fontSize: step === index ? "16px" : "14px",
-                fontWeight: step === index ? "400" : "300",
+                fontWeight: step === index ? "500" : "300",
               }}
               onClick={() => setStep(index)}
             >
