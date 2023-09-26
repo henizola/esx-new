@@ -77,18 +77,18 @@ function TradingMarketStructure() {
           </Link>
         </Card>
         <Card width="w-[100%] mt-0 py-5 px-5 flex flex-col flex-grow border-t-4 border-[#A8965B]">
-          <div className="flex pr-16">
+          <div className="flex items-end w-[80%]">
             <h2 className="text-[24px] font-normal">
               Public Holidays / Closing Days (2023 -2024){" "}
             </h2>
-            <div className="">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={3}
                 stroke="currentColor"
-                className="w-6 h-6 mt-11 text-[#A8965B]"
+                className="w-6 h-6 text-[#A8965B]"
               >
                 <path
                   strokeLinecap="round"

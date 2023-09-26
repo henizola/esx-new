@@ -37,10 +37,10 @@ function ListOfMembers() {
   ];
   return (
     <div>
-      <h1 className="text-[32px] px-5 py-5  text-left text-white w-[100%] bg-primary-blue font-sans font-light ">
+      <h1 className="text-[32px] px-5 py-5 text-left text-white w-[100%] bg-primary-blue font-sans font-light ">
         Membership rules{" "}
       </h1>
-      <div className="p-5 gap-4 max-h-[500px] overflow-scroll w-full">
+      <div className="max-h-[500px] overflow-scroll w-full">
         {members.map((member, index) => {
           return (
             <div className="flex w-full my-5" key={index}>

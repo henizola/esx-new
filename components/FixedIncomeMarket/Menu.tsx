@@ -26,7 +26,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
               {items.map((item: any, index: number) => (
                 <button
                   key={index}
-                  className={`text-left font-light border-b border-black py-2 mx-11`}
+                  className={`text-left font-light border-b border-black py-2 ml-11`}
                   style={{
                     borderBottom: "0.7px solid black",
                     fontSize: step === index ? "16px" : "14px",
