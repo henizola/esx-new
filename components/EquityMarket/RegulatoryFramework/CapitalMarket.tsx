@@ -48,35 +48,35 @@ const CapitalMarket: React.FC<CapitalMarketProps> = ({ setStep, step }) => {
         </Card>
         <div className="col-span-5 space-y-8">
           <Card width="col-span-5 flex flex-col ">
-            <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-xl not-italic font-normal leading-[normal]">
+            <h1 className="py-[18px] px-[19px]  bg-primary-blue text-white text-[32px] font-normal font-['Open Sans']">
               Capital market regulatory environment
             </h1>
-            <div className="grid sm:grid-cols-5">
-              <div className="py-[20px] px-[20px] col-span-3 space-y-4">
-                <main className="flex flex-col gap-4 h-full ">
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
+            <div className="flex  ">
+              <div className="py-[21px] px-[25px] w-[60%] space-y-4">
+                <main className="flex flex-col pt-[39px] gap-5 h-full ">
+                  <p className="text-black text-base font-normal font-['Open Sans']">
                     ESX is licensed by the Ethiopian Capital Market Authority
                     (“ECMA” or “the Authority”) as a securities exchange in line
                     with Article 30 and 31 of the Capital Market Proclamation
                     No.1248/2021 (“the Proclamation”).
                   </p>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  <p className="text-black text-base font-normal font-['Open Sans']">
                     ECMA is the apex regulator of the capital markets in
                     Ethiopia
                   </p>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                  <p className="text-black text-base font-normal font-['Open Sans']">
                     ECMA is responsible for setting the legal framework and
                     regulating entities interested in participating ESX
                   </p>
-                  <LinkButton className="mt-auto" href="#">View More</LinkButton>
+                  <LinkButton className="text-black mt-[18px] text-base font-semibold font-['Open Sans']" href="#">View More</LinkButton>
                 </main>
               </div>
               <Image
-                src={"/images/behnam.png"}
+                src={"/images/austin-distel-EMPZ7yRZoGw-unsplash 1.png"}
                 height={500}
                 width={400}
                 alt=""
-                className="col-span-2 h-full w-full object-cover"
+                className="aspect-square w-[40%] object-cover"
               />
             </div>
           </Card>

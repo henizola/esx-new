@@ -14,7 +14,7 @@ export default function ExpandableCard({
 }: ExpandableCardProps) {
   const [open, setOpen] = useState(false);
   return (
-    <div className={`bg-gray/10 p-[20px] flex flex-col gap-4 transition-all  rounded ${className}`}>
+    <div className={` ${open  ? 'bg-gray/10 ' : ' '}  px-[20px] pt-[12px]  flex flex-col gap-4 transition-all   ${className}`}>
       <div className="rounded flex justify-between items-center">
         <h1 className="text-black text-[19px] not-italic font-normal leading-[normal] ">
           {question}
@@ -26,7 +26,7 @@ export default function ExpandableCard({
           }`}
         />
       </div>
-      {open && <span className="">{children}</span>}
+      {open && <span className="pb-[52px]">{children}</span>}
     </div>
   );
 }

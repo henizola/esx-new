@@ -22,7 +22,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         title="Equity market"
         description="ESX Equities Market is the division of ESX that allows issuers of equity securities to raise long-term capital."
       />
-      <div className="flex w-full  px-28 py-7">
+      <div className="flex w-full  px-28 py-[30px]">
         <Card width="w-[30%] mr-5 flex flex-col text-left  py-10 px-5">
           <h6 className="ml-2 mb-4">Equity Market</h6>{" "}
           {items.map((item, index) => (
@@ -64,6 +64,18 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             Trade
           </Link>
           <Link
+            href={"/equity-market/members"}
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: step === 2 ? "16px" : "14px",
+              fontWeight: step === 2 ? "400" : "300",
+            }}
+            // onClick={() => setStep(2)}
+          >
+            Members
+          </Link>
+          <Link
             href={"/equity-market/trading-operations"}
             className={`  text-left ml-10 my-2 font-light border-b border-black `}
             style={{
@@ -88,34 +100,45 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             Regulatory Framework
           </Link>
         </Card>
-        <div className="grid grid-cols-1 gap-3 w-[100%]">
+        <div className="flex flex-col justify-between gap-[18px] h-full w-[100%]">
           <Card width="flex flex-col ">
-            <div className="grid sm:grid-cols-2 h-fit">
-              <div className="py-[20px] px-[20px] col-span-1 space-y-4 order-2">
-                <h1 className="text-primary-blue text-[14px] ">Overview</h1>
-                <h1 className="text-black text-[19px] ">
+            <div className="flex ">
+              <Image
+                src={"/images/austin-distel-EMPZ7yRZoGw-unsplash 1.png"}
+                height={100}
+                width={400}
+                alt=""
+                className="w-[40%]  aspect-square object-cover"
+              />
+              <div className="pt-[30px] pb-[20px]  px-[20px] w-[60%]  ">
+                <h1 className="text-primary-blue text-[12px] mb-[14px] ">
+                  Overview
+                </h1>
+                <h1 className="text-black text-[30px]  mb-[20px]">
                   ESX’s Equity Market Provides:
                 </h1>
-                <div className="flex  gap-2">
+                <div className="flex  gap-[10px] mb-[20px]">
                   <ChevronRightIcon className="w-6 h-6 " />
 
                   <p className="text-black text-base flex-1 ">
-                    Serves as a platform for large and mature issuers that are
-                    capable of meeting ESX’s listing requirements
+                    A central listing and trading venue for issuance and trading
+                    of various equity instruments that are approved and
+                    registered by the Ethiopian Capital Market Authority
+                    <div className="flex flex-col gap-[10px] px-6 pt-5">
+                      <p className="text-gray text-base ">
+                        Shares and other forms of equity instruments
+                      </p>
+                      <p className="text-gray text-base ">
+                        Real estate investment funds (REIFs) / ‘REITS’
+                      </p>
+                      <p className="text-gray text-base ">
+                        Exchange traded funds (ETFs)
+                      </p>
+                    </div>
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 px-12">
-                  <p className="text-gray text-base ">
-                    Shares and other forms of equity instruments
-                  </p>
-                  <p className="text-gray text-base ">
-                    Real estate investment funds (REIFs) / ‘REITS’
-                  </p>
-                  <p className="text-gray text-base ">
-                    Exchange traded funds (ETFs)
-                  </p>
-                </div>
-                <div className="flex  gap-2">
+
+                <div className="flex  gap-[10px] mb-[20px]">
                   <ChevronRightIcon className="w-6 h-6 " />
 
                   <p className="text-black text-base flex-1 ">
@@ -125,20 +148,20 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     the Ethiopian capital markets.
                   </p>
                 </div>
-                <div className="flex  gap-2">
+                <div className="flex  gap-[10px] mb-[20px]">
                   <ChevronRightIcon className="w-6 h-6 " />
                   <p className="text-black text-base flex-1 ">
                     Enhances the overall liquidity of the equities market.
                   </p>
                 </div>
-                <div className="flex  gap-2">
+                <div className="flex  gap-[10px] mb-[20px]">
                   <ChevronRightIcon className="w-6 h-6 " />
 
                   <p className="text-black text-base flex-1 ">
                     Regulates and enforces actions on trading members.
                   </p>
                 </div>
-                <Link href="#" className="flex text-[16px] mt-5">
+                <Link href="#" className="flex text-[16px] mt-[15px]">
                   View more{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,27 +179,19 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   </svg>
                 </Link>
               </div>
-              <div className="col-span-1 h-full order-1">
-                <Image
-                  src={"/images/career-1.png"}
-                  height={100}
-                  width={400}
-                  alt=""
-                  className="w-full aspect-square object-cover"
-                />
-              </div>
             </div>
           </Card>
-          <Card width="py-[20px] px-[20px] my-3 p-4">
-            <h1 className="text-[24px] font-sans font-normal mt-0 pt-0">
+
+          <Card width="pt-[30px] pb-[20px] px-[23px]  p-4">
+            <h1 className="text-[20px] font-sans font-normal  pt-0">
               ESX’s Equity Market Provides:
             </h1>
 
-            <p className="  text-[15px] font-sans font-normal mt-2 pt-0 leading-6 text-gray">
+            <p className=" text-zinc-500 text-base mt-[20px] mb-[30px]  font-normal font-['Open Sans'] leading-tight">
               ESX Equities Market is the division of ESX that allows issuers of
               equity securities to raise long-term capital.
             </p>
-            <Link href="#" className="flex text-[16px] mt-5">
+            <Link href="#" className="flex text-[16px] font-semibold ">
               View more{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -197,21 +212,29 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         </div>
       </div>
 
-      <GoldBanner
-        backgroundUrl={'/images/Career-Banner.png'}
-        heading={
-          "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer"
-        }
-        buttonText={"Learn More"}
-        link={"fghgfhfgh"}
-      />
+      <div className="relative h-[200px]">
+        <img
+          src={"/images/Authors 1.png"}
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute top-0 left-0 bg-primary-golden/80 w-full h-full  flex items-center justify-center ">
+          <div className="w-full px-[130px] flex justify-between">
+            <h1 className="text-white text-3xl font-normal font-['Open Sans'] max-w-[760px] leading-10">
+              Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+              consectetuer
+            </h1>
+            <Link
+              className="px-[29px] pt-[11px] pb-[13px] min-w-[104px] h-fit rounded-full bg-white text-center text-primary-golden text-xl font-medium font-['Roboto']"
+              href={"#"}
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default EquityMarketOverview;
-
-
-
-
-

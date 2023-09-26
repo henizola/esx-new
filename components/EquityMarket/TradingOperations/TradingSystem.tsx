@@ -8,7 +8,11 @@ import bannerImage from "/public/images/about-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
-import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import {
+  ArrowDownIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/20/solid";
 import ExpandableCard from "@/components/Card/ExpandableCard";
 import LinkButton from "@/components/Button/LinkButton";
 interface TradingSystemProps {
@@ -33,7 +37,7 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
         description="Trading on ESX shall be in approved securities on only the ESX’s trading platform unless an the Exchange grants an express exemption inline with its trading rules."
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
-        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
+        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]">
           <h6 className="ml-2 mb-4 text-lg text-gray-600">
             {"Equity Market > Trading System"}
           </h6>
@@ -52,20 +56,20 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="col-span-5 space-y-8">
-          <Card width="w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]">
-            <h1 className="text-black text-[40px] not-italic font-normal leading-[normal]">
+        <div className="col-span-5 space-y-5">
+          <Card width="w-[100%] flex  flex-col pt-[40px] pb-[30px] px-[20px] shadow-[0]">
+            <h1 className="text-black text-[32px] ml-[11px] font-normal font-['Open Sans']">
               Trading calendar
             </h1>
-            <hr className="  border border-gray/30" />
-            <main className=" space-y-6">
-              <p className="text-gray text-base not-italic font-normal leading-[normal]">
+            <hr className=" border border-primary-golden opacity-70 mt-[12px]" />
+            <main className=" space-y-[15px] pt-[30px]">
+              <p className=" text-black text-base font-normal font-['Open Sans']">
                 All trading activity on ESX listed securities, (as well as its
                 unlisted securities market) occurs via ESX’s proiopitery
                 Automated Trading System.
               </p>
 
-              <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              <p className=" text-black text-base font-normal font-['Open Sans']">
                 ESX adopts a hybrid market that provides both a central order
                 book as well as platforms for bilateral and multilateral
                 negotiated trade in the form of RFQs (request for Qiuote). ESX’s
@@ -73,45 +77,52 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
                 enter buy and sell orders anonymously where trades are matched
                 using ESX’ modern trading engine based on price time priority.
               </p>
-              <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              <p className=" text-black text-base font-normal font-['Open Sans']">
                 The ATS seamlessly integrates with the Central Securities
                 Depository that ensures efficent clearning and settlment.
               </p>
             </main>
           </Card>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Card width="w-[100%] flex gap-4 flex-col  ">
+          <div className="grid sm:grid-cols-2 gap-5">
+            <Card width="w-[100%] flex gap-4 flex-col shadow-[0] ">
               <div className="p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]" />
-              <main className="pb-[20px] px-[20px] space-y-4">
-                <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
-                  Trading System
+              <main className="pb-[20px] px-[20px] flex flex-col h-full">
+                <h1 className="text-black text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
+                  <span>Trading calendar</span>
+                  <ChevronRightIcon className="w-8 h-8 mt-1 text-primary-golden" />
                 </h1>
-                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
                   All trading activity on ESX listed securities, (as well as its
                   unlisted securities market) occurs via ESX’s proiopitery
                   Automated Trading System.
                 </p>
 
-                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                <p className="text-black text-sm font-light mt-[10px] font-['Open Sans']">
                   The ATS seamlessly integrates with the Central Securities
                   Depository that ensures efficent clearning and settlment.
                 </p>
-                <LinkButton href="#">View More</LinkButton>
+                <LinkButton className="mt-auto" href="#">
+                  View More
+                </LinkButton>
               </main>
             </Card>
-            <Card width="w-[100%] flex gap-4 flex-col  ">
+            <Card width="w-[100%] flex gap-4 flex-col  shadow-[0]">
               <div className="p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]" />
-              <main className="pb-[20px] px-[20px] space-y-4">
-                <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
-                  Public Holidays / Closign Days (2023 -2024)
+              <main className="pb-[20px] px-[20px] flex flex-col h-full">
+                <h1 className="text-black text-2xl font-normal font-['Open Sans'] flex items-end gap-5 ">
+                  <div>
+                    Public Holidays / <br />
+                    Closing Days (2023 -2024)
+                  </div>
+                  <ChevronRightIcon className="w-8 h-8 mt-1 text-primary-golden" />
                 </h1>
-                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                   nonummy nibh euismod tincidunt ut
                 </p>
-                <LinkButton href="#">View More</LinkButton>
+                <LinkButton className="mt-[30px]" href="#">View More</LinkButton>
               </main>
             </Card>
           </div>

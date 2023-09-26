@@ -56,26 +56,26 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="col-span-5 space-y-8">
-          <Card width="w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]">
-            <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+        <div className="col-span-5 ">
+          <Card width="w-[100%] flex flex-col  py-[36px] px-[20px]">
+            <h1 className="text-black text-[30px]  font-normal font-['Open Sans']">
               Every Trading Member shall be required at all times to:
             </h1>
-            <hr className="  border border-gray/30" />
-            <main className=" space-y-6">
-              <div className="flex  gap-2">
-                <ChevronRightIcon className="w-6 h-6 " />
+            <hr className=" border border-primary-golden opacity-70 mt-[19px]" />
+            <main className="">
+              <div className="flex gap-2 mt-[30px]">
+                <ChevronRightIcon className="w-6 h-6 text-stone-500 " />
 
-                <p className="text-black text-base flex-1 ">
+                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug flex-1 ">
                   Address investor protection obligations with respect to their
                   clients when they, acting on behalf of their clients, execute
                   their orders on the exchange platform or system
                 </p>
               </div>
-              <div className="flex  gap-2">
-                <ChevronRightIcon className="w-6 h-6 " />
+              <div className="flex gap-2 mt-[20px]">
+                <ChevronRightIcon className="w-6 h-6 text-stone-500" />
 
-                <p className="text-black text-base flex-1 ">
+                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug flex-1 ">
                   Adhere to the best execution principle by taking reasonable
                   steps to obtain the best available result for the client in a
                   timely manner, provided that the Trading Member shall at all
@@ -85,35 +85,35 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
               </div>
             </main>
           </Card>
-          <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+          <h1 className="text-black text-3xl mt-[40px] ml-[19px] font-normal font-['Open Sans']">
             Trading Fees
           </h1>
-          <Card width="w-[100%] flex gap-3 flex-col bg-white/0 ">
+          <Card width="w-[100%] flex gap-3 mt-[10px] flex-col bg-white/0 ">
             <div>
-              <div className="py-[20px] px-[20px] grid sm:grid-cols-3 bg-primary-blue text-white">
-                <span className="text-base flex-1 ">Fee type</span>
-                <span className="text-base flex-1 ">Buy side</span>
-                <span className="text-base flex-1 ">Sell side</span>
+              <div className="pt-[15px] pb-[13px] px-[20px] grid sm:grid-cols-3 bg-primary-blue text-white">
+                <span className="text-white text-base font-semibold font-['Open Sans'] ">Fee type</span>
+                <span className="text-white text-base font-semibold font-['Open Sans'] ">Buy side</span>
+                <span className="text-white text-base font-semibold font-['Open Sans'] ">Sell side</span>
               </div>
-              <div className="p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]" />
+              <div className="p-1 bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]" />
             </div>
-            <div className="py-[10px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-base flex-1 ">ESX fee</span>
+            <div className="pt-[10px] pb-[8px]  px-[20px] grid sm:grid-cols-3 bg-white text-black">
+              <span className="text-black text-base font-normal font-['Open Sans'] ">ESX fee</span>
             </div>
-            <div className="py-[10px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-base flex-1 ">CSD fee</span>
+            <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
+              <span className="text-black text-base font-normal font-['Open Sans'] ">CSD fee</span>
             </div>
-            <div className="py-[10px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-base flex-1 ">CMA fee</span>
+            <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
+              <span className="text-black text-base font-normal font-['Open Sans'] ">CMA fee</span>
             </div>
-            <div className="py-[10px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-base flex-1 ">Member commission</span>
+            <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
+              <span className="text-black text-base font-normal font-['Open Sans'] ">Member commission</span>
             </div>
-            <div className="py-[10px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-base flex-1 ">Compensation fund</span>
+            <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
+              <span className="text-black text-base font-normal font-['Open Sans'] ">Compensation fund</span>
             </div>
-            <div className="py-[10px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-base flex-1 ">Taxes</span>
+            <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
+              <span className="text-black text-base font-normal font-['Open Sans'] ">Taxes</span>
             </div>
           </Card>
         </div>

@@ -40,8 +40,8 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
 
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Members"}
+        <h6 className="ml-2 mb-4 text-lg text-gray-600">
+            <Link href={"/equity-market"}>Equity Market</Link> {"> Members"}
           </h6>
           {items.map((item, index) => (
             <button
@@ -59,14 +59,14 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className="col-span-5 space-y-8">
-          <div className="grid gap-8">
+          <div className="grid gap-5">
             <Card width="flex flex-col ">
-              <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-2xl not-italic font-normal leading-[normal]">
+              <h1 className="py-[18px] px-[20px]  bg-primary-blue text-white text-[32px] font-normal font-['Open Sans']">
                 Membership Rules
               </h1>
 
               <main className="py-[20px] px-[20px] space-y-4">
-                <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+                <h1 className="text-black text-[28px] font-normal font-['Open Sans']">
                   Members shall also comply with The Exchange’s membership rules
                   that set out
                 </h1>
@@ -74,21 +74,21 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
                   {evidence.map((text) => (
                     <p
                       key={text}
-                      className="text-gray text-base not-italic font-normal leading-[normal] py-4"
+                      className="text-zinc-500 text-base not-italic font-normal leading-[normal] py-4 flex items-center gap-1"
                     >
-                      ● {text}
+                      <div className="w-3 h-3 aspect-square rounded-full bg-gray "/> <span>{text}</span>
                     </p>
                   ))}
                 </div>
 
-                <div className="bg-gray/20 text-gray flex flex-col items-center py-4">
-                  <p className="text-gray text-base text-center not-italic font-normal leading-[normal] py-4">
+                <div className="bg-zinc-100  max-w-[580px] mx-auto text-gray flex flex-col items-center py-4">
+                  <p className="text-justify text-zinc-500 text-[15px] font-normal font-['Open Sans'] leading-snug mb-[18px]" >
                     For details of ESX membership rules, please refer to
                     following documents
                   </p>
                   <Link
                     href="#"
-                    className="px-3 py-1  text-white bg-primary-blue rounded-md text-base not-italic font-normal "
+                    className="px-[18px] pt-[2px] pb-[3px] bg-primary-blue rounded-md text-center text-white text-base font-semibold font-['Open Sans']"
                   >
                     ESX Membership Rules
                   </Link>
@@ -97,27 +97,27 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
             </Card>
           </div>
           <div className="grid sm:grid-cols-2 gap-8">
-            <Card width="py-[20px] px-[20px] space-y-4  flex flex-col">
-              <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+            <Card width="py-[20px] px-[20px] flex flex-col">
+              <h1 className="text-black text-2xl font-normal font-['Open Sans']">
                 Access to the trading platform
               </h1>
-              <p className="text-gray text-base not-italic font-normal leading-[normal] ">
+              <p className="text-justify text-zinc-500 text-[15px] font-normal font-['Open Sans'] leading-snug mt-[8px]">
                 Members can access ESX’s Automated Trading System by connecting
                 directly or through third party back office and trading
                 platforms.
               </p>
-              <LinkButton href="" >View More</LinkButton>
+              <LinkButton href="" className="mt-auto" >View More</LinkButton>
             </Card>
-            <Card width="py-[20px] px-[20px] space-y-4  flex flex-col">
-              <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+            <Card width="py-[20px] px-[20px] flex flex-col">
+              <h1 className="text-black text-2xl font-normal font-['Open Sans']">
                 Direct Market Access (DMA)
               </h1>
-              <p className="text-gray text-base not-italic font-normal leading-[normal] ">
+              <p className="text-justify text-zinc-500 text-[15px] font-normal font-['Open Sans'] leading-snug mt-[8px]">
                 ESX members can offer direct market access (DMA) to their
                 clinets, which allows clients to enter buy and sell side
                 instructions via the members third party trading platform.
               </p>
-              <LinkButton href="" >View More</LinkButton>
+              <LinkButton href="" className="mt-[17px]" >View More</LinkButton>
             </Card>
           </div>
         </div>

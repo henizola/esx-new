@@ -20,9 +20,6 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
     "Market Segment",
     "Listing Rules",
     "Listing FAOs",
-    "Listing Companies",
-    "Notice to Issuers",
-    "Other Products",
   ];
 
   return (
@@ -35,7 +32,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
           <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Listing"}
+            <Link href={'/equity-market'}>Equity Market</Link> {"> Listing"}
           </h6>
           {items.map((item, index) => (
             <button
@@ -51,31 +48,67 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
               {item}
             </button>
           ))}
+            <button
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+            >
+              Listing Companies
+   
+            </button>
+            <button
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+            >
+               Notice to Issuers
+   
+   
+            </button>
+            <button
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+            >
+               Other Products
+   
+            </button>
         </Card>
         <div className="col-span-5 space-y-8">
-          <Card width="w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]">
-            <h1 className="text-black text-[40px] not-italic font-normal leading-[normal]">
+          <Card width="w-[100%] flex gap-4 flex-col  py-[32px] px-[20px]">
+            <h1 className="text-black text-[32px] font-normal font-['Open Sans']">
               Frequently asked questions
             </h1>
-            <p className="text-gray text-base not-italic font-normal leading-[normal]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              reiciendis autem ea qui in, suscipit eum, quidem tenetur iure
-              possimus fugit dolor, dolores nisi tempora nihil inventore
-              voluptatem. Expedita, harum?
+            <p className="text-black text-base font-normal font-['Open Sans'] leading-snug">
+            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             </p>
-            <hr className="  border border-gray/30" />
+            <div className="w-full h-[0.5px] border bg-black opacity-50"></div>
             <main className=" space-y-6">
-              <ExpandableCard question="What is an IPO?">
+              <ExpandableCard question="- What is an IPO?">
                 typically 6-9 months - however this depends on the company’s IPO
                 readiness (prepared financial statements, company documents
                 etc.).
               </ExpandableCard>
-              <ExpandableCard question="What is an IPO?">
+              <ExpandableCard question="- How long is the IPO process?">
                 typically 6-9 months - however this depends on the company’s IPO
                 readiness (prepared financial statements, company documents
                 etc.).
               </ExpandableCard>
-              <ExpandableCard question="What is an IPO?">
+              <ExpandableCard question="- When is the best time to list / go public?">
+                typically 6-9 months - however this depends on the company’s IPO
+                readiness (prepared financial statements, company documents
+                etc.).
+              </ExpandableCard>
+              <ExpandableCard question="- What is secondary market?">
                 typically 6-9 months - however this depends on the company’s IPO
                 readiness (prepared financial statements, company documents
                 etc.).

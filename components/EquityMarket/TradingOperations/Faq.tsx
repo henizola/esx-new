@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import manager from "/public/images/manager.png";
 import sliderbannerImage from "/public/images/slider-background.png";
 import bannerImage from "/public/images/about-banner.png";
@@ -9,7 +9,6 @@ import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
 import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
-import ExpandableCard from "@/components/Card/ExpandableCard";
 interface TradingFaqsProps {
   setStep: (value: number) => void;
   step: number;
@@ -58,7 +57,7 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
             </h1>
             
             <hr className="  border border-gray/30" />
-            <main className=" space-y-6">
+            <main className=" flex flex-col  ">
               <ExpandableCard question="What is a share?">
                 Some of the benefits of investing include income earned through dividends, protection of saving from the effects of inflation, capital gains, and diversification.
               </ExpandableCard>
@@ -81,3 +80,36 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
 };
 
 export default TradingFaqs;
+
+
+
+
+interface ExpandableCardProps {
+  question: string;
+  className?: string;
+  children: string | ReactNode;
+}
+
+ function ExpandableCard({
+  question,
+  children,
+  className
+}: ExpandableCardProps) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className={` ${open  ? 'bg-gray/10 pl-[20px]' : ' '}   pt-[12px]  flex flex-col gap-4 transition-all pb-[30px] border-b border-gray/40  ${className}`}>
+      <div className="rounded flex justify-between items-center">
+        <h1 className={`${open ? "text-black text-base  font-['Open Sans'] leading-snug" : "text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug " } `}>
+          {question}
+        </h1>
+        <ChevronDownIcon
+          onClick={() => setOpen((prev) => !prev)}
+          className={`w-10 h-10 p-2 rounded-full hover:bg-white/80 ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </div>
+      {open && <span className=" h-16 text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">{children}</span>}
+    </div>
+  );
+}

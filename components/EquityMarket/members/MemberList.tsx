@@ -40,8 +40,8 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
 
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Members"}
+        <h6 className="ml-2 mb-4 text-lg text-gray-600">
+            <Link href={"/equity-market"}>Equity Market</Link> {"> Members"}
           </h6>
           {items.map((item, index) => (
             <button
@@ -60,94 +60,65 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
         </Card>
         <div className="col-span-5 space-y-8">
           <div className="grid gap-8">
-            <Card width="flex flex-col bg-black/0 shadow-0 ">
-              <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-2xl not-italic font-normal leading-[normal]">
+            <Card width="flex flex-col bg-white/0  shadow-[0px] ">
+              <h1 className="py-[22px] px-[20px]  bg-primary-blue text-white text-[32px] font-normal font-['Open Sans']">
                 List of Members
               </h1>
 
-              <main className="pt-[20px]  space-y-4 ">
-                <div className="grid grid-cols-4 gap-4">
-                  <img
-                    alt=""
-                    className="aspect-square h-full"
-                    src="/images/Accounting and Finance Business Branding Complete Guide (1) 1.png"
-                  />
-                  <Card width="p-[20px] col-span-3 flex flex-col gap-4">
-                    <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
-                      lorem Ipsum
-                    </h1>
-                    <div className="flex flex-col">
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Email :</span>
-                        <span className="text-gray">
-                          TheEmail.gmail.com
-                        </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Website :</span>
-                        <span className="text-gray">
-                          www.gmail.com
-                        </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Tel :</span>
-                        <span className=" text-gray">0987654321</span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Service :</span>
-                        <span className=" text-gray">
-                          Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">
-                          Active Since :
-                        </span>
-                        <span className=" text-gray">1990</span>
-                      </p>
-                    </div>
-                  </Card>
-                </div>
+              <main className="pt-[30px]  space-y-4 ">
+               
 
                 <div className="grid grid-cols-4 gap-4">
                   <img
                     alt=""
-                    className="aspect-square h-full"
+                    className="aspect-square w-[230px] h-[230px] object-cover "
                     src="/images/Premium Vector _ Hand people care logo vector 1.png"
                   />
-                  <Card width="p-[20px] col-span-3 flex flex-col gap-4">
-                    <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
-                      lorem Ipsum
-                    </h1>
-                    <div className="flex flex-col">
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Email :</span>
-                        <span className="text-gray">
-                          TheEmail.gmail.com
+                  <Card width="px-[20px] py-[16px] pb-[14px] col-span-3 flex flex-col gap-4  shadow-[0px]">
+                    <h1 className="text-black text-[32px] font-normal font-['Open Sans']">Lorem ipsum</h1>
+                    <div className="flex flex-col gap-1">
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Email :
                         </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Website :</span>
-                        <span className="text-gray">
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          theemail.gmail.com
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Website :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
                           www.gmail.com
                         </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Tel :</span>
-                        <span className=" text-gray">0987654321</span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Service :</span>
-                        <span className=" text-gray">
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Tel :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          0987654321
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Service :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
                           Lorem ipsum dolor sit amet consectetur adipisicing.
                         </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
                           Active Since :
                         </span>
-                        <span className=" text-gray">1990</span>
-                      </p>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          1990
+                        </span>
+                      </div>
+
+                     
                     </div>
                   </Card>
                 </div>
@@ -155,49 +126,117 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                 <div className="grid grid-cols-4 gap-4">
                   <img
                     alt=""
-                    className="aspect-square h-full"
-                    src="/images/Recruiting 1.png"
+                    className="aspect-square w-[230px] h-[230px] object-cover "
+                    src="/images/Accounting and Finance Business Branding Complete Guide (1) 1.png"
                   />
-                  <Card width="p-[20px] col-span-3 flex flex-col gap-4">
-                    <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
-                      lorem Ipsum
-                    </h1>
-                    <div className="flex flex-col">
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Email :</span>
-                        <span className="text-gray">
-                          TheEmail.gmail.com
+                  <Card width="px-[20px] py-[16px] pb-[14px] col-span-3 flex flex-col gap-4 shadow-[0px]">
+                    <h1 className="text-black text-[32px] font-normal font-['Open Sans']">Lorem ipsum</h1>
+                    <div className="flex flex-col gap-1">
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Email :
                         </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Website :</span>
-                        <span className="text-gray">
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          theemail.gmail.com
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Website :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
                           www.gmail.com
                         </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Tel :</span>
-                        <span className=" text-gray">0987654321</span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">Service :</span>
-                        <span className=" text-gray">
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Tel :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          0987654321
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Service :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
                           Lorem ipsum dolor sit amet consectetur adipisicing.
                         </span>
-                      </p>
-                      <p className="flex gap-2">
-                        <span className="font-bold text-black">
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
                           Active Since :
                         </span>
-                        <span className=" text-gray">1990</span>
-                      </p>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          1990
+                        </span>
+                      </div>
+
+                     
                     </div>
                   </Card>
                 </div>
+
+                <div className="grid grid-cols-4 gap-4">
+                  <img
+                    alt=""
+                    className="aspect-square w-[230px] h-[230px] object-cover "
+                    src="/images/Recruiting 1.png"
+                  />
+                  <Card width="px-[20px] py-[16px] pb-[14px] col-span-3 flex flex-col gap-4 shadow-[0px]">
+                    <h1 className="text-black text-[32px] font-normal font-['Open Sans']">Lorem ipsum</h1>
+                    <div className="flex flex-col gap-1">
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Email :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          theemail.gmail.com
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Website :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          www.gmail.com
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Tel :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          0987654321
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Service :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                          Active Since :
+                        </span>
+                        <span className="text-zinc-500 text-sm font-light font-['Open Sans'] leading-snug">
+                          1990
+                        </span>
+                      </div>
+
+                     
+                    </div>
+                  </Card>
+                </div>
+
+               
               </main>
             </Card>
           </div>
-         
         </div>
       </div>
       {/* <CustomSlider slides={slides} /> */}

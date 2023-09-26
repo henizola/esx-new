@@ -52,7 +52,7 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
           <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Members"}
+            <Link href={"/equity-market"}>Equity Market</Link> {"> Members"}
           </h6>
           {items.map((item, index) => (
             <button
@@ -72,49 +72,49 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         <div className="col-span-5 space-y-8">
           <div className="grid sm:grid-cols-5 gap-8">
             <Card width="col-span-5 flex flex-col ">
-              <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-2xl not-italic font-normal leading-[normal]">
+              <h1 className="py-[18px] px-[20px]  bg-primary-blue  text-white text-[32px] font-normal font-['Open Sans']">
                 How to become a member
               </h1>
 
-              <main className="py-[20px] px-[20px] space-y-4">
-                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              <main className="pt-[44px] pb-[45px]  px-[20px] ">
+                <p className="text-black text-base font-light font-['Open Sans'] mb-[40px] ">
                   Only capital market service providers, registered in Ethiopia
                   by the Ethiopian Capital Market Authority are eligible to
                   become a trading member of the exchange.
                 </p>
-                <div className="grid sm:grid-cols-4 gap-4">
+                <div className="grid sm:grid-cols-4 gap-4 mb-[30px]">
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-md font-bold text-primary-blue">
+                    <h2 className="text-xl font-semibold font-['Open Sans'] text-primary-blue">
                       Step 1
                     </h2>
                     <div className="w-full py-1 bg-primary-golden"></div>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-md font-bold text-primary-blue">
+                    <h2 className="text-xl font-semibold font-['Open Sans'] text-primary-blue">
                       Step 2
                     </h2>
                     <div className="w-full py-0.5 bg-gray/40"></div>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-md font-bold text-primary-blue">
+                    <h2 className="text-xl font-semibold font-['Open Sans'] text-primary-blue">
                       Step 3
                     </h2>
                     <div className="w-full py-0.5 bg-gray/40"></div>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-md font-bold text-primary-blue">
+                    <h2 className="text-xl font-semibold font-['Open Sans'] text-primary-blue">
                       Step 4
                     </h2>
                     <div className="w-full py-0.5 bg-gray/40"></div>
                   </div>
                 </div>
-                <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+                <h1 className="text-black text-[32px] font-normal font-['Open Sans'] mb-[20px]">
                   How to Become a Member
                 </h1>
-                <div className="flex  gap-2">
+                <div className="flex  gap-[11px]">
                   <ChevronRightIcon className="w-6 h-6 " />
 
-                  <p className="text-black text-base flex-1 ">
+                  <p className="text-black text-base font-normal font-['Open Sans'] flex-1 ">
                     An application for a membership license shall be made in
                     such a manner as prescribed by the exchange membership
                     rules.
@@ -123,15 +123,15 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
               </main>
             </Card>
             <Card width="py-[20px] px-[20px] space-y-4 col-span-5 flex flex-col">
-              <h1 className="text-black text-2xl not-italic font-normal leading-[normal]">
+              <h1 className="text-black text-[32px] font-normal font-['Open Sans']">
                 The applicant shall provide the following in evidence:
               </h1>
-              <hr className="  border border-gray/50" />
-              <div className="flex flex-col divide divide-y divide-gray/40">
+              <hr className="  border border-gray/90" />
+              <div className="flex flex-col ">
                 {evidence.map((text) => (
                   <p
                     key={text}
-                    className="text-gray text-base not-italic font-normal leading-[normal] py-4"
+                    className="text-zinc-500 text-base border-b border-gray/40 font-normal font-['Open Sans'] leading-snug pt-[20px] pb-[15px]"
                   >
                     {text}
                   </p>

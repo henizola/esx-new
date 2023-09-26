@@ -56,35 +56,35 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
           ))}
         </Card>
         <div className="col-span-5 space-y-8">
-          <Card width="w-[100%] flex gap-4 flex-col grid grid-cols-5  py-[20px] px-[20px] place-items-center">
-            <div className="col-span-3 h-full">
-              <h1 className=" text-black text-[40px] not-italic font-normal leading-[normal]">
+            <Card width="w-[100%] flex gap-10 flex-col grid grid-cols-5  pt-[36px] pb-[23px] px-[20px] items-end">
+            <div className="col-span-3 h-fit">
+              <h1 className=" text-black text-3xl font-normal font-['Open Sans']">
                 Procedures & manuals
               </h1>
-              <hr className="  border border-gray/30" />
-              <main className="py-[20px] flex flex-col gap-8">
-                <p className="text-gray text-base not-italic font-normal leading-[normal]">
+              <hr className=" mt-[17px] border border-gray/30" />
+              <main className="flex flex-col ">
+                <p className="text-zinc-500  mt-[25px] text-base font-normal font-['Open Sans'] leading-snug">
                   The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s first,
-                  and only organized securities exchange. ESX is established as
+                  and only organized securities exchange. <br/>ESX is established as
                   a public private partnership inline with Article 31 of the
                   Capital Market Proclamation (No.1248/2021), and is licensed by
                   the Ethiopian Capital Market Authority (ECMA).
                 </p>
                 <Link
                   href="#"
-                  className="px-3 py-1 ml-auto text-white bg-primary-blue rounded-md text-base not-italic font-normal "
+                  className="px-3 py-1 ml-auto mb-[17px] mt-[39px] text-white bg-primary-blue rounded-md text-base not-italic font-normal "
                 >
                   Procedures and Manuals
                 </Link>
               </main>
             </div>
-            <div className="col-span-2 h-full order-2">
+            <div className="col-span-2 self-end order-2">
               <Image
-                src={"/images/career-1.png"}
+                src={"/images/Career Advancement Myths_ 10  Mistakes That Keep You From Getting Ahead 1.png"}
                 height={100}
                 width={400}
                 alt=""
-                className="w-full aspect-square object-cover rounded-full"
+                className="w-full  aspect-square object-cover rounded-full"
               />
             </div>
           </Card>

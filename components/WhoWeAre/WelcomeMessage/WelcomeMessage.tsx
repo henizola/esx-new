@@ -77,7 +77,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`text-left ml-10 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",

@@ -1,14 +1,14 @@
-import React, { ReactNode } from "react";
+import React  from "react";
 import Card from "@/components/Card/Card";
 import Banner from "@/components/Banner/banner";
 import image from "/public/images/who-we-are.png";
-import whoweare from "/public/images/who-we-are-circle.png";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
-import { GoldBanner } from "@/components/Banner/GoldBanner";
-import LinkButton from "@/components/Button/LinkButton";
-import ExpandableCard from "@/components/Card/ExpandableCard";
+
+
+
+
 
 interface MembersDirectoryProps {
   setStep: (value: number) => void;
@@ -19,9 +19,8 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
   setStep,
   step,
 }) => {
-  const items = [
-    "Trade on ESX",
-    "Members Directory",
+  const items = ["Trade on ESX", "Members Directory"];
+  const spanItems = [
     "Direct Market Access",
     "Listed Lecurities",
     "Market Data",
@@ -47,7 +46,7 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
       />
       <div className="flex w-full  px-28 py-7">
         <Card width="w-[30%] mr-5 flex flex-col text-left  py-10 px-5">
-          <h6 className="ml-2 mb-4">{"Equity Market > Trade"}</h6>{" "}
+        <h6 className="ml-2 mb-4"><Link href={"/equity-market"}>Equity Market</Link> {"> Trade"}</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
@@ -62,38 +61,55 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
               {item}
             </button>
           ))}
+          {spanItems.map((item, index) => (
+            <button
+              key={index}
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+            >
+              {item}
+            </button>
+          ))}
         </Card>
         <div className="grid grid-cols-1 gap-3 w-[100%]">
           <Card width="flex flex-col ">
-           
-              <div className="py-[20px] px-[20px] col-span-1 flex flex-col gap-4 order-1">
-                <h1 className="text-black text-3xl ">Members</h1>
-                <p className="  font-sans font-normal mt-2 pt-0 leading-6 text-black">
-                  ESX provides the following categories of membership license.
-                </p>
-                <hr className="  border border-0.5 border-primary-golden" />
+            <div className="pt-[32px] pb-[36px] px-[20px] col-span-1 flex flex-col gap-4 order-1">
+              <h1 className="text-black text-3xl ">Members</h1>
+              <p className="text-black text-base font-normal font-['Open Sans'] leading-snug mt-2 ">
+                ESX provides the following categories of membership license.
+              </p>
+              <hr className="  border border-0.5 border-primary-golden" />
 
-                <div className="divide divide-y-2 divide-primary-golden/40">
-                  {members.map((member, i) => (
-                    <ExpandableCard
-                    key={i}
-                      className="bg-transparent py-2 rounded-none  "
-                      question={member}
-                    >
-                      typically 6-9 months - however this depends on the
-                      company’s IPO readiness (prepared financial statements,
-                      company documents etc.).
-                    </ExpandableCard>
-                  ))}
-                </div>
-
-               
-
-                {/* <LinkButton href="#">View More</LinkButton> */}
+              <div className="">
+                {members.map((member, i) => (
+                  <div className="flex justify-between border-b border-primary-golden/40 items-center py-[30px]" key={i}>
+                    <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">
+                      {member}
+                    </p>
+                    <ChevronRightIcon
+                    
+                    className={`w-10 h-10 p-2 rounded-full hover:bg-white/80 `}
+                  />
+                  </div>
+                ))}
               </div>
-             
+                  {/* <ExpandableCard
+                    key={i}
+                    className="bg-transparent py-2 rounded-none  "
+                    question={member}
+                  >
+                    typically 6-9 months - however this depends on the company’s
+                    IPO readiness (prepared financial statements, company
+                    documents etc.).
+                  </ExpandableCard> */}
+
+              {/* <LinkButton href="#">View More</LinkButton> */}
+            </div>
           </Card>
-         
         </div>
       </div>
     </div>
