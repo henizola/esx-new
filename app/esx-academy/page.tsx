@@ -1,11 +1,52 @@
+"use client";
+
+import SideMenu from "@/components/SideMenu/SideMenu";
+import TheAcademy from "@/components/TheAcademy";
+import BoardMembers from "@/components/WhoWeAre/BoardMembers/BoardMembers";
+import Careers from "@/components/WhoWeAre/Careers/Careers";
+import Management from "@/components/WhoWeAre/Management/Management";
+import Organization from "@/components/WhoWeAre/Organization/Organization";
+import OverView from "@/components/WhoWeAre/Overview/Overview";
+import Reports from "@/components/WhoWeAre/Reports/Reports";
+import Tenders from "@/components/WhoWeAre/Tender/Tender";
+import Vision from "@/components/WhoWeAre/Vision/Vision";
+import WelcomeMessage from "@/components/WhoWeAre/WelcomeMessage/WelcomeMessage";
+import { useNumber } from "@/context/nav.context";
+
 export default function Home() {
+  const { currentPage, setNumber } = useNumber();
+
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left'>
-        <div className='group rounded-lg border border-transparent px-5 py-4 transition-colors  border-gray-300  bg-gray-100  dark:border-neutral-700  dark:bg-neutral-800/30'>
-          <h2 className={`mb-3 text-2xl font-semibold`}>ESX Academy Page</h2>
-        </div>
-      </div>
+    <main className='flex  flex-col items-center p-0'>
+      <SideMenu state={currentPage}>
+        {[
+          <TheAcademy
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <OverView setStep={setNumber} step={currentPage} key={currentPage} />,
+          <Vision setStep={setNumber} step={currentPage} key={currentPage} />,
+          <Organization
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <BoardMembers
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <Management
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
+          <Reports setStep={setNumber} step={currentPage} key={currentPage} />,
+          <Careers setStep={setNumber} step={currentPage} key={currentPage} />,
+          <Tenders setStep={setNumber} step={currentPage} key={currentPage} />,
+        ]}
+      </SideMenu>
     </main>
   );
 }
