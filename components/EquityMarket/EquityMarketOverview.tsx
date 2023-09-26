@@ -63,6 +63,30 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           >
             Trade
           </Link>
+          <Link
+            href={"/equity-market/trading-operations"}
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: step === 2 ? "16px" : "14px",
+              fontWeight: step === 2 ? "400" : "300",
+            }}
+            // onClick={() => setStep(2)}
+          >
+            Trading & Operations
+          </Link>
+          <Link
+            href={"/equity-market/regulatory-framework"}
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: step === 2 ? "16px" : "14px",
+              fontWeight: step === 2 ? "400" : "300",
+            }}
+            // onClick={() => setStep(2)}
+          >
+            Regulatory Framework
+          </Link>
         </Card>
         <div className="grid grid-cols-1 gap-3 w-[100%]">
           <Card width="flex flex-col ">

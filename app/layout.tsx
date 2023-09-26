@@ -1,11 +1,11 @@
 import Header from "@/components/Header/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import Footer from "@/components/Header/Footer";
 import { NumberProvider } from "@/context/nav.context";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Esx",
@@ -26,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className}  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}
+        className={`  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}
       >
         <NumberProvider>
           <Header />
