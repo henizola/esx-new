@@ -177,7 +177,7 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
                   Read Our Latest Thinking
                 </p>
               </main>
-              <hr className=" mt-[37px] px-[20px] mb-[40px] border border-gray/30" />
+              <hr className="  mt-[37px] mx-[20px] mb-[40px] border border-gray/30" />
               <main className="flex flex-col gap-2  px-[20px] ">
                 <h1 className=" text-black text-xl font-normal font-['Open Sans']">
                   ESX Facts and Figures

@@ -55,6 +55,17 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
               {item}
             </button>
           ))}
+          <button
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+             
+            >
+              Trading Platform
+            </button>
         </Card>
         <div className="col-span-5 space-y-8">
             <Card width="w-[100%] flex gap-10 flex-col grid grid-cols-5  pt-[36px] pb-[23px] px-[20px] items-end">

@@ -68,7 +68,7 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
                 Membership Rules
               </h1>
 
-              <main className="py-[20px] px-[20px] space-y-4">
+              <main className="pt-[20px] pb-[30px] px-[20px] space-y-4">
                 <h1 className="text-black text-[28px] font-normal font-['Open Sans']">
                   Members shall also comply with The Exchange’s membership rules
                   that set out

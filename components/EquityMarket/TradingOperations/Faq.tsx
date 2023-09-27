@@ -21,7 +21,7 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
     "Trading Rules",
     "Procedures & Manuals",
     "Trading FAQ",
-    "Trading Platform",
+    
   ];
 
   return (
@@ -50,6 +50,17 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
               {item}
             </button>
           ))}
+            <button
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+             
+            >
+              Trading Platform
+            </button>
         </Card>
         <div className="col-span-5 space-y-8">
           <Card width="w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]">
@@ -98,13 +109,13 @@ interface ExpandableCardProps {
 }: ExpandableCardProps) {
   const [open, setOpen] = useState(false);
   return (
-    <div className={` ${open  ? 'bg-gray/10 pl-[20px]' : ' '}   pt-[12px]  flex flex-col gap-4 transition-all pb-[30px] border-b border-gray/40  ${className}`}>
+    <div onClick={() => setOpen((prev) => !prev)} className={` ${open  ? 'bg-gray/10 pl-[20px]' : ' '}   pt-[12px]  flex flex-col gap-4 transition-all pb-[30px] border-b border-gray/40  ${className}`}>
       <div className="rounded flex justify-between items-center">
         <h1 className={`${open ? "text-black text-base  font-['Open Sans'] leading-snug" : "text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug " } `}>
           {question}
         </h1>
         <ChevronDownIcon
-          onClick={() => setOpen((prev) => !prev)}
+          
           className={`w-10 h-10 p-2 rounded-full hover:bg-white/80 ${
             open ? "rotate-180" : ""
           }`}

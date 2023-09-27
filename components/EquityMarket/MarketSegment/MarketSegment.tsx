@@ -16,7 +16,7 @@ interface ListingRulesProps {
 }
 
 const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
-  const items = ["Market Segment", "Listing Rules", "Listing FAOs"];
+  const items = ["Market Segment", "Listing Rules", "Listing FAQs"];
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
@@ -78,7 +78,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
           </button>
         </Card>
         <div className="col-span-5 space-y-8">
-          <div className="grid sm:grid-cols-5 gap-8">
+          <div className="grid sm:grid-cols-5 gap-5">
             <Card width="col-span-5 flex flex-col ">
               <h1 className="pt-[19px] pb-5 px-[20px]  bg-primary-blue text-white text-[40px] font-normal font-['Open Sans']  leading-[normal]">
                 Market Segments
@@ -136,7 +136,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 securities in an efficient and reliable manner.
               </h1>
             </Card>
-            <div className="col-span-5 grid sm:grid-cols-2 gap-8">
+            <div className="col-span-5 grid sm:grid-cols-2 gap-5">
               <Card width="py-[20px] px-[20px] ">
                 <h1 className="text-black text-2xl font-normal font-['Open Sans'] ">
                   Listing on ESX

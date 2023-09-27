@@ -39,9 +39,12 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-        <h6 className="ml-2 mb-4"><BackButton setStep={setStep} link="/equity-market">
+          <h6 className="ml-2 mb-4">
+            <BackButton setStep={setStep} link="/equity-market">
               Equity Market
-            </BackButton>{" "} {"> Trading Rules"}</h6>{" "}
+            </BackButton>{" "}
+            {"> Trading Rules"}
+          </h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
@@ -56,6 +59,17 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
               {item}
             </button>
           ))}
+          <button
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: "14px",
+                fontWeight: "300",
+              }}
+             
+            >
+              Trading Platform
+            </button>
         </Card>
         <div className="col-span-5 ">
           <Card width="w-[100%] flex flex-col  py-[36px] px-[20px]">
@@ -92,32 +106,58 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
           <Card width="w-[100%] flex gap-3 mt-[10px] flex-col bg-white/0 ">
             <div>
               <div className="pt-[15px] pb-[13px] px-[20px] grid sm:grid-cols-3 bg-primary-blue text-white">
-                <span className="text-white text-base font-semibold font-['Open Sans'] ">Fee type</span>
-                <span className="text-white text-base font-semibold font-['Open Sans'] ">Buy side</span>
-                <span className="text-white text-base font-semibold font-['Open Sans'] ">Sell side</span>
+                <span className="text-white text-base font-semibold font-['Open Sans'] ">
+                  Fee type
+                </span>
+                <span className="text-white text-base font-semibold font-['Open Sans'] ">
+                  Buy side
+                </span>
+                <span className="text-white text-base font-semibold font-['Open Sans'] ">
+                  Sell side
+                </span>
               </div>
               <div className="p-1 bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]" />
             </div>
             <div className="pt-[10px] pb-[8px]  px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-black text-base font-normal font-['Open Sans'] ">ESX fee</span>
+              <span className="text-black text-base font-normal font-['Open Sans'] ">
+                ESX fee
+              </span>
             </div>
             <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-black text-base font-normal font-['Open Sans'] ">CSD fee</span>
+              <span className="text-black text-base font-normal font-['Open Sans'] ">
+                CSD fee
+              </span>
             </div>
             <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-black text-base font-normal font-['Open Sans'] ">CMA fee</span>
+              <span className="text-black text-base font-normal font-['Open Sans'] ">
+                CMA fee
+              </span>
             </div>
             <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-black text-base font-normal font-['Open Sans'] ">Member commission</span>
+              <span className="text-black text-base font-normal font-['Open Sans'] ">
+                Member commission
+              </span>
             </div>
             <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-black text-base font-normal font-['Open Sans'] ">Compensation fund</span>
+              <span className="text-black text-base font-normal font-['Open Sans'] ">
+                Compensation fund
+              </span>
             </div>
             <div className="pt-[10px] pb-[8px] px-[20px] grid sm:grid-cols-3 bg-white text-black">
-              <span className="text-black text-base font-normal font-['Open Sans'] ">Taxes</span>
+              <span className="text-black text-base font-normal font-['Open Sans'] ">
+                Taxes
+              </span>
             </div>
           </Card>
         </div>
+      </div>
+      <div className="bg-white py-[68px]">
+        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+          Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+          consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
+          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna aliquam erat
+        </p>
       </div>
       {/* <CustomSlider slides={slides} /> */}
     </div>

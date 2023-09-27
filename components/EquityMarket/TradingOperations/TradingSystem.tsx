@@ -59,6 +59,16 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
               {item}
             </button>
           ))}
+          <button
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: "14px",
+              fontWeight: "300",
+            }}
+          >
+            Trading Platform
+          </button>
         </Card>
         <div className="col-span-5 space-y-5">
           <Card width="w-[100%] flex  flex-col pt-[40px] pb-[30px] px-[20px] shadow-[0]">

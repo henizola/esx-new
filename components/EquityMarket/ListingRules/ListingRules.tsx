@@ -15,7 +15,7 @@ interface ListingRulesProps {
 }
 
 const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
-  const items = ["Market Segment", "Listing Rules", "Listing FAOs"];
+  const items = ["Market Segment", "Listing Rules", "Listing FAQs"];
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
@@ -77,7 +77,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
             Other Products
           </button>
         </Card>
-        <div className="col-span-5 space-y-8">
+        <div className="col-span-5 space-y-5">
           <Card width="w-[100%] flex  flex-col  pt-[20px] pb-[40px] px-[20px]">
             <h1 className="text-black text-[40px] font-normal font-['Open Sans']">
               Listing rules
@@ -95,8 +95,8 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
               as a sustainable business enterprise.
             </p>
           </Card>
-          <div className="w-full flex gap-8">
-            <div className="w-[60%] flex flex-col gap-8">
+          <div className="w-full flex gap-5">
+            <div className="w-[60%] flex flex-col gap-5">
               <Card width=" ">
                 <h1 className="pt-[21px] pb-[10px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
                   Listing Rules and Requirements

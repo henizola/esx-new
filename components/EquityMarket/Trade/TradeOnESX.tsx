@@ -9,6 +9,9 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { GoldBanner } from "@/components/Banner/GoldBanner";
 import LinkButton from "@/components/Button/LinkButton";
 import { BackButton } from "@/components/Button/BackButton";
+import CustomSlider from "@/components/Slider/Slider";
+import sliderbannerImage from "/public/images/slider-background.png";
+import CustomMarketSlider from "@/components/Slider/MarketSlider";
 
 interface WhoWeAreProps {
   setStep: (value: number) => void;
@@ -25,6 +28,44 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
     "Market Announcements",
     "Fees & Taxation",
     "Tendor",
+  ];
+
+  const slides = [
+    {
+      image: sliderbannerImage.src,
+      alt: "Image 1",
+      title: "Wellcome to ESX",
+      description:
+        "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ",
+    },
+    {
+      image: sliderbannerImage.src,
+      alt: "Image 2",
+      title: "Wellcome to ESX",
+      description:
+        "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ",
+    },
+    {
+      image: sliderbannerImage.src,
+      alt: "Image 2",
+      title: "Wellcome to ESX",
+      description:
+        "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ",
+    },
+    {
+      image: sliderbannerImage.src,
+      alt: "Image 2",
+      title: "Wellcome to ESX",
+      description:
+        "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ",
+    },
+    {
+      image: sliderbannerImage.src,
+      alt: "Image 2",
+      title: "Wellcome to ESX",
+      description:
+        "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ",
+    },
   ];
 
   return (
@@ -67,7 +108,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="grid grid-cols-1 gap-3 w-[100%]">
+        <div className="grid grid-cols-1 gap-5 w-[100%]">
           <Card width="flex flex-col ">
             <div className="flex ">
               <div className="pt-[30px] pb-[20px]  px-[20px] w-[60%]  ">
@@ -125,7 +166,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             </div>
           </Card>
           
-          <Card width="pt-[30px] pb-[34px] px-[24px] mt-[100px] p-4 space-y-5">
+          <Card width="pt-[30px] pb-[34px] px-[24px]  p-4 space-y-5">
             <h1 className="text-black text-xl font-normal font-['Open Sans'] leading-relaxed">
               Central Securities Depository (CSD)
             </h1>
@@ -141,6 +182,8 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           </Card>
         </div>
       </div>
+      {/* <CustomMarketSlider slides={slides} /> */}
+
     </div>
   );
 };
