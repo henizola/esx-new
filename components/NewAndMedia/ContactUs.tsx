@@ -8,12 +8,12 @@ import bannerImage from "/public/images/about-banner.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
-interface LatestNewsProps {
+interface ContactUsProps {
   setStep: (value: number) => void;
   step: number;
 }
 
-const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
+const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
   const items = [
 "Latest News",
 "Events",
@@ -28,7 +28,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
     <div className="flex flex-col w-full p-0 m-0">
       <Banner
         backgroundImage={bannerImage}
-        title="Latest News"
+        title="Contact Us"
         description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
@@ -53,102 +53,37 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
         </Card>
         <div className="col-span-5 space-y-8">
         <div className="col-span-3 flex flex-col gap-8">
-              <Card width=" grid grid-flex  ">
-                <div>
-                <h1 className="py-[20px] px-[20px]  text-3xl ">
-                  Listing Rules and Requirements
+              <Card width=" flex flex-col gap-[37px] pt-[30px] pb-[45px] pr-[46px] pl-[43px]    ">
+                <h1 className=" text-black text-[40px] font-normal font-['Open Sans']">Enquiry Form
                 </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    How to become a listed company
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    To be listed on the ESX equity market, issuers will be
-                    required to comply with pre-set listing rules and be subject
-                    to continuous obligations.
-                  </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
+                <div className="grid grid-cols-3 gap-[22px]">
+                  <input placeholder="Title" type="text" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                  <input placeholder="First Name" type="text" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                  <input placeholder="Last Name" type="text" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
                 </div>
+                <div className="grid grid-cols-1 gap-[22px]">
+                  <input placeholder="Email Address" type="email" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                </div>
+                <div className="grid grid-cols-2 gap-[22px]">
+                  <input placeholder="Company" type="text" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                  <input placeholder="Investor Type" type="text" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                </div>
+                 <div className="grid grid-cols-3 gap-[22px]">
+                  <input placeholder="Work Phone" type="tel" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                  <input placeholder="home Phone" type="tel" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                  <input placeholder="Fax number" type="text" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                </div>
+                <div className="grid grid-cols-1 gap-[22px]">
+                  <input placeholder="type of enquiry" type="email" className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                </div>
+                <div className="grid grid-cols-1 gap-[22px]">
+                  <textarea placeholder="type of enquiry" rows={6} className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']" />
+                </div>
+                <button className="w-full max-w-[255px] py-[15px] self-center bg-primary-blue text-center text-white text-xl font-bold font-['Open Sans']">
+                  SUBMIT
+                </button>
               </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Main Market Segment
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
-                  </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Enterprise Growth Market
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
-                  </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </Card>
+              
             </div>
         </div>
       </div>
@@ -157,5 +92,5 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
   );
 };
 
-export default LatestNews;
+export default ContactUs;
 

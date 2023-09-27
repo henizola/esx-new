@@ -8,21 +8,20 @@ import bannerImage from "/public/images/about-banner.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
-interface LatestNewsProps {
+interface GalleryProps {
   setStep: (value: number) => void;
   step: number;
 }
 
-const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
+const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
   const items = [
-"Latest News",
-"Events",
-"Press Releases",
-"Gallery",
-"Downloads",
-"Contact I-Js",
+    "Latest News",
+    "Events",
+    "Press Releases",
+    "Gallery",
+    "Downloads",
+    "Contact I-Js",
   ];
-
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
@@ -51,105 +50,195 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="col-span-5 space-y-8">
-        <div className="col-span-3 flex flex-col gap-8">
-              <Card width=" grid grid-flex  ">
-                <div>
-                <h1 className="py-[20px] px-[20px]  text-3xl ">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    How to become a listed company
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    To be listed on the ESX equity market, issuers will be
-                    required to comply with pre-set listing rules and be subject
-                    to continuous obligations.
-                  </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
-                </div>
-              </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Main Market Segment
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
-                  </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Enterprise Growth Market
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
-                  </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </Card>
+        <div className="col-span-5 flex flex-col">
+          <Card width="w-[100%] h-fit flex pt-[50px] pb-[38px] px-[43px] flex-col    ">
+            <Image
+              src={
+                "/images/16 Black Chefs Changing Food in America (Published 2019) 1.png"
+              }
+              height={500}
+              width={400}
+              alt=""
+              className=" bg-black w-full object-cover  "
+            />
+
+            <div className="grid grid-cols-3 gap-[91px] mt-[60px]">
+              <div className="flex flex-col gap-[9px] ">
+                <Image
+                  src={
+                    "/images/Black Chefs Changing Food in America (Published 2019) 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col  h-full gap-[9px] ">
+                <Image
+                  src={
+                    "/images/16 Black Chefs Changing Food in America (Published 2019) 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full   h-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col gap-[9px] ml-[0px]">
+                <Image
+                  src={
+                    "/images/Guide to running an effective crowdfunding campaign 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
             </div>
+            <div className="grid grid-cols-3 gap-[91px] mt-[60px]">
+              <div className="flex flex-col gap-[9px] ">
+                <Image
+                  src={
+                    "/images/16 aChefs Changing Food in America (Published 2019) 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col  h-full gap-[9px] ">
+                <Image
+                  src={
+                    "/images/0d19a242-c484-4c64-86d5-86e5d1910288 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full   h-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col gap-[9px] ml-[0px]">
+                <Image
+                  src={
+                    "/images/Guide to running an crowdfunding campaign 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-[91px] mt-[60px]">
+              <div className="flex flex-col gap-[9px] ">
+                <Image
+                  src={
+                    "/images/Black Chefs Changing Food in America (Published 2019) 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col  h-full gap-[9px] ">
+                <Image
+                  src={
+                    "/images/16 Black Chefs Changing Food in America (Published 2019) 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full   h-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col gap-[9px] ml-[0px]">
+                <Image
+                  src={
+                    "/images/Guide to running an effective crowdfunding campaign 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-[91px] mt-[60px]">
+              <div className="flex flex-col gap-[9px] ">
+                <Image
+                  src={
+                    "/images/16 aChefs Changing Food in America (Published 2019) 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col  h-full gap-[9px] ">
+                <Image
+                  src={
+                    "/images/0d19a242-c484-4c64-86d5-86e5d1910288 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full   h-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+              <div className="flex flex-col gap-[9px] ml-[0px]">
+                <Image
+                  src={
+                    "/images/Guide to running an crowdfunding campaign 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=""
+                  className=" bg-black w-full object-cover "
+                />
+                <span className="text-black text-base font-normal font-['Open Sans']">
+                  Lorem, ipsum dolor.
+                </span>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
       {/* <CustomSlider slides={slides} /> */}
@@ -157,5 +246,4 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
   );
 };
 
-export default LatestNews;
-
+export default Gallery;

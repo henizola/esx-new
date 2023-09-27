@@ -8,21 +8,20 @@ import bannerImage from "/public/images/about-banner.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
-interface LatestNewsProps {
+interface EventProps {
   setStep: (value: number) => void;
   step: number;
 }
 
-const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
+const Event: React.FC<EventProps> = ({ setStep, step }) => {
   const items = [
-"Latest News",
-"Events",
-"Press Releases",
-"Gallery",
-"Downloads",
-"Contact I-Js",
+    "Latest News",
+    "Events",
+    "Press Releases",
+    "Gallery",
+    "Downloads",
+    "Contact I-Js",
   ];
-
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
@@ -52,22 +51,27 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className="col-span-5 space-y-8">
-        <div className="col-span-3 flex flex-col gap-8">
-              <Card width=" grid grid-flex  ">
-                <div>
-                <h1 className="py-[20px] px-[20px]  text-3xl ">
-                  Listing Rules and Requirements
+          <div className="col-span-3 flex flex-col gap-8">
+            <Card width="w-[100%] flex gap-10 flex-col grid grid-cols-5  pt-[50px] pb-[35px] pl-[20px] pr-[40px] items-end">
+              <div className="col-span-3 h-fit">
+                <h1 className=" text-black text-3xl font-normal font-['Open Sans']">
+                  Lorem Ipsum
                 </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    How to become a listed company
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    To be listed on the ESX equity market, issuers will be
-                    required to comply with pre-set listing rules and be subject
-                    to continuous obligations.
+                <main className="flex flex-col ">
+                  <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+                    vel eum iriure dolor
                   </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
+                  <Link
+                    href="#"
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
+                  >
                     View more
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -85,21 +89,34 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                     </svg>
                   </Link>
                 </main>
-                </div>
-              </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
+              </div>
+              <div className="col-span-2 self-end order-2">
+                <Image
+                  src={
+                    "/images/Career Advancement Myths_ 10  Mistakes That Keep You From Getting Ahead 1.png"
+                  }
+                  height={100}
+                  width={400}
+                  alt=""
+                  className="w-full  aspect-square object-cover rounded-full"
+                />
+              </div>
+            </Card>
+
+            <div className="flex gap-5">
+              <Card width="w-[60%] flex  flex-col   p-[20px] pl-[20px] pr-[40] ">
+                <h1 className=" text-black text-2xl font-normal font-['Open Sans'] lowercase">
+                  Lorem Ipsum
                 </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Main Market Segment
-                  </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
+                <main className="flex flex-col mt-[6px] ">
+                  <p className="text-justify text-zinc-500 text-[15px] font-normal font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
+                  <Link
+                    href="#"
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[29px]"
+                  >
                     View more
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -118,19 +135,47 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                   </Link>
                 </main>
               </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Enterprise Growth Market
+              <Card width="w-[40%] flex  flex-col   pt-[120px] pb-[47px] px-[20px]  ">
+                <main className="flex flex-col  ">
+                  <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                    Lorem Ipsum
                   </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
+                  <p className="text-zinc-500 text-sm font-normal font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
+                </main>
+                <hr className=" my-[40px] border border-gray/30" />
+                <main className="flex flex-col  ">
+                  <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                    Lorem Ipsum
+                  </h1>
+                  <p className="text-zinc-500 text-sm font-normal font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                  </p>
+                </main>
+              </Card>
+            </div>
+            <Card width="w-[100%] flex gap-10 flex-col grid grid-cols-5  pt-[50px] pb-[35px] pl-[20px] pr-[40px] items-end">
+              <div className="col-span-3 h-fit">
+                <h1 className=" text-black text-3xl font-normal font-['Open Sans']">
+                  Lorem Ipsum
+                </h1>
+                <main className="flex flex-col ">
+                  <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+                    vel eum iriure dolor
+                  </p>
+                  <Link
+                    href="#"
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
+                  >
                     View more
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -146,10 +191,106 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                         d="M8.25 4.5l7.5 7.5-7.5 7.5"
                       />
                     </svg>
+                  </Link>
+                </main>
+              </div>
+              <div className="col-span-2 self-end order-2">
+                <Image
+                  src={
+                    "/images/Career Advancement Myths_ 10  Mistakes That Keep You From Getting 1.png"
+                  }
+                  height={100}
+                  width={400}
+                  alt=""
+                  className="w-full  aspect-square object-cover rounded-full"
+                />
+              </div>
+            </Card>
+
+            <div className="w-[900px] h-[69px] relative">
+              <h1 className="left-0 top-0 absolute text-black text-3xl font-normal font-['Open Sans']">
+                UPCOMING Events
+              </h1>
+            </div>
+            <div className="grid grid-cols-2 w-full gap-[60px] ">
+              <Card width=" flex  flex-col  pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
+                
+                <main className="flex flex-col  ">
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  </p>
+
+                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  08 Sept 2023
+                </h1>
+                <hr className=" mt-[24px] border border-gray/30 " />
+                  <Link
+                    href="#"
+                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                  >
+                    View more
+                    
+                  </Link>
+                </main>
+              </Card>
+              <Card width=" flex  flex-col   pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
+                
+                <main className="flex flex-col  ">
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  </p>
+
+                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  08 Sept 2023
+                </h1>
+                <hr className=" mt-[24px] border border-gray/30 " />
+                  <Link
+                    href="#"
+                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                  >
+                    View more
+                    
+                  </Link>
+                </main>
+              </Card>
+              <Card width=" flex  flex-col  pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
+                
+                <main className="flex flex-col  ">
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  </p>
+
+                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  08 Sept 2023
+                </h1>
+                <hr className=" mt-[24px] border border-gray/30 " />
+                  <Link
+                    href="#"
+                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                  >
+                    View more
+                    
+                  </Link>
+                </main>
+              </Card>
+              <Card width=" flex  flex-col   pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
+                
+                <main className="flex flex-col  ">
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  </p>
+
+                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  08 Sept 2023
+                </h1>
+                <hr className=" mt-[24px] border border-gray/30 " />
+                  <Link
+                    href="#"
+                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                  >
+                    View more
+                    
                   </Link>
                 </main>
               </Card>
             </div>
+          </div>
         </div>
       </div>
       {/* <CustomSlider slides={slides} /> */}
@@ -157,5 +298,4 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
   );
 };
 
-export default LatestNews;
-
+export default Event;

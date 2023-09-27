@@ -15,14 +15,13 @@ interface LatestNewsProps {
 
 const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
   const items = [
-"Latest News",
-"Events",
-"Press Releases",
-"Gallery",
-"Downloads",
-"Contact I-Js",
+    "Latest News",
+    "Events",
+    "Press Releases",
+    "Gallery",
+    "Downloads",
+    "Contact I-Js",
   ];
-
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
@@ -52,22 +51,37 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className="col-span-5 space-y-8">
-        <div className="col-span-3 flex flex-col gap-8">
-              <Card width=" grid grid-flex  ">
-                <div>
-                <h1 className="py-[20px] px-[20px]  text-3xl ">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    How to become a listed company
+          <div className="col-span-3 flex flex-col gap-8">
+   
+            <Card width=" flex py-[87px] px-[48px] gap-[42px]  ">
+              <div className="w-[40%] ">
+              <Image
+                src={"/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"}
+                height={500}
+                width={400}
+                alt=""
+                className=" bg-black h-full object-cover"
+              />
+              </div>
+              <div className="w-[60%] ">
+                <main className=" ">
+                <h1 className=" text-black text-[40px] font-light font-['Open Sans'] capitalize leading-[50px] ">Lorem ipsum dolor sit</h1>
+                  <h1 className="text-black text-[24px] not-italic font-normal leading-[normal] mt-[25px]">
+                    Lorem ipsum
                   </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    To be listed on the ESX equity market, issuers will be
-                    required to comply with pre-set listing rules and be subject
-                    to continuous obligations.
+                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-[4px]">
+                    Dolor sit
+                  </h1>
+                  <p className="text-zinc-500 text-base font-normal font-['Roboto'] leading-snug mt-[25px]">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis”
                   </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
+                  <Link href="#" className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[25px]">
                     View more
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -85,21 +99,39 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                     </svg>
                   </Link>
                 </main>
-                </div>
-              </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Main Market Segment
+              </div>
+            </Card>
+      
+
+            <Card width=" flex py-[87px] px-[48px] gap-[42px]  ">
+              <div className="w-[40%] ">
+              <Image
+                src={"/images/Salem Corporate Headshots & Personal Branding Photographer 1.png"}
+                height={500}
+                width={400}
+                alt=""
+                className=" bg-black h-full object-cover"
+              />
+              </div>
+              <div className="w-[60%] ">
+                <main className=" ">
+                <h1 className=" text-black text-[40px] font-light font-['Open Sans'] capitalize leading-[50px] ">Lorem ipsum dolor sit</h1>
+                  <h1 className="text-black text-[24px] not-italic font-normal leading-[normal] mt-[25px]">
+                    Lorem ipsum
                   </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
+                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-[4px]">
+                    Dolor sit
+                  </h1>
+                  <p className="text-zinc-500 text-base font-normal font-['Roboto'] leading-snug mt-[25px]">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis”
                   </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
+                  <Link href="#" className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[25px]">
                     View more
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -117,20 +149,38 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                     </svg>
                   </Link>
                 </main>
-              </Card>
-              <Card width=" ">
-                <h1 className="py-[20px] px-[20px]  bg-primary-blue text-white text-sm not-italic font-semibold leading-[normal]">
-                  Listing Rules and Requirements
-                </h1>
-                <main className="py-[20px] px-[20px] space-y-6">
-                  <h1 className="text-black text-[19px] not-italic font-normal leading-[normal]">
-                    ESX Enterprise Growth Market
+              </div>
+            </Card>
+
+            <Card width=" flex py-[87px] px-[48px] gap-[42px]  ">
+              <div className="w-[40%] ">
+              <Image
+                src={"/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"}
+                height={500}
+                width={400}
+                alt=""
+                className=" bg-black h-full object-cover"
+              />
+              </div>
+              <div className="w-[60%] ">
+                <main className=" ">
+                <h1 className=" text-black text-[40px] font-light font-['Open Sans'] capitalize leading-[50px] ">Lorem ipsum dolor sit</h1>
+                  <h1 className="text-black text-[24px] not-italic font-normal leading-[normal] mt-[25px]">
+                    Lorem ipsum
                   </h1>
-                  <p className="text-gray text-base not-italic font-normal leading-[normal]">
-                    An Issuer seeking to list its equity shares on ESX Main
-                    Market Segment shall have;
+                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-[4px]">
+                    Dolor sit
+                  </h1>
+                  <p className="text-zinc-500 text-base font-normal font-['Roboto'] leading-snug mt-[25px]">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis”
                   </p>
-                  <Link href="#" className="flex text-[16px] mt-5">
+                  <Link href="#" className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[25px]">
                     View more
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -148,8 +198,9 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                     </svg>
                   </Link>
                 </main>
-              </Card>
-            </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
       {/* <CustomSlider slides={slides} /> */}
@@ -158,4 +209,3 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
 };
 
 export default LatestNews;
-
