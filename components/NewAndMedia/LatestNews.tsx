@@ -20,7 +20,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact I-Js",
+    "Contact Us",
   ];
 
   return (
@@ -202,6 +202,14 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
             </Card>
           </div>
         </div>
+      </div>
+      <div className="bg-white py-[68px]">
+        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+          Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+          consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
+          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna aliquam erat{" "}
+        </p>
       </div>
       {/* <CustomSlider slides={slides} /> */}
     </div>

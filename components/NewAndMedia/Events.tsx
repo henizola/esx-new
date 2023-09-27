@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import manager from "/public/images/manager.png";
 import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
+import bannerImage from "/public/images/Addis-Ababa-Ethiopia-1.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
@@ -20,14 +20,14 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact I-Js",
+    "Contact Us",
   ];
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
       <Banner
         backgroundImage={bannerImage}
-        title="Latest News"
+        title="Event"
         description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
@@ -93,7 +93,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               <div className="col-span-2 self-end order-2">
                 <Image
                   src={
-                    "/images/Career Advancement Myths_ 10  Mistakes That Keep You From Getting Ahead 1.png"
+                    "/images/Mistakes That Keep You From Getting Ahead 1.png"
                   }
                   height={100}
                   width={400}
@@ -207,90 +207,112 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </div>
             </Card>
 
-            <div className="w-[900px] h-[69px] relative">
+            <div className="w-[900px] pb-[32px] relative">
               <h1 className="left-0 top-0 absolute text-black text-3xl font-normal font-['Open Sans']">
                 UPCOMING Events
               </h1>
             </div>
-            <div className="grid grid-cols-2 w-full gap-[60px] ">
-              <Card width=" flex  flex-col  pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
-                
+            <div className="grid grid-cols-2 w-full gap-[32px] ">
+              <Card width=" flex  flex-col  pt-[43px] pb-[37px] pl-[43px] pr-[41px] ">
                 <main className="flex flex-col  ">
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy Lorem
+                    ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
                   <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
-                  08 Sept 2023
-                </h1>
-                <hr className=" mt-[24px] border border-gray/30 " />
+                    08 Sept 2023
+                  </h1>
+                  <hr className=" mt-[24px] border border-gray/30 " />
                   <Link
                     href="#"
                     className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
-                    
                   </Link>
                 </main>
               </Card>
-              <Card width=" flex  flex-col   pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
-                
+              <Card width=" flex  flex-col   pt-[43px] pb-[37px] pl-[43px] pr-[41px] ">
                 <main className="flex flex-col  ">
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy Lorem
+                    ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
                   <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
-                  08 Sept 2023
-                </h1>
-                <hr className=" mt-[24px] border border-gray/30 " />
+                    08 Sept 2023
+                  </h1>
+                  <hr className=" mt-[24px] border border-gray/30 " />
                   <Link
                     href="#"
                     className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
-                    
                   </Link>
                 </main>
               </Card>
-              <Card width=" flex  flex-col  pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
-                
+              <Card width=" flex  flex-col  pt-[43px] pb-[37px] pl-[43px] pr-[41px] ">
                 <main className="flex flex-col  ">
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy Lorem
+                    ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
                   <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
-                  08 Sept 2023
-                </h1>
-                <hr className=" mt-[24px] border border-gray/30 " />
+                    08 Sept 2023
+                  </h1>
+                  <hr className=" mt-[24px] border border-gray/30 " />
                   <Link
                     href="#"
                     className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
-                    
                   </Link>
                 </main>
               </Card>
-              <Card width=" flex  flex-col   pt-[57px] pb-[37px] pl-[43px] pr-[41px] ">
-                
+              <Card width=" flex  flex-col   pt-[43px] pb-[37px] pl-[43px] pr-[41px] ">
                 <main className="flex flex-col  ">
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy Lorem
+                    ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
                   <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
-                  08 Sept 2023
-                </h1>
-                <hr className=" mt-[24px] border border-gray/30 " />
+                    08 Sept 2023
+                  </h1>
+                  <hr className=" mt-[24px] border border-gray/30 " />
                   <Link
                     href="#"
                     className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
-                    
                   </Link>
                 </main>
               </Card>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-white py-[68px]">
+        <div className="max-w-[980px] mx-auto w-full flex flex-col items-center">
+          <h3 className="text-center text-black text-2xl font-bold font-['Open Sans']">
+            Contact the team
+          </h3>
+          <p className="text-center text-black text-base font-normal mb-5 mt-[6px] font-['Open Sans']">
+            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+            consectetuer adipiscing{" "}
+          </p>
+          <button className="text-center w-fit rounded-md bg-primary-blue px-5 p-1 text-white text-base font-semibold font-['Open Sans']">
+            Contact us
+          </button>
         </div>
       </div>
       {/* <CustomSlider slides={slides} /> */}

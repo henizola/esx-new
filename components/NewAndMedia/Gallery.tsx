@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import manager from "/public/images/manager.png";
 import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
+import bannerImage from "/public/images/gallery-banner.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
@@ -20,14 +20,14 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact I-Js",
+    "Contact Us",
   ];
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
       <Banner
         backgroundImage={bannerImage}
-        title="Latest News"
+        title="Gallery"
         description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
@@ -240,6 +240,14 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
             </div>
           </Card>
         </div>
+      </div>
+      <div className="bg-white py-[68px]">
+        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+          Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+          consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
+          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna aliquam erat{" "}
+        </p>
       </div>
       {/* <CustomSlider slides={slides} /> */}
     </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import manager from "/public/images/manager.png";
 import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
+import bannerImage from "/public/images/how-can-your-start-up-can-finish-with-success_1.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
@@ -20,7 +20,7 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact I-Js",
+    "Contact Us",
   ];
 
   return (
@@ -96,6 +96,14 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>
         </div>
+      </div>
+      <div className="bg-white py-[68px]">
+        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+          Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+          consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
+          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna aliquam erat{" "}
+        </p>
       </div>
       {/* <CustomSlider slides={slides} /> */}
     </div>

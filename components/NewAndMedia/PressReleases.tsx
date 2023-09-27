@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import manager from "/public/images/manager.png";
 import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
+import bannerImage from "/public/images/press-banner.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
 
@@ -20,14 +20,14 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact I-Js",
+    "Contact Us",
   ];
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
       <Banner
         backgroundImage={bannerImage}
-        title="Latest News"
+        title="Press Releases"
         description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
@@ -53,8 +53,8 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
         <div className="col-span-5 space-y-8">
           <div className="flex gap-5">
             <div className="flex flex-col w-[60%] gap-5">
-              <Card width=" flex  flex-col   pb-[20px] pl-[36px] pr-[37px] ">
-                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] mt-[8px]">
+              <Card width=" flex  flex-col   py-[34px] pl-[36px] pr-[37px] ">
+                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] ">
                   Press Releases
                 </h1>
                 <h1 className=" text-zinc-500 text-xl font-semibold font-['Open Sans'] leading-snug mt-[16px]">
@@ -90,8 +90,8 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
                 </main>
                 <div className="w-full h-[177px] mt-[30px] bg-zinc-300" />
               </Card>
-              <Card width=" flex  flex-col   pb-[20px] pl-[36px] pr-[37px] ">
-                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] mt-[8px]">
+              <Card width=" flex  flex-col   py-[34px] pl-[36px] pr-[37px] ">
+                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] ">
                   News
                 </h1>
                 <h1 className=" text-zinc-500 text-xl font-semibold font-['Open Sans'] leading-snug mt-[16px]">
@@ -127,8 +127,8 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
                 </main>
                 <div className="w-full h-[177px] mt-[30px] bg-zinc-300" />
               </Card>
-              <Card width=" flex  flex-col   pb-[20px] pl-[36px] pr-[37px] ">
-                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] mt-[8px]">
+              <Card width=" flex  flex-col  pt-[28px] pb-[34px] pl-[36px] pr-[37px] ">
+                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] ">
                   Press Releases
                 </h1>
                 <h1 className=" text-zinc-500 text-xl font-semibold font-['Open Sans'] leading-snug mt-[16px]">
@@ -167,24 +167,38 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
             </div>
             <Card width="w-[40%] h-fit flex  pb-[293px] flex-col    ">
               <h1 className="pt-[20px] pb-[27px] px-[20px]  bg-primary-blue text-white text-2xl font-normal font-['Open Sans']">
-                List of Members
+                For More Information
               </h1>
               <main className="flex flex-col gap-2 pt-[40px]  px-[20px] ">
-                <h1 className=" text-black text-xl font-normal font-['Open Sans']">ESX Insights
+                <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                  ESX Insights
                 </h1>
-                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">Read Our Latest Thinking
+                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">
+                  Read Our Latest Thinking
                 </p>
               </main>
               <hr className=" mt-[37px] px-[20px] mb-[40px] border border-gray/30" />
               <main className="flex flex-col gap-2  px-[20px] ">
-                <h1 className=" text-black text-xl font-normal font-['Open Sans']">ESX Facts and Figures
+                <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                  ESX Facts and Figures
                 </h1>
-                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">ESX and its subsidiaries recorded $21.9 billion in US revenues in the fiscal year ended June 1,2023
+                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">
+                  ESX and its subsidiaries recorded $21.9 billion in US revenues
+                  in the fiscal year ended June 1,2023
                 </p>
               </main>
             </Card>
           </div>
         </div>
+      </div>
+
+      <div className="bg-white py-[68px]">
+        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+          Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+          consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
+          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna aliquam erat{" "}
+        </p>
       </div>
       {/* <CustomSlider slides={slides} /> */}
     </div>
