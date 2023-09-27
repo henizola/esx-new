@@ -8,17 +8,14 @@ import bannerImage from "/public/images/about-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
+import { BackButton } from "../../Button/BackButton";
 interface ListingRulesProps {
   setStep: (value: number) => void;
   step: number;
 }
 
 const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
-  const items = [
-    "Market Segment",
-    "Listing Rules",
-    "Listing FAOs",
-  ];
+  const items = ["Market Segment", "Listing Rules", "Listing FAOs"];
 
   return (
     <div className="flex flex-col w-full p-0 m-0">
@@ -28,9 +25,12 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         description="As an issuer listing on ESX provides you Wlth access to large pool of long-term capital that IS critical to finance your growth ambitions"
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
-      <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
+        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
           <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            <Link href={'/equity-market'}>Equity Market</Link> {"> Listing"}
+            <BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "}
+            {"> Listing"}
           </h6>
           {items.map((item, index) => (
             <button
@@ -46,40 +46,36 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
               {item}
             </button>
           ))}
-            <button
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
-              style={{
-                borderBottom: "0.7px solid black",
-                fontSize: "14px",
-                fontWeight: "300",
-              }}
-            >
-              Listing Companies
-   
-            </button>
-            <button
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
-              style={{
-                borderBottom: "0.7px solid black",
-                fontSize: "14px",
-                fontWeight: "300",
-              }}
-            >
-               Notice to Issuers
-   
-   
-            </button>
-            <button
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
-              style={{
-                borderBottom: "0.7px solid black",
-                fontSize: "14px",
-                fontWeight: "300",
-              }}
-            >
-               Other Products
-   
-            </button>
+          <button
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: "14px",
+              fontWeight: "300",
+            }}
+          >
+            Listing Companies
+          </button>
+          <button
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: "14px",
+              fontWeight: "300",
+            }}
+          >
+            Notice to Issuers
+          </button>
+          <button
+            className={`  text-left ml-10 my-2 font-light border-b border-black `}
+            style={{
+              borderBottom: "0.7px solid black",
+              fontSize: "14px",
+              fontWeight: "300",
+            }}
+          >
+            Other Products
+          </button>
         </Card>
         <div className="col-span-5 space-y-8">
           <Card width="w-[100%] flex  flex-col  pt-[20px] pb-[40px] px-[20px]">

@@ -15,6 +15,7 @@ import {
 } from "@heroicons/react/20/solid";
 import ExpandableCard from "@/components/Card/ExpandableCard";
 import LinkButton from "@/components/Button/LinkButton";
+import { BackButton } from "@/components/Button/BackButton";
 interface TradingSystemProps {
   setStep: (value: number) => void;
   step: number;
@@ -38,9 +39,12 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Trading System"}
-          </h6>
+          <h6 className="ml-2 mb-4">
+            <BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "}
+            {"> Trading System"}
+          </h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
@@ -122,7 +126,9 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                   nonummy nibh euismod tincidunt ut
                 </p>
-                <LinkButton className="mt-[30px]" href="#">View More</LinkButton>
+                <LinkButton className="mt-[30px]" href="#">
+                  View More
+                </LinkButton>
               </main>
             </Card>
           </div>

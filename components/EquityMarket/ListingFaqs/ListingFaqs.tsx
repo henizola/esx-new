@@ -10,6 +10,7 @@ import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
 import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExpandableCard from "@/components/Card/ExpandableCard";
+import { BackButton } from "@/components/Button/BackButton";
 interface ListingFaqsProps {
   setStep: (value: number) => void;
   step: number;
@@ -32,7 +33,9 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
           <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            <Link href={'/equity-market'}>Equity Market</Link> {"> Listing"}
+          <BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "} {"> Listing"}
           </h6>
           {items.map((item, index) => (
             <button

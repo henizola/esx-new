@@ -11,6 +11,7 @@ import CustomSlider from "../../Slider/Slider";
 import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExpandableCard from "@/components/Card/ExpandableCard";
 import LinkButton from "@/components/Button/LinkButton";
+import { BackButton } from "@/components/Button/BackButton";
 interface ProceduresManualProps {
   setStep: (value: number) => void;
   step: number;
@@ -37,9 +38,9 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Trading System"}
-          </h6>
+        <h6 className="ml-2 mb-4"><BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "} {"> Procedures & Manuals"}</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}

@@ -8,6 +8,7 @@ import Image from "next/image";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { GoldBanner } from "@/components/Banner/GoldBanner";
 import LinkButton from "@/components/Button/LinkButton";
+import { BackButton } from "@/components/Button/BackButton";
 
 interface WhoWeAreProps {
   setStep: (value: number) => void;
@@ -35,7 +36,9 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
       />
       <div className="flex w-full  px-28 py-7">
         <Card width="w-[30%] mr-5 flex flex-col text-left  py-10 px-5">
-          <h6 className="ml-2 mb-4"><Link href={"/equity-market"}>Equity Market</Link> {"> Trade"}</h6>{" "}
+          <h6 className="ml-2 mb-4"><BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "} {"> Trade"}</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}

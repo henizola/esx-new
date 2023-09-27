@@ -10,6 +10,7 @@ import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import LinkButton from "@/components/Button/LinkButton";
+import { BackButton } from "@/components/Button/BackButton";
 interface MembershipRulesProps {
   setStep: (value: number) => void;
   step: number;
@@ -41,7 +42,9 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
         <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            <Link href={"/equity-market"}>Equity Market</Link> {"> Members"}
+        <BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "} {"> Members"}
           </h6>
           {items.map((item, index) => (
             <button

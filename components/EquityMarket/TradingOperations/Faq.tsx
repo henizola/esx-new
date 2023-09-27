@@ -9,6 +9,7 @@ import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import CustomSlider from "../../Slider/Slider";
 import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import { BackButton } from "@/components/Button/BackButton";
 interface TradingFaqsProps {
   setStep: (value: number) => void;
   step: number;
@@ -32,9 +33,9 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
       />
       <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
         <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
-            {"Equity Market > Listing"}
-          </h6>
+        <h6 className="ml-2 mb-4"><BackButton setStep={setStep} link="/equity-market">
+              Equity Market
+            </BackButton>{" "} {"> FAQ"}</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
