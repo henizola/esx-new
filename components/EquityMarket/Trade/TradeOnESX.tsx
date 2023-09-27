@@ -11,7 +11,7 @@ import LinkButton from "@/components/Button/LinkButton";
 import { BackButton } from "@/components/Button/BackButton";
 import CustomSlider from "@/components/Slider/Slider";
 import sliderbannerImage from "/public/images/slider-background.png";
-import CustomMarketSlider from "@/components/Slider/MarketSlider";
+import TradeOnESXSlider from "@/components/Slider/TradeOnESXSlider";
 
 interface WhoWeAreProps {
   setStep: (value: number) => void;
@@ -182,7 +182,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           </Card>
         </div>
       </div>
-      {/* <CustomMarketSlider slides={slides} /> */}
+      <TradeOnESXSlider/>
 
     </div>
   );
