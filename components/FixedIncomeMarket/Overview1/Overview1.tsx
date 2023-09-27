@@ -2,15 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import bannerImage from "../../../public/images/about-banner.png";
 import overview from "../../../public/images/overview.png";
+import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
-
-interface OverviewProps {
+interface Overview1Props {
   setStep: (value: number) => void;
   step: number;
 }
 
-const Overview = () => {
+const Overview1: React.FC<Overview1Props> = ({ setStep, step }) => {
   const items = [
     "Overview",
     "Instruments",
@@ -23,8 +24,32 @@ const Overview = () => {
 
   return (
     <div className='flex flex-col w-full p-0 m-0'>
-      <div className='flex w-full  '>
-        <div className='flex flex-col w-full gap-5'>
+      <Banner
+        backgroundImage={bannerImage}
+        title='Fixed income market'
+        // description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
+      />
+      <div className='flex w-full  px-28 py-7'>
+        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+          <h6 className='ml-2 mb-4 text-[#001F59] opacity-60'>
+            Fixed income market
+          </h6>
+          {items.map((item, index) => (
+            <button
+              key={index}
+              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              style={{
+                borderBottom: "0.7px solid black",
+                fontSize: step === index ? "16px" : "14px",
+                fontWeight: step === index ? "400" : "300",
+              }}
+              onClick={() => setStep(index)}
+            >
+              {item}
+            </button>
+          ))}
+        </Card>
+        <div className='flex flex-col w-[70%]  gap-5'>
           <Card width='w-[100%]  flex flex-row h-[380px]'>
             <div className='w-[38%] h-[100%]'>
               <Image
@@ -111,4 +136,4 @@ const Overview = () => {
   );
 };
 
-export default Overview;
+export default Overview1;

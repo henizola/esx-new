@@ -1,8 +1,6 @@
-import React from "react";
-import Card from "../../Card/Card";
 import Image from "next/image";
 import tbills from "../../../public/images/tbills.png";
-import Link from "next/link";
+import Card from "../../Card/Card";
 
 function TbillsAndBonds() {
   const tbils = [
@@ -12,14 +10,14 @@ function TbillsAndBonds() {
     "Treasury Bonds are safe, long-term debt securities issued by the Ethiopian government to investors with a maturity period of more than one year.",
   ];
   return (
-    <Card width="flex flex-col  w-full h-full">
-      <div className="bg-[#00205B] w-full h-full">
-        <h1 className="text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
-          T-bills and bonds
+    <Card width='flex flex-col  w-full h-full'>
+      <div className='bg-[#00205B] w-full h-full'>
+        <h1 className='text-[40px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+          T-Bills and Bonds
         </h1>
       </div>
-      <div className="flex h-full ">
-        <div className="min-h-full bg-white pt-10 px-5 flex flex-col justify-between  ">
+      <div className='flex h-full '>
+        <div className='min-h-full bg-white py-10 px-5 flex flex-col justify-between  '>
           <div>
             {tbils.map((tbil, index) => {
               return (
@@ -34,32 +32,14 @@ function TbillsAndBonds() {
               );
             })}
           </div>
-
-          <Link href="#" className="flex text-[16px] font-semibold mt-5 pb-5">
-            View more{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-4 h-4 mt-1.5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </Link>
         </div>
-        <div className="min-w-[38%] min-h-full ">
+        <div className='min-w-[38%] min-h-full '>
           <Image
             height={200}
             width={200}
             src={tbills.src}
-            alt="tbills"
-            className="w-[100%] h-[100%] object-fill "
+            alt='tbills'
+            className='w-[100%] h-[100%] object-fill '
           />
         </div>
       </div>
