@@ -1,6 +1,5 @@
 "use client";
 
-import EquityMarketOverview from "@/components/EquityMarket/EquityMarketOverview";
 import ListingFaqs from "@/components/EquityMarket/ListingFaqs/ListingFaqs";
 import ListingRules from "@/components/EquityMarket/ListingRules/ListingRules";
 import MarketSegment from "@/components/EquityMarket/MarketSegment/MarketSegment";
@@ -22,7 +21,11 @@ export default function Home() {
     <main className="flex  flex-col items-center p-0">
       <SideMenu state={currentPage}>
         {[
-          <EquityMarketOverview setStep={setNumber} step={currentPage} key={currentPage} />,
+          <MarketSegment
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
           <ListingRules
             setStep={setNumber}
             step={currentPage}
