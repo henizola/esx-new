@@ -14,7 +14,7 @@ function TheAcademy() {
               <h1 className="text-[30px] font-sans font-normal pt-12">
                 Overview{" "}
               </h1>
-              <p className="w-[90%] text-[16px] font-sans font-normal leading-6 text-gray pt-4">
+              <p className="w-[90%] text-[16px] font-sans font-normal leading-6 text-[#707377] pt-4">
                 ESX has observed capacity gaps across financial institutions and
                 government agencies on key aspects of capital market products,
                 services, and infrastructures. As ESX will be operating in a
@@ -65,11 +65,11 @@ function TheAcademy() {
                 The broad level objectives of the ESX Academy are:
               </h1>
               <div className="pt-3">
-                <li className="text-[14px] font-sans font-normal text-gray">
+                <li className="text-[14px] font-sans font-normal text-[#707377]">
                   To educate various stakeholders on the role of capital markets
                   in general and the role, functions, and operations of ESX.
                 </li>
-                <li className="text-[14px] font-sans font-normal text-gray">
+                <li className="text-[14px] font-sans font-normal text-[#707377]">
                   To be a learning center that offers free and paid courses,
                   workshops, and training to equip issuers, investors, capital
                   market service providers, financial market professionals, and
@@ -85,7 +85,7 @@ function TheAcademy() {
                   general public, with the knowledge and skills to participate
                   in the Ethiopian Capital Markets ecosystem.
                 </li>
-                <li className="text-[14px] font-sans font-normal text-gray">
+                <li className="text-[14px] font-sans font-normal text-[#707377]">
                   To fill the capacity and knowledge gaps of financial market
                   professionals, investors and the general public.
                 </li>

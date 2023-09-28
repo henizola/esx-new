@@ -54,7 +54,7 @@ function EsxTrainingAcademy() {
           return (
             <h1
               key={index}
-              className="text-[24px] text-left text-white font-sans font-normal "
+              className="text-[24px] text-left text-white font-sans font-normal pl-5"
             >
               {title}
             </h1>
@@ -66,15 +66,15 @@ function EsxTrainingAcademy() {
           return (
             <div
               key={index}
-              className="grid grid-cols-3 w-full border-b border-gray"
+              className="grid grid-cols-3 w-full border-b border-[#A8965B]"
             >
               <p className="text-[16px] font-sans font-normal p-5">
                 {program.ProgramName}
               </p>
-              <p className="text-[16px] font-sans font-light text-gray p-5">
+              <p className="text-[16px] font-sans font-light p-5">
                 {program.StartDate}
               </p>
-              <p className="text-[16px] font-sans font-light text-gray p-5">
+              <p className="text-[16px] font-sans font-light p-5">
                 {program.Duration}
               </p>
             </div>

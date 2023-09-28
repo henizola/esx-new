@@ -54,7 +54,7 @@ export default function Home() {
     setSubMenuIndex(0);
   }, [mainMenuIndex]);
   return (
-    <div className="h-full border-4 border-green-500">
+    <div className="h-full">
       <Banner backgroundImage={bannerImage} title="ESX Academy" />
       <Menu
         items={menuItems}

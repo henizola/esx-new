@@ -16,7 +16,7 @@ function FAQs() {
             dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat
           </p>
-          <div className="w-full max-w-full text-gray text-[16px] font-sans font-normal border-gray border-b py-4 my-4">
+          <div className="w-full max-w-full text-[#707377] text-[16px] font-sans font-normal border-[#707377] border-b py-4 my-4">
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               children={
@@ -25,9 +25,10 @@ function FAQs() {
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 </p>
               }
+              background={"bg-[#F0F0F0]"}
             ></Accordion>
           </div>
-          <div className="w-full max-w-full text-gray text-[16px] font-sans font-normal border-gray border-b py-4 my-4">
+          <div className="w-full max-w-full text-[#707377] text-[16px] font-sans font-normal border-[#707377] border-b py-4 my-4">
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               children={
@@ -36,9 +37,10 @@ function FAQs() {
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 </p>
               }
+              background={"bg-[#F0F0F0]"}
             ></Accordion>
           </div>
-          <div className="w-full max-w-full text-gray text-[16px] font-sans font-normal border-gray border-b py-4 my-4">
+          <div className="w-full max-w-full text-[#707377] text-[16px] font-sans font-normal border-[#707377] border-b py-4 my-4">
             <Accordion
               title={"Lorem ipsum dolor sit amet, consecLorem?"}
               children={
@@ -47,9 +49,10 @@ function FAQs() {
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 </p>
               }
+              background={"bg-[#F0F0F0]"}
             ></Accordion>
           </div>
-          <div className="w-full max-w-full text-gray text-[16px] font-sans font-normal border-gray border-b py-4 my-4">
+          <div className="w-full max-w-full text-[#707377] text-[16px] font-sans font-normal border-[#707377] border-b py-4 my-4">
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               children={
@@ -58,6 +61,7 @@ function FAQs() {
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 </p>
               }
+              background={"bg-[#F0F0F0]"}
             ></Accordion>
           </div>
         </div>
