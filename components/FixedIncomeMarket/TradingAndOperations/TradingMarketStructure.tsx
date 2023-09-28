@@ -30,35 +30,40 @@ function TradingMarketStructure() {
         </div>
       </Card>
       <div className="grid grid-cols-2 gap-5 mt-5">
-        <Card width="w-[100%] mt-0 py-5 px-5 flex flex-col flex-grow border-t-4 border-[#A8965B]">
-          <div className="flex items-center">
-            <h2 className="text-[24px] font-normal pr-7">Trading calendar</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={3}
-                stroke="currentColor"
-                className="w-6 h-6 mt-1.5 text-[#A8965B]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
+        <Card width="w-[100%] mt-0 py-5 px-5 flex flex-col flex-grow border-t-4 border-[#A8965B] justify-between">
+          <div>
+            <div className="flex items-center">
+              <h2 className="text-[24px] font-normal pr-7">Trading calendar</h2>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-6 h-6 mt-1.5 text-[#A8965B]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-          <p className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
+          <p className="text-[14px] font-light my-2 mt-4 text-[#707377]">
             The Exchange shall open for trading on all business days in
             Ethiopia.
           </p>
-          <p className="text-[16px ] font-light mb-4 text-[#707377]">
+          <p className="text-[14px] font-light mb-4 text-[#707377]">
             Trading shall be conducted at specified times as may be determined
             by The Exchange.
           </p>
-          <Link href="#" className="flex text-[16px] pt-16 px-0 ">
+          <Link
+            href="#"
+            className="flex text-[16px] pt-16 px-0 font-semibold items-center"
+          >
             View more{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +71,7 @@ function TradingMarketStructure() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-4 h-4 mt-1.5"
+              className="w-4 h-4"
             >
               <path
                 strokeLinecap="round"
@@ -77,34 +82,39 @@ function TradingMarketStructure() {
           </Link>
         </Card>
         <Card width="w-[100%] mt-0 py-5 px-5 flex flex-col flex-grow border-t-4 border-[#A8965B]">
-          <div className="flex items-end w-[80%]">
-            <h2 className="text-[24px] font-normal">
-              Public Holidays / Closing Days (2023 -2024){" "}
-            </h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={3}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#A8965B]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
+          <div className="flex flex-col justify-between">
+            <div className="flex items-end w-[80%]">
+              <h2 className="text-[24px] font-normal">
+                Public Holidays / Closing Days (2023 -2024){" "}
+              </h2>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#A8965B]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
             </div>
+            <p className="text-[14px] font-light my-2 mt-4 text-[#707377]">
+              Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+              consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
+              ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut
+            </p>
           </div>
-          <p className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
-            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-            consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
-            dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-            euismod tincidunt ut
-          </p>
-          <Link href="#" className="flex text-[16px] mt-5 px-0 ">
+          <Link
+            href="#"
+            className="flex text-[16px] mt-5 px-0 semiBold items-center"
+          >
             View more{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +122,7 @@ function TradingMarketStructure() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-5 h-5 mt-1.5"
+              className="w-4 h-4"
             >
               <path
                 strokeLinecap="round"

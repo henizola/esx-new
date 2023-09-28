@@ -15,12 +15,12 @@ function FindBroker() {
 
   return (
     <div className="flex flex-col gap-7 w-full">
-      <Card width="w-[100%] p-5">
+      <Card width="w-[100%] px-5 pt-5 pb-9">
         <div className="flex flex-col gap-5">
           <h1 className="text-[40px] font-normal border-b border-black">
             Find a Broker
           </h1>
-          <p className="font-[16px]">
+          <p className="text-[16px] font-normal">
             The first step to trading on ESX is approaching a licensed broker.
             Brokers are licensed agents that have the authorization to buy and
             sell shares on your behalf.
@@ -29,14 +29,14 @@ function FindBroker() {
       </Card>
       <div className="bg-white">
         <div className="bg-[#00205B] w-full h-full">
-          <h1 className="text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
+          <h1 className="text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
             List of registered brokers
           </h1>
         </div>
         <div className="p-5 gap-4 max-h-[283px] overflow-scroll">
           {registeredUsers.map((users) => {
             return (
-              <div className="border-b border-[#A8965B] bg-white py-2 mb-2">
+              <div className="border-b border-[#A8965B] bg-white py-2 mb-2 text-[#707377]">
                 {users}
               </div>
             );

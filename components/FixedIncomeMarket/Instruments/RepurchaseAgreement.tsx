@@ -31,7 +31,7 @@ const RepurchaseAgreement = () => {
               />
             </div>
             <div className="w-[62%] flex px-5 pt-10  flex-col">
-              <h1 className="text-[40px] font-sans font-light mt-0 pt-0  border-b border-black">
+              <h1 className="text-[30px] font-sans font-light mt-0 pt-0  border-b border-[#A8965B]">
                 Corporate Bonds{" "}
               </h1>
 
@@ -41,7 +41,8 @@ const RepurchaseAgreement = () => {
                     <div
                       key={index}
                       className={`py-5 font-normal text-[14px] font-sans ${
-                        lists.length - 1 !== index && "border-b border-black"
+                        lists.length - 1 !== index &&
+                        "border-b border-[#A8965B]"
                       }`}
                     >
                       {item}
@@ -51,24 +52,24 @@ const RepurchaseAgreement = () => {
               </div>
             </div>
           </Card>
-          <Card width="w-[100%] my-3 p-4">
-            <div className="flex py-5 mx-10">
+          <Card width="w-[100%] py-7 px-6 mt-5">
+            <div className="flex">
               <div className="w-[100%] flex  flex-col  mt-0 pt-0">
-                <h1 className="text-[24px] font-sans font-normal mt-0 pt-0">
+                <h1 className="text-[30px] font-sans font-normal mt-0 pt-0">
                   Commercial Papers{" "}
                 </h1>
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-2 pt-0 leading-6 text-gray">
+                <p className="w-[100%]  text-[15px] font-sans font-normal mt-5 pt-0 leading-6 text-[#7F7F7F]">
                   Commercial papers (CPs) are short-term debt obligations issued
                   by large corporations with a maturity period of less than 270
                   days.
                 </p>
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-2 pt-0 leading-6 text-gray">
+                <p className="w-[100%]  text-[15px] font-sans font-normal mt-3 pt-0 leading-6 text-[#7F7F7F]">
                   CPs are usually sold to investors at a discount to face value
                   and primarily issued by corporates to fund working capital or
                   finance short term assets. Investors receive the face value of
                   the CP instrument at maturity.
                 </p>
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-2 pt-0 leading-6 text-gray">
+                <p className="w-[100%]  text-[15px] font-sans font-normal mt-3 pt-0 leading-6 text-[#7F7F7F]">
                   Corporates can efficiently issue which can then be quoted and
                   traded on the secondary market by market participants on the
                   ESX platform.

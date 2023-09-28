@@ -9,10 +9,10 @@ function ProceduresAndManuals() {
       <div className="flex items-center">
         <div className="w-[60%] px-5 py-9">
           <div className="w-[100%] flex flex-col">
-            <h1 className="text-[30px] font-sans font-normal border-b pb-5">
+            <h1 className="text-[30px] font-sans font-normal border-b border-[#A8965B] pb-5">
               Procedures & manuals{" "}
             </h1>
-            <p className="w-[90%]  text-[16px] font-sans font-normal mt-2 pt-5 leading-6 text-gray">
+            <p className="w-[90%]  text-[16px] font-sans font-normal mt-2 pt-5 leading-6 text-[#707377]">
               The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s first, and
               only organized securities exchange. ESX is established as a public
               private partnership inline with Article 31 of the Capital Market
@@ -21,7 +21,7 @@ function ProceduresAndManuals() {
             </p>
           </div>
           <div className="flex justify-center items-center pt-10">
-            <button className=" rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8">
+            <button className=" rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue py-[2px] px-2 ">
               Procedures and Manuals{" "}
             </button>
           </div>

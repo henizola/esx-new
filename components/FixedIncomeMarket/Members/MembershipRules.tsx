@@ -23,12 +23,12 @@ function MembershipRules() {
           Members shall also comply with The Exchange’s membership rules that
           set out{" "}
         </h1>
-        <div className="pl-5 pr-20">
+        <div className="flex flex-col gap-5 px-5">
           {lists.map((item, index) => {
             return (
               <p
                 key={index}
-                className={` p-5 text-[14px] font-sans text-gray ${
+                className={` pb-[15px] text-[16px] font-sans text-[#707377] ${
                   lists.length - 1 !== index && "border-b border-black "
                 }`}
               >
@@ -37,16 +37,18 @@ function MembershipRules() {
             );
           })}
         </div>
-        <Card width="w-[100%] mr-0 flex flex-col text-left p-4 py-14 ">
+        <Card width="w-[100%] mr-0 flex flex-col text-left py-10 ">
           <div className="bg-[#F0F0F0] w-[70%] mx-auto">
-            <p className=" text-[#707377] text-[16px] font-normal font-sans italic py-3 w-[100%] text-center">
-              For details of ESX membership rules, please refer to following
-              documents
-            </p>
-            <div className="flex justify-center items-center ">
-              <button className=" rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8">
-                ESX Membership Rules
-              </button>
+            <div className="mx-12 my-[28px]">
+              <p className=" text-[#707377] text-[16px] font-normal font-sans italic w-[100%] text-center">
+                For details of ESX membership rules, please refer to following
+                documents
+              </p>
+              <div className="flex justify-center items-center ">
+                <button className=" rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8">
+                  ESX Membership Rules
+                </button>
+              </div>
             </div>
           </div>
         </Card>

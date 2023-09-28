@@ -23,11 +23,11 @@ function HowToBecomeMember() {
     <div>
       <div className="bg-white">
         <div className="bg-[#00205B] w-full h-full">
-          <h1 className="text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
+          <h1 className="text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
             How to become a member{" "}
           </h1>
         </div>
-        <p className="py-5 pl-5 pr-40 text-[14px] font-sans">
+        <p className="py-10 pl-5 pr-40 text-[16px] font-sans font-light">
           Only capital market service providers, registered in Ethiopia by the
           Ethiopian Capital Market Authority are eligible to become a trading
           member of the exchange.
@@ -90,7 +90,7 @@ function HowToBecomeMember() {
             return (
               <p
                 key={index}
-                className={` py-5 text-[14px] font-sans text-gray ${
+                className={` py-5 text-[14px] font-sans text-[#707377] ${
                   lists2.length - 1 !== index && "border-b border-black "
                 }`}
               >

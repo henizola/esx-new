@@ -25,7 +25,7 @@ function TbillsAndBonds() {
               return (
                 <p
                   key={index}
-                  className={` py-5 text-[14px] font-sans ${
+                  className={` py-5 text-[14px] font-sans font-normal ${
                     tbils.length - 1 !== index && "border-b border-black "
                   }`}
                 >
@@ -34,24 +34,6 @@ function TbillsAndBonds() {
               );
             })}
           </div>
-
-          <Link href="#" className="flex text-[16px] font-semibold mt-5 pb-5">
-            View more{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-4 h-4 mt-1.5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </Link>
         </div>
         <div className="min-w-[38%] min-h-full ">
           <Image

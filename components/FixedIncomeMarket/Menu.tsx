@@ -2,9 +2,27 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import Banner from "../Banner/banner";
 import sliderbannerImage from "../../public/images/slider-background.png";
+import footerImage from "../../public/images/footer1.png";
+import Image from "next/image";
 
-const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
-  console.log("title", title, step);
+type Props = {
+  items: any;
+  step: number;
+  setStep: any;
+  title: string;
+  returnHome: any;
+  children: React.JSX.Element | null;
+};
+
+const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
+  const hasChildren = React.Children.toArray(children).some((child) => {
+    // Filter out null, undefined, and empty string children
+    return (
+      React.isValidElement(child) ||
+      (typeof child === "string" && child.trim() !== "")
+    );
+  });
+
   return (
     <>
       <div className="flex w-full  px-28 py-7 justify-center gap-5 ">
@@ -33,10 +51,15 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
                     fontWeight: step === index ? "400" : "300",
                   }}
                   onClick={() => {
-                    setStep(index);
+                    if (
+                      item?.disabled ||
+                      ["Regulatory Framework"].includes(item)
+                    )
+                      return;
+                    else setStep(index);
                   }}
                 >
-                  {item}
+                  {item.name || item}
                 </button>
               ))}
             </div>
@@ -51,6 +74,27 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
             title="Trading"
             description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
             contentCenter={true}
+          />
+        </div>
+      )}
+      {title === "Overview" && (
+        <div className=" relative w-full h-auto  ">
+          <div className="absolute w-full h-full inset-0 bg-[#A8965BD9] opacity-80 flex  items-center justify-center">
+            <div className=" flex justify-between  ">
+              <h1 className="bg-transparent font-normal text-[30px] text-white w-[60%]">
+                Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                consectetuer{" "}
+              </h1>
+              <button className="bg-white text-[20px] py-3 px-6 font-medium  leading-6 rounded-[42px] h-min text-[#A8965B]">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <Image
+            src={footerImage.src}
+            width={10000}
+            height={100000}
+            alt="footer"
           />
         </div>
       )}

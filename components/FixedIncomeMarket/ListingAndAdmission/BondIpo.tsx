@@ -16,7 +16,7 @@ const BondIpo = () => {
             <h1 className="text-[30px] font-sans font-normal mt-0 pt-0 pb-5 border-b">
               Bond IPO / Debt Public Issue
             </h1>
-            <p className="w-[90%]  text-[16px] font-sans font-normal mt-2 pt-5 leading-6 text-gray">
+            <p className="w-[90%]  text-[16px] font-sans font-normal mt-2 pt-5 leading-6 text-[#707377]">
               Initial Public Offering ("IPO") Bonds is the process by which
               governments, government agencies, or corporations issue bonds to
               the general public to raise capital for their operations. The

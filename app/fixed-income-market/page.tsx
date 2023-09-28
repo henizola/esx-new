@@ -7,6 +7,8 @@ import Menu from "@/components/FixedIncomeMarket/Menu";
 import Instruments from "@/components/FixedIncomeMarket/Instruments";
 import CorporateBonds from "@/components/FixedIncomeMarket/Instruments/CorporateBonds";
 import bannerImage from "../../public/images/about-banner.png";
+import bannerImage2 from "../../public/images/instruments-banner.png";
+import bannerImage3 from "../../public/images/listing-banner.png";
 import Banner from "@/components/Banner/banner";
 import ListingAndAdmission from "@/components/FixedIncomeMarket/ListingAndAdmission";
 import { menus } from "@/components/FixedIncomeMarket/menuData";
@@ -54,10 +56,14 @@ export default function Home() {
     setMainMenuIndex(0);
   };
   const currentMenu = menus[mainMenuIndex];
-  const hasSubMenus = currentMenu.menu.length > 0;
+  const hasSubMenus = currentMenu?.menu && currentMenu.menu.length > 0;
   const menuItems = hasSubMenus ? currentMenu.menu : mainMenuItems;
   const updateStep = hasSubMenus ? setSubMenuIndex : setMainMenuIndex;
   const selectedIndex = hasSubMenus ? subMenuIndex : mainMenuIndex;
+  const bannerTitle = currentMenu?.menu
+    ? currentMenu.menu[selectedIndex]?.title ||
+      currentMenu.menu[selectedIndex]?.name
+    : "";
 
   useEffect(() => {
     setSubMenuIndex(0);
@@ -65,7 +71,14 @@ export default function Home() {
 
   return (
     <div>
-      <Banner backgroundImage={bannerImage} title="Fixed income market" />
+      <Banner
+        backgroundImage={bannerImage}
+        title={bannerTitle || "Fixed income market"}
+        description={
+          (currentMenu.menu && currentMenu.menu[selectedIndex]?.description) ||
+          ""
+        }
+      />
       <Menu
         items={menuItems}
         step={selectedIndex}

@@ -22,7 +22,7 @@ function TradingFAQ() {
               }
             ></Accordion>
           </div>
-          <div className="pb-7">
+          <div className="pb-7 text-[#707377] text-[16px] border-b border-[#A8965B]">
             <Accordion title={"How do I start trading ?"}></Accordion>
           </div>
         </div>

@@ -6,7 +6,7 @@ function ListingFAQs() {
   return (
     <Card width="w-[100%]">
       <div className="flex mx-5">
-        <div className="w-[100%] flex flex-col border-b border-gray mb-8">
+        <div className="w-[100%] flex flex-col border-b border-[#A8965B] mb-8">
           <h1 className="text-[32px] font-sans font-normal border-b pt-8 pb-6 mb-7">
             Frequently asked questions{" "}
           </h1>

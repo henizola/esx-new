@@ -24,7 +24,7 @@ function CorporateBonds() {
           />
         </div>
         <div className="w-[62%] flex px-5 pt-10  flex-col">
-          <h1 className="text-[40px] font-sans font-light mt-0 pt-0 border-b border-black">
+          <h1 className="text-[30px] font-sans font-light mt-0 pt-0 border-b border-[#A8965B]">
             Corporate Bonds{" "}
           </h1>
 
@@ -34,7 +34,7 @@ function CorporateBonds() {
                 <div
                   key={index}
                   className={`py-5 font-normal text-[14px] font-sans ${
-                    lists.length - 1 !== index && "border-b border-black"
+                    lists.length - 1 !== index && "border-b border-[#A8965B]"
                   }`}
                 >
                   {item}

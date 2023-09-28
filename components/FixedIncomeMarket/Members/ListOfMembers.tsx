@@ -55,10 +55,10 @@ function ListOfMembers() {
                 />
               </div>
               <div className="bg-white ml-1 px-5 py-3 w-[74%]">
-                <h1 className="py-5 font-normal text-[32px] font-sans">
+                <h1 className="font-normal text-[32px] font-sans">
                   {member.title}
                 </h1>
-                <div className="py-1 font-normal text-[14px] font-sans text-gray">
+                <div className="py-1 font-normal text-[14px] font-sans text-[#707377]">
                   <div className="flex">
                     <h4 className="text-black pr-2">Email:</h4>
                     <p>{member.email}</p>

@@ -9,11 +9,13 @@ function TradingOverview() {
         <div className="w-[55%] px-5 py-7 h-full">
           <div className="w-[100%] flex flex-col justify-between">
             <div>
-              <p className="text-[12px] font-sans font-normal">Overview</p>
+              <p className="text-[12px] font-sans font-normal text-[#001F59]">
+                Overview
+              </p>
               <h1 className="text-[30px] font-sans font-normal  pt-5 pb-4">
                 Trading{" "}
               </h1>
-              <p className="w-[90%]  text-[16px] font-sans font-normal leading-6 text-gray ">
+              <p className="w-[90%]  text-[16px] font-sans font-normal leading-6 text-[#707377] ">
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

@@ -18,12 +18,10 @@ const SelectedPage = ({ index }: { index: number }) => {
   }
 };
 
-function Instruments({ index }: { index: number }) {
-  return (
-    <div>
-      <SelectedPage index={index} />
-    </div>
-  );
-}
+const Instruments = ({ index }: { index: number }) => {
+  console.log("instruments", SelectedPage({ index }));
+  if (SelectedPage({ index })) return <SelectedPage index={index} />;
+  else return null;
+};
 
 export default Instruments;

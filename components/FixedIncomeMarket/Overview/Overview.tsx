@@ -36,14 +36,14 @@ const Overview = () => {
               />
             </div>
             <div className="w-[62%] flex  flex-col py-7 px-5">
-              <p className="text-[12px] font-sans font-normal pb-6">
+              <p className="text-[12px] text-[#001F59] font-sans font-semibold pb-6">
                 Overview{" "}
               </p>
-              <h1 className="text-[30px] font-sans font-light pb-6">
+              <h1 className="text-[30px] font-sans font-normal pb-6">
                 Fixed income market{" "}
               </h1>
 
-              <p className="text-[16px] font-sans font-[400] mt-2 pt-0 leading-6 text-[#707377] pb-14">
+              <p className="text-[16px] font-sans font-normal mt-2 pt-0 leading-6 text-[#707377] pb-14">
                 The ESX Fixed Income Market is a market where participants buy
                 and sell debt securities, either directly from the issuer
                 through the primary market, or afterwards through the secondary
@@ -74,12 +74,12 @@ const Overview = () => {
           <Card width="w-[100%] px-6 py-7">
             <div className="flex ">
               <div className="w-[100%] flex  flex-col  mt-0 pt-0">
-                <h1 className="text-[24px] font-sans font-normal mt-0 pt-0">
+                <h1 className="text-[20px] font-sans font-normal mt-0 pt-0">
                   The following instruments are listed and traded in ESX’s Fixed
                   Income Market.{" "}
                 </h1>
 
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-2 pt-0 leading-6 text-gray">
+                <p className="w-[100%]  text-[16px] font-sans font-light mt-2 pt-0 leading-6 text-[#707377]">
                   The ESX Fixed Income market will facilitate the listing,
                   quoting, and trading of debt instruments with the aim to
                   increase efficiency, transparency, and liquidity of the

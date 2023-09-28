@@ -53,7 +53,7 @@ function ListingRules() {
                   <div className="mx-4">
                     {sublists.map((subitem, index) => {
                       return (
-                        <div className="relative flex items-center text-[15px] font-sans font-light text-gray mt-2 pl-[180px] pr-16 leading-6 gap-2">
+                        <div className="relative flex items-center text-[15px] font-sans font-light text-[#707377] mt-2 pl-[180px] pr-16 leading-6 gap-2">
                           <div>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
