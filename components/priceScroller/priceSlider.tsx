@@ -46,18 +46,18 @@ const StockPriceAutoScroller: React.FC = () => {
     arrows: false,
   };
 
-  useEffect(() => {
-    // Simulate real-time updates (replace with WebSocket or API calls)
-    const interval = setInterval(() => {
-      const updatedStocks = stocks.map((stock) => ({
-        ...stock,
-        price: stock.price + Math.random() * 100 - 5, // Simulate price change
-      }));
-      setStocks(updatedStocks);
-    }, 2000); // Update every 2 seconds
+  // useEffect(() => {
+  //   // Simulate real-time updates (replace with WebSocket or API calls)
+  //   const interval = setInterval(() => {
+  //     const updatedStocks = stocks.map((stock) => ({
+  //       ...stock,
+  //       price: stock.price + Math.random() * 100 - 5, // Simulate price change
+  //     }));
+  //     setStocks(updatedStocks);
+  //   }, 2000); // Update every 2 seconds
 
-    return () => clearInterval(interval);
-  }, [stocks]);
+  //   return () => clearInterval(interval);
+  // }, [stocks]);
   return (
     <div className='max-w-[100vw] py-5'>
       <Slider {...settings} className=' m-0 p-0'>

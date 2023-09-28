@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 interface BannerProps {
   backgroundImage: StaticImageData;
   title: string;
-  description: string;
+  description?: string;
 }
 
 const Banner: React.FC<BannerProps> = ({

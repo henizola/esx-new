@@ -18,10 +18,10 @@ const Accordion: React.FC<AccordionProps> = ({
   };
 
   return (
-    <div className={background}>
+    <div>
       <div
         className={`p-4 cursor-pointer 
-           ${background ? " text-white" : "text-black"} flex justify-between
+           ${!background ? " text-white" : "text-black"} flex justify-between
     `}
         onClick={toggleAccordion}
       >
@@ -58,7 +58,7 @@ const Accordion: React.FC<AccordionProps> = ({
           </svg>
         )}
       </div>
-      {isOpen && <div className=' bg-white'>{children}</div>}
+      {isOpen && <div className={`${background} p-4`}>{children}</div>}
     </div>
   );
 };
