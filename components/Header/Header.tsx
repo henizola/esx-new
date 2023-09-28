@@ -36,6 +36,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
         href={item.href}
         className={`group  flex items-center justify-between px-4 py-5 text-sm relative`}
         onMouseEnter={openSubMenu}
+        onClick={() => setNumber(0)}
       >
         {item.name}
         {hasSubMenu && (
@@ -45,34 +46,34 @@ const MenuItem: React.FC<MenuItemProps> = ({
             &#9662;
           </span>
         )}
-        <span className='absolute w-full h-1 bg-transparent transition-transform transform scale-x-0 group-hover:scale-x-100'></span>
+        <span className="absolute w-full h-1 bg-transparent transition-transform transform scale-x-0 group-hover:scale-x-100"></span>
       </Link>
       {hasSubMenu && showSubMenu && (
         <div
           style={{ listStyle: "none" }}
-          className='fixed w-[85vw]  z-10 min-h-[65vh] left-[7vw] p-7 mx-3 hidden mt--1 space-y-1 bg-primary-golden primary-blue group-hover:block transform scale-x-0 group-hover:scale-x-100 '
+          className="fixed w-[85vw]  z-10 min-h-[65vh] left-[7vw] p-7 mx-3 hidden mt--1 space-y-1 bg-primary-golden primary-blue group-hover:block transform scale-x-0 group-hover:scale-x-100 "
           onMouseLeave={closeSubMenu}
         >
           <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            color='white'
-            viewBox='0 0 24 24'
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            color="white"
+            viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke='currentColor'
-            className='w-8 h-8  float-right m-2 right-4 cursor-pointer absolute'
+            stroke="currentColor"
+            className="w-8 h-8  float-right m-2 right-4 cursor-pointer absolute"
             onClick={closeSubMenu}
           >
             <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
 
-          <div className='grid grid-cols-4  pt-10 '>
+          <div className="grid grid-cols-4  pt-10 ">
             {item.submenu!.map((subItem) => (
-              <div key={subItem.name} className='flex flex-col'>
+              <div key={subItem.name} className="flex flex-col">
                 <Link
                   href={subItem.href}
                   onClick={() => {
@@ -83,7 +84,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                     subItem.current ? "bg-blue-200" : ""
                   } px-4 py-2  block w-fit broder text-white`}
                 >
-                  <span className='hover:underline font-bold text-xl'>
+                  <span className="hover:underline font-bold text-xl">
                     {" "}
                     {subItem.name}
                   </span>
@@ -163,7 +164,7 @@ const navigation: MenuItem[] = [
   },
   {
     name: "Equity Market",
-    href: "/equity-market",
+    href: "/equity-market/listing",
     current: false,
     value: 0,
     submenu: [
@@ -177,56 +178,56 @@ const navigation: MenuItem[] = [
           {
             name: "Market Segments",
             value: 0,
-            href: "/equity-market",
+            href: "/equity-market/listing",
             current: false,
           },
           {
             name: "Listing Rules, Requirements, Benefits",
-            href: "/equity-market",
+            href: "/equity-market/listing",
             value: 1,
             current: false,
           },
           {
             name: "Listing FAQs",
             value: 2,
-            href: "/equity-market",
+            href: "/equity-market/listing",
             current: false,
           },
           {
             name: "Listed Companies",
 
-            href: "/equity-market",
+            href: "/equity-market/listing",
             current: false,
           },
           {
             name: "Notice to Issuers",
 
-            href: "/equity-market",
+            href: "/equity-market/listing",
             current: false,
           },
           {
             name: "Other products (REITs, ETFs)",
-            href: "/equity-market",
+            href: "/equity-market/listing",
             current: false,
           },
         ],
       },
       {
         name: "Trade",
-        href: "/equity-market",
+        href: "/equity-market/trade",
         current: false,
         value: 1,
         submenu: [
           {
             name: "Trade on ESX",
             value: 0,
-            href: "/equity-market",
+            href: "/equity-market/trade",
             current: false,
           },
           {
             name: "Members Directory",
             value: 1,
-            href: "/equity-market",
+            href: "/equity-market/trade",
             current: false,
           },
           {
@@ -252,50 +253,79 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Members",
-        href: "/equity-market",
+        href: "/equity-market/members",
         current: false,
         value: 2,
         submenu: [
           {
             name: "How to Become a Member",
-            href: "/equity-market",
+            href: "/equity-market/members",
+            value: 0,
             current: false,
           },
-          { name: "Membership Rules", href: "/equity-market", current: false },
-          { name: "List of Members", href: "/equity-market", current: false },
+          {
+            name: "Membership Rules",
+            value: 1,
+            href: "/equity-market/members",
+            current: false,
+          },
+          {
+            name: "List of Members",
+            value: 2,
+            href: "/equity-market/members",
+            current: false,
+          },
         ],
       },
       {
         name: "Trading and Operations",
-        href: "#",
+        href: "/equity-market/trading-operations",
         current: false,
         submenu: [
           {
             name: "Trading Market Structure",
-            href: "/equity-market",
+            href: "/equity-market/trading-operations",
+            value: 0,
             current: false,
           },
-          { name: "Trading Rules", href: "/equity-market", current: false },
+          {
+            name: "Trading Rules",
+            value: 1,
+            href: "/equity-market/trading-operations",
+            current: false,
+          },
           {
             name: "Procedures and Manuals",
-            href: "/equity-market",
+            href: "/equity-market/trading-operations",
+            current: false,
+            value: 2,
+          },
+          {
+            name: "Trading FAQ",
+            value: 3,
+            href: "/equity-market/trading-operations",
             current: false,
           },
-          { name: "Trading FAQ", href: "/equity-market", current: false },
           { name: "Trading Platform", href: "/equity-market", current: false },
         ],
       },
       {
         name: "Regulatory Framework",
-        href: "/equity-market",
+        href: "/equity-market/regulatory-framework",
         current: false,
         submenu: [
           {
             name: "Capital Market Regulatory Environment",
-            href: "/equity-market",
+            href: "/equity-market/regulatory-framework",
+            current: false,
+            value: 0,
+          },
+          {
+            name: "Tax",
+            value: 1,
+            href: "/equity-market/regulatory-framework",
             current: false,
           },
-          { name: "Tax", href: "/equity-market", current: false },
         ],
       },
       {
@@ -318,26 +348,30 @@ const navigation: MenuItem[] = [
     href: "/fixed-income-market",
     current: false, // Change to true if this section is currently active
     submenu: [
-      { name: "Overview", href: "/fixed-income-market", current: false },
+      { name: "Overview", value: 0, href: "/fixed-income-market", current: false },
       {
         name: "Instruments",
         href: "/fixed-income-market",
         current: false,
+        value: 1,
         submenu: [
           {
             name: "T-Bills and Bonds",
             href: "/fixed-income-market",
             current: false,
+            value: 0,
           },
           {
             name: "Corporate Bonds",
             href: "/fixed-income-market",
             current: false,
+            value: 1,
           },
           {
             name: "Repurchase Agreements / Repos",
             href: "/fixed-income-market",
             current: false,
+            value: 2,
           },
           {
             name: "Other Instruments",
@@ -350,21 +384,25 @@ const navigation: MenuItem[] = [
         name: "Listing and Admission to Trading",
         href: "/fixed-income-market",
         current: false,
+        value: 2,
         submenu: [
           {
             name: "Bond IPO / Debt Public Issue",
             href: "/fixed-income-market",
             current: false,
+            value: 0,
           },
           {
             name: "Listing Rules",
             href: "/fixed-income-market",
             current: false,
+            value: 1,
           },
           {
             name: "Listing FAQs",
             href: "/fixed-income-market",
             current: false,
+            value: 2,
           },
         ],
       },
@@ -372,16 +410,19 @@ const navigation: MenuItem[] = [
         name: "Trading",
         href: "/fixed-income-market",
         current: false,
+        value: 3,
         submenu: [
           {
             name: "Trading Overview",
             href: "/fixed-income-market",
             current: false,
+            value: 0,
           },
           {
             name: "Find a Broker",
             href: "/fixed-income-market",
             current: false,
+            value: 1,
           },
           {
             name: "Listed Securities",
@@ -414,26 +455,29 @@ const navigation: MenuItem[] = [
         name: "Members",
         href: "/members",
         current: false,
+        value: 4,
         submenu: [
-          { name: "How to Become a Member", href: "/members", current: false },
-          { name: "Membership Rules", href: "/members", current: false },
-          { name: "List of Members", href: "/members", current: false },
+          { name: "How to Become a Member",  value: 0, href: "/members", current: false },
+          { name: "Membership Rules", value: 1,  href: "/members", current: false },
+          { name: "List of Members", value: 2,  href: "/members", current: false },
         ],
       },
       {
         name: "Trading and Operations",
         href: "/members",
         current: false,
+        value: 5,
         submenu: [
           {
             name: "Trading Market Structure",
             href: "/members",
             current: false,
+            value: 0,
           },
-          { name: "Trading Rules", href: "/members", current: false },
-          { name: "Procedures and Manuals", href: "/members", current: false },
-          { name: "Trading FAQ", href: "/members", current: false },
+          { name: "Trading Rules", value: 1, href: "/members", current: false },
+          { name: "Procedures and Manuals", value: 2, href: "/members", current: false },
           { name: "Trading Platform", href: "/members", current: false },
+          { name: "Trading FAQ", value: 3, href: "/members", current: false },
         ],
       },
       {
@@ -547,12 +591,22 @@ const navigation: MenuItem[] = [
     href: "/news-and-media ",
     current: false, // Change to true if this section is currently active
     submenu: [
-      { name: "Latest News", href: "/news-and-media", current: false },
-      { name: "Events", href: "/news-and-media", current: false },
-      { name: "Press Releases", href: "/news-and-media", current: false },
-      { name: "Gallery", href: "/news-and-media", current: false },
-      { name: "Downloads", href: "/news-and-media", current: false },
-      { name: "Contact Us", href: "/news-and-media", current: false },
+      {
+        name: "Latest News",
+        value: 0,
+        href: "/news-and-media",
+        current: false,
+      },
+      { name: "Events", value: 1, href: "/news-and-media", current: false },
+      {
+        name: "Press Releases",
+        value: 2,
+        href: "/news-and-media",
+        current: false,
+      },
+      { name: "Gallery", value: 3, href: "/news-and-media", current: false },
+      { name: "Downloads", value: 4, href: "/news-and-media", current: false },
+      { name: "Contact Us", value: 5, href: "/news-and-media", current: false },
     ],
   },
   {
@@ -598,42 +652,42 @@ const Header: React.FC = () => {
 
   return (
     <Disclosure
-      as='nav'
-      className='bg-white-800  mx-0 w-screen py-0 px-0 shadow-md '
+      as="nav"
+      className="bg-white-800  mx-0 w-screen py-0 px-0 shadow-md "
     >
       {({ open }) => (
         <>
-          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  py-0'>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  py-0">
             <div
-              className='relative flex h-16 items-center justify-between'
+              className="relative flex h-16 items-center justify-between"
               style={{ height: "fit-content" }}
             >
-              <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:underline hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
-                  <span className='absolute -inset-0.5' />
-                  <span className='sr-only'>Open main menu</span>
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:underline hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
-                <Link href='/' className='flex flex-shrink-0 items-center'>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <Link href="/" className="flex flex-shrink-0 items-center">
                   <Image
-                    className='h-8 w-auto'
+                    className="h-8 w-auto"
                     src={logo.src}
-                    alt='Your Company'
+                    alt="Your Company"
                     width={60}
                     height={50}
                     style={{ height: "22px" }}
                   />
                 </Link>
-                <div className='hidden sm:ml-6 sm:block'>
-                  <div className='flex space-x-4  '>
-                    <nav className='flex space-x-4'>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4  ">
+                    <nav className="flex space-x-4">
                       {navigation.map((item) => (
                         <MenuItem
                           key={item.name}
@@ -646,22 +700,22 @@ const Header: React.FC = () => {
                     </nav>
                   </div>
                 </div>
-                <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                  <button type='button' className='relative '>
-                    <span className='absolute -inset-1.5' />
-                    <span className='sr-only'>View notifications</span>
+                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                  <button type="button" className="relative ">
+                    <span className="absolute -inset-1.5" />
+                    <span className="sr-only">View notifications</span>
                     <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
                       strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='w-6 h-6'
+                      stroke="currentColor"
+                      className="w-6 h-6"
                     >
                       <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z'
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                       />
                     </svg>
                   </button>
