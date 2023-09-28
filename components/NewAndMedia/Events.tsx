@@ -308,7 +308,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
           </h3>
           <p className="text-center text-black text-base font-normal mb-5 mt-[6px] font-['Open Sans']">
             Get in touch with our dedicated team today! Whether you have
-            questions, feedback, or collaboration ideas, we're here to assist
+            questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
           <button className="text-center w-fit rounded-md bg-primary-blue px-5 p-1 text-white text-base font-semibold font-['Open Sans']">

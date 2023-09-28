@@ -229,7 +229,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           </h1>
           <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
             Get in touch with our dedicated team today! Whether you have
-            questions, feedback, or collaboration ideas, we're here to assist
+            questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
