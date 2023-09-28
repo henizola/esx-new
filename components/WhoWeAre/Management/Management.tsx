@@ -151,8 +151,9 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
             Contact the team
           </h1>
           <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
-            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-            consectetuer adipiscing
+            Get in touch with our dedicated team today! Whether you have
+            questions, feedback, or collaboration ideas, we're here to assist
+            you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
             <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>

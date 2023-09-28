@@ -69,15 +69,19 @@ export default function HomeSlider() {
       <Slider {...settings} className=' m-0 p-0'>
         {slides.map((slide, index) => (
           <>
-            <div className='absolute inset-0 opacity-10 bg-light-blue z-10'></div>
-
-            <Image
-              src={slide.image}
-              alt={slide.alt}
-              height={100}
-              width={100}
-              className=' inset-0  w-[100vw] z-0 object-cover'
-            />
+            <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
+            <div className='relative'>
+              <h1 className='absolute top-[50%] -translate-y-[50%] text-white text-[40px] font-semibold  w-[100%] text-center z-50'>
+                {slide.title}
+              </h1>
+              <Image
+                src={slide.image}
+                alt={slide.alt}
+                height={100}
+                width={100}
+                className=' inset-0  w-[100vw] max-height-[90vh] z-0 object-cover'
+              />
+            </div>
           </>
         ))}
       </Slider>

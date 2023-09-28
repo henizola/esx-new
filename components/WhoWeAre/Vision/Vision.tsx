@@ -210,7 +210,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               <div className=' flex py-5 mx-10  p-2'>
                 <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                   <span className='text-[12px] font-semibold text-primary-blue'>
-                    Market Development
+                    Primary Function
                   </span>
                   <p className='text-[14px] w-[100%] mt-2'>
                     {" "}
@@ -316,7 +316,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   <div className='flex flex-col justify-between h-[100%] '>
                     <div>
                       <span className='text-[12px] font-semibold text-primary-blue'>
-                        Market Development
+                        Secondary Function
                       </span>
                       <p className='text-[14px] w-[100%] mt-2'>
                         {" "}
