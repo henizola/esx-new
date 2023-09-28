@@ -576,7 +576,7 @@ const Header: React.FC = () => {
                 </Disclosure.Button>
               </div>
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='flex flex-shrink-0 items-center'>
+                <Link href='/' className='flex flex-shrink-0 items-center'>
                   <Image
                     className='h-8 w-auto'
                     src={logo.src}
@@ -585,7 +585,7 @@ const Header: React.FC = () => {
                     height={50}
                     style={{ height: "22px" }}
                   />
-                </div>
+                </Link>
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-4  '>
                     <nav className='flex space-x-4'>

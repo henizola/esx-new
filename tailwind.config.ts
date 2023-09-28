@@ -23,6 +23,9 @@ const config: Config = {
       lineHeight: {
         "100": "100px",
       },
+      animation: {
+        scrolling: "scrolling 10s linear infinite",
+      },
     },
   },
   plugins: [],
