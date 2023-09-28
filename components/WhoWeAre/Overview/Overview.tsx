@@ -143,7 +143,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 <div className='flex p-0 mx-0'>
                   <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
                     <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
-                      ESX markets
+                      Main markets
                     </h1>
 
                     <div className='w-[100%] flex  flex-col  mt-0 px-10 py-5'>
@@ -184,23 +184,21 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               </Card>
               <Card width='w-[100%] pb-10 h-[100%]'>
                 <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
-                  ESX markets
+                  Functions
                 </h1>
 
                 <div className='w-[100%] flex  flex-col  mt-0 px-10 py-5'>
                   <p className='w-[100%]  text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
-                    ESX is organized as having two main markets (ESX equity and
-                    fixed income markets) and an alternative market that hosts
-                    various market place offerings and services geared towards
-                    supporting the growth of small and medium enterprises (SMEs)
+                    The ESX Fixed Income Market facilitates the trading of debt
+                    securities with the aim to increase efficiency,
+                    transparency, and liquidity of the fixed income market. The
+                    fixed income segment will also include a trading platform
+                    for short-term money market instruments such as governmetn
+                    t-bills, commercial papers and interbank money market
+                    including Repurchase Agreements (Repos).
                   </p>
                 </div>
 
-                <p className='w-[100%]  text-[14px] font-sans font-normal  pt-0  mt-0 px-10  leading-6 text-gray'>
-                  ESX Alternative Market segment provides platform for SME’s to
-                  raise growth and working capital via dedicated equity
-                  crowdfunding and electronic receivables discounting platforms.
-                </p>
                 <Link href='#' className='flex text-[16px] mt-5 px-10 '>
                   View more{" "}
                   <svg
@@ -230,8 +228,9 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             Contact the team
           </h1>
           <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
-            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-            consectetuer adipiscing
+            Get in touch with our dedicated team today! Whether you have
+            questions, feedback, or collaboration ideas, were here to assist
+            you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
             <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>
