@@ -122,60 +122,88 @@ const navigation: MenuItem[] = [
     submenu: [
       {
         name: "Welcome message",
-        href: "/",
+        href: "/about-us",
         current: false,
         value: 0,
       },
       { name: "Overview", href: "/#overview", current: false, value: 1 },
       {
         name: "Vision & Mission Statement",
-        href: "/",
+        href: "/about-us",
         current: false,
         value: 2,
       },
       {
         name: "Meet our Team",
-        href: "/",
+        href: "/about-us",
         current: false,
         value: 3,
         submenu: [
           {
             name: "Organizational Structure",
-            href: "#",
+            href: "/about-us",
             current: false,
             value: 3,
           },
 
-          { name: "Board of Directors", href: "/", current: false, value: 4 },
-          { name: "Management", href: "/", current: false, value: 5 },
-          { name: "Staff", href: "/", current: false, value: 6 },
+          {
+            name: "Board of Directors",
+            href: "/about-us",
+            current: false,
+            value: 4,
+          },
+          { name: "Management", href: "/about-us", current: false, value: 5 },
+          { name: "Staff", href: "/about-us", current: false, value: 6 },
         ],
       },
-      { name: "ESX Reports", href: "/", current: false, value: 6 },
-      { name: "Careers", href: "/", current: false, value: 7 },
-      { name: "Tenders", href: "/", current: false, value: 8 },
+      { name: "ESX Reports", href: "/about-us", current: false, value: 6 },
+      { name: "Careers", href: "/about-us", current: false, value: 7 },
+      { name: "Tenders", href: "/about-us", current: false, value: 8 },
     ],
   },
   {
     name: "Equity Market",
     href: "/equity-market",
     current: false,
+    value: 0,
     submenu: [
-      { name: "Overview", href: "/equity-market#", current: false },
+      { name: "Overview", value: 0, href: "/equity-market#", current: false },
       {
         name: "Listing on ESX",
         href: "/equity-market",
+        value: 0,
         current: false,
         submenu: [
-          { name: "Market Segments", href: "/equity-market", current: false },
           {
-            name: "Listing Rules, Requirements, Benefits",
+            name: "Market Segments",
+            value: 0,
             href: "/equity-market",
             current: false,
           },
-          { name: "Listing FAQs", href: "/equity-market", current: false },
-          { name: "Listed Companies", href: "/equity-market", current: false },
-          { name: "Notice to Issuers", href: "/equity-market", current: false },
+          {
+            name: "Listing Rules, Requirements, Benefits",
+            href: "/equity-market",
+            value: 1,
+            current: false,
+          },
+          {
+            name: "Listing FAQs",
+            value: 2,
+            href: "/equity-market",
+            current: false,
+          },
+          {
+            name: "Listed Companies",
+
+            href: "/equity-market",
+            current: false,
+          },
+          {
+            name: "Notice to Issuers",
+
+            href: "/equity-market",
+            current: false,
+          },
           {
             name: "Other products (REITs, ETFs)",
             href: "/equity-market",
@@ -187,20 +215,36 @@ const navigation: MenuItem[] = [
         name: "Trade",
         href: "/equity-market",
         current: false,
+        value: 1,
         submenu: [
-          { name: "Trade on ESX", href: "/equity-market", current: false },
-          { name: "Members Directory", href: "/equity-market", current: false },
+          {
+            name: "Trade on ESX",
+            value: 0,
+            href: "/equity-market",
+            current: false,
+          },
+          {
+            name: "Members Directory",
+            value: 1,
+            href: "/equity-market",
+            current: false,
+          },
           {
             name: "Direct Market Access",
             href: "/equity-market",
             current: false,
           },
-          { name: "Listed Securities", href: "/equity-market", current: false },
+          {
+            name: "Listed Securities",
+            href: "/equity-market",
+            current: false,
+          },
           { name: "Market Data", href: "/equity-market", current: false },
           { name: "Indices", href: "/equity-market", current: false },
           {
             name: "Market Announcements",
             href: "/equity-market",
+
             current: false,
           },
           { name: "Fees and Taxation", href: "/equity-market", current: false },
@@ -210,6 +254,7 @@ const navigation: MenuItem[] = [
         name: "Members",
         href: "/equity-market",
         current: false,
+        value: 2,
         submenu: [
           {
             name: "How to Become a Member",

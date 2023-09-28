@@ -68,22 +68,17 @@ export default function HomeSlider() {
     <div className='max-w-[100vw]'>
       <Slider {...settings} className=' m-0 p-0'>
         {slides.map((slide, index) => (
-          <div
-            key={index}
-            className='relative w-[100vw] bg-light-blue  m-0 p-0'
-          >
-            <div className='absolute inset-0 opacity-30 bg-light-blue z-10'></div>
-            <h1 className='absolute top-[50%] -translate-y-[50%] text-white text-[40px] font-semibold  w-[100%] text-center'>
-              Attracting new issuers and investors to the market
-            </h1>
+          <>
+            <div className='absolute inset-0 opacity-10 bg-light-blue z-10'></div>
+
             <Image
               src={slide.image}
               alt={slide.alt}
               height={100}
               width={100}
-              className=' inset-0  w-full z-0 object-cover'
+              className=' inset-0  w-[100vw] z-0 object-cover'
             />
-          </div>
+          </>
         ))}
       </Slider>
     </div>
