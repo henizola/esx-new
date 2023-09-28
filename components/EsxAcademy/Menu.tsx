@@ -1,10 +1,24 @@
 import React from "react";
 import Card from "../../components/Card/Card";
-import Banner from "../Banner/banner";
-import sliderbannerImage from "../../public/images/slider-background.png";
 
-const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
-  console.log("title", title, step);
+type Props = {
+  items: any;
+  step: number;
+  setStep: any;
+  title: string;
+  returnHome: any;
+  children: React.JSX.Element | null;
+};
+
+const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
+  const hasChildren = React.Children.toArray(children).some((child) => {
+    // Filter out null, undefined, and empty string children
+    return (
+      React.isValidElement(child) ||
+      (typeof child === "string" && child.trim() !== "")
+    );
+  });
+
   return (
     <>
       <div className="flex w-full  px-28 py-7 justify-center gap-5 ">
@@ -33,10 +47,15 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
                     fontWeight: step === index ? "400" : "300",
                   }}
                   onClick={() => {
-                    setStep(index);
+                    if (
+                      item?.disabled ||
+                      ["Regulatory Framework"].includes(item)
+                    )
+                      return;
+                    else setStep(index);
                   }}
                 >
-                  {item}
+                  {item.name || item}
                 </button>
               ))}
             </div>
@@ -67,9 +86,9 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
         </div>
       )}
       {title === "Courses and programs" && step === 1 && (
-        <div className="flex justify-end items-end">
-          <div className="flex text-[16px] px-5 py-5 mb-12 text-white  w-[50%] mx-auto rounded-lg justify-center items-end bg-primary-blue font-sans font-light tracking-widest gap-x-8">
-            <div className="rotate-180 border-l pl-8">
+        <div className="flex justify-end items-end mr-[15%]">
+          <div className="flex text-[16px] px-5 py-5 mb-12 text-white w-[60%] h-[58px] rounded-lg justify-center items-center bg-primary-blue font-sans font-light tracking-widest gap-x-8">
+            <div className="flex justify-center items-center rotate-180 border-l pl-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -89,14 +108,14 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
             <div>3</div>
             <div>4</div> <div>5</div> <div>6</div> <div>7</div>
             <div>8</div> <div>9</div> <div>...</div>
-            <div className="border-l pl-8">
+            <div className="flex justify-center items-center border-l pl-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-8 h-8 mt-1.5"
+                className="w-8 h-8"
               >
                 <path
                   strokeLinecap="round"

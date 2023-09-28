@@ -25,7 +25,7 @@ function TheAcademy() {
               </p>
               <Link
                 href="#"
-                className="flex text-[16px] font-semibold pt-5 pb-16"
+                className="flex text-[16px] font-semibold font-sans pt-5 pb-16"
               >
                 View more{" "}
                 <svg
@@ -65,11 +65,11 @@ function TheAcademy() {
                 The broad level objectives of the ESX Academy are:
               </h1>
               <div className="pt-3">
-                <li className="text-[14px] font-sans font-normal text-[#707377]">
+                <li className="text-[15px] font-sans font-normal text-[#707377]">
                   To educate various stakeholders on the role of capital markets
                   in general and the role, functions, and operations of ESX.
                 </li>
-                <li className="text-[14px] font-sans font-normal text-[#707377]">
+                <li className="text-[15px] font-sans font-normal text-[#707377]">
                   To be a learning center that offers free and paid courses,
                   workshops, and training to equip issuers, investors, capital
                   market service providers, financial market professionals, and
@@ -92,7 +92,7 @@ function TheAcademy() {
               </div>
               <Link
                 href="#"
-                className="flex text-[16px] font-semibold pt-4 pb-9"
+                className="flex text-[16px] font-semibold font-sans pt-4 pb-9"
               >
                 View more{" "}
                 <svg
@@ -130,21 +130,24 @@ function TheAcademy() {
             The target audience includes{" "}
           </h2>
           <div className="pt-4">
-            <li className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
+            <li className="text-[16px ] font-normal font-sans my-2 mt-4 text-[#707377]">
               Entrepreneurs, business operators, investors
             </li>
-            <li className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
+            <li className="text-[16px ] font-normal font-sans my-2 mt-4 text-[#707377]">
               Finance professionals
             </li>
-            <li className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
+            <li className="text-[16px ] font-normal font-sans my-2 mt-4 text-[#707377]">
               High school and University students
             </li>
-            <li className="text-[16px ] font-light my-2 mt-4 text-[#707377]">
+            <li className="text-[16px ] font-normal font-sans my-2 mt-4 text-[#707377]">
               Academic institutions
             </li>
           </div>
         </div>
-        <Link href="#" className="flex text-[16px] mt-5 px-0 pb-10">
+        <Link
+          href="#"
+          className="flex text-[16px] font-semibold font-sans mt-5 px-0 pb-10"
+        >
           View more{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

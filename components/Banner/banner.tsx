@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 interface BannerProps {
   backgroundImage: StaticImageData;
-  title: string;
+  title: any;
   description?: string;
   contentCenter?: boolean;
 }
