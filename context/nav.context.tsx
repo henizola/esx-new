@@ -28,7 +28,6 @@ export function NumberProvider({ children }: NumberProviderProps) {
   const [currentPage, setCurrentPage] = useState(0);
 
   const setNumber = (number: number) => {
-    console.log("i am called", number);
     setCurrentPage(number);
   };
 

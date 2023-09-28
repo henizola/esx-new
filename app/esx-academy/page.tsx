@@ -8,6 +8,7 @@ import TheAcademy from "@/components/EsxAcademy/TheAcademy";
 import CoursesAndPrograms from "@/components/EsxAcademy/CoursesAndPrograms";
 import EsxTrainingAcademy from "@/components/EsxAcademy/EsxTrainingAcademy";
 import FAQs from "@/components/EsxAcademy/FAQs";
+import { useNumber } from "@/context/nav.context";
 
 type Page = {
   menu: string[];
@@ -17,7 +18,7 @@ type Page = {
 export default function Home() {
   const [mainMenuIndex, setMainMenuIndex] = useState<number>(0);
   const [subMenuIndex, setSubMenuIndex] = useState<number>(0);
-
+  const { currentPage } = useNumber();
   const mainMenuItems = menus.map((menu) => menu.name);
 
   const SelectedPage = ({
@@ -51,11 +52,12 @@ export default function Home() {
   const selectedIndex = hasSubMenus ? subMenuIndex : mainMenuIndex;
 
   useEffect(() => {
-    setSubMenuIndex(0);
-  }, [mainMenuIndex]);
+    setMainMenuIndex(currentPage);
+  }, [currentPage]);
+
   return (
-    <div className="h-full">
-      <Banner backgroundImage={bannerImage} title="ESX Academy" />
+    <div className='h-full'>
+      <Banner backgroundImage={bannerImage} title='ESX Academy' />
       <Menu
         items={menuItems}
         step={selectedIndex}

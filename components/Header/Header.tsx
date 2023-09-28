@@ -77,6 +77,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                 <Link
                   href={subItem.href}
                   onClick={() => {
+                    typeof subItem.value === "number" && subItem.value;
                     setNumber(subItem.value ? subItem.value : 0);
                     closeSubMenu();
                   }}
@@ -127,7 +128,7 @@ const navigation: MenuItem[] = [
         current: false,
         value: 0,
       },
-      { name: "Overview", href: "/#overview", current: false, value: 1 },
+      { name: "Overview", href: "/about-us", current: false, value: 1 },
       {
         name: "Vision & Mission Statement",
         href: "/about-us",
@@ -154,7 +155,7 @@ const navigation: MenuItem[] = [
             value: 4,
           },
           { name: "Management", href: "/about-us", current: false, value: 5 },
-          { name: "Staff", href: "/about-us", current: false, value: 6 },
+          { name: "Staff", href: "/about-us", current: false },
         ],
       },
       { name: "ESX Reports", href: "/about-us", current: false, value: 6 },
@@ -172,7 +173,7 @@ const navigation: MenuItem[] = [
       {
         name: "Listing on ESX",
         href: "/equity-market",
-        value: 0,
+        value: 1,
         current: false,
         submenu: [
           {
@@ -232,23 +233,23 @@ const navigation: MenuItem[] = [
           },
           {
             name: "Direct Market Access",
-            href: "/equity-market",
+            href: "",
             current: false,
           },
           {
             name: "Listed Securities",
-            href: "/equity-market",
+            href: "",
             current: false,
           },
-          { name: "Market Data", href: "/equity-market", current: false },
-          { name: "Indices", href: "/equity-market", current: false },
+          { name: "Market Data", href: "", current: false },
+          { name: "Indices", href: "", current: false },
           {
             name: "Market Announcements",
-            href: "/equity-market",
+            href: "",
 
             current: false,
           },
-          { name: "Fees and Taxation", href: "/equity-market", current: false },
+          { name: "Fees and Taxation", href: "", current: false },
         ],
       },
       {
@@ -280,6 +281,7 @@ const navigation: MenuItem[] = [
       {
         name: "Trading and Operations",
         href: "/equity-market/trading-operations",
+        value: 0,
         current: false,
         submenu: [
           {
@@ -306,12 +308,13 @@ const navigation: MenuItem[] = [
             href: "/equity-market/trading-operations",
             current: false,
           },
-          { name: "Trading Platform", href: "/equity-market", current: false },
+          { name: "Trading Platform", href: "", current: false },
         ],
       },
       {
         name: "Regulatory Framework",
         href: "/equity-market/regulatory-framework",
+        value: 0,
         current: false,
         submenu: [
           {
@@ -332,8 +335,14 @@ const navigation: MenuItem[] = [
         name: "Market for Unlisted Securities",
         href: "/equity-market",
         current: false,
+        value: 0,
         submenu: [
-          { name: "Overview", href: "/equity-market", current: false },
+          {
+            name: "Overview",
+            href: "/equity-market",
+            value: 0,
+            current: false,
+          },
           {
             name: "Admission to Trading",
             href: "/equity-market",
@@ -658,16 +667,23 @@ const navigation: MenuItem[] = [
   {
     name: "ESX Academy",
     href: "/esx-academy",
-    current: false, // Change to true if this section is currently active
+    current: false,
+    value: 0,
     submenu: [
-      { name: "Overview", href: "/esx-academy", current: false },
-      { name: "Courses and Programs", href: "/esx-academy", current: false },
+      { name: "Overview", value: 0, href: "/esx-academy", current: false },
       {
-        name: "ESX Training Academy Calendar",
+        name: "Courses and Programs",
+        value: 1,
         href: "/esx-academy",
         current: false,
       },
-      { name: "FAQs", href: "/esx-academy", current: false },
+      {
+        name: "ESX Training Academy Calendar",
+        href: "/esx-academy",
+        value: 2,
+        current: false,
+      },
+      { name: "FAQs", href: "/esx-academy", current: false, value: 3 },
       { name: "Downloads", href: "/esx-academy", current: false },
     ],
   },

@@ -22,7 +22,9 @@ type Page = {
 };
 
 export default function Home() {
-  const [mainMenuIndex, setMainMenuIndex] = useState<number>(0);
+  const { currentPage } = useNumber();
+
+  const [mainMenuIndex, setMainMenuIndex] = useState<number>(currentPage);
   const [subMenuIndex, setSubMenuIndex] = useState<number>(0);
 
   const mainMenuItems = menus.map((menu) => menu.name);
@@ -64,10 +66,6 @@ export default function Home() {
     ? currentMenu.menu[selectedIndex]?.title ||
       currentMenu.menu[selectedIndex]?.name
     : "";
-
-  useEffect(() => {
-    setSubMenuIndex(0);
-  }, [mainMenuIndex]);
 
   return (
     <div>
