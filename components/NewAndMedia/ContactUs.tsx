@@ -24,15 +24,15 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
   ];
 
   return (
-    <div className="flex flex-col w-full p-0 m-0">
+    <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title="Contact Us"
-        description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
+        title='Contact Us'
+        description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
-        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
+      <div className='grid sm:grid-cols-7 gap-8 px-28 py-7'>
+        <Card width='col-span-2  flex flex-col text-left  py-[20px] px-[20px]'>
+          <h6 className='ml-2 mb-4 text-lg text-gray-600'>
             {"News and Media Center"}
           </h6>
           {items.map((item, index) => (
@@ -50,75 +50,75 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="col-span-5 space-y-8">
-          <div className="col-span-3 flex flex-col gap-8">
-            <Card width=" flex flex-col gap-[37px] pt-[30px] pb-[45px] pr-[46px] pl-[43px]    ">
+        <div className='col-span-5 space-y-8'>
+          <div className='col-span-3 flex flex-col gap-8'>
+            <Card width=' flex flex-col gap-[37px] pt-[30px] pb-[45px] pr-[46px] pl-[43px]    '>
               <h1 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 Enquiry Form
               </h1>
-              <div className="grid grid-cols-3 gap-[22px]">
+              <div className='grid grid-cols-3 gap-[22px]'>
                 <input
-                  placeholder="Title"
-                  type="text"
+                  placeholder='Title'
+                  type='text'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
                 <input
-                  placeholder="First Name"
-                  type="text"
+                  placeholder='First Name'
+                  type='text'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
                 <input
-                  placeholder="Last Name"
-                  type="text"
-                  className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
-                />
-              </div>
-              <div className="grid grid-cols-1 gap-[22px]">
-                <input
-                  placeholder="Email Address"
-                  type="email"
+                  placeholder='Last Name'
+                  type='text'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-[22px]">
+              <div className='grid grid-cols-1 gap-[22px]'>
                 <input
-                  placeholder="Company"
-                  type="text"
-                  className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
-                />
-                <input
-                  placeholder="Investor Type"
-                  type="text"
+                  placeholder='Email Address'
+                  type='email'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
               </div>
-              <div className="grid grid-cols-3 gap-[22px]">
+              <div className='grid grid-cols-2 gap-[22px]'>
                 <input
-                  placeholder="Work Phone"
-                  type="tel"
+                  placeholder='Company'
+                  type='text'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
                 <input
-                  placeholder="home Phone"
-                  type="tel"
-                  className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
-                />
-                <input
-                  placeholder="Fax number"
-                  type="text"
+                  placeholder='Investor Type'
+                  type='text'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
               </div>
-              <div className="grid grid-cols-1 gap-[22px]">
+              <div className='grid grid-cols-3 gap-[22px]'>
                 <input
-                  placeholder="type of enquiry"
-                  type="email"
+                  placeholder='Work Phone'
+                  type='tel'
+                  className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
+                />
+                <input
+                  placeholder='home Phone'
+                  type='tel'
+                  className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
+                />
+                <input
+                  placeholder='Fax number'
+                  type='text'
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
               </div>
-              <div className="grid grid-cols-1 gap-[22px]">
+              <div className='grid grid-cols-1 gap-[22px]'>
+                <input
+                  placeholder='type of enquiry'
+                  type='email'
+                  className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
+                />
+              </div>
+              <div className='grid grid-cols-1 gap-[22px]'>
                 <textarea
-                  placeholder="type of enquiry"
+                  placeholder='type of enquiry'
                   rows={6}
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
@@ -128,92 +128,92 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
               </button>
             </Card>
 
-            <div className="pr-[46px] pl-[43px]">
+            <div className='pr-[46px] pl-[43px]'>
               <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 Physical Address
               </h2>
-              <hr className=" mt-[18px] mb-[13px] border border-gray/30 " />
+              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
               <div className=" text-black text-base font-light font-['Open Sans']">
-                JSE Limited
+                ESX
                 <br />
-                One Exchange Square
+                Bole
                 <br />
-                Gwen Lane
+                Medhanialem
                 <br />
-                Sandown
+                Addis Ababa
                 <br />
                 2196
               </div>
             </div>
-            <div className="pr-[46px] pl-[43px]">
+            <div className='pr-[46px] pl-[43px]'>
               <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 GPS Coordinates
               </h2>
-              <hr className=" mt-[18px] mb-[13px] border border-gray/30 " />
+              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
               <div className=" text-black text-base font-light font-['Open Sans']">
                 Latitude: -26.1018
                 <br />
                 Longitude: 28.05671
               </div>
             </div>
-            <div className="pr-[46px] pl-[43px]">
+            <div className='pr-[46px] pl-[43px]'>
               <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 Postal Address
               </h2>
-              <hr className=" mt-[18px] mb-[13px] border border-gray/30 " />
+              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
               <div className=" text-black text-base font-light font-['Open Sans']">
                 Private Bag <br /> X991174Sandton, 2196
               </div>
             </div>
-            <div className="pr-[46px] pl-[43px]">
+            <div className='pr-[46px] pl-[43px]'>
               <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 Contact Information
               </h2>
-              <hr className=" mt-[18px] mb-[13px] border border-gray/30 " />
+              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
               {/* <div className=" text-black text-base font-light font-['Open Sans']">Private Bag X991174Sandton, 2196</div> */}
-              <div className="">
+              <div className=''>
                 <span className="text-black text-base font-light font-['Open Sans']">
                   Tel:{" "}
                 </span>
-                <span className="underline">
-                  +27 11 520 7000
+                <span className='underline'>
+                  +251 11 520 7000
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
                   Email:{" "}
                 </span>
-                <span className="underline">info@jse.co.za</span>
+                <span className='underline'>info@esx.com</span>
               </div>
             </div>
-            <div className="pr-[46px] pl-[43px]">
+            <div className='pr-[46px] pl-[43px]'>
               <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 Media Enquiry
               </h2>
-              <hr className=" mt-[18px] mb-[13px] border border-gray/30 " />
+              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
               {/* <div className=" text-black text-base font-light font-['Open Sans']">Private Bag X991174Sandton, 2196</div> */}
-              <div className="">
+              <div className=''>
                 <span className="text-black text-base font-normal font-['Open Sans']">
-                  Pheliswa Mayekiso
+                  Addis Ababa, Ethiopia
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
-                  Head: Group Communications
+                  Head: Bole
                   <br />
                   Email:{" "}
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans'] underline">
-                  pheliswam@jse.co.za
+                  info@esx.co
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
-                  Contact: +27 11 520 7495
+                  Contact: +251 11 520 7495
                   <br />
-                  Mobile: +27 66 261 7411
+                  Mobile: +251 11 261 7411
                   <br />
                   <br />
                 </span>
                 <span className="text-black text-base font-normal font-['Open Sans']">
-                  Paballo Makhetha
+                  2RCP+RR2,Addis Ababa
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
@@ -221,26 +221,26 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                   <br />
                   Tel: 011 520 7331
                   <br />
-                  Mobile: 066 261 7405
+                  Mobile: 011 261 7405
                   <br />
                   Email:{" "}
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans'] underline">
-                  paballom@jse.co.za
+                  contact@esx.com
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
                   <br />
                 </span>
                 <span className="text-black text-base font-normal font-['Open Sans']">
-                  JSE general enquiries:
+                  ESX general enquiries:
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
                   Email:{" "}
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans'] underline">
-                  info@jse.co.za
+                  inquiries@esx.com
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
@@ -251,7 +251,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
           </div>
         </div>
       </div>
-      <div className="bg-white py-[68px]">
+      <div className='bg-white py-[68px]'>
         <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
