@@ -138,7 +138,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                 <br />
                 Bole
                 <br />
-                Medhanialem
+                Flamingo
                 <br />
                 Addis Ababa
                 <br />
@@ -202,7 +202,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                   Email:{" "}
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans'] underline">
-                  info@esx.co
+                  info@esx.com
                   <br />
                 </span>
                 <span className="text-black text-base font-light font-['Open Sans']">
