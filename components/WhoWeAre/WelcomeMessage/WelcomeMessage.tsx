@@ -71,8 +71,8 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
         title='Welcome to ESX'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full lg:px-2 lg:px-28 sm:pt-0 lg:py-7  '>
+        <Card width='w-[30%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -89,8 +89,8 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <Card width='w-[70%] flex flex-row py-10 px-14'>
-          <div className='w-[38%] h-[100%] '>
+        <Card width='w-full sm:w-[100%] lg:flex lg:flex-row sm:flex-col sm:pt-0 lg:py-10 lg:px-14'>
+          <div className='w-full lg:w-[38%] h-[300px] lg:h-[100%] '>
             <Image
               height={200}
               width={200}
@@ -99,26 +99,26 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
               className='w-full object-cover h-[100%]'
             />
           </div>
-          <div className='w-[62%] flex  flex-col ml-10 mt-0 pt-0'>
-            <h1 className='text-[40px] font-sans font-light mt-0 pt-0'>
+          <div className='w-full  sm:w-[100%] lg:w-[62%] flex flex-col mt-12 lg:mt-0 px-5 pb-12'>
+            <h1 className=' text-center lg:text-left text-2xl lg:text-4xl font-sans font-light mt-0 pt-0'>
               Message from our CEO
             </h1>
-            <h1 className='text-[24px] font-sans font-normal mt-0 pt-0'>
+            <h1 className=' text-center lg:text-left text-xl sm:text-[24px] font-sans font-normal mt-0 pt-0'>
               Abebe Legese
             </h1>
-            <p className='text-[12px] font-sans font-normal mt-0 pt-0'>
+            <p className=' text-center lg:text-left text-sm sm:text-[12px] font-sans font-normal mt-0 pt-0'>
               Chief executive officer
             </p>
 
-            <p className='text-[16px] font-roboto font-normal mt-2 pt-0 leading-6 text-gray'>
-              Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+            <p className=' text-base text-[14px] lg:text-[16px] font-roboto font-normal mt-2 pt-0 leading-6 text-gray'>
+              Lorem ipsum dolor sit amet, consectLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
               erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
               tation ullamcorper suscipit lobortis”
             </p>
-            <Link href='#' className='flex text-[16px] mt-5'>
+            <Link href='#' className='flex text-base sm:text-[16px] mt-5'>
               View more{" "}
               <svg
                 xmlns='http://www.w3.org/2000/svg'

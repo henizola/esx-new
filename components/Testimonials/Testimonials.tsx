@@ -49,11 +49,11 @@ const settings = {
 
 const Testimonials: React.FC = () => {
   return (
-    <Slider {...settings} className='h-[50vh]'>
+    <Slider {...settings} className='mb-10 lg:mb-0 lg:h-[50vh]'>
       <div className='flex flex-col'>
-        <Card width='w-[80%] mx-[10%] mt-10 py-5 px-5 flex h-[fit-content] '>
+        <Card width='w-[80%] mx-[10%] mt-5 md:mt-10 py-2 md:py-5 px-5 flex h-[fit-content] '>
           <div className='w-[90%] ml-4'>
-            <h1 className='text-[14px] font-light text-[#001F5980] p-5 text-center'>
+            <h1 className='text-[12px] lg:text-[14px] font-light text-[#001F5980] lg:p-5 text-center'>
               “Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -71,9 +71,9 @@ const Testimonials: React.FC = () => {
         </h2>
       </div>
       <div className='flex flex-col'>
-        <Card width='w-[80%] mx-[10%] mt-10 py-5 px-5 flex h-[fit-content] '>
+        <Card width='w-[80%] mx-[10%] mt-5 md:mt-10 py-2 md:py-5 px-5 flex h-[fit-content] '>
           <div className='w-[90%] ml-4'>
-            <h1 className='text-[14px] font-light text-[#001F5980] p-5 text-center'>
+            <h1 className='text-[12px] lg:text-[14px] font-light text-[#001F5980] lg:p-5 text-center'>
               “Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

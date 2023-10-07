@@ -25,7 +25,7 @@ interface NumberProviderProps {
 }
 
 export function NumberProvider({ children }: NumberProviderProps) {
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(8);
 
   const setNumber = (number: number) => {
     setCurrentPage(number);

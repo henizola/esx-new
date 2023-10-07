@@ -10,7 +10,8 @@
 
 /* Style each individual dot */
 .slick-dots li {
-  margin: 0 5px; /* Adjust the spacing between dots as needed */
+  margin: 0 5px;
+  /* Adjust the spacing between dots as needed */
 }
 
 /* Style the arrow buttons */

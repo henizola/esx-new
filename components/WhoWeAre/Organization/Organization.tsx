@@ -37,8 +37,8 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
         title='Organizational structure'
         description='The Ethiopian Securities Exchange is organized as a share company in accordance with the Commercial Code of Ethiopia (2021).'
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full px-4 lg:px-28 py-7'>
+        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>About Us</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -62,17 +62,19 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                 <span className='text-[12px] font-semibold text-primary-blue'>
                   Market Development
                 </span>
-                <h1 className='text-[40px]'>Meet the team</h1>
-                <p className='text-[19px]  w-[100%] mt-2'>
+                <h1 className='text-[24px] md:text-[30px] lg:text-[40px]'>
+                  Meet the team
+                </h1>
+                <p className='text-[14px] md:text-[19px] w-[100%] mt-2'>
                   ESX impliments a corporate organization and a governance
                   framework following international best practices.
                 </p>
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-5 top-2 h-[20px]   '
+                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]   '
                   >
                     <path
                       fillRule='evenodd'
@@ -80,18 +82,18 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                       clipRule='evenodd'
                     />
                   </svg>
-                  <p className='pl-2 py-1 text-[16px] font-light'>
+                  <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Having a Board of directors, where at least 1/3 will be
                     independent, including representatives from the financial
                     and capital market ecosystem, issuers, investors etc.
                   </p>
                 </div>
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-5 top-2 h-[20px]   '
+                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]   '
                   >
                     <path
                       fillRule='evenodd'
@@ -99,18 +101,18 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                       clipRule='evenodd'
                     />
                   </svg>
-                  <p className='pl-2 py-1 text-[16px] font-light'>
+                  <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Having dedicated market committees for both equity and fixed
                     income markets that deal with the regulatory and delegated
                     enforcement functions of ESX.
                   </p>
                 </div>{" "}
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-5 top-2 h-[20px]   '
+                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]'
                   >
                     <path
                       fillRule='evenodd'
@@ -118,17 +120,17 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                       clipRule='evenodd'
                     />
                   </svg>
-                  <p className='pl-2 py-1 text-[16px] font-light'>
+                  <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Separates ‘ringfences’ operation and governance of the
                     market from shareholders interest on the exchange.
                   </p>
                 </div>{" "}
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-5 top-2 h-[20px]   '
+                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]   '
                   >
                     <path
                       fillRule='evenodd'
@@ -136,7 +138,7 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                       clipRule='evenodd'
                     />
                   </svg>
-                  <p className='pl-2 py-1 text-[16px] font-light'>
+                  <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Building an efficient management and human resource strategy
                     that caters for the development stages of the exchange.
                   </p>
@@ -145,8 +147,8 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
             </div>
           </Card>
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
-            <div className=' flex flex-col py-5 mx-10 h-[100%]   p-2'>
-              <div className='w-[100%] grid px-[100px]  gap-4  grid-cols-3 h-[100%]   mt-0 pt-0'>
+            <div className=' flex flex-col py-5 md:mx-10 h-[100%]   p-2'>
+              <div className='w-[100%] grid px-0 md:px-[20px] lg:px-[100px]  gap-4 grid-cols-2  md:grid-cols-3 h-[100%]   mt-0 pt-0'>
                 <div>
                   <Image
                     height={200}
@@ -195,7 +197,7 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                   </h1>
                 </div>
               </div>
-              <div className='w-[100%]  grid px-[100px]  gap-4  grid-cols-4 h-[100%]   mt-10 pt-0'>
+              <div className='w-[100%]  grid px-0 mt-10 lg:px-[100px]  gap-x-8 gap-y-5  grid-cols-2 md:grid-cols-4 h-[100%]  pt-2'>
                 <div>
                   <Image
                     height={200}
@@ -204,10 +206,10 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                     alt='manager'
                     className='w-[100%] h-[80%] object-cover'
                   />
-                  <h1 className='text-[14px] font-normal py-1'>
+                  <h1 className='text-[12px] font-normal py-1'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] text-gray font-normal'>
+                  <h1 className='text-[10px] text-gray font-normal'>
                     Meet the team
                   </h1>
                 </div>
@@ -220,10 +222,10 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                     alt='manager'
                     className='w-[100%] h-[80%] object-cover'
                   />
-                  <h1 className='text-[14px] font-normal py-1'>
+                  <h1 className='text-[12px] font-normal py-1'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] text-gray font-normal'>
+                  <h1 className='text-[10px] text-gray font-normal'>
                     Meet the team
                   </h1>
                 </div>
@@ -236,10 +238,10 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                     alt='manager'
                     className='w-[100%] h-[80%] object-cover'
                   />
-                  <h1 className='text-[14px] font-normal py-1'>
+                  <h1 className='text-[12px] font-normal py-1'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] text-gray font-normal'>
+                  <h1 className='text-[10px] text-gray font-normal'>
                     Meet the team
                   </h1>
                 </div>
@@ -252,10 +254,10 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                     alt='manager'
                     className='w-[100%] h-[80%] object-cover'
                   />
-                  <h1 className='text-[14px] font-normal py-1'>
+                  <h1 className='text-[12px] font-normal py-1'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] text-gray font-normal'>
+                  <h1 className='text-[10px] text-gray font-normal'>
                     Meet the team
                   </h1>
                 </div>
@@ -263,8 +265,8 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
             </div>
           </Card>
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
-            <div className=' flex flex-col py-5 mx-10 h-[100%]   p-2'>
-              <div className='w-[100%]  grid px-[100px]  gap-x-12  grid-cols-4 h-[100%]   mt-0 pt-2'>
+            <div className=' flex flex-col py-5 lg:mx-10 h-[100%]   p-2'>
+              <div className='w-[100%]  grid  lg:px-[100px]  gap-x-12  grid-cols-2  md:grid-cols-4 h-[100%]   mt-0 pt-2'>
                 <div>
                   <Image
                     height={200}
@@ -334,18 +336,18 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
         </div>
       </div>
 
-      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-14 '>
+      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
         <div className=''>
-          <h1 className='text-primary-blue text-[24px] font-bold w-[100%] text-center'>
+          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
             Contact the team
           </h1>
-          <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
+          <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
             Get in touch with our dedicated team today! Whether you have
             questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
-            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>
+            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-1 md:my-4 px-8'>
               Contact
             </button>
           </div>

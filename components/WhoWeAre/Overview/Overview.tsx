@@ -32,8 +32,8 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         title='Who we are'
         description='As the pioneer securities exchange, ESX aims to play a critical role in the development and growth of the Ethiopian capital market. ESX’s core objective is to facilitate access to capital and support effective capital allocation in a manner that supports Ethiopia’s economic growth. By developing a well-regulated and efficient capital market ecosystem, ESX will enable mobilization of financial resources for the Government, and private sector institutions while providing investors a reliable platform to invest in reliable and efficent environment.'
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full  px-5 lg:px-28 py-7'>
+        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>About Us</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -51,10 +51,10 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className='grid grid-cols-1 gap-3 w-[100%]'>
-          <Card width='w-[100%] p-4'>
-            <div className='flex py-10 mx-10'>
-              <div className='w-[60%] '>
-                <div className='w-[100%] flex  flex-col  mt-6 pt-0'>
+          <Card width='w-[100%]  p-4'>
+            <div className='flex ml-4 md:py-10 md:mx-10'>
+              <div className='w-[100%] md:w-[60%] '>
+                <div className='w-[100%] flex  flex-col  md:mt-6  pt-0'>
                   <h1 className='text-[30px] font-sans font-normal mt-0 pt-0'>
                     Who We Are
                   </h1>
@@ -67,7 +67,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     (No.1248/2021), and is licensed by the Ethiopian Capital
                     Market Authority (ECMA).
                   </p>
-                  <Link href='#' className='flex text-[16px] mt-10'>
+                  <Link href='#' className='flex text-[16px] mt-4 md:mt-10'>
                     View more{" "}
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -86,7 +86,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   </Link>
                 </div>
               </div>
-              <div className='w-[38%] ml-[3%]'>
+              <div className='hidden md:block w-[38%] ml-[3%]'>
                 {" "}
                 <Image
                   height={300}
@@ -100,8 +100,8 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           </Card>
           <div className='flex-col my-0 justify-between'>
             <div className='w-[100%] flex flex-col '>
-              <Card width='w-[100%] my-3 p-4'>
-                <div className='flex py-5 mx-10'>
+              <Card width='w-[100%]  p-4'>
+                <div className='flex mx-4 my-2 md:py-5 md:mx-10'>
                   <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                     <h1 className='text-[24px] font-sans font-normal mt-0 pt-0'>
                       ESX markets
@@ -117,7 +117,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                       transparent, and regulated venue listing equity securities
                       and subsequently other structured products.
                     </p>
-                    <Link href='#' className='flex text-[16px] mt-5'>
+                    <Link href='#' className='flex text-[16px] md:mt-5'>
                       View more{" "}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -138,7 +138,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 </div>
               </Card>
             </div>
-            <div className='grid grid-cols-2 gap-3 mt-4 '>
+            <div className='grid  grid-cols-1 md:grid-cols-2 gap-3 mt-4 '>
               <Card width='w-[100%] pb-10 h-[100%]'>
                 <div className='flex p-0 mx-0'>
                   <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
@@ -199,7 +199,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   </p>
                 </div>
 
-                <Link href='#' className='flex text-[16px] mt-5 px-10 '>
+                <Link href='#' className='flex text-[16px] md:mt-5 px-10 '>
                   View more{" "}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -222,18 +222,18 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         </div>
       </div>
 
-      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-14 '>
+      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
         <div className=''>
-          <h1 className='text-primary-blue text-[24px] font-bold w-[100%] text-center'>
+          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
             Contact the team
           </h1>
-          <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
+          <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
             Get in touch with our dedicated team today! Whether you have
             questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
-            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>
+            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-1 md:my-4 px-8'>
               Contact
             </button>
           </div>

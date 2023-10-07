@@ -25,9 +25,7 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'
         />
       </head>
-      <body
-        className={`  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}
-      >
+      <body className={`  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}>
         <NumberProvider>
           <Header />
           {children}

@@ -34,8 +34,8 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
         title='Our vision & mission'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full border px-4 lg:px-28 py-7'>
+        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -53,10 +53,10 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
           ))}
         </Card>
 
-        <div className='flex flex-col w-[70%]'>
-          <div className='grid grid-cols-1 gap-3  w-[100%]'>
-            <Card width='w-[100%] my-0 h-[100%] pb-10'>
-              <div className=' bg-primary-blue h-[68px] w-[94%] mt-10  float-right'>
+        <div className='flex flex-col w-100% lg:w-[70%]'>
+          <div className='grid grid-cols-1 gap-3 lg:gap-0 w-[100%]'>
+            <Card width='w-[100%] my-0 h-[100%] pb-2 md:pb-5'>
+              <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  md:mt-5 float-right'>
                 <Image
                   height={200}
                   width={200}
@@ -65,12 +65,11 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   className='w-[auto] object-cover h-[40px] ml-[30px] mt-4'
                 />
               </div>
-              <div className=' w-[95%] flex py-5 mx-10  p-4'>
-                <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
+              <div className=' w-[95%] flex md:py-5 mx-4 md:mx-10  p-4'>
+                <div className='w-[100%] flex  flex-col lg:ml-10  mt-0 pt-0'>
                   <h1 className='text-[24px] italic  py-0 mb-0 pl-0 mt-0 text-left  w-[100%] font-sans font-normal '>
                     Our Mission
                   </h1>
-
                   <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 px-5 leading-6 text-gray'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -132,7 +131,9 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   </div>
                 </div>
               </div>
-              <div className=' bg-primary-blue h-[68px] w-[94%] mt-0  float-right'>
+            </Card>
+            <Card width='w-[100%] my-0 h-[100%] pb-5 md:pb-10'>
+              <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
                 <Image
                   height={200}
                   width={200}
@@ -141,8 +142,8 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   className='w-[auto] object-cover h-[40px] ml-[30px] mt-4'
                 />
               </div>
-              <div className=' w-[95%] flex py-0 mx-10  p-4'>
-                <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
+              <div className=' w-[95%] flex py-0 ml-4 md:mx-10  p-4'>
+                <div className='w-[100%] flex  flex-col lg:ml-10  mt-0 pt-0'>
                   <h1 className='text-[24px] italic  py-0 mb-2 pl-0 mt-5 text-left  w-[100%] font-sans font-normal '>
                     Our Vision
                   </h1>
@@ -167,7 +168,9 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   </div>
                 </div>
               </div>
-              <div className=' bg-primary-blue h-[68px] w-[94%] mt-5  float-right'>
+            </Card>
+            <Card width='w-[100%] my-0 h-[100%] pb-5 md:pb-10'>
+              <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
                 <Image
                   height={200}
                   width={200}
@@ -176,8 +179,8 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   className='w-[auto] object-cover h-[40px] ml-[30px] mt-4'
                 />
               </div>
-              <div className=' w-[95%] flex py-5 mx-10  p-4'>
-                <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
+              <div className=' w-[95%] flex py-5 ml-4 md:mx-10   p-4'>
+                <div className='w-[100%] flex  flex-col lg:ml-10  mt-0 pt-0'>
                   <h1 className='text-[24px] italic  py-2 mb-0 pl-0 mt-0 text-left  w-[100%] font-sans font-normal '>
                     Our Values
                   </h1>
@@ -205,9 +208,9 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
             </Card>
           </div>
 
-          <div className='grid grid-cols-2 mt-5 gap-3 w-[100%]'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 mt-5 gap-3 w-[100%]'>
             <Card width='w-[100%] my-0 h-[100%] pb-5'>
-              <div className=' flex py-5 mx-10  p-2'>
+              <div className=' flex py-5 mx-4 md:mx-10  p-2'>
                 <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                   <span className='text-[12px] font-semibold text-primary-blue'>
                     Primary Function
@@ -311,7 +314,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               </div>
             </Card>
             <Card width='w-[100%] my-0 h-[100%] pb-5'>
-              <div className=' flex py-5 mx-10 h-[100%]   p-2'>
+              <div className=' flex py-5 mx-4 md:mx-10  p-2'>
                 <div className='w-[100%] flex  flex-col h-[100%]   mt-0 pt-0'>
                   <div className='flex flex-col justify-between h-[100%] '>
                     <div>

@@ -33,8 +33,8 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
         title='Board of directors'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci '
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full  px-4 lg:px-28 py-7'>
+        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>About Us</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -53,10 +53,12 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
         </Card>
         <div className='grid grid-cols-1  gap-3 w-[100%]'>
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
-            <div className=' flex py-5 mx-10  p-2'>
+            <div className=' flex py-5 mx-5 md:mx-10  p-2'>
               <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
-                <h1 className='text-[40px]'>Board of directors</h1>
-                <p className='text-[16px]  w-[100%] mt-2'>
+                <h1 className='text-[28px] md:text-[40px]'>
+                  Board of directors
+                </h1>
+                <p className='text-[14px] md:text-[16px]  w-[100%] mt-2'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -65,24 +67,24 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
               </div>
             </div>
           </Card>
-          <div className='w-[100%] grid   gap-4   grid-cols-3 h-[100%]  pt-4'>
-            <Card width='w-[100%] my-0 h-[100%] pb-5 '>
-              <div className=' flex flex-col h-[100%] px-0  '>
+          <div className='w-[100%] grid   gap-4  grid-cols-1 md:grid-cols-3 h-[100%]  pt-4'>
+            <Card width='w-[100%] my-0 h-[fit-content] pb-5 '>
+              <div className=' flex flex-col h-[fit-content] px-0  '>
                 <div>
                   <Image
                     height={200}
                     width={200}
                     src={member1.src}
                     alt='manager'
-                    className='w-[100%] h-[60%] object-cover'
+                    className='w-[100%] h-[200px] lg:h-[60%] object-cover'
                   />
-                  <h1 className='text-[16px] font-normal p-5 pb-0'>
+                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
                     Board of director
                   </h1>
-                  <p className=' text-[16px]  p-5 pt-2'>
+                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -91,23 +93,23 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </Card>
-            <Card width='w-[100%] my-0 h-[100%] pb-5 '>
-              <div className=' flex flex-col h-[100%] px-0  '>
+            <Card width='w-[100%] my-0 h-[fit-content] pb-5 '>
+              <div className=' flex flex-col h-[fit-content] px-0  '>
                 <div>
                   <Image
                     height={200}
                     width={200}
                     src={member2.src}
                     alt='manager'
-                    className='w-[100%] h-[60%] object-cover'
+                    className='w-[100%] h-[200px] lg:h-[60%] object-cover'
                   />
-                  <h1 className='text-[16px] font-normal p-5 pb-0'>
+                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
                     Board of director
                   </h1>
-                  <p className=' text-[16px]  p-5 pt-2'>
+                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -116,23 +118,23 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </Card>
-            <Card width='w-[100%] my-0 h-[100%] pb-5 '>
-              <div className=' flex flex-col h-[100%] px-0  '>
+            <Card width='w-[100%] my-0 h-[fit-content] pb-5 '>
+              <div className=' flex flex-col h-[fit-content] px-0  '>
                 <div>
                   <Image
                     height={200}
                     width={200}
                     src={member3.src}
                     alt='manager'
-                    className='w-[100%] h-[60%] object-cover'
+                    className='w-[100%] h-[200px] lg:h-[60%] object-cover'
                   />
-                  <h1 className='text-[16px] font-normal p-5 pb-0'>
+                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
                     Board of director
                   </h1>
-                  <p className=' text-[16px]  p-5 pt-2'>
+                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -145,18 +147,18 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
         </div>
       </div>
 
-      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-14 '>
+      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
         <div className=''>
-          <h1 className='text-primary-blue text-[24px] font-bold w-[100%] text-center'>
+          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
             Contact the team
           </h1>
-          <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
+          <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
             Get in touch with our dedicated team today! Whether you have
             questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
-            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>
+            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-1 md:my-4 px-8'>
               Contact
             </button>
           </div>

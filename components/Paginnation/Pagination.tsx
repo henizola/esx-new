@@ -9,7 +9,7 @@ const Pagination = () => {
   };
 
   return (
-    <div className='flex justify-between items-center ml-[50%]  mt-12 w-[100%] bg-primary-blue py-4 px-8 bg-gray-200'>
+    <div className='flex max-w-[90vw] justify-between items-center md:ml-[50%]  mt-12 w-[100%] bg-primary-blue py-4 px-8 bg-gray-200'>
       <button
         className='flex items-center text-gray-600 hover:text-gray-900'
         onClick={() => handlePageChange(currentPage - 1)}

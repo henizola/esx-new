@@ -36,8 +36,8 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
         title='ESX Reports'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci '
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full px-4 lg:px-28 py-7'>
+        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>About Us</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -56,8 +56,8 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
         </Card>
         <div className='grid grid-cols-1  gap-3 w-[100%]'>
           <Card width='w-[100%] my-0  h-[100%] '>
-            <div className=' flex p-0  mx-0 '>
-              <div className='w-[60%] flex  flex-col  p-5 px-10 pr-0 '>
+            <div className=' md:flex p-0  mx-0 '>
+              <div className='md:w-[60%] flex  flex-col  p-5 lg:px-10 lg:pr-0 '>
                 <h1 className='text-[40px]'>ESX reports</h1>
                 <hr />
                 <p className='text-[16px] font-light mt-4 pr-16  w-[100%] '>
@@ -68,7 +68,10 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
                   erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
                   exerci tation
                 </p>
-                <Link href='#' className='flex text-[16px] mt-5 px-0 '>
+                <Link
+                  href='#'
+                  className='hidden md:flex text-[16px] mt-5 px-0 '
+                >
                   View more{" "}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -86,7 +89,7 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
                   </svg>
                 </Link>
               </div>
-              <div className='w-[40%] '>
+              <div className='md:w-[40%] '>
                 <Image
                   height={200}
                   width={200}
@@ -94,10 +97,27 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
                   alt='manager'
                   className='w-[100%] h-[100%] object-cover'
                 />
+                <Link href='#' className='md:hidden flex text-[16px] m-5 px-0 '>
+                  View more{" "}
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-4 h-4 mt-1.5'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
           </Card>
-          <div className='grid grid-cols-2 gap-5 mt-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-5'>
             <Card width='w-[100%] my-0  h-[100%] '>
               <div className=' flex flex-col p-0  mx-0 '>
                 <div className='w-[100%] '>
@@ -274,18 +294,18 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
         </div>
       </div>
 
-      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-14 '>
+      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
         <div className=''>
-          <h1 className='text-primary-blue text-[24px] font-bold w-[100%] text-center'>
+          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
             Contact the team
           </h1>
-          <p className=' text-primary-black text-[16px] font-normal py-3 w-[100%] text-center'>
+          <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
             Get in touch with our dedicated team today! Whether you have
             questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
           <div className='flex justify-center items-center '>
-            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>
+            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-1 md:my-4 px-8'>
               Contact
             </button>
           </div>
