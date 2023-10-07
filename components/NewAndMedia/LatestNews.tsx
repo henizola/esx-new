@@ -24,15 +24,15 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
   ];
 
   return (
-    <div className="flex flex-col w-full p-0 m-0">
+    <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title="Latest News"
-        description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
+        title='Latest News'
+        description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
-        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
+      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+          <h6 className='ml-2 mb-4 text-lg text-gray-600'>
             {"News and Media Center"}
           </h6>
           {items.map((item, index) => (
@@ -50,79 +50,33 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="col-span-5 space-y-8">
-          <div className="col-span-3 flex flex-col gap-8">
-   
-            <Card width=" flex py-[87px] px-[48px] gap-[42px]  ">
-              <div className="w-[40%] ">
-              <Image
-                src={"/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"}
-                height={500}
-                width={400}
-                alt=""
-                className=" bg-black h-full object-cover"
-              />
-              </div>
-              <div className="w-[60%] ">
-                <main className=" ">
-                <h1 className=" text-black text-[40px] font-light font-['Open Sans'] capitalize leading-[50px] ">Lorem ipsum dolor sit</h1>
-                  <h1 className="text-black text-[24px] not-italic font-normal leading-[normal] mt-[25px]">
-                    Lorem ipsum
-                  </h1>
-                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-[4px]">
-                    Dolor sit
-                  </h1>
-                  <p className="text-zinc-500 text-base font-normal font-['Roboto'] leading-snug mt-[25px]">
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                    veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis”
-                  </p>
-                  <Link href="#" className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[25px]">
-                    View more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </div>
-            </Card>
-      
 
-            <Card width=" flex py-[87px] px-[48px] gap-[42px]  ">
-              <div className="w-[40%] ">
-              <Image
-                src={"/images/Salem Corporate Headshots & Personal Branding Photographer 1.png"}
-                height={500}
-                width={400}
-                alt=""
-                className=" bg-black h-full object-cover"
-              />
+        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
+          <div className='col-span-3 flex flex-col gap-8'>
+            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-[87px] lg:px-[48px] gap-[42px]  '>
+              <div className='lg:w-[40%] '>
+                <Image
+                  src={
+                    "/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=''
+                  className='h-[230px] bg-black lg:h-full object-cover'
+                />
               </div>
-              <div className="w-[60%] ">
-                <main className=" ">
-                <h1 className=" text-black text-[40px] font-light font-['Open Sans'] capitalize leading-[50px] ">Lorem ipsum dolor sit</h1>
-                  <h1 className="text-black text-[24px] not-italic font-normal leading-[normal] mt-[25px]">
+              <div className='lg:w-[60%] '>
+                <main className=' '>
+                  <h1 className=" text-black text-[20px] lg:text-[40px] font-light font-['Open Sans'] capitalize lg:leading-[50px] ">
+                    Lorem ipsum dolor sit
+                  </h1>
+                  <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
                     Lorem ipsum
                   </h1>
-                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-[4px]">
+                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-2 lg:mt-[4px]">
                     Dolor sit
                   </h1>
-                  <p className="text-zinc-500 text-base font-normal font-['Roboto'] leading-snug mt-[25px]">
+                  <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -131,20 +85,23 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                     veniam, quis nostrud exerci tation ullamcorper suscipit
                     lobortis”
                   </p>
-                  <Link href="#" className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[25px]">
+                  <Link
+                    href='#'
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mb-[10px] mt-[25px]"
+                  >
                     View more
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
                       strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
+                      stroke='currentColor'
+                      className='w-4 h-4 mt-1.5'
                     >
                       <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
                       />
                     </svg>
                   </Link>
@@ -152,26 +109,30 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
             </Card>
 
-            <Card width=" flex py-[87px] px-[48px] gap-[42px]  ">
-              <div className="w-[40%] ">
-              <Image
-                src={"/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"}
-                height={500}
-                width={400}
-                alt=""
-                className=" bg-black h-full object-cover"
-              />
+            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-[87px] lg:px-[48px] gap-[42px]  '>
+              <div className='lg:w-[40%] '>
+                <Image
+                  src={
+                    "/images/Salem Corporate Headshots & Personal Branding Photographer 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=''
+                  className='h-[230px] bg-black lg:h-full object-cover'
+                />
               </div>
-              <div className="w-[60%] ">
-                <main className=" ">
-                <h1 className=" text-black text-[40px] font-light font-['Open Sans'] capitalize leading-[50px] ">Lorem ipsum dolor sit</h1>
-                  <h1 className="text-black text-[24px] not-italic font-normal leading-[normal] mt-[25px]">
+              <div className='lg:w-[60%] '>
+                <main className=' '>
+                  <h1 className=" text-black text-[20px] lg:text-[40px] font-light font-['Open Sans'] capitalize lg:leading-[50px] ">
+                    Lorem ipsum dolor sit
+                  </h1>
+                  <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
                     Lorem ipsum
                   </h1>
-                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-[4px]">
+                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-2 lg:mt-[4px]">
                     Dolor sit
                   </h1>
-                  <p className="text-zinc-500 text-base font-normal font-['Roboto'] leading-snug mt-[25px]">
+                  <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -180,20 +141,79 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                     veniam, quis nostrud exerci tation ullamcorper suscipit
                     lobortis”
                   </p>
-                  <Link href="#" className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[25px]">
+                  <Link
+                    href='#'
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mb-[10px] mt-[25px]"
+                  >
                     View more
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
                       strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4 mt-1.5"
+                      stroke='currentColor'
+                      className='w-4 h-4 mt-1.5'
                     >
                       <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                      />
+                    </svg>
+                  </Link>
+                </main>
+              </div>
+            </Card>
+
+            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-[87px] lg:px-[48px] gap-[42px]  '>
+              <div className='lg:w-[40%] '>
+                <Image
+                  src={
+                    "/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"
+                  }
+                  height={500}
+                  width={400}
+                  alt=''
+                  className='h-[230px] bg-black lg:h-full object-cover'
+                />
+              </div>
+              <div className='lg:w-[60%] '>
+                <main className=' '>
+                  <h1 className=" text-black text-[20px] lg:text-[40px] font-light font-['Open Sans'] capitalize lg:leading-[50px] ">
+                    Lorem ipsum dolor sit
+                  </h1>
+                  <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
+                    Lorem ipsum
+                  </h1>
+                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-2 lg:mt-[4px]">
+                    Dolor sit
+                  </h1>
+                  <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis”
+                  </p>
+                  <Link
+                    href='#'
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mb-[10px] mt-[25px]"
+                  >
+                    View more
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className='w-4 h-4 mt-1.5'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
                       />
                     </svg>
                   </Link>
@@ -203,8 +223,8 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
           </div>
         </div>
       </div>
-      <div className="bg-white py-[68px]">
-        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+      <div className='bg-white py-5 lg:py-[68px]'>
+        <p className="max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-[14px] px-[20px] lg:text-base font-normal font-['Open Sans'] leading-snug">
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh

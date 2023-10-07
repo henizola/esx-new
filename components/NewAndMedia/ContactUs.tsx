@@ -30,8 +30,8 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
         title='Contact Us'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='grid sm:grid-cols-7 gap-8 px-28 py-7'>
-        <Card width='col-span-2  flex flex-col text-left  py-[20px] px-[20px]'>
+      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
           <h6 className='ml-2 mb-4 text-lg text-gray-600'>
             {"News and Media Center"}
           </h6>
@@ -50,13 +50,13 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className='col-span-5 space-y-8'>
+        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
             <Card width=' flex flex-col gap-[37px] pt-[30px] pb-[45px] pr-[46px] pl-[43px]    '>
               <h1 className=" text-black text-[40px] font-normal font-['Open Sans']">
                 Enquiry Form
               </h1>
-              <div className='grid grid-cols-3 gap-[22px]'>
+              <div className='grid grid-cols-1  md:grid-cols-3 gap-[22px]'>
                 <input
                   placeholder='Title'
                   type='text'
@@ -80,7 +80,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
               </div>
-              <div className='grid grid-cols-2 gap-[22px]'>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-[22px]'>
                 <input
                   placeholder='Company'
                   type='text'
@@ -92,7 +92,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                   className="py-[14px] px-5 bg-zinc-300 text-black text-base font-light font-['Open Sans']"
                 />
               </div>
-              <div className='grid grid-cols-3 gap-[22px]'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-[22px]'>
                 <input
                   placeholder='Work Phone'
                   type='tel'
@@ -129,7 +129,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
             </Card>
 
             <div className='pr-[46px] pl-[43px]'>
-              <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
+              <h2 className=" text-black text-[24px] md:text-[40px] font-normal font-['Open Sans']">
                 Physical Address
               </h2>
               <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
@@ -146,7 +146,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
               </div>
             </div>
             <div className='pr-[46px] pl-[43px]'>
-              <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
+              <h2 className=" text-black text-[24px] md:text-[40px] font-normal font-['Open Sans']">
                 GPS Coordinates
               </h2>
               <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
@@ -157,7 +157,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
               </div>
             </div>
             <div className='pr-[46px] pl-[43px]'>
-              <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
+              <h2 className=" text-black text-[24px] md:text-[40px] font-normal font-['Open Sans']">
                 Postal Address
               </h2>
               <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
@@ -166,7 +166,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
               </div>
             </div>
             <div className='pr-[46px] pl-[43px]'>
-              <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
+              <h2 className=" text-black text-[24px] md:text-[40px] font-normal font-['Open Sans']">
                 Contact Information
               </h2>
               <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
@@ -186,7 +186,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
               </div>
             </div>
             <div className='pr-[46px] pl-[43px]'>
-              <h2 className=" text-black text-[40px] font-normal font-['Open Sans']">
+              <h2 className=" text-black text-[24px] md:text-[40px] font-normal font-['Open Sans']">
                 Media Enquiry
               </h2>
               <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
@@ -251,8 +251,8 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
           </div>
         </div>
       </div>
-      <div className='bg-white py-[68px]'>
-        <p className="max-w-[980px] mx-auto w-full h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+      <div className='bg-white py-5 px-5 md:py-[68px]'>
+        <p className="max-w-[980px] mx-auto w-full md:h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh

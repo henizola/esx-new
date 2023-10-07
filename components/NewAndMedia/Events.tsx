@@ -30,8 +30,8 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
         title='Event'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='grid sm:grid-cols-7 gap-8 px-28 py-7'>
-        <Card width='col-span-2  flex flex-col text-left  py-[20px] px-[20px]'>
+      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
           <h6 className='ml-2 mb-4 text-lg text-gray-600'>
             {"News and Media Center"}
           </h6>
@@ -50,15 +50,24 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className='col-span-5 space-y-8'>
+        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
-            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5  pt-[50px] pb-[35px] pl-[20px] pr-[40px] items-end'>
-              <div className='col-span-3 h-fit'>
-                <h1 className=" text-black text-3xl font-normal font-['Open Sans']">
+            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5 pt-[0] md:pt-[50px] pb-0 md:pb-[35px] md:pl-[20px] md:pr-[40px] items-end'>
+              <div className='col-span-full md:col-span-3 h-fit'>
+                <Image
+                  src={
+                    "/images/Mistakes That Keep You From Getting Ahead 1.png"
+                  }
+                  height={100}
+                  width={400}
+                  alt=''
+                  className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
+                />
+                <h1 className=" text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0 font-['Open Sans']">
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
-                  <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
+                  <p className="text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -70,7 +79,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
+                    className="flex px-4 md:px-0 text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
                     <svg
@@ -98,13 +107,13 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   height={100}
                   width={400}
                   alt=''
-                  className='w-full  aspect-square object-cover rounded-full'
+                  className='w-full hidden md:block aspect-square object-cover rounded-full'
                 />
               </div>
             </Card>
 
-            <div className='flex gap-5'>
-              <Card width='w-[60%] flex  flex-col   p-[20px] pl-[20px] pr-[40] '>
+            <div className='flex flex-col lg:flex-row gap-5'>
+              <Card width='lg:w-[60%] flex  flex-col   p-[20px] pl-[20px] pr-[40] '>
                 <h1 className=" text-black text-2xl font-normal font-['Open Sans'] lowercase">
                   Lorem Ipsum
                 </h1>
@@ -115,7 +124,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[29px]"
+                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-3 md:mt-[29px]"
                   >
                     View more
                     <svg
@@ -135,7 +144,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </Link>
                 </main>
               </Card>
-              <Card width='w-[40%] flex  flex-col   pt-[120px] pb-[47px] px-[20px]  '>
+              <Card width='lg:w-[40%] flex  flex-col  pt-[30px] lg:pt-[120px] pb-[47px] px-[20px]  '>
                 <main className='flex flex-col  '>
                   <h1 className=" text-black text-xl font-normal font-['Open Sans']">
                     Lorem Ipsum
@@ -145,7 +154,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                     amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
                 </main>
-                <hr className=' my-[40px] border border-gray/30' />
+                <hr className='my-4 md:my-[40px] border border-gray/30' />
                 <main className='flex flex-col  '>
                   <h1 className=" text-black text-xl font-normal font-['Open Sans']">
                     Lorem Ipsum
@@ -156,13 +165,23 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                 </main>
               </Card>
             </div>
-            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5  pt-[50px] pb-[35px] pl-[20px] pr-[40px] items-end'>
-              <div className='col-span-3 h-fit'>
-                <h1 className=" text-black text-3xl font-normal font-['Open Sans']">
+
+            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5 pt-[0] md:pt-[50px] pb-0 md:pb-[35px] md:pl-[20px] md:pr-[40px] items-end'>
+              <div className='col-span-full md:col-span-3 h-fit'>
+                <Image
+                  src={
+                    "/images/Career Advancement Myths_ 10  Mistakes That Keep You From Getting 1.png"
+                  }
+                  height={100}
+                  width={400}
+                  alt=''
+                  className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
+                />
+                <h1 className=" text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0 font-['Open Sans']">
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
-                  <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
+                  <p className="text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -174,7 +193,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
+                    className="flex px-4 md:px-0 text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
                     <svg
@@ -202,96 +221,96 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   height={100}
                   width={400}
                   alt=''
-                  className='w-full  aspect-square object-cover rounded-full'
+                  className='w-full hidden md:block aspect-square object-cover rounded-full'
                 />
               </div>
             </Card>
 
             <div className='w-[900px] pb-[32px] relative'>
-              <h1 className="left-0 top-0 absolute text-black text-3xl font-normal font-['Open Sans']">
-                UPCOMING Events
+              <h1 className="left-4 lg:left-0 top-0 absolute text-black text-3xl font-normal font-['Open Sans']">
+                UPCOMING EVENTS
               </h1>
             </div>
-            <div className='grid grid-cols-2 w-full gap-[32px] '>
-              <Card width=' flex  flex-col  pt-[43px] pb-[37px] pl-[43px] pr-[41px] '>
+            <div className='grid md:grid-cols-2 w-full gap-[32px] '>
+              <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
                     08 Sept 2023
                   </h1>
-                  <hr className=' mt-[24px] border border-gray/30 ' />
+                  <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
                   </Link>
                 </main>
               </Card>
-              <Card width=' flex  flex-col   pt-[43px] pb-[37px] pl-[43px] pr-[41px] '>
+              <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
                     08 Sept 2023
                   </h1>
-                  <hr className=' mt-[24px] border border-gray/30 ' />
+                  <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
                   </Link>
                 </main>
               </Card>
-              <Card width=' flex  flex-col  pt-[43px] pb-[37px] pl-[43px] pr-[41px] '>
+              <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
                     08 Sept 2023
                   </h1>
-                  <hr className=' mt-[24px] border border-gray/30 ' />
+                  <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
                   </Link>
                 </main>
               </Card>
-              <Card width=' flex  flex-col   pt-[43px] pb-[37px] pl-[43px] pr-[41px] '>
+              <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-xl font-['Open Sans'] leading-snug">
+                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
                     08 Sept 2023
                   </h1>
-                  <hr className=' mt-[24px] border border-gray/30 ' />
+                  <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
                   >
                     View more
                   </Link>
