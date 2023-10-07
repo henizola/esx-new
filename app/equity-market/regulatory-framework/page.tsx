@@ -9,7 +9,7 @@ export default function Home() {
   const { currentPage, setNumber } = useNumber();
 
   return (
-    <main className="flex  flex-col items-center p-0">
+    <main className='flex  flex-col items-center p-0'>
       <SideMenu state={currentPage}>
         {[
           <CapitalMarket
@@ -22,7 +22,6 @@ export default function Home() {
             step={currentPage}
             key={currentPage}
           />,
-          
         ]}
       </SideMenu>
     </main>

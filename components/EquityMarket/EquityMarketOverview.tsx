@@ -16,15 +16,15 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
   const items = ["Overview"];
 
   return (
-    <div className="flex flex-col w-full">
+    <div className='flex flex-col w-full'>
       <Banner
         backgroundImage={image}
-        title="Equity market"
-        description="ESX Equities Market is the division of ESX that allows issuers of equity securities to raise long-term capital."
+        title='Equity market'
+        description='ESX Equities Market is the division of ESX that allows issuers of equity securities to raise long-term capital.'
       />
-      <div className="flex w-full  px-28 py-[30px]">
-        <Card width="w-[30%] mr-5 flex flex-col text-left  py-10 px-5">
-          <h6 className="ml-2 mb-4">Equity Market</h6>{" "}
+      <div className='flex w-full px-0 lg:px-28 pt-4 lg:py-[30px]'>
+        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+          <h6 className='ml-2 mb-4'>Equity Market</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
@@ -100,81 +100,81 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             Regulatory Framework
           </Link>
         </Card>
-        <div className="flex flex-col justify-between gap-[18px] h-full w-[100%]">
-          <Card width="flex flex-col ">
-            <div className="flex ">
+        <div className='flex flex-col justify-between gap-[18px] h-full w-[100%]'>
+          <Card width='flex flex-col '>
+            <div className='flex flex-col lg:flex-row'>
               <Image
                 src={"/images/austin-distel-EMPZ7yRZoGw-unsplash 1.png"}
                 height={100}
                 width={400}
-                alt=""
-                className="w-[40%]  aspect-square object-cover"
+                alt=''
+                className='w-[100%] lg:w-[40%] h-[30vh] lg:h-auto  aspect-square object-cover'
               />
-              <div className="pt-[30px] pb-[20px]  px-[20px] w-[60%]  ">
-                <h1 className="text-primary-blue text-[12px] mb-[14px] ">
+              <div className='pt-[30px] pb-[20px]  px-[20px] lg:w-[60%]  '>
+                <h1 className='text-primary-blue text-[12px] mb-[14px] '>
                   Overview
                 </h1>
-                <h1 className="text-black text-[30px]  mb-[20px]">
+                <h1 className='text-black  text-[20px] lg:text-[30px]  mb-[20px]'>
                   ESX’s Equity Market Provides:
                 </h1>
-                <div className="flex  gap-[10px] mb-[20px]">
-                  <ChevronRightIcon className="w-6 h-6 " />
+                <div className='flex  gap-[10px] mb-[20px]'>
+                  <ChevronRightIcon className='w-6 h-6 ' />
 
-                  <p className="text-black text-base flex-1 ">
+                  <p className='text-[14px] text-black text-base flex-1 '>
                     A central listing and trading venue for issuance and trading
                     of various equity instruments that are approved and
                     registered by the Ethiopian Capital Market Authority
-                    <div className="flex flex-col gap-[10px] px-6 pt-5">
-                      <p className="text-gray text-base ">
+                    <div className='flex flex-col gap-[10px] px-6 pt-5'>
+                      <p className='text-gray text-base '>
                         Shares and other forms of equity instruments
                       </p>
-                      <p className="text-gray text-base ">
+                      <p className='text-gray text-base '>
                         Real estate investment funds (REIFs) / ‘REITS’
                       </p>
-                      <p className="text-gray text-base ">
+                      <p className='text-gray text-base '>
                         Exchange traded funds (ETFs)
                       </p>
                     </div>
                   </p>
                 </div>
 
-                <div className="flex  gap-[10px] mb-[20px]">
-                  <ChevronRightIcon className="w-6 h-6 " />
+                <div className='flex  gap-[10px] mb-[20px]'>
+                  <ChevronRightIcon className='w-6 h-6 ' />
 
-                  <p className="text-black text-base flex-1 ">
+                  <p className='text-black text-base flex-1 '>
                     Promotes market transparency, integrity, efficiency, and
                     reliability of the market with the aim to protect and
                     enhance confidence by local and international investors on
                     the Ethiopian capital markets.
                   </p>
                 </div>
-                <div className="flex  gap-[10px] mb-[20px]">
-                  <ChevronRightIcon className="w-6 h-6 " />
-                  <p className="text-black text-base flex-1 ">
+                <div className='flex  gap-[10px] mb-[20px]'>
+                  <ChevronRightIcon className='w-6 h-6 ' />
+                  <p className='text-black text-base flex-1 '>
                     Enhances the overall liquidity of the equities market.
                   </p>
                 </div>
-                <div className="flex  gap-[10px] mb-[20px]">
-                  <ChevronRightIcon className="w-6 h-6 " />
+                <div className='flex  gap-[10px] mb-[20px]'>
+                  <ChevronRightIcon className='w-6 h-6 ' />
 
-                  <p className="text-black text-base flex-1 ">
+                  <p className='text-black text-base flex-1 '>
                     Regulates and enforces actions on trading members.
                   </p>
                 </div>
-                <Link href="#" className="flex text-[16px] mt-[15px]">
+                <Link href='#' className='flex text-[16px] mt-[15px]'>
                   View more{" "}
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
                     strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4 mt-1.5"
+                    stroke='currentColor'
+                    className='w-4 h-4 mt-1.5'
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
                     />
                   </svg>
                 </Link>
@@ -182,8 +182,8 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             </div>
           </Card>
 
-          <Card width="pt-[30px] pb-[20px] px-[23px]  p-4">
-            <h1 className="text-[20px] font-sans font-normal  pt-0">
+          <Card width='pt-[30px] pb-[20px] px-[23px]  p-4'>
+            <h1 className='text-[20px] font-sans font-normal  pt-0'>
               ESX’s Equity Market Provides:
             </h1>
 
@@ -191,20 +191,20 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               ESX Equities Market is the division of ESX that allows issuers of
               equity securities to raise long-term capital.
             </p>
-            <Link href="#" className="flex text-[16px] font-semibold ">
+            <Link href='#' className='flex text-[16px] font-semibold '>
               View more{" "}
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
                 strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-4 h-4 mt-1.5"
+                stroke='currentColor'
+                className='w-4 h-4 mt-1.5'
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
                 />
               </svg>
             </Link>
@@ -212,15 +212,15 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         </div>
       </div>
 
-      <div className="relative h-[200px]">
+      <div className='relative h-[200px]'>
         <img
           src={"/images/Authors 1.png"}
-          alt=""
-          className="w-full h-full object-cover"
+          alt=''
+          className='w-full h-full object-cover'
         />
-        <div className="absolute top-0 left-0 bg-primary-golden/80 w-full h-full  flex items-center justify-center ">
-          <div className="w-full px-[130px] flex justify-between">
-            <h1 className="text-white text-3xl font-normal font-['Open Sans'] max-w-[760px] leading-10">
+        <div className='absolute top-0 left-0 bg-primary-golden/80 w-full h-full  flex items-center justify-center '>
+          <div className='w-full px-4 lg:px-[130px] flex flex-col lg:flex-row justify-between'>
+            <h1 className="text-center lg:text-left text-white lg:text-3xl font-normal font-['Open Sans'] max-w-[760px] lg:leading-10 mb-5 lg:mb-0">
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer
             </h1>

@@ -26,7 +26,24 @@
 /* Optionally, you can add additional styles for the arrows, such as positioning */
 .slick-prev {
   left: 10%;
-  z-index: 999; /* Adjust the horizontal position of the previous arrow */
+  z-index: 999;
+  /* Adjust the horizontal position of the previous arrow */
+}
+
+@media screen and (max-width: 780px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 0px; /* Adjust the font size as needed */
+    color: #333; /* Set the color of the arrows */
+    height: 25px !important;
+    width: 25px !important;
+  }
+  .slick-next {
+    right: 5%;
+  }
+  .slick-prev {
+    left: 5%;
+  }
 }
 
 .slick-next {
@@ -42,4 +59,20 @@
   font-size: 16px;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 0px; /* Adjust the font size as needed */
+    color: #333; /* Set the color of the arrows */
+    height: 25px !important;
+    width: 25px !important;
+  }
+  .slick-next {
+    right: 5%;
+  }
+  .slick-prev {
+    left: 5%;
+  }
 }

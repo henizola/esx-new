@@ -20,15 +20,15 @@ const CapitalMarket: React.FC<CapitalMarketProps> = ({ setStep, step }) => {
   const items = ["Capital Market Regulatory Environment", "Tax"];
 
   return (
-    <div className="flex flex-col w-full p-0 m-0">
+    <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title="Capital market regulatory environment"
-        description="“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse"
+        title='Capital market regulatory environment'
+        description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className="grid sm:grid-cols-7 gap-8 px-28 py-7">
-        <Card width="col-span-2  flex flex-col text-left  py-[20px] px-[20px]">
-          <h6 className="ml-2 mb-4 text-lg text-gray-600">
+      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+          <h6 className='ml-2 mb-4 text-lg text-gray-600'>
             {"Regulatory Framework"}
           </h6>
           {items.map((item, index) => (
@@ -46,14 +46,21 @@ const CapitalMarket: React.FC<CapitalMarketProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className="col-span-5 space-y-8">
-          <Card width="col-span-5 flex flex-col ">
-            <h1 className="py-[18px] px-[19px]  bg-primary-blue text-white text-[32px] font-normal font-['Open Sans']">
+        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
+          <Card width='col-span-5 flex flex-col '>
+            <h1 className="py-[18px] px-[19px]  bg-primary-blue text-white text-[20px] md:text-[32px] font-normal font-['Open Sans']">
               Capital market regulatory environment
             </h1>
-            <div className="flex  ">
-              <div className="py-[21px] px-[25px] w-[60%] space-y-4">
-                <main className="flex flex-col pt-[39px] gap-5 h-full ">
+            <Image
+              src={"/images/austin-distel-EMPZ7yRZoGw-unsplash 1.png"}
+              height={500}
+              width={400}
+              alt=''
+              className='aspect-square md:hidden  w-[100%] h-[200px] object-cover'
+            />
+            <div className='flex flex-col md:flex-row pb-10 md:pb-0  '>
+              <div className='md:py-[21px] px-[25px] md:w-[60%] space-y-4'>
+                <main className='flex flex-col pt-[39px] gap-5 h-full '>
                   <p className="text-black text-base font-normal font-['Open Sans']">
                     ESX is licensed by the Ethiopian Capital Market Authority
                     (“ECMA” or “the Authority”) as a securities exchange in line
@@ -68,15 +75,20 @@ const CapitalMarket: React.FC<CapitalMarketProps> = ({ setStep, step }) => {
                     ECMA is responsible for setting the legal framework and
                     regulating entities interested in participating ESX
                   </p>
-                  <LinkButton className="text-black mt-[18px] text-base font-semibold font-['Open Sans']" href="#">View More</LinkButton>
+                  <LinkButton
+                    className="text-black mt-[18px] text-base font-semibold font-['Open Sans']"
+                    href='#'
+                  >
+                    View More
+                  </LinkButton>
                 </main>
               </div>
               <Image
                 src={"/images/austin-distel-EMPZ7yRZoGw-unsplash 1.png"}
                 height={500}
                 width={400}
-                alt=""
-                className="aspect-square w-[40%] object-cover"
+                alt=''
+                className='aspect-square hidden md:block w-[40%] object-cover'
               />
             </div>
           </Card>
