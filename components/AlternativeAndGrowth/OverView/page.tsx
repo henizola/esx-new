@@ -27,8 +27,8 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
         title='Alternative and Growth Market'
         description='The ESX alternative market is a platform that enables small and growing businesses in Ethiopia to raise capital through the capital market.'
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full  lg:px-28 py-7'>
+        <Card width='w-[30%] mr-5 hidden lg:flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>Alternative and Growth Market</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -46,16 +46,23 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className='grid grid-cols-1 gap-3 w-[100%]'>
-          <Card width='w-[100%] p-4'>
-            <div className='flex py-10 pt-6 mx-10'>
-              <div className='w-[60%] '>
+          <Card width='w-[100%] md:p-4'>
+            <Image
+              height={300}
+              width={200}
+              src={alternativeAndGrowth.src}
+              alt='manager'
+              className='w-[100%] md:hidden h-[250px] border object-cover '
+            />
+            <div className='flex flex-col  md:flex-row py-10 pt-6 mx-5 md:mx-10'>
+              <div className='w-[100%] md:w-[60%] '>
                 <div className='w-[100%] flex  flex-col pt-0'>
                   <p className='text-[12px] font-semibold'>Overview</p>
-                  <h1 className='text-[30px]  font-sans font-normal   mt-6 pt-0'>
+                  <h1 className='text-[20px] md:text-[30px]  font-sans font-normal   mt-6 pt-0'>
                     Alternative and growth market
                   </h1>
 
-                  <p className='w-[90%]  text-[16px] font-sans font-normal mt-2 pt-0 leading-6 text-gray'>
+                  <p className='w-[100%]  md:w-[90%]  text-[14px] md:text-[16px] font-sans font-normal mt-2 pt-0 leading-6 text-gray'>
                     The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s
                     first, and only organized securities exchange. ESX is
                     established as a public private partnership inline with
@@ -63,7 +70,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                     (No.1248/2021), and is licensed by the Ethiopian Capital
                     Market Authority (ECMA).
                   </p>
-                  <p className='w-[90%]  text-[16px] font-sans font-normal mt-2 pt-0 leading-6 text-gray'>
+                  <p className='w-[100%]  m md:w-[90%]  text-[14px] md:text-[16px] font-sans font-normal mt-5 md:mt-2 pt-0 leading-6 text-gray'>
                     To investors, the alternative market offers investment
                     options to diversify their portfolios and reduce overall
                     risk
@@ -77,7 +84,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                   width={200}
                   src={alternativeAndGrowth.src}
                   alt='manager'
-                  className='w-[100%] border object-cover rounded-full  border-'
+                  className='w-[100%] hidden md:block border object-cover rounded-full  border-'
                 />
               </div>
             </div>
@@ -85,9 +92,9 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
           <div className='flex-col my-0 justify-between'>
             <div className='w-[100%] flex flex-col '>
               <Card width='w-[100%] mt-3 p-4'>
-                <div className='flex py-5 mx-10'>
-                  <div className='w-[90%] flex  flex-col  mt-0 pt-0'>
-                    <h1 className='text-[30px] font-sans font-normal mt-0 pt-0'>
+                <div className='flex py-5 mx-0 md:mx-10'>
+                  <div className=' md:w-[90%] flex  flex-col  mt-0 pt-0'>
+                    <h1 className='text-[20px] md:text-[30px] font-sans font-normal mt-0 pt-0'>
                       ESX will put in place an alternative market for SMEs
                       offering
                     </h1>
@@ -105,7 +112,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                           clipRule='evenodd'
                         />
                       </svg>
-                      <p className='pl-2 py-1 text-[16px]'>
+                      <p className='pl-2 py-1 text-[14px] md:text-[16px]'>
                         A Crowdfunding/crowd investment platform
                       </p>
                     </div>
@@ -122,7 +129,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                           clipRule='evenodd'
                         />
                       </svg>
-                      <p className='pl-2 py-1 text-[16px]'>
+                      <p className='pl-2 py-1 text-[14px] md:text-[16px]'>
                         SME incubation, acceleration services – geared towards
                         capital market investor readiness
                       </p>

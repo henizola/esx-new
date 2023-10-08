@@ -27,8 +27,8 @@ const Page: React.FC<InvestorsProps> = ({ setStep, step }) => {
         title='Investors'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci '
       />
-      <div className='flex w-full  px-28 py-7'>
-        <Card width='w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full  lg:px-28 py-7'>
+        <Card width='w-[30%] mr-5 hidden lg:flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>Alternative and Growth Market</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -46,19 +46,19 @@ const Page: React.FC<InvestorsProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className='grid grid-cols-1 gap-3 w-[100%]'>
-          <Card width='w-[100%] px-4 '>
-            <div className='flex py-8 mx-10 '>
-              <div className='w-[35%] mr-[3%]'>
+          <Card width='w-[100%] md:px-4 '>
+            <div className='flex flex-col md:flex-row md:py-8 md:mx-10 '>
+              <div className='md:w-[35%] w-[100%] md:mr-[3%]'>
                 {" "}
                 <Image
                   height={300}
                   width={200}
                   src={whoweare.src}
                   alt='manager'
-                  className='w-[100%] border object-cover rounded-full  border-'
+                  className='w-[100%] h-[250px] md:h-[auto] border object-cover md:rounded-full '
                 />
               </div>{" "}
-              <div className='w-[60%] '>
+              <div className='md:w-[60%] px-5 py-5 md:px-0 md:py-0'>
                 <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                   <p className='text-[12px] font-semibold'>Crowdex</p>
                   <h1 className='text-[30px]  font-sans font-normal   mt-3   pt-0'>
