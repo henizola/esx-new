@@ -7,14 +7,24 @@ import Card from "../Card/Card";
 function TheAcademy() {
   return (
     <div className='w-full flex h-full flex-col'>
-      <div className='bg-white flex flex-grow items-center h-full w-full'>
-        <div className='w-[55%] px-5 h-full'>
+      <div className='bg-white flex flex-col md:flex-grow items-center h-full w-full'>
+        <div className=' ml-[0%] w-[100%] pr-0'>
+          {" "}
+          <Image
+            height={300}
+            width={200}
+            src={tradingoverview}
+            alt='manager'
+            className='md:hidden w-[100%] h-[100%] border object-cover'
+          />
+        </div>
+        <div className='w-[100%] md:w-[55%] px-5 h-full'>
           <div className='w-[100%] flex flex-col justify-between'>
             <div>
-              <h1 className='text-[30px] font-sans font-normal pt-12'>
+              <h1 className='text-[20px] md:text-[30px] font-sans font-normal pt-5 md:pt-12'>
                 Overview{" "}
               </h1>
-              <p className='w-[90%] text-[16px] font-sans font-normal leading-6 text-[#707377] pt-4'>
+              <p className='w-[90%] text-[14px] md:text-[16px] font-sans font-light md:font-normal leading-6 text-[#707377] pt-4'>
                 ESX has observed capacity gaps across financial institutions and
                 government agencies on key aspects of capital market products,
                 services, and infrastructures. As ESX will be operating in a
@@ -25,7 +35,7 @@ function TheAcademy() {
               </p>
               <Link
                 href='#'
-                className='flex text-[16px] font-semibold pt-5 pb-16'
+                className='flex text-[16px] font-semibold pt-5 pb-8 md:pb-16'
               >
                 View more{" "}
                 <svg
@@ -53,15 +63,25 @@ function TheAcademy() {
             width={200}
             src={tradingoverview}
             alt='manager'
-            className='w-[100%] h-[100%] border object-cover'
+            className='hidden md:block w-[100%] h-[100%] border object-cover'
           />
         </div>
       </div>
-      <div className='flex flex-grow items-center h-full w-full mt-7'>
-        <div className='bg-white w-[55%] px-5 h-full'>
+      <div className='flex flex-col md:flex-grow items-center h-full w-full mt-7'>
+        <div className=' w-[100%]'>
+          {" "}
+          <Image
+            height={300}
+            width={200}
+            src={tradingoverview}
+            alt='manager'
+            className='w-[100%]  md:hidden h-[100%] border object-cover'
+          />
+        </div>
+        <div className='bg-white md:w-[55%] px-5 h-full'>
           <div className='w-[100%] flex flex-col justify-between'>
             <div>
-              <h1 className='text-[24px] font-sans font-normal pt-5'>
+              <h1 className='text-[20px] md:text-[24px] font-sans font-normal pt-5'>
                 The broad level objectives of the ESX Academy are:
               </h1>
               <div className='pt-3'>
@@ -120,7 +140,7 @@ function TheAcademy() {
             width={200}
             src={tradingoverview}
             alt='manager'
-            className='w-[100%] h-[100%] border object-cover'
+            className='w-[100%] hidden md:block h-[100%] border object-cover'
           />
         </div>
       </div>
@@ -130,16 +150,16 @@ function TheAcademy() {
             The target audience includes{" "}
           </h2>
           <div className='pt-4'>
-            <li className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ] font-light my-2 mt-4 text-[#707377]'>
               Entrepreneurs, business operators, investors
             </li>
-            <li className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4 text-[#707377]'>
               Finance professionals
             </li>
-            <li className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4 text-[#707377]'>
               High school and University students
             </li>
-            <li className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4 text-[#707377]'>
               Academic institutions
             </li>
           </div>

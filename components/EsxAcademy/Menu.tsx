@@ -1,12 +1,13 @@
 import Card from "../../components/Card/Card";
+import Pagination from "../Paginnation/Pagination";
 
 const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
   console.log("title", title, step);
   return (
     <>
-      <div className='flex w-full  px-28 py-7 justify-center gap-5 '>
+      <div className='flex w-full  lg:px-28 py-7 justify-center gap-5 '>
         <div className='flex w-full gap-5'>
-          <Card width='min-w-[300px] max-w-[300px] flex-1  flex flex-col text-left  pt-10 pb-5 px-5'>
+          <Card width='min-w-[300px] max-w-[300px] flex-1  hidden lg:flex flex-col text-left  pt-10 pb-5 px-5'>
             <h6 className=' mb-4 ml-3'>
               <span
                 className='hover:cursor-pointer hover:scale-125'
@@ -61,45 +62,8 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
         </div>
       )}
       {title === "Courses and programs" && step === 1 && (
-        <div className='flex justify-end items-end'>
-          <div className='flex text-[16px] mr-48 px-5 py-5 mb-12 text-white  w-[50%] mx-auto rounded-lg justify-center items-end bg-primary-blue font-sans font-light tracking-widest gap-x-8'>
-            <div className='rotate-180 border-l pl-8'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-8 h-8'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                />
-              </svg>
-            </div>
-            <div> ...</div>
-            <div>3</div>
-            <div>4</div> <div>5</div> <div>6</div> <div>7</div>
-            <div>8</div> <div>9</div> <div>...</div>
-            <div className='border-l pl-8'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-8 h-8 mt-1.5'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                />
-              </svg>
-            </div>
-          </div>
+        <div className='flex justify-center items-center'>
+          <Pagination />
         </div>
       )}
     </>

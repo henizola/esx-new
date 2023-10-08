@@ -46,7 +46,8 @@ export default function Home() {
     setMainMenuIndex(0);
   };
   const currentMenu = menus[mainMenuIndex];
-  const hasSubMenus = currentMenu.menu.length > 0;
+  const hasSubMenus = currentMenu?.menu && currentMenu.menu.length > 0;
+
   const menuItems = hasSubMenus ? currentMenu.menu : mainMenuItems;
   const updateStep = hasSubMenus ? setSubMenuIndex : setMainMenuIndex;
   const selectedIndex = hasSubMenus ? subMenuIndex : mainMenuIndex;
@@ -62,7 +63,7 @@ export default function Home() {
         items={menuItems}
         step={selectedIndex}
         setStep={updateStep}
-        title={currentMenu.name}
+        title={currentMenu?.name}
         returnHome={resetToHomePage}
       >
         <SelectedPage mainIndex={mainMenuIndex} subIndex={subMenuIndex} />

@@ -57,11 +57,11 @@ function CoursesAndPrograms() {
       <h1 className='text-[24px] px-5 py-5 mb-0 text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
         Courses and programs{" "}
       </h1>
-      <div className='w-full min-h-[1000px] grid grid-cols-3 gap-y-0 gap-x-5 pt-0 '>
+      <div className='w-full min-h-[1000px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-0 gap-x-5 pt-0 '>
         {members.map((member, index) => {
           return (
             <div
-              className='w-full h-[500px] flex flex-col flex-grow justify-center items-center mt-5 '
+              className='w-full h-[fit-content] lg:h-[500px] flex flex-col flex-grow justify-center items-center mt-5 '
               key={index}
             >
               <div className='w-full h-[50%]'>
@@ -71,7 +71,7 @@ function CoursesAndPrograms() {
                   width={200}
                   src={member.img}
                   alt='listofmembers'
-                  className='w-full h-full border object-cover'
+                  className='w-full h-[250px] lg:h-full border  object-cover'
                 />
               </div>
               <div className='bg-white w-full h-[50%] px-6'>
