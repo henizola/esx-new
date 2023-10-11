@@ -49,6 +49,20 @@ const MarketSummary: React.FC = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 5.5,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5.5,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
     slidesToScroll: 1,
     arrows: true,
     nextArrow: (
@@ -96,12 +110,16 @@ const MarketSummary: React.FC = () => {
   }, [stocks]);
 
   return (
-    <div className='summary max-w-[100vw] py-10   bg-white'>
-      <h1 className='text-[36px] ml-28'>Market summary</h1>
-      <Slider {...settings} className='mt-10 p-0  mx-32'>
-        {stocks.map((slide, index) => (
-          <div key={slide.name} className='px-5'>
-            <h1 className='text-[24px] h-[90px] text-center'>{slide.name}</h1>
+    <div className='summary max-w-[100vw] overflow-hidden py-5 lg:py-10   bg-white'>
+      <h1 className='text-[20px] w-[100%] text-center lg:text-[36px] '>
+        Market summary
+      </h1>
+      <Slider {...settings} className=' mt-5 lg:mt-10 p-0 mx-2  lg:mx-32'>
+        {stocks.map((slide) => (
+          <div key={slide.name} className='lg:px-5'>
+            <h1 className='text-[16px] lg:text-[24px] h-[30px] lg:h-[90px] text-center'>
+              {slide.name}
+            </h1>
             <div
               style={{
                 display: "flex",

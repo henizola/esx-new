@@ -34,6 +34,7 @@ const dummyStockData = [
 
 const StockPriceAutoScroller: React.FC = () => {
   const [stocks, setStocks] = useState(dummyStockData);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -44,6 +45,27 @@ const StockPriceAutoScroller: React.FC = () => {
     autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 7,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 370,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   useEffect(() => {

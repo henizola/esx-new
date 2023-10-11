@@ -53,10 +53,10 @@
     height: 25px !important;
     width: 25px !important;
   }
-  .slick-next {
-    right: 5%;
+  .summary .slick-next {
+    right: 5% !important;
   }
-  .slick-prev {
-    left: 5%;
+  .summary .slick-prev {
+    left: 5% !important;
   }
 }

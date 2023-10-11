@@ -38,8 +38,8 @@ export default function Home() {
       </div>
       <MarketSummary />
 
-      <div className='flex w-full  px-28 py-7'>
-        <Card width=' w-[28%] mr-5 flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full  lg:px-28 py-7'>
+        <Card width=' w-[28%] mr-5 hidden lg:flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>ESX</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -55,11 +55,11 @@ export default function Home() {
           ))}
         </Card>
         <div
-          className='w-[70%]'
+          className='lg:w-[70%]  w-[100vw]'
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <div className='flex flex-row gap-3 w-[100%]'>
-            <Card width='w-[67%] mr-[0%] pb-10 h-[100%]'>
+          <div className='flex flex-col lg:flex-row gap-3 w-[100%]'>
+            <Card width='lg:w-[67%] mr-[0%] pb-10 h-[100%]'>
               <div className='flex p-0 mx-0'>
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
                   <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
               </div>
             </Card>
-            <Card width='w-[40%] pb-10 h-[100%]'>
+            <Card width=' lg:w-[40%] pb-10 h-[100%]'>
               <div className='flex p-0 mx-0'>
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
                   <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
@@ -128,130 +128,42 @@ export default function Home() {
             </Card>
           </div>
           <Card width='w-[100%] my-6 mb-0  h-[100%] '>
-            <div className=' flex p-0  mx-0 '>
-              <div className='w-[60%] flex  flex-col  p-5 px-10 pr-0 '>
+            <div className=' flex flex-col lg:flex-row p-0  mx-0 '>
+              <div className='lg:hidden  w-[100%] '>
+                <Image
+                  height={200}
+                  width={200}
+                  src={home.src}
+                  alt='manager'
+                  className='w-[100%] h-[200px] object-cover'
+                />
+              </div>
+              <div className='lg:w-[60%] flex  flex-col  p-5  lg:px-10 pr-0 '>
                 <span className='text-[12px] font-semibold text-primary-blue'>
                   Trade on ESX
                 </span>
-                <h1 className='text-[40px] mt-3'>Why invest?</h1>
+                <h1 className='text-[20px] lg:text-[40px] mt-3'>Why invest?</h1>
                 <hr className='mr-10 border-[#A8965B]' />
-                <p className='text-[16px] text-[#707377]  font-light mt-5 pr-16  w-[100%] '>
+                <p className='text-[14px] lg:text-[16px] text-[#707377]  font-light mt-5 pr-16  w-[100%] '>
                   A benefit to investing and trading on ESX is price
                   transparency. As prices are publicly available, investors are
                   able to make informed decisions based on real-time market data
                 </p>
-                <p className='text-[16px] text-[#707377]  font-light mt-4 pr-16  w-[100%] '>
+                <p className='text-[14px] lg:text-[16px] text-[#707377]  font-light mt-4 pr-16  w-[100%] '>
                   The regulatory oversight of ESX maintains market integrity.
                   This ensures that participants are adhering to trading
                   practices.
                 </p>
-                <p className='text-[16px] text-[#707377] font-light mt-4 pr-16  w-[100%] '>
+                <p className='text-[14px] lg:text-[16px] text-[#707377] font-light mt-4 pr-16  w-[100%] '>
                   The ESX trading platform will be linked with a fully
                   electronic central securities depository (CSD) to ensure
                   efficient post-trade clearing and settlement processes from
                   the launch of the exchange.
                 </p>
 
-                <Link href='#' className='flex text-[16px] mt-5 px-0 '>
-                  View more{" "}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-4 h-4 mt-1.5'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                    />
-                  </svg>
-                </Link>
-              </div>
-              <div className='w-[40%] '>
-                <Image
-                  height={200}
-                  width={200}
-                  src={home.src}
-                  alt='manager'
-                  className='w-[100%] h-[100%] object-cover'
-                />
-              </div>
-            </div>
-          </Card>
-          <div className='mt-5 flex'>
-            <Card width='w-[50%] flex gap-4 flex-col shadow-[0] '>
-              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
-              <main className='pb-[20px] px-[20px] flex flex-col h-full'>
-                <span className='text-[12px] font-semibold text-primary-blue'>
-                  Listing and Admission to Trading
-                </span>
-                <h1 className="text-black text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
-                  <span>ESX Listing Rules</span>
-                  <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
-                </h1>
-                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
-                  Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
-                  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                  nonummy nibh euismod tincidunt ut
-                </p>
-
-                <Link className='mt-auto' href='#'>
-                  View More
-                </Link>
-              </main>
-            </Card>
-            <Card width='w-[50%] ml-5 flex gap-4 flex-col shadow-[0] '>
-              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
-              <main className='pb-[20px] px-[20px] flex flex-col h-full'>
-                <span className='text-[12px] font-semibold text-primary-blue'>
-                  Members
-                </span>
-                <h1 className="text-black text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
-                  <span>ESX Membership Rules</span>
-                  <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
-                </h1>
-                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
-                  Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
-                  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                  nonummy nibh euismod tincidunt ut
-                </p>
-
-                <Link className='mt-auto' href='#'>
-                  View More
-                </Link>
-              </main>
-            </Card>
-          </div>
-          <Card width='flex flex-col  w-full h-full mt-5'>
-            <div className='bg-[#00205B] w-full h-full'>
-              <h1 className='text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
-                Capital market regulatory environment
-              </h1>
-            </div>
-            <div className='flex h-full '>
-              <div className='w-[60%] min-h-full '>
-                <p className='px-8 mt-10 text-[16px] p-0'>
-                  ESX is licensed by the Ethiopian Capital Market Authority
-                  (“ECMA” or “the Authority”) as a securities exchange in line
-                  with Article 30 and 31 of the Capital Market Proclamation
-                  No.1248/2021 (“the Proclamation”).
-                </p>
-                <p className='px-8 mt-5 text-[16px] p-0'>
-                  ECMA is the apex regulator of the capital markets in Ethiopia
-                </p>
-                <p className='px-8 mt-5 text-[16px] p-0'>
-                  ECMA is responsible for setting the legal framework and
-                  regulating entities interested in participating ESX
-                </p>
                 <Link
                   href='#'
-                  className='flex px-8 mt-10 mb-10  
-                text-[16px] p-0'
+                  className='flex text-[14px] lg:text-[16px] mt-5 px-0 '
                 >
                   View more{" "}
                   <svg
@@ -270,7 +182,116 @@ export default function Home() {
                   </svg>
                 </Link>
               </div>
-              <div className='w-[40%] min-h-full '>
+              <div className='hidden lg:blockw-[40%] '>
+                <Image
+                  height={200}
+                  width={200}
+                  src={home.src}
+                  alt='manager'
+                  className='w-[100%] h-[100%] object-cover'
+                />
+              </div>
+            </div>
+          </Card>
+          <div className='mt-5 flex flex-col lg:flex-row'>
+            <Card width='lg:w-[50%] flex gap-4 flex-col shadow-[0] '>
+              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
+              <main className='pb-[20px] px-[20px] flex flex-col h-full'>
+                <span className='text-[12px] font-semibold text-primary-blue'>
+                  Listing and Admission to Trading
+                </span>
+                <h1 className="text-black  text-[20px] lg:text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
+                  <span>ESX Listing Rules</span>
+                  <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
+                </h1>
+                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
+                  Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                  consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
+                  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                  nonummy nibh euismod tincidunt ut
+                </p>
+
+                <Link className='mt-2 lg:mt-auto' href='#'>
+                  View More
+                </Link>
+              </main>
+            </Card>
+            <Card width='lg:w-[50%] mt-5 lg:mt-0 lg:ml-5 flex gap-4 flex-col shadow-[0] '>
+              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
+              <main className='pb-[20px] px-[20px] flex flex-col h-full'>
+                <span className='text-[12px] font-semibold text-primary-blue'>
+                  Members
+                </span>
+                <h1 className="text-black text-[20px] lg:text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
+                  <span>ESX Membership Rules</span>
+                  <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
+                </h1>
+                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
+                  Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
+                  consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
+                  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                  nonummy nibh euismod tincidunt ut
+                </p>
+
+                <Link className='mt-2 lg:mt-auto' href='#'>
+                  View More
+                </Link>
+              </main>
+            </Card>
+          </div>
+          <Card width='flex flex-col  w-full h-full mt-5'>
+            <div className='bg-[#00205B] w-full h-full'>
+              <h1 className='text-[18px] lg:text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+                Capital market regulatory environment
+              </h1>
+            </div>
+            <div className='flex h-full flex-col lg:flex-row '>
+              <div className=' lg:hidden  '>
+                <Image
+                  height={200}
+                  width={200}
+                  src={phoneImage.src}
+                  alt='tbills'
+                  className='w-[100%] mr-[0%] h-[200px] object-cover '
+                />
+              </div>
+              <div className='lg:w-[60%] min-h-full '>
+                <p className='px-5 lg:px-8 py-5 lg:mt-10 text-[14px] lg:text-[16px] lg:p-0'>
+                  ESX is licensed by the Ethiopian Capital Market Authority
+                  (“ECMA” or “the Authority”) as a securities exchange in line
+                  with Article 30 and 31 of the Capital Market Proclamation
+                  No.1248/2021 (“the Proclamation”).
+                </p>
+                <p className='px-5 lg:px-8 lg:mt-5 text-[14px] lg:text-[16px] p-0'>
+                  ECMA is the apex regulator of the capital markets in Ethiopia
+                </p>
+                <p className='px-5 lg:px-8 mt-5 text-[14px] lg:text-[14px] lg:text-[16px] p-0'>
+                  ECMA is responsible for setting the legal framework and
+                  regulating entities interested in participating ESX
+                </p>
+                <Link
+                  href='#'
+                  className='flex px-5 lg:px-8 mt-5 lg:mt-10 lg:mb-10 mb-5  
+                text-[14px] lg:text-[16px] p-0'
+                >
+                  View more{" "}
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-4 h-4 mt-1.5'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                    />
+                  </svg>
+                </Link>
+              </div>
+              <div className='w-[40%] hidden lg:block min-h-full '>
                 <Image
                   height={200}
                   width={200}
@@ -281,23 +302,23 @@ export default function Home() {
               </div>
             </div>
           </Card>
-          <div className='mt-5 w-[100%] flex flex-row'>
-            <Card width='w-[58%] my-0 mr-[2%] h-[100%] pb-5'>
-              <div className=' flex py-5 mx-10 h-[100%]   p-2'>
+          <div className='mt-5 w-[100%] flex flex-col lg:flex-row'>
+            <Card width='lg:w-[58%] my-0 mr-[2%] h-[100%] pb-5'>
+              <div className=' flex py-5 mx-5 lg:mx-10 h-[100%]   lg:p-2'>
                 <div className='w-[100%] flex  flex-col h-[100%]   mt-0 pt-0'>
                   <div className='flex flex-col justify-between h-[100%] '>
                     <div>
                       <span className='text-[12px] font-semibold text-primary-blue'>
                         Press Releases
                       </span>
-                      <p className='text-[16px] w-[100%] mt-2'>
+                      <p className='text-[14px] lg:text-[16px] w-[100%] mt-2'>
                         Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                         amet, consectetuer adipiscing elit, sed diam nonummy
                         nibh euisLorem ipsum dolor sit amet, consectetuer
                         adipiscing elit,
                       </p>
                     </div>
-                    <h1 className='font-semibold text-[20px] my-5 mb-0'>
+                    <h1 className='font-semibold text-[16px] lg:text-[20px] my-5 mb-0'>
                       Read More
                     </h1>
 
@@ -308,7 +329,10 @@ export default function Home() {
                       alt='tbills'
                       className='w-[100%] mr-[0%] h-[177px] my-5 object-fill '
                     />
-                    <Link href='#' className='flex text-[16px] mt-5 px-0 '>
+                    <Link
+                      href='#'
+                      className='flex text-[14px] lg:text-[16px] mt-5 px-0 '
+                    >
                       View more{" "}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -329,11 +353,11 @@ export default function Home() {
                 </div>
               </div>
             </Card>{" "}
-            <Card width='w-[40%] flex flex-col '>
-              <h1 className='py-[20px] text-[24px]  px-[20px]   bg-primary-blue text-white text-xl not-italic font-normal leading-[normal]'>
+            <Card width='lg:w-[40%] mt-5 lg:mt-0 flex flex-col '>
+              <h1 className='py-[20px] text-[20px] lg:text-[24px]  px-[20px]   bg-primary-blue text-white text-xl not-italic font-normal leading-[normal]'>
                 For More Information
               </h1>
-              <main className='pt-[52px] pb-[10px] px-[20px] flex flex-col gap-[10px]'>
+              <main className='pt-5 lg:pt-[52px] lg:pb-[10px] px-5 lg:px-[20px] flex flex-col gap-[10px]'>
                 <h1 className="text-black text-[20px] mb-[0px] font-normal font-['Open Sans']">
                   ESX Insights
                 </h1>
@@ -342,8 +366,8 @@ export default function Home() {
                 </p>
                 <Link
                   href='#'
-                  className='flex px-0 my-0  mt-5 
-                text-[16px] '
+                  className='flex px-0 my-0 mt-2 lg:mt-5 
+                text-[14px] lg:text-[16px] '
                 >
                   View more{" "}
                   <svg
@@ -361,9 +385,9 @@ export default function Home() {
                     />
                   </svg>
                 </Link>
-                <hr className=' mt-[10px]  border border-0.5 border-gray/30' />
+                <hr className='mt-[5px] lg:mt-[10px]  border border-0.5 border-gray/30' />
               </main>
-              <main className='pt-[22px] pb-[50px] px-[20px]  flex flex-col gap-[10px]'>
+              <main className='pt-[5px] lg:pt-[22px] pb-5 lg:pb-[50px] px-[20px]  flex flex-col gap-[10px]'>
                 <h1 className="text-black text-[20px] mb-[5px] font-normal font-['Open Sans']">
                   Facts and Figures
                 </h1>
@@ -371,7 +395,10 @@ export default function Home() {
                   ESX and its subsidiaries recorded $21.9 billion in US revenues
                   in the fiscal year ended June 1,2023
                 </p>
-                <Link href='#' className='flex text-[16px] mt-5 px-0 '>
+                <Link
+                  href='#'
+                  className='flex text-[14px] lg:text-[16px] mt-2 lg:mt-5 px-0 '
+                >
                   View more{" "}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -391,39 +418,20 @@ export default function Home() {
               </main>
             </Card>
           </div>
-          <Card width='w-[100%] my-5 mb-[120px] py-10  h-[fit-content] '>
+          <Card width='w-[100%] my-5 my-0 py-5 lg:py-10  h-[fit-content] mb-[140px]'>
             <div className='w-[100%] flex p-0  mx-0 '>
-              <div className='flex  flex-col  p-5 px-10 pt-0 pr-0 relative'>
-                <h1 className='text-[40px] w-[100%] '>Join us</h1>
-                <hr className='w-[60%] ' />
+              <div className='flex  flex-col  p-5 px-4 md:px-10 pt-0 pr-0 relative'>
+                <h1 className='text-[30px] lg:text-[40px] w-[100%] '>
+                  Join us
+                </h1>
+                <hr className='mr-10 lg:mr-0 lg:w-[60%] ' />
                 <p className='text-[16px] font-light mt-4 pr-16  w-[100%] '>
                   Are you Interested in working at ESX? Please click here to see
                   what jobs are currently available.
-                  <Link
-                    href='#'
-                    className='flex px-0 mt-10 mb-0  
-                text-[16px] p-0'
-                  >
-                    View more{" "}
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='w-4 h-4 mt-1.5'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                      />
-                    </svg>
-                  </Link>
                 </p>
-                <div className='absolute grid grid-cols-3 py-10 w-[90%] left-[10%] -bottom-[160px] bg-primary-blue'>
+                <div className='absolute grid grid-cols-3 py-10 w-[90%] left-[5%] lg:left-[10%] -bottom-[150px] lg:-bottom-[160px] bg-primary-blue'>
                   <div className='border-right flex flex-col border-r border-white text-center'>
-                    <h1 className='text-white font-semibold text-[40px]'>
+                    <h1 className='text-white font-semibold text-[24px] lg:text-[40px]'>
                       150 +
                     </h1>
                     <h1 className='text-white font-normal text-[12px]'>
@@ -431,19 +439,19 @@ export default function Home() {
                     </h1>
                   </div>
                   <div className='border-right flex flex-col border-r border-white text-center'>
-                    <h1 className='text-white font-semibold text-[40px]'>
+                    <h1 className='text-white font-semibold text-[24px] lg:text-[40px]'>
                       20 +
                     </h1>
                     <h1 className='text-white font-normal text-[12px]'>
                       Offices
                     </h1>
                   </div>{" "}
-                  <div className='border-right flex flex-col border-r border-white text-center'>
-                    <h1 className='text-white font-semibold text-[40px]'>
+                  <div className='flex flex-col border-r text-center'>
+                    <h1 className='text-white font-semibold text-[24px] lg:text-[40px]'>
                       50 +
                     </h1>
                     <h1 className='text-white font-normal text-[12px]'>
-                      Clients represented
+                      Clients <br className='flex lg:hidden' /> represented
                     </h1>
                   </div>
                 </div>
