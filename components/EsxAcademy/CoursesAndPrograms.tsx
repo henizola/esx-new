@@ -54,7 +54,7 @@ function CoursesAndPrograms() {
   ];
   return (
     <div className='w-full h-full  '>
-      <h1 className='text-[24px] px-5 py-5 mb-0 text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+      <h1 className='text-[24px] px-5 py-5 mb-0 text-left text-white  w-[100%] bg-primary-blue   font-normal '>
         Courses and programs{" "}
       </h1>
       <div className='w-full min-h-[1000px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-0 gap-x-5 pt-0 '>
@@ -75,10 +75,10 @@ function CoursesAndPrograms() {
                 />
               </div>
               <div className='bg-white w-full h-[50%] px-6'>
-                <h1 className='pt-7 pb-5 font-normal text-[16px] font-sans text-[#00205B]'>
+                <h1 className='pt-7 pb-5 font-normal text-[16px]   text-[#00205B]'>
                   {member.title}
                 </h1>
-                <p className='pb-7 font-light text-[16px] font-sans text-[#7F7F7F]'>
+                <p className='pb-7 font-light text-[16px]   text-[#7F7F7F]'>
                   {member.description}
                 </p>
               </div>

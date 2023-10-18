@@ -7,7 +7,7 @@ function TradingFAQ() {
     <Card width='w-[100%]'>
       <div className='flex mx-5'>
         <div className='w-[100%] flex flex-col border-b border-gray mb-8'>
-          <h1 className='text-[32px] font-sans font-normal border-b pt-8 pb-6 mb-7'>
+          <h1 className='text-[32px]   font-normal border-b pt-8 pb-6 mb-7'>
             Frequently asked questions{" "}
           </h1>
           <div className='bg-[#F0F0F0] w-full max-w-full pb-5'>
@@ -15,7 +15,7 @@ function TradingFAQ() {
               title={"What are the benefits of trading in fixed income ?"}
             >
               {" "}
-              <p className='text-[16px] font-sans font-normal text-[#707377] pt-5 pb-3 px-5 bg-[#F0F0F0]'>
+              <p className='text-[16px]   font-normal text-[#707377] pt-5 pb-3 px-5 bg-[#F0F0F0]'>
                 Some of the benefits of investing include income earned through
                 dividends, protection of saving from the effects of inflation,
                 capital gains, and diversification.

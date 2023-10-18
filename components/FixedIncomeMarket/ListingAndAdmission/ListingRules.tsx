@@ -19,7 +19,7 @@ function ListingRules() {
     <div className=' w-full h-[100%] flex '>
       <div className='w-[100%] flex flex-col  mt-0 pt-0 bg-white py-9'>
         <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+          <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
             Listing Rules{" "}
           </h1>
         </div>
@@ -27,7 +27,7 @@ function ListingRules() {
           return (
             <div
               key={index}
-              className={`flex items-center w-[100%] relative text-[15px] font-sans font-light mt-2 px-5 leading-6 gap-2`}
+              className={`flex items-center w-[100%] relative text-[15px]   font-light mt-2 px-5 leading-6 gap-2`}
             >
               <div
                 className={` h-full flex  ${
@@ -55,7 +55,7 @@ function ListingRules() {
                       return (
                         <div
                           key={index}
-                          className='relative flex items-center text-[15px] font-sans font-light text-[#707377] mt-2 pl-[180px] pr-16 leading-6 gap-2'
+                          className='relative flex items-center text-[15px]   font-light text-[#707377] mt-2 pl-[180px] pr-16 leading-6 gap-2'
                         >
                           <div>
                             <svg

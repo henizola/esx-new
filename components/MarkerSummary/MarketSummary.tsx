@@ -111,13 +111,13 @@ const MarketSummary: React.FC = () => {
 
   return (
     <div className='summary max-w-[100vw] overflow-hidden py-5 lg:py-10   bg-white'>
-      <h1 className='text-[20px] w-[100%] text-center lg:text-[36px] '>
+      <h1 className='text-[20px] w-[100%] text-center lg:text-header '>
         Market summary
       </h1>
       <Slider {...settings} className=' mt-5 lg:mt-10 p-0 mx-2  lg:mx-32'>
         {stocks.map((slide) => (
           <div key={slide.name} className='lg:px-5'>
-            <h1 className='text-[16px] lg:text-[24px] h-[30px] lg:h-[90px] text-center'>
+            <h1 className='text-[16px] lg:text-paragraphBig h-[30px] lg:h-[90px] text-center'>
               {slide.name}
             </h1>
             <div

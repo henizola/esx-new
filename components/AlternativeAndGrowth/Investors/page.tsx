@@ -61,11 +61,11 @@ const Page: React.FC<InvestorsProps> = ({ setStep, step }) => {
               <div className='md:w-[60%] px-5 py-5 md:px-0 md:py-0'>
                 <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                   <p className='text-[12px] font-semibold'>Crowdex</p>
-                  <h1 className='text-[30px]  font-sans font-normal   mt-3   pt-0'>
+                  <h1 className='text-[30px]    font-normal   mt-3   pt-0'>
                     Investors
                   </h1>
                   <hr className='  mt-3  mb-3' />
-                  <p className='w-[90%]  text-[16px] font-sans font-normal mt-2 pt-0 leading-6 text-gray'>
+                  <p className='w-[90%]  text-[16px]   font-normal mt-2 pt-0 leading-6 text-gray'>
                     They have access to a new mechanism for getting funds that
                     is not dependent on the banking system, that does not
                     generate any dilution of their capital and that does not

@@ -17,30 +17,30 @@ const RepurchaseAgreement = () => {
     "The ESX repo platform acts as a matchmaker by bringing buyers and sellers of funds in the repo market together efficiently in an organized manner.",
   ];
   return (
-    <div className="flex flex-col w-full p-0 m-0">
-      <div className="flex w-full ">
-        <div className="flex flex-col w-full">
-          <Card width="w-[100%] h-full flex flex-row">
-            <div className="w-[38%] h-[100%]">
+    <div className='flex flex-col w-full p-0 m-0'>
+      <div className='flex w-full '>
+        <div className='flex flex-col w-full'>
+          <Card width='w-[100%] h-full flex flex-row'>
+            <div className='w-[38%] h-[100%]'>
               <Image
                 height={200}
                 width={200}
                 src={overview.src}
-                alt="overview"
-                className="w-full object-cover h-[100%]"
+                alt='overview'
+                className='w-full object-cover h-[100%]'
               />
             </div>
-            <div className="w-[62%] flex px-5 pt-10  flex-col">
-              <h1 className="text-[30px] font-sans font-light mt-0 pt-0  border-b border-[#A8965B]">
+            <div className='w-[62%] flex px-5 pt-10  flex-col'>
+              <h1 className='text-[30px]   font-light mt-0 pt-0  border-b border-[#A8965B]'>
                 Corporate Bonds{" "}
               </h1>
 
-              <div className="pl-7">
+              <div className='pl-7'>
                 {lists.map((item, index) => {
                   return (
                     <div
                       key={index}
-                      className={`py-5 font-normal text-[14px] font-sans ${
+                      className={`py-5 font-normal text-[14px]   ${
                         lists.length - 1 !== index &&
                         "border-b border-[#A8965B]"
                       }`}
@@ -52,24 +52,24 @@ const RepurchaseAgreement = () => {
               </div>
             </div>
           </Card>
-          <Card width="w-[100%] py-7 px-6 mt-5">
-            <div className="flex">
-              <div className="w-[100%] flex  flex-col  mt-0 pt-0">
-                <h1 className="text-[30px] font-sans font-normal mt-0 pt-0">
+          <Card width='w-[100%] py-7 px-6 mt-5'>
+            <div className='flex'>
+              <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
+                <h1 className='text-[30px]   font-normal mt-0 pt-0'>
                   Commercial Papers{" "}
                 </h1>
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-5 pt-0 leading-6 text-[#7F7F7F]">
+                <p className='w-[100%]  text-[15px]   font-normal mt-5 pt-0 leading-6 text-[#7F7F7F]'>
                   Commercial papers (CPs) are short-term debt obligations issued
                   by large corporations with a maturity period of less than 270
                   days.
                 </p>
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-3 pt-0 leading-6 text-[#7F7F7F]">
+                <p className='w-[100%]  text-[15px]   font-normal mt-3 pt-0 leading-6 text-[#7F7F7F]'>
                   CPs are usually sold to investors at a discount to face value
                   and primarily issued by corporates to fund working capital or
                   finance short term assets. Investors receive the face value of
                   the CP instrument at maturity.
                 </p>
-                <p className="w-[100%]  text-[15px] font-sans font-normal mt-3 pt-0 leading-6 text-[#7F7F7F]">
+                <p className='w-[100%]  text-[15px]   font-normal mt-3 pt-0 leading-6 text-[#7F7F7F]'>
                   Corporates can efficiently issue which can then be quoted and
                   traded on the secondary market by market participants on the
                   ESX platform.

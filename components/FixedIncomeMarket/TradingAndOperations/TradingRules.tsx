@@ -17,7 +17,7 @@ function TradingRules() {
     <div className=' w-full h-[100%] flex '>
       <div className='w-[100%] flex flex-col  mt-0 pt-0 bg-white py-9'>
         <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-[32px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+          <h1 className='text-[32px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
             Trading rules{" "}
           </h1>
         </div>
@@ -26,7 +26,7 @@ function TradingRules() {
             return (
               <div
                 key={index}
-                className='w-[100%] relative flex items-center text-[16px] font-sans font-normal text-black mt-2 px-5 leading-6 gap-2'
+                className='w-[100%] relative flex items-center text-[16px]   font-normal text-black mt-2 px-5 leading-6 gap-2'
               >
                 <div>
                   <svg
@@ -57,7 +57,7 @@ function TradingRules() {
             return (
               <div
                 key={index}
-                className='relative flex items-center text-[16px] font-sans  text-[#707377] mt-2 pl-[180px] pr-16 leading-6 gap-2 font-normal'
+                className='relative flex items-center text-[16px]    text-[#707377] mt-2 pl-[180px] pr-16 leading-6 gap-2 font-normal'
               >
                 <div>
                   <svg

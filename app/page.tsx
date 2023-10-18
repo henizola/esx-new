@@ -38,13 +38,13 @@ export default function Home() {
       </div>
       <MarketSummary />
 
-      <div className='flex w-full  lg:px-28 py-7'>
-        <Card width=' w-[28%] mr-5 hidden lg:flex flex-col text-left  py-10 px-5'>
+      <div className='flex w-full relative lg:px-28 py-7'>
+        <Card width=' w-[23%] mr-5 sticky h-fit hidden lg:flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>ESX</h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
               }}
@@ -62,7 +62,7 @@ export default function Home() {
             <Card width='lg:w-[67%] mr-[0%] pb-10 h-[100%]'>
               <div className='flex p-0 mx-0'>
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
-                  <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+                  <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
                     Market summary
                   </h1>
 
@@ -79,7 +79,7 @@ export default function Home() {
             <Card width=' lg:w-[40%] pb-10 h-[100%]'>
               <div className='flex p-0 mx-0'>
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
-                  <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+                  <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
                     Other markets
                   </h1>
                   <div className='p-8 '>
@@ -182,7 +182,7 @@ export default function Home() {
                   </svg>
                 </Link>
               </div>
-              <div className='hidden lg:blockw-[40%] '>
+              <div className='hidden lg:block w-[40%] '>
                 <Image
                   height={200}
                   width={200}
@@ -241,7 +241,7 @@ export default function Home() {
           </div>
           <Card width='flex flex-col  w-full h-full mt-5'>
             <div className='bg-[#00205B] w-full h-full'>
-              <h1 className='text-[18px] lg:text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+              <h1 className='text-[18px] lg:text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
                 Capital market regulatory environment
               </h1>
             </div>

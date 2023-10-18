@@ -23,11 +23,11 @@ function HowToBecomeMember() {
     <div>
       <div className='bg-white'>
         <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+          <h1 className='text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
             How to become a member{" "}
           </h1>
         </div>
-        <p className='py-10 pl-5 pr-40 text-[16px] font-sans font-light'>
+        <p className='py-10 pl-5 pr-40 text-[16px]   font-light'>
           Only capital market service providers, registered in Ethiopia by the
           Ethiopian Capital Market Authority are eligible to become a trading
           member of the exchange.
@@ -42,7 +42,7 @@ function HowToBecomeMember() {
               >
                 <p
                   key={index}
-                  className={`font-normal text-[20px] font-sans text-[#001F59] ${
+                  className={`font-normal text-[20px]   text-[#001F59] ${
                     item === selectedStep && "font-semibold"
                   }`}
                 >
@@ -57,10 +57,10 @@ function HowToBecomeMember() {
             );
           })}
         </div>
-        <h1 className='font-normal text-[32px] font-sans px-5'>
+        <h1 className='font-normal text-[32px]   px-5'>
           How to Become a Member
         </h1>
-        <div className='w-[100%] relative flex items-center text-[15px] font-sans font-light mt-2 px-5 leading-6 gap-2'>
+        <div className='w-[100%] relative flex items-center text-[15px]   font-light mt-2 px-5 leading-6 gap-2'>
           <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -83,7 +83,7 @@ function HowToBecomeMember() {
       </div>
 
       <div className='bg-white mt-5'>
-        <h1 className='font-normal text-[32px] font-sans ml-5 mr-20 pt-8 pb-8 border-b'>
+        <h1 className='font-normal text-[32px]   ml-5 mr-20 pt-8 pb-8 border-b'>
           The applicant shall provide the following in evidence:{" "}
         </h1>
         <div className='pl-5 pr-20'>
@@ -91,7 +91,7 @@ function HowToBecomeMember() {
             return (
               <p
                 key={index}
-                className={` py-5 text-[14px] font-sans text-[#707377] ${
+                className={` py-5 text-[14px]   text-[#707377] ${
                   lists2.length - 1 !== index && "border-b border-black "
                 }`}
               >

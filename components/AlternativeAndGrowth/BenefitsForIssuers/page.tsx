@@ -72,11 +72,11 @@ const Page: React.FC<BenefitsForIssuersProps> = ({ setStep, step }) => {
                   className='w-[100%] object-cover h-[100%]'
                 />
               </div>
-              <h1 className='text-[24px] h-[77px] px-10 py-0 my-0 md:my-5 text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '></h1>
+              <h1 className='text-[24px] h-[77px] px-10 py-0 my-0 md:my-5 text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
               <Card width='w-[100%] pb-10  md:mt-5 px-5 py-5 '>
                 <h1 className='text-[20px] '>Benefits for Issuers</h1>
-                <p className='w-[100%] mt-3 text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
+                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6 text-gray'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>
@@ -92,11 +92,11 @@ const Page: React.FC<BenefitsForIssuersProps> = ({ setStep, step }) => {
                   className='w-[100%] object-cover h-[100%]'
                 />
               </div>
-              <h1 className='text-[24px] h-[77px] px-10 py-0 my-0 md:my-5 text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '></h1>
+              <h1 className='text-[24px] h-[77px] px-10 py-0 my-0 md:my-5 text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
               <Card width='w-[100%] pb-10  md:mt-5 px-5 py-5 '>
                 <h1 className='text-[20px] '>Benefits for Issuers</h1>
-                <p className='w-[100%] mt-3 text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
+                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6 text-gray'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>
@@ -113,11 +113,11 @@ const Page: React.FC<BenefitsForIssuersProps> = ({ setStep, step }) => {
                   className='w-[100%] object-cover h-[100%]'
                 />
               </div>
-              <h1 className='text-[24px] h-[77px] px-10 py-0 my-0 md:my-5 text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '></h1>
+              <h1 className='text-[24px] h-[77px] px-10 py-0 my-0 md:my-5 text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
               <Card width='w-[100%] pb-10  md:mt-5 px-5 py-5 '>
                 <h1 className='text-[20px] '>Benefits for Issuers</h1>
-                <p className='w-[100%] mt-3 text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
+                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6 text-gray'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>

@@ -1,11 +1,9 @@
 "use client";
+import { useNumber } from "@/context/nav.context";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import logo from "/public/images/logo.png";
-import { useNumber } from "@/context/nav.context";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface MenuItem {
   name: string;
@@ -31,7 +29,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
   const hasSubMenu = item.submenu && item.submenu.length > 0;
   const { setNumber } = useNumber();
   return (
-    <div className={`group relative`} onMouseEnter={openSubMenu}>
+    <div className={`group relative `} onMouseEnter={openSubMenu}>
       <Link
         href={item.href}
         className={`group  flex items-center justify-between px-4 py-5 text-sm relative`}
@@ -48,10 +46,10 @@ const MenuItem: React.FC<MenuItemProps> = ({
         )}
         <span className='absolute w-full h-1 bg-transparent transition-transform transform scale-x-0 group-hover:scale-x-100'></span>
       </Link>
-      {hasSubMenu && showSubMenu && (
+      {item.submenu && showSubMenu && (
         <div
           style={{ listStyle: "none" }}
-          className='fixed w-[85vw]  z-10 min-h-[65vh] left-[7vw] p-7 mx-3 hidden mt--1 space-y-1 bg-primary-golden primary-blue group-hover:block transform scale-x-0 group-hover:scale-x-100 '
+          className='fixed w-[75vw]  z-10  left-[13vw] p-7 mx-3 hidden mt--1 space-y-1 bg-[#ffff] primary-blue group-hover:block transform scale-x-0 group-hover:scale-x-100 '
           onMouseLeave={closeSubMenu}
         >
           <svg
@@ -71,9 +69,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
             />
           </svg>
 
-          <div className='grid grid-cols-4  pt-10 '>
-            {item.submenu!.map((subItem) => (
-              <div key={subItem.name} className='flex flex-col'>
+          <div className='flex justify-around  pt-0 '>
+            {item.submenu?.map((subItem) => (
+              <div key={subItem.name} className='flex flex-col '>
                 <Link
                   href={subItem.href}
                   onClick={() => {
@@ -83,9 +81,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
                   }}
                   className={`${
                     subItem.current ? "bg-blue-200" : ""
-                  } px-4 py-2  block w-fit broder text-white`}
+                  } px-4 py-2  block text-link w-fit  text-primary-blue`}
                 >
-                  <span className='hover:underline font-bold text-xl'>
+                  <span className='hover:underline  text-l'>
                     {" "}
                     {subItem.name}
                   </span>
@@ -100,7 +98,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                       }}
                       className={`${
                         subItem.current ? "bg-blue-200" : "hover:underline"
-                      }  px-4 py-2  text-s block w-fit broder text-white`}
+                      }  px-4 py-2  text-subLink block w-fit font- text-primary-blue`}
                     >
                       {subItem.name}
                     </Link>
@@ -117,8 +115,14 @@ const MenuItem: React.FC<MenuItemProps> = ({
 
 const navigation: MenuItem[] = [
   {
-    name: "About Us",
+    name: "Home",
     href: "/",
+    current: false,
+    value: 0,
+  },
+  {
+    name: "About Us",
+    href: "/about-us",
     current: false,
     value: 0,
     submenu: [
@@ -155,12 +159,11 @@ const navigation: MenuItem[] = [
             value: 4,
           },
           { name: "Management", href: "/about-us", current: false, value: 5 },
-          { name: "Staff", href: "/about-us", current: false },
         ],
       },
-      { name: "ESX Reports", href: "/about-us", current: false, value: 6 },
-      { name: "Careers", href: "/about-us", current: false, value: 7 },
-      { name: "Tenders", href: "/about-us", current: false, value: 8 },
+      // { name: "ESX Reports", href: "/about-us", current: false, value: 6 },
+      // { name: "Careers", href: "/about-us", current: false, value: 7 },
+      // { name: "Tenders", href: "/about-us", current: false, value: 8 },
     ],
   },
   {
@@ -551,96 +554,96 @@ const navigation: MenuItem[] = [
     ],
   },
 
-  {
-    name: "Alternative and Growth Market",
-    href: "/alternative-and-growth-market",
-    value: 0,
-    current: false,
-    submenu: [
-      {
-        name: "Overview",
-        href: "/alternative-and-growth-market",
-        current: false,
-        value: 0,
-      },
-      {
-        name: "Crowdex",
-        href: "/alternative-and-growth-market",
-        current: false,
-        value: 1,
-        submenu: [
-          {
-            name: "What is CrowdEx?",
-            href: "/alternative-and-growth-market",
-            current: false,
-            value: 1,
-          },
-          {
-            name: "Benefits for Issuers",
-            href: "/alternative-and-growth-market",
-            current: false,
-            value: 2,
-          },
-          {
-            name: "Issuers",
-            href: "/alternative-and-growth-market",
-            current: false,
-            value: 3,
-          },
-          {
-            name: "Investors",
-            href: "/alternative-and-growth-market",
-            current: false,
-            value: 4,
-          },
-        ],
-      },
-      {
-        name: "FactorEx",
-        href: "/alternative-and-growth-market",
-        current: false,
-        submenu: [
-          {
-            name: "What is FactorEx?",
-            href: "/alternative-and-growth-market",
-            current: false,
-          },
-          {
-            name: "Benefits",
-            href: "/alternative-and-growth-market",
-            current: false,
-          },
-          {
-            name: "Buyers",
-            href: "/alternative-and-growth-market",
-            current: false,
-          },
-          {
-            name: "Suppliers",
-            href: "/alternative-and-growth-market",
-            current: false,
-          },
-        ],
-      },
-      {
-        name: "Capital Market Accelerator",
-        href: "/alternative-and-growth-market",
-        current: false,
-        submenu: [
-          {
-            name: "Benefits",
-            href: "/alternative-and-growth-market",
-            current: false,
-          },
-          {
-            name: "How to Become a Member of the Program",
-            href: "/alternative-and-growth-market",
-            current: false,
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   name: "Alternative and Growth Market",
+  //   href: "/alternative-and-growth-market",
+  //   value: 0,
+  //   current: false,
+  //   submenu: [
+  //     {
+  //       name: "Overview",
+  //       href: "/alternative-and-growth-market",
+  //       current: false,
+  //       value: 0,
+  //     },
+  //     {
+  //       name: "Crowdex",
+  //       href: "/alternative-and-growth-market",
+  //       current: false,
+  //       value: 1,
+  //       submenu: [
+  //         {
+  //           name: "What is CrowdEx?",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //           value: 1,
+  //         },
+  //         {
+  //           name: "Benefits for Issuers",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //           value: 2,
+  //         },
+  //         {
+  //           name: "Issuers",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //           value: 3,
+  //         },
+  //         {
+  //           name: "Investors",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //           value: 4,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "FactorEx",
+  //       href: "/alternative-and-growth-market",
+  //       current: false,
+  //       submenu: [
+  //         {
+  //           name: "What is FactorEx?",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //         },
+  //         {
+  //           name: "Benefits",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //         },
+  //         {
+  //           name: "Buyers",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //         },
+  //         {
+  //           name: "Suppliers",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "Capital Market Accelerator",
+  //       href: "/alternative-and-growth-market",
+  //       current: false,
+  //       submenu: [
+  //         {
+  //           name: "Benefits",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //         },
+  //         {
+  //           name: "How to Become a Member of the Program",
+  //           href: "/alternative-and-growth-market",
+  //           current: false,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     name: "News and Media ",
     href: "/news-and-media ",
@@ -715,7 +718,7 @@ const Header: React.FC = () => {
   return (
     <Disclosure
       as='nav'
-      className='bg-white-800  mx-0 w-screen py-0 px-0 shadow-md '
+      className='bg-[#f0f0f0] hidden lg:block  z-50 mx-0 w-screen py-0 px-0 shadow-md fixed top-0'
     >
       {({ open }) => (
         <>
@@ -736,20 +739,10 @@ const Header: React.FC = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
-                <Link href='/' className='flex flex-shrink-0 items-center'>
-                  <Image
-                    className='h-8 w-auto'
-                    src={logo.src}
-                    alt='Your Company'
-                    width={60}
-                    height={50}
-                    style={{ height: "22px" }}
-                  />
-                </Link>
-                <div className='hidden sm:ml-6 sm:block'>
+              <div className='flex flex-1 items-center  justify-center sm:items-stretch sm:justify-around'>
+                <div className='hidden sm:ml-6 sm:block   '>
                   <div className='flex space-x-4  '>
-                    <nav className='flex space-x-4'>
+                    <nav className='flex space-x-4 '>
                       {navigation.map((item) => (
                         <MenuItem
                           key={item.name}

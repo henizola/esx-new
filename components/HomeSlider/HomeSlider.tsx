@@ -2,7 +2,9 @@
 import "./HomeSliderStyles.css";
 import Image from "next/image";
 import Slider from "react-slick";
-import background from "../../public/images/Addis Ababa Ethiopia 1.png";
+import slider1 from "../../public/images/home-slider-1.jpg";
+import slider2 from "../../public/images/home-slider-2.jpg";
+import slider3 from "../../public/images/home-slider-3.jpg";
 
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -21,7 +23,7 @@ export default function HomeSlider() {
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
         viewBox='0 0 24 24'
-        strokeWidth={3.5}
+        strokeWidth={2}
         stroke='white'
       >
         <path
@@ -36,7 +38,7 @@ export default function HomeSlider() {
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
         viewBox='0 0 24 24'
-        strokeWidth={3.5}
+        strokeWidth={2}
         stroke='white'
       >
         <path
@@ -49,37 +51,37 @@ export default function HomeSlider() {
   };
   const slides = [
     {
-      image: background.src,
+      image: slider2.src,
       alt: "image",
       title: "Attracting new issuers and investors to the market",
     },
     {
-      image: background.src,
+      image: slider1.src,
       alt: "image",
       title: "Attracting new issuers and investors to the market",
     },
     {
-      image: background.src,
+      image: slider3.src,
       alt: "image",
       title: "Attracting new issuers and investors to the market",
     },
   ];
   return (
-    <div className='max-w-[100vw] border'>
+    <div className='max-w-[100vw] '>
       <Slider {...settings} className=' m-0 p-0 '>
         {slides.map((slide, index) => (
           <>
             <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
             <div className='relative'>
-              <h1 className='absolute top-[50%] px-5 lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-[40px] font-semibold  w-[100%] text-center z-50'>
+              <h1 className='absolute top-[50%] px-5 lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-header font-bold  w-[100%] text-center z-50'>
                 {slide.title}
               </h1>
-              <Image
+              <img
                 src={slide.image}
                 alt={slide.alt}
                 height={100}
                 width={100}
-                className=' inset-0 h-[40vh] lg:h-[60vh]  w-[100vw] max-height-[90vh] z-0 object-cover'
+                className=' inset-0 h-[40vh] lg:h-[70vh]  w-[100vw] max-height-[90vh] z-0 object-cover'
               />
             </div>
           </>

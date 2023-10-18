@@ -12,20 +12,20 @@ function TbillsAndBonds() {
     "Treasury Bonds are safe, long-term debt securities issued by the Ethiopian government to investors with a maturity period of more than one year.",
   ];
   return (
-    <Card width="flex flex-col  w-full h-full">
-      <div className="bg-[#00205B] w-full h-full">
-        <h1 className="text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal ">
+    <Card width='flex flex-col  w-full h-full'>
+      <div className='bg-[#00205B] w-full h-full'>
+        <h1 className='text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
           T-bills and bonds
         </h1>
       </div>
-      <div className="flex h-full ">
-        <div className="min-h-full bg-white pt-10 px-5 flex flex-col justify-between  ">
+      <div className='flex h-full '>
+        <div className='min-h-full bg-white pt-10 px-5 flex flex-col justify-between  '>
           <div>
             {tbils.map((tbil, index) => {
               return (
                 <p
                   key={index}
-                  className={` py-5 text-[14px] font-sans font-normal ${
+                  className={` py-5 text-[14px]   font-normal ${
                     tbils.length - 1 !== index && "border-b border-black "
                   }`}
                 >
@@ -35,13 +35,13 @@ function TbillsAndBonds() {
             })}
           </div>
         </div>
-        <div className="min-w-[38%] min-h-full ">
+        <div className='min-w-[38%] min-h-full '>
           <Image
             height={200}
             width={200}
             src={tbills.src}
-            alt="tbills"
-            className="w-[100%] h-[100%] object-fill "
+            alt='tbills'
+            className='w-[100%] h-[100%] object-fill '
           />
         </div>
       </div>

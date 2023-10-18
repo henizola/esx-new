@@ -320,7 +320,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
           </div>
         </div>
       </div>
-      <div className='bg-white py-[68px]'>
+      {/* <div className='bg-white py-[68px]'>
         <div className='max-w-[980px] mx-auto w-full flex flex-col items-center'>
           <h3 className="text-center text-black text-2xl font-bold font-['Open Sans']">
             Contact the team
@@ -334,7 +334,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
             Contact us
           </button>
         </div>
-      </div>
+      </div> */}
       {/* <CustomSlider slides={slides} /> */}
     </div>
   );

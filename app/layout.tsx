@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import Footer from "@/components/Header/Footer";
 import { NumberProvider } from "@/context/nav.context";
+import MobileFooter from "@/components/Header/MobileFooter";
+import MobileHeader from "@/components/Header/MobileHeader";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +22,21 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
+          href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
           rel='stylesheet'
-          href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'
         />
       </head>
       <body className={`  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}>
         <NumberProvider>
           <Header />
+          {/* <MobileHeader /> */}
+
           {children}
           <Footer />
+          <MobileFooter />
         </NumberProvider>
       </body>
     </html>

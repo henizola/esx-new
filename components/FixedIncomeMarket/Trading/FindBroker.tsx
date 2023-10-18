@@ -29,7 +29,7 @@ function FindBroker() {
       </Card>
       <div className='bg-white'>
         <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '>
+          <h1 className='text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
             List of registered brokers
           </h1>
         </div>
@@ -48,7 +48,7 @@ function FindBroker() {
       </div>
       <div className=' flex w-full items-center justify-center'>
         <div className='w-[90%] px-24 h-[450px] flex flex-col bg-primary-blue'>
-          <h1 className='text-left text-[32px] text-white font-semibold font-sans pt-16 pb-5'>
+          <h1 className='text-left text-[32px] text-white font-semibold   pt-16 pb-5'>
             Sign Up
           </h1>
 
@@ -64,7 +64,7 @@ function FindBroker() {
             className='text border w-[460px] border-round-md border-white rounded-md p-3 bg-primary-blue mt-5'
             placeholder='Password'
           />
-          <span className='text-right w-[460px] pt-7 pb-10 cursor-pointer text-[20px] font-medium text-white font-sans'>
+          <span className='text-right w-[460px] pt-7 pb-10 cursor-pointer text-[20px] font-medium text-white  '>
             Subscribe
           </span>
         </div>

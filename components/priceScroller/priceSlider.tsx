@@ -12,24 +12,20 @@ import Image from "next/image";
 
 // Dummy data for demonstration purposes (replace with actual stock data)
 const dummyStockData = [
-  { name: "Stock A", price: 100 },
-  { name: "Stock B", price: 150 },
-  { name: "Stock C", price: 75 },
-  { name: "Stock D", price: 120 },
-  { name: "Stock E", price: 90 },
-  { name: "Stock F", price: 200 },
-  { name: "Stock A", price: 100 },
-  { name: "Stock B", price: 150 },
-  { name: "Stock C", price: 75 },
-  { name: "Stock D", price: 120 },
-  { name: "Stock E", price: 90 },
-  { name: "Stock F", price: 200 },
-  { name: "Stock A", price: 100 },
-  { name: "Stock B", price: 150 },
-  { name: "Stock C", price: 75 },
-  { name: "Stock D", price: 120 },
-  { name: "Stock E", price: 90 },
-  { name: "Stock F", price: 200 },
+  { name: "Stock Ticker Comming  Soon", price: 100 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Stock Ticker Comming  Soon", price: 150 },
 ];
 
 const StockPriceAutoScroller: React.FC = () => {
@@ -38,7 +34,7 @@ const StockPriceAutoScroller: React.FC = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -50,7 +46,7 @@ const StockPriceAutoScroller: React.FC = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 2,
         },
       },
       {
@@ -92,7 +88,8 @@ const StockPriceAutoScroller: React.FC = () => {
               }}
             >
               <div className='text-white pl-0 relative w-fit'>
-                Lorem {slide.price.toFixed(2)}{" "}
+                {slide.name}
+                {/* Lorem {slide.price.toFixed(2)}{" "}
                 {Math.random() * 107 - 5 > 60 ? (
                   <Image
                     height={0}
@@ -109,12 +106,12 @@ const StockPriceAutoScroller: React.FC = () => {
                     alt='manager'
                     className='w-5 h-5 -right-8 absolute top-1 '
                   />
-                )}
+                )} */}
               </div>
-              <div className='text-white pl-10 relative w-fit'>
+              {/* <div className='text-white pl-10 relative w-fit'>
                 {" "}
                 {(Math.random() * 10 - 5).toFixed(0)} %
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

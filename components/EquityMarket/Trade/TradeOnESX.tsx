@@ -178,7 +178,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 height={100}
                 width={400}
                 alt=''
-                className='w-[40%] hidden md:block  aspect-square object-cover'
+                className='w-[40%] hidden lg:block  aspect-square object-cover'
               />
             </div>
           </Card>

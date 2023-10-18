@@ -51,12 +51,12 @@ const Page: React.FC<AlternativeAndGrowthProps> = ({ setStep, step }) => {
             <Card width='w-[100%] pb-10 h-[100%]'>
               <div className='flex flex-col p-0 mx-0'>
                 <div className='lg:h-[40vh]'>
-                  <h1 className='text-[24px] px-5 lg:px-10 mt-5 lg:mt-10  text-left text-primary-blue font-sans font-normal '>
+                  <h1 className='text-[24px] px-5 lg:px-10 mt-5 lg:mt-10  text-left text-primary-blue   font-normal '>
                     What is CrowdEx?
                   </h1>
 
                   <div className='w-[100%] flex  flex-col  mt-0 px-5 lg:px-10 py-5'>
-                    <p className='w-[100%]  text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
+                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6 text-gray'>
                       ESX’s CrownEX is a securities-based crowd-invest platform,
                       offering the SMEs not only a chance to raise equity and/or
                       to receive loans from specialized investors and from the
@@ -88,10 +88,10 @@ const Page: React.FC<AlternativeAndGrowthProps> = ({ setStep, step }) => {
                 </div>
 
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
-                  <h1 className='text-[24px] h-[77px] px-5 lg:px-10 py-0  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '></h1>
+                  <h1 className='text-[24px] h-[77px] px-5 lg:px-10 py-0  text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
                   <div className='w-[100%] flex  flex-col  mt-0 px-5 lg:px-10 py-5'>
-                    <p className='w-[100%]  text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
+                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6 text-gray'>
                       The platform provides a safe and easier avenue to access
                       (equity and/or debt) to SMEs, it raises awareness amongst
                       investors and serves as a stepping stone to attract
@@ -190,10 +190,10 @@ const Page: React.FC<AlternativeAndGrowthProps> = ({ setStep, step }) => {
                 </div>
 
                 <div className='w-[100%] flex   flex-col mt-5 md:mt-10 lg:mt-0 pt-0'>
-                  <h1 className='text-[24px] h-[77px] px-5 lg:px-10 py-0  text-left text-white  w-[100%] bg-primary-blue font-sans font-normal '></h1>
+                  <h1 className='text-[24px] h-[77px] px-5 lg:px-10 py-0  text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
                   <div className='w-[100%] flex  flex-col  mt-0 px-5 lg:px-10 py-5'>
-                    <p className='w-[100%]  text-[14px] font-sans font-normal  pt-0 leading-6 text-gray'>
+                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6 text-gray'>
                       The platform provides a safe and easier avenue to access
                       (equity and/or debt) to SMEs, it raises awareness amongst
                       investors and serves as a stepping stone to attract

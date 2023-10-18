@@ -183,7 +183,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           </Card>
 
           <Card width='pt-[30px] pb-[20px] px-[23px]  p-4'>
-            <h1 className='text-[20px] font-sans font-normal  pt-0'>
+            <h1 className='text-[20px]   font-normal  pt-0'>
               ESX’s Equity Market Provides:
             </h1>
 

@@ -21,9 +21,9 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
     "Organizational Structure",
     "Board of Directors",
     "Management",
-    "ESX Reports",
-    "Careers",
-    "Tender",
+    // "ESX Reports",
+    // "Careers",
+    // "Tender",
   ];
 
   return (
@@ -34,12 +34,12 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci '
       />
       <div className='flex w-full  px-4 lg:px-28 py-7'>
-        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
-          <h6 className='ml-2 mb-4'>About Us</h6>{" "}
+        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+          <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`text-left ml-8 my-2 font-light  `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -146,24 +146,6 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
           </div>
         </div>
       </div>
-
-      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
-        <div className=''>
-          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
-            Contact the team
-          </h1>
-          <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
-            Get in touch with our dedicated team today! Whether you have
-            questions, feedback, or collaboration ideas, were here to assist
-            you. Contact us now for a prompt response.
-          </p>
-          <div className='flex justify-center items-center '>
-            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-1 md:my-4 px-8'>
-              Contact
-            </button>
-          </div>
-        </div>
-      </Card>
     </div>
   );
 };

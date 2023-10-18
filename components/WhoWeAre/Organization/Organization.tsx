@@ -25,9 +25,9 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
     "Organizational Structure",
     "Board of Directors",
     "Management",
-    "ESX Reports",
-    "Careers",
-    "Tender",
+    // "ESX Reports",
+    // "Careers",
+    // "Tender",
   ];
 
   return (
@@ -38,12 +38,12 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
         description='The Ethiopian Securities Exchange is organized as a share company in accordance with the Commercial Code of Ethiopia (2021).'
       />
       <div className='flex w-full px-4 lg:px-28 py-7'>
-        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
-          <h6 className='ml-2 mb-4'>About Us</h6>{" "}
+        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+          <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`text-left ml-8 my-2 font-light  `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -59,85 +59,51 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
             <div className=' flex py-5 mx-10  p-2'>
               <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
-                <span className='text-[12px] font-semibold text-primary-blue'>
-                  Market Development
-                </span>
-                <h1 className='text-[24px] md:text-[30px] lg:text-[40px]'>
-                  Meet the team
-                </h1>
                 <p className='text-[14px] md:text-[19px] w-[100%] mt-2'>
                   ESX impliments a corporate organization and a governance
                   framework following international best practices.
                 </p>
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]   '
+                    className='w-[60px] absolute -left-5 top-2 h-[20px]'
                   >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z'
-                      clipRule='evenodd'
-                    />
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
                   </svg>
-                  <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
-                    Having a Board of directors, where at least 1/3 will be
-                    independent, including representatives from the financial
-                    and capital market ecosystem, issuers, investors etc.
-                  </p>
-                </div>
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    fill='currentColor'
-                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]   '
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
+
                   <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Having dedicated market committees for both equity and fixed
                     income markets that deal with the regulatory and delegated
                     enforcement functions of ESX.
                   </p>
                 </div>{" "}
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]'
+                    className='w-[60px] absolute -left-5 top-2 h-[20px]'
                   >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z'
-                      clipRule='evenodd'
-                    />
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
                   </svg>
+
                   <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Separates ‘ringfences’ operation and governance of the
                     market from shareholders interest on the exchange.
                   </p>
                 </div>{" "}
-                <div className='w-[100%] relative flex justify-between  text-[15px] font-sans font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
                     fill='currentColor'
-                    className='w-[60px] absolute -left-12 first-line:md:-left-5 top-2 h-[20px]   '
+                    className='w-[60px] absolute -left-5 top-2 h-[20px]'
                   >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z'
-                      clipRule='evenodd'
-                    />
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
                   </svg>
+
                   <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
                     Building an efficient management and human resource strategy
                     that caters for the development stages of the exchange.
@@ -335,24 +301,6 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
           </Card>
         </div>
       </div>
-
-      <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
-        <div className=''>
-          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
-            Contact the team
-          </h1>
-          <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
-            Get in touch with our dedicated team today! Whether you have
-            questions, feedback, or collaboration ideas, were here to assist
-            you. Contact us now for a prompt response.
-          </p>
-          <div className='flex justify-center items-center '>
-            <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-1 md:my-4 px-8'>
-              Contact
-            </button>
-          </div>
-        </div>
-      </Card>
     </div>
   );
 };

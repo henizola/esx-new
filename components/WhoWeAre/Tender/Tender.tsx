@@ -36,9 +36,9 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
     "Organizational Structure",
     "Board of Directors",
     "Management",
-    "ESX Reports",
-    "Careers",
-    "Tender",
+    // "ESX Reports",
+    // "Careers",
+    // "Tender",
   ];
 
   return (
@@ -46,15 +46,15 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
       <Banner
         backgroundImage={reportsBanner}
         title='Tenders'
-        description="ESX is committed to fostering an inclusive, innovative, and collaborative work environment. Join us in shaping the nation's capital markets landscape by exploring a variety of exciting career pathways with us."
+        background='bg-light-blue'
       />
       <div className='flex w-full px-4 lg:px-28 py-7'>
-        <Card width='hidden lg:flex w-[30%] mr-5 flex flex-col text-left  py-10 px-5'>
-          <h6 className='ml-2 mb-4'>About Us</h6>{" "}
+        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+          <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`text-left ml-8 my-2 font-light  `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -66,7 +66,20 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
+
         <div className='grid grid-cols-1  gap-3 w-[100%]'>
+          <Card width='w-[100%] my-0 py-5  h-[fit-content] '>
+            <div className='w-[100%] flex p-0  mx-0 '>
+              <div className='flex  flex-col px-10  pt-0 pr-0'>
+                <p className='text-[12px] md:text-[16px] font-light mt-4 pr-16  w-[100%] '>
+                  ESX is committed to fostering an inclusive, innovative, and
+                  collaborative work environment. Join us in shaping the
+                  nation's capital markets landscape by exploring a variety of
+                  exciting career pathways with us.
+                </p>
+              </div>
+            </div>
+          </Card>
           <Card width='w-[100%] my-0 py-5  h-[fit-content] '>
             <div className='w-[100%] flex p-0  mx-0 '>
               <div className='flex  flex-col px-10  pt-0 pr-0'>
