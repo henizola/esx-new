@@ -48,10 +48,10 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
         </Card>
         <div className='col-span-5 space-y-[30px] w-[100vw] lg:w-[100%]'>
           <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className="text-black text-[24px] lg:text-[40px] font-normal font-['Open Sans']">
+            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
               Lorem Ipsum
             </h1>
-            <p className="text-primary-blue text-[14px] lg:text-base font-normal font-['Open Sans'] leading-snug">
+            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -59,10 +59,10 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>
           <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className="text-black text-[24px] lg:text-[40px] font-normal font-['Open Sans']">
+            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
               Lorem Ipsum
             </h1>
-            <p className="text-primary-blue text-[14px] lg:text-base font-normal font-['Open Sans'] leading-snug">
+            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -70,10 +70,10 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>{" "}
           <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className="text-black text-[24px] lg:text-[40px] font-normal font-['Open Sans']">
+            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
               Lorem Ipsum
             </h1>
-            <p className="text-primary-blue text-[14px] lg:text-base font-normal font-['Open Sans'] leading-snug">
+            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -81,10 +81,10 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>{" "}
           <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className="text-black text-[24px] lg:text-[40px] font-normal font-['Open Sans']">
+            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
               Lorem Ipsum
             </h1>
-            <p className="text-primary-blue text-[14px] lg:text-base font-normal font-['Open Sans'] leading-snug">
+            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -94,7 +94,7 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
         </div>
       </div>
       <div className='bg-white px-5 py-5 md:py-[68px]'>
-        <p className="max-w-[980px] mx-auto w-full  md:h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+        <p className='max-w-[980px] mx-auto w-full  md:h-16 text-center text-black text-base font-normal    leading-snug'>
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh

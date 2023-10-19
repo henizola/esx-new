@@ -54,8 +54,8 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
         </Card>
         <div className='grid grid-cols-1 mt-0 gap-3 w-[100%]'>
           <div className='grid grid-cols-1 gap-3 lg:gap-0 w-[100%]'>
-            <Card width='w-[100%] my-0 h-[100%] pb-2 md:pb-5'>
-              <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  md:mt-5 float-right'>
+            <Card width='w-[100%] my-0 h-[100%] pb-2 pt-5 md:pb-5'>
+              {/* <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  md:mt-5 float-right'>
                 <Image
                   height={200}
                   width={200}
@@ -63,11 +63,14 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   alt='manager'
                   className='w-[auto] object-cover h-[40px] ml-[30px] mt-4'
                 />
-              </div>
-              <div className=' w-[95%] flex md:py-5 mx-4 md:mx-10  p-4'>
-                <div className='w-[100%] flex  flex-col lg:ml-10  mt-0 pt-0'>
-                  <h1 className='text-subHeader   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
-                    Our Mission
+              </div> */}
+              <div className=' w-[100%] flex md:py-5 mx-4 md:mx-10  p-4'>
+                <div className='w-[100%] flex  flex-col lg:mr-10  mt-0 pt-0'>
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
+                    <span className=' border-b-[3px] border-light-golden'>
+                      O
+                    </span>
+                    ur Mission
                   </h1>
                   <div className='w-[100%] relative flex justify-between    text-paragraphSmall   font-light mt-2 px-5 leading-6   '>
                     <svg
@@ -123,7 +126,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               </div>
             </Card>
             <Card width='w-[100%] my-0 h-[100%] pb-5 md:pb-10'>
-              <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
+              {/* <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
                 <Image
                   height={200}
                   width={200}
@@ -131,11 +134,14 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   alt='manager'
                   className='w-[auto] object-cover h-[40px] ml-[30px] mt-4'
                 />
-              </div>
-              <div className=' w-[95%] flex py-0 ml-4 md:mx-10  p-4'>
-                <div className='w-[100%] flex  flex-col lg:ml-10  mt-0 pt-0'>
-                  <h1 className='text-subHeader   py-0 mb-2 pl-0 mt-5 text-left  w-[100%]   font-normal '>
-                    Our Vision
+              </div> */}
+              <div className=' w-[100%] flex py-0 ml-4 md:mx-10  p-4'>
+                <div className='w-[100%] flex  flex-col lg:mr-10  mt-0 pt-0'>
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
+                    <span className=' border-b-[3px] border-light-golden'>
+                      O
+                    </span>
+                    ur Vision
                   </h1>
 
                   <div className='w-[100%] relative flex justify-between    text-paragraphSmall   font-light mt-2 px-5 leading-6   '>
@@ -157,7 +163,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               </div>
             </Card>
             <Card width='w-[100%] my-0 h-[100%] pb-5 md:pb-10'>
-              <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
+              {/* <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
                 <Image
                   height={200}
                   width={200}
@@ -165,11 +171,14 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                   alt='manager'
                   className='w-[auto] object-cover h-[40px] ml-[30px] mt-4'
                 />
-              </div>
-              <div className=' w-[95%] flex py-5 ml-4 md:mx-10   p-4'>
-                <div className='w-[100%] flex  flex-col lg:ml-10  mt-0 pt-0'>
-                  <h1 className='text-subHeader   py-2 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
-                    Our Values
+              </div> */}
+              <div className=' w-[910%] flex py-5 pt-0 ml-4 md:mx-10   p-4'>
+                <div className='w-[100%] flex  flex-col lg:mr-10  mt-0 pt-0'>
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
+                    <span className=' border-b-[3px] border-light-golden'>
+                      O
+                    </span>
+                    ur Values
                   </h1>
 
                   <div className='w-[100%] relative flex justify-between    text-paragraphSmall   font-light mt-2 px-5 leading-6   '>

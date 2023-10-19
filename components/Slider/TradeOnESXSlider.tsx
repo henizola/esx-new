@@ -1,11 +1,10 @@
 // components/Slider.tsx
 
-import React, { ReactNode } from "react";
+import React from "react";
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Card from "../Card/Card";
+import "slick-carousel/slick/slick.css";
 
 const settings = {
   dots: true,
@@ -59,18 +58,21 @@ const TradeOnESXSlider: React.FC = () => {
           />
           <div className='h-[400px] w-full relative -pt-64 px-[20%] z-20  '>
             <div className='max-w-[1020px] bg-white   absolute top-0 left-1/2 transform -translate-x-1/2 w-full px-[24px] py-[40px] mx-auto z-20 flex flex-col gap-5 '>
-              <h2 className="text-center text-black text-[20px] lg:text-[32px] font-semibold font-['Open Sans']">
-                How do investors access the market ?
+              <h2 className='text-center text-black text-[20px] lg:text-[32px] font-semibold   '>
+                Lorem ipsum dolor sit amet
               </h2>
-              <p className=" text-center text-black text-[14px] lg:text-xl font-normal font-['Open Sans'] leading-relaxed">
-                ESX is a fully electronic and intermeidated market. To access
-                the markets investors should have a CSD account, and select a
-                licensed member of the exchange/ brokerage firm (Member)
+              <p className=' text-center text-black text-[14px] lg:text-xl font-normal    leading-relaxed'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur rerum dolorum iure! Aut impedit, hic a iste eaque
+                tenetur officia facilis, consectetur laudantium voluptas
+                dolorem, minima ea esse rem. Itaque.
               </p>
             </div>
-            <p className="pt-5 w-[70%] lg:w-[780px] h-[350px] absolute top-64 left-1/2 transform -translate-x-1/2 text-center text-white lg:text-xl z-20 font-normal font-['Open Sans'] leading-relaxed">
-              Investors can choose and appoint a licensed member/ broker from
-              members directory of ESX website
+            <p className='pt-5 w-[70%] lg:w-[780px] h-[350px] absolute top-64 left-1/2 transform -translate-x-1/2 text-center text-white lg:text-xl z-20 font-normal    leading-relaxed'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae quisquam quis in quibusdam beatae quae distinctio
+              explicabo, itaque quidem maiores qui asperiores rerum laboriosam
+              quas, assumenda ipsum, cupiditate nulla a!
             </p>
           </div>
         </div>
@@ -85,18 +87,21 @@ const TradeOnESXSlider: React.FC = () => {
           />
           <div className='h-[400px] w-full relative -pt-64 px-[20%] z-20  '>
             <div className='max-w-[1020px] bg-white   absolute top-0 left-1/2 transform -translate-x-1/2 w-full px-[24px] py-[40px] mx-auto z-20 flex flex-col gap-5 '>
-              <h2 className="text-center text-black text-[20px] lg:text-[32px] font-semibold font-['Open Sans']">
-                How do investors access the market ?
+              <h2 className='text-center text-black text-[20px] lg:text-[32px] font-semibold   '>
+                Lorem ipsum dolor sit amet
               </h2>
-              <p className=" text-center text-black text-[14px] lg:text-xl font-normal font-['Open Sans'] leading-relaxed">
-                ESX is a fully electronic and intermeidated market. To access
-                the markets investors should have a CSD account, and select a
-                licensed member of the exchange/ brokerage firm (Member)
+              <p className=' text-center text-black text-[14px] lg:text-xl font-normal    leading-relaxed'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur rerum dolorum iure! Aut impedit, hic a iste eaque
+                tenetur officia facilis, consectetur laudantium voluptas
+                dolorem, minima ea esse rem. Itaque.
               </p>
             </div>
-            <p className=" w-[70%] lg:w-[780px] h-[350px] absolute top-64 left-1/2 transform -translate-x-1/2 text-center text-white lg:text-xl z-20 font-normal font-['Open Sans'] leading-relaxed">
-              Investors can choose and appoint a licensed member/ broker from
-              members directory of ESX website
+            <p className='pt-5 w-[70%] lg:w-[780px] h-[350px] absolute top-64 left-1/2 transform -translate-x-1/2 text-center text-white lg:text-xl z-20 font-normal    leading-relaxed'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae quisquam quis in quibusdam beatae quae distinctio
+              explicabo, itaque quidem maiores qui asperiores rerum laboriosam
+              quas, assumenda ipsum, cupiditate nulla a!
             </p>
           </div>
         </div>

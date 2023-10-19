@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import member1 from "/public/images/member1.png";
+import stracture from "/public/images/stracture.png";
 import member2 from "/public/images/member8.png";
 import member3 from "/public/images/member9.png";
 import member4 from "/public/images/member6.png";
@@ -57,7 +57,7 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
         </Card>
         <div className='grid grid-cols-1 mt-0 gap-3 w-[100%]'>
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
-            <div className=' flex py-5 mx-10  p-2'>
+            <div className=' flex flex-col py-5 mx-10  p-2'>
               <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                 <p className='text-[14px] md:text-[19px] w-[100%] mt-2'>
                   ESX impliments a corporate organization and a governance
@@ -110,193 +110,13 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                   </p>
                 </div>
               </div>
-            </div>
-          </Card>
-          <Card width='w-[100%] my-0 h-[100%] pb-5'>
-            <div className=' flex flex-col py-5 md:mx-10 h-[100%]   p-2'>
-              <div className='w-[100%] grid px-0 md:px-[20px] lg:px-[100px]  gap-4 grid-cols-2  md:grid-cols-3 h-[100%]   mt-0 pt-0'>
-                <div>
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member1.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[16px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[14px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member2.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[16px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[14px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member3.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[16px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[14px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-              </div>
-              <div className='w-[100%]  grid px-0 mt-10 lg:px-[100px]  gap-x-8 gap-y-5  grid-cols-2 md:grid-cols-4 h-[100%]  pt-2'>
-                <div>
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member4.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member5.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member6.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member7.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </Card>
-          <Card width='w-[100%] my-0 h-[100%] pb-5'>
-            <div className=' flex flex-col py-5 lg:mx-10 h-[100%]   p-2'>
-              <div className='w-[100%]  grid  lg:px-[100px]  gap-x-12  grid-cols-2  md:grid-cols-4 h-[100%]   mt-0 pt-2'>
-                <div>
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member4.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member5.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member6.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-                <div>
-                  {" "}
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member7.src}
-                    alt='manager'
-                    className='w-[100%] h-[80%] object-cover'
-                  />
-                  <h1 className='text-[12px] font-normal py-1'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[10px] text-gray font-normal'>
-                    Meet the team
-                  </h1>
-                </div>
-              </div>
+              <Image
+                height={200}
+                width={200}
+                src={stracture.src}
+                alt='manager'
+                className='w-[100%] mt-10 '
+              />
             </div>
           </Card>
         </div>

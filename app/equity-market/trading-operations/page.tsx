@@ -24,16 +24,16 @@ export default function Home() {
             step={currentPage}
             key={currentPage}
           />,
-          <ProceduresManual
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
           <TradingFaqs
             setStep={setNumber}
             step={currentPage}
             key={currentPage}
           />,
+          // <ProceduresManual
+          //   setStep={setNumber}
+          //   step={currentPage}
+          //   key={currentPage}
+          // />,
         ]}
       </SideMenu>
     </main>

@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import manager from "/public/images/manager.png";
+import chariman from "/public/images/Helaway Tadesse.jpg";
+
 import sliderbannerImage from "/public/images/slider-background.png";
 import bannerImage from "/public/images/about-banner.png";
 import Banner from "../../Banner/banner";
@@ -140,11 +142,11 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
           </div>
 
           <div className='w-full sm:w-[100%] lg:flex lg:flex-row sm:flex-col sm:pt-0 lg:py-10 lg:px-14'>
-            <div className='w-full lg:w-[38%] h-[300px] lg:h-[100%] '>
+            <div className='w-full lg:w-[38%] h-[200px] lg:h-[100%] '>
               <Image
                 height={200}
                 width={200}
-                src={manager.src}
+                src={chariman.src}
                 alt='manager'
                 className='w-full object-cover h-[100%]'
               />
@@ -154,10 +156,10 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
                 Message from the Board of Directors
               </h1>
               <h1 className=' text-center lg:text-left text-xl sm:text-[24px]   font-light mt-0 pt-0'>
-                Abebe Legese
+                Helaway Tadesse
               </h1>
               <p className=' text-center lg:text-left text-sm sm:text-[12px]   font-normal mt-0 pt-0'>
-                Chief executive officer
+                Chairman of Board of Directors
               </p>
 
               <p className=' text-base text-[14px] lg:text-[16px] font-roboto font-normal mt-2 pt-0 leading-6 text-gray'>
@@ -168,23 +170,6 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
                 erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                 tation ullamcorper suscipit lobortis”
               </p>
-              <Link href='#' className='flex text-base sm:text-[16px] mt-5'>
-                View more{" "}
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-4 h-4 mt-1.5'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                  />
-                </svg>
-              </Link>
             </div>
           </div>
         </Card>

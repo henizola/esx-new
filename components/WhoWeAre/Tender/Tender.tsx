@@ -74,8 +74,8 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
                 <p className='text-[12px] md:text-[16px] font-light mt-4 pr-16  w-[100%] '>
                   ESX is committed to fostering an inclusive, innovative, and
                   collaborative work environment. Join us in shaping the
-                  nation's capital markets landscape by exploring a variety of
-                  exciting career pathways with us.
+                  nation&apos;s capital markets landscape by exploring a variety
+                  of exciting career pathways with us.
                 </p>
               </div>
             </div>

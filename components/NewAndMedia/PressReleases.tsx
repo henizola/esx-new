@@ -54,24 +54,24 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
           <div className='flex flex-col lg:flex-row gap-5'>
             <div className='flex flex-col lg:w-[60%] gap-5'>
               <Card width=' flex  flex-col   py-[34px] pl-[36px] pr-[37px] '>
-                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] ">
+                <h1 className=' text-zinc-400 text-sm font-normal    '>
                   Press Releases
                 </h1>
-                <h1 className=" text-zinc-500 text-[14px] lg:text-xl font-semibold font-['Open Sans'] leading-snug mt-[16px]">
+                <h1 className=' text-zinc-500 text-[14px] lg:text-xl font-semibold    leading-snug mt-[16px]'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                   nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
                   erat
                 </h1>
-                <p className="text-zinc-500 text-sm font-semibold font-['Open Sans'] leading-snug mt-[20px]">
+                <p className='text-zinc-500 text-sm font-semibold    leading-snug mt-[20px]'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh
                 </p>
                 <main className='flex flex-col  mt-[6px] '>
                   <Link
                     href='#'
-                    className="flex gap-3 text-[14px] lg:text-xl items-center font-semibold font-['Open Sans'] mt-[20px]"
+                    className='flex gap-3 text-[14px] lg:text-xl items-center font-semibold    mt-[20px]'
                   >
                     <span>Read more</span>
                     <svg
@@ -91,24 +91,22 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
                 <div className='w-full h-[177px] mt-[30px] bg-zinc-300' />
               </Card>
               <Card width=' flex  flex-col   py-[34px] pl-[36px] pr-[37px] '>
-                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] ">
-                  News
-                </h1>
-                <h1 className=" text-zinc-500 text-[14px] lg:text-xl font-semibold font-['Open Sans'] leading-snug mt-[16px]">
+                <h1 className=' text-zinc-400 text-sm font-normal    '>News</h1>
+                <h1 className=' text-zinc-500 text-[14px] lg:text-xl font-semibold    leading-snug mt-[16px]'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                   nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
                   erat
                 </h1>
-                <p className="text-zinc-500 text-sm font-semibold font-['Open Sans'] leading-snug mt-[20px]">
+                <p className='text-zinc-500 text-sm font-semibold    leading-snug mt-[20px]'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh
                 </p>
                 <main className='flex flex-col  mt-[6px] '>
                   <Link
                     href='#'
-                    className="flex gap-3 text-[14px] lg:text-xl items-center font-semibold font-['Open Sans'] mt-[20px]"
+                    className='flex gap-3 text-[14px] lg:text-xl items-center font-semibold    mt-[20px]'
                   >
                     <span>Read more</span>
                     <svg
@@ -128,24 +126,24 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
                 <div className='w-full h-[177px] mt-[30px] bg-zinc-300' />
               </Card>
               <Card width=' flex  flex-col  pt-[28px] pb-[34px] pl-[36px] pr-[37px] '>
-                <h1 className=" text-zinc-400 text-sm font-normal font-['Open Sans'] ">
+                <h1 className=' text-zinc-400 text-sm font-normal    '>
                   Press Releases
                 </h1>
-                <h1 className=" text-zinc-500 text-[14px] lg:text-xl font-semibold font-['Open Sans'] leading-snug mt-[16px]">
+                <h1 className=' text-zinc-500 text-[14px] lg:text-xl font-semibold    leading-snug mt-[16px]'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                   nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
                   erat
                 </h1>
-                <p className="text-zinc-500 text-sm font-semibold font-['Open Sans'] leading-snug mt-[20px]">
+                <p className='text-zinc-500 text-sm font-semibold    leading-snug mt-[20px]'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh
                 </p>
                 <main className='flex flex-col  mt-[6px] '>
                   <Link
                     href='#'
-                    className="flex gap-3 text-[14px] lg:text-xl items-center font-semibold font-['Open Sans'] mt-[20px]"
+                    className='flex gap-3 text-[14px] lg:text-xl items-center font-semibold    mt-[20px]'
                   >
                     <span>Read more</span>
                     <svg
@@ -166,23 +164,23 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
               </Card>
             </div>
             <Card width='lg:w-[40%] h-[350px] lg:h-fit flex  pb-[293px] flex-col    '>
-              <h1 className="pt-[20px] pb-[27px] px-[20px]  bg-primary-blue text-white text-2xl font-normal font-['Open Sans']">
+              <h1 className='pt-[20px] pb-[27px] px-[20px]  bg-primary-blue text-white text-2xl font-normal   '>
                 For More Information
               </h1>
               <main className='flex flex-col gap-2 pt-[40px]  px-[20px] '>
-                <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                <h1 className=' text-black text-xl font-normal   '>
                   ESX Insights
                 </h1>
-                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">
+                <p className='text-zinc-500 text-base font-normal    leading-snug'>
                   Read Our Latest Thinking
                 </p>
               </main>
               <hr className=' mt-3 lg:mt-[37px] mx-[20px] mb-3 lg:mb-[40px] border border-gray/30' />
               <main className='flex flex-col gap-2  px-[20px] '>
-                <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                <h1 className=' text-black text-xl font-normal   '>
                   ESX Facts and Figures
                 </h1>
-                <p className="text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">
+                <p className='text-zinc-500 text-base font-normal    leading-snug'>
                   ESX and its subsidiaries recorded $21.9 billion in US revenues
                   in the fiscal year ended June 1,2023
                 </p>
@@ -193,7 +191,7 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
       </div>
 
       <div className='bg-white py-5 px-5 lg:py-[68px]'>
-        <p className="max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+        <p className='max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-base font-normal    leading-snug'>
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh

@@ -24,9 +24,9 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
   const items = [
     "Trading Market Structure",
     "Trading Rules",
-    "Procedures & Manuals",
+    // "Procedures & Manuals",
     "Trading FAQ",
-    "Trading Platform",
+    // "Trading Platform",
   ];
 
   return (
@@ -54,7 +54,6 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
                 fontWeight: step === index ? "400" : "300",
               }}
               onClick={() => {
-                if (index + 1 === items.length) return;
                 setStep(index);
               }}
             >
@@ -74,12 +73,12 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
                 alt=''
                 className='w-full h-[200px] mb-5 lg:hidden object-cover '
               />
-              <h1 className=" px-5 lg:px-0 text-black text-xl md:text-3xl font-normal font-['Open Sans']">
+              <h1 className=' px-5 lg:px-0 text-black text-xl md:text-3xl font-normal   '>
                 Procedures & manuals
               </h1>
               <hr className=' px-5 lg:px-0 mt-[17px] border border-gray/30' />
               <main className='flex flex-col  px-5 lg:px-0'>
-                <p className="text-zinc-500  mt-[25px] text-base font-normal font-['Open Sans'] leading-snug">
+                <p className='text-zinc-500  mt-[25px] text-base font-normal    leading-snug'>
                   The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s first,
                   and only organized securities exchange. <br />
                   ESX is established as a public private partnership inline with

@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import member1 from "/public/images/board1.png";
-import member2 from "/public/images/board2.png";
-import member3 from "/public/images/board3.png";
+import member1 from "/public/images/Helaway Tadesse.jpg";
+import member2 from "/public/images/Zemedenh Nigatu.jpg";
+import member3 from "/public/images/Dr-Eleni Gabremadhin.jpeg";
+import member4 from "/public/images/Fekadu Petros.jpeg";
+import member5 from "/public/images/Hinjat Shamil.jpeg";
+import member6 from "/public/images/Dr. Tewodros Makonnen.jpg";
+import member7 from "/public/images/Yasmin Wohabrebbi.jpg";
 import organization from "/public/images/organization-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
@@ -81,10 +85,10 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
                 <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
+                    Helaway Tadesse
                   </h1>
                   <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
+                    Chairman
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
@@ -108,10 +112,10 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
                 <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
+                    Zemedenh Nigatu
                   </h1>
                   <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
+                    Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
@@ -135,10 +139,38 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
                 <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
+                    Dr. Eleni Gabremadhin
                   </h1>
                   <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
+                    Member
+                  </h1>
+                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
+                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
+                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy ni
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+                <div className='absolute backface-hidden  w-full h-full'>
+                  <Image
+                    height={200}
+                    width={200}
+                    src={member7.src}
+                    alt='manager'
+                    className='w-[100%]  lg:h-[100%] object-cover'
+                  />
+                </div>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
+                    Yasmin Wohabrebbi
+                  </h1>
+                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                    Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
@@ -155,17 +187,17 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <Image
                     height={200}
                     width={200}
-                    src={member1.src}
+                    src={member4.src}
                     alt='manager'
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
                 <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
+                    Fekadu Petros Member
                   </h1>
                   <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
+                    Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
@@ -182,17 +214,17 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <Image
                     height={200}
                     width={200}
-                    src={member2.src}
+                    src={member5.src}
                     alt='manager'
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
                 <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
+                    Hinjat Shamil
                   </h1>
                   <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
+                    Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
@@ -209,98 +241,17 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <Image
                     height={200}
                     width={200}
-                    src={member3.src}
+                    src={member6.src}
                     alt='manager'
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
                 <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
+                    Dr. Tewodros Makonnen
                   </h1>
                   <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
-                  </h1>
-                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy ni
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
-                <div className='absolute backface-hidden  w-full h-full'>
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member1.src}
-                    alt='manager'
-                    className='w-[100%]  lg:h-[100%] object-cover'
-                  />
-                </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
-                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
-                  </h1>
-                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy ni
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
-                <div className='absolute backface-hidden  w-full h-full'>
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member2.src}
-                    alt='manager'
-                    className='w-[100%]  lg:h-[100%] object-cover'
-                  />
-                </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
-                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
-                  </h1>
-                  <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy ni
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
-                <div className='absolute backface-hidden  w-full h-full'>
-                  <Image
-                    height={200}
-                    width={200}
-                    src={member3.src}
-                    alt='manager'
-                    className='w-[100%]  lg:h-[100%] object-cover'
-                  />
-                </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
-                  <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
-                    Lorem ipsum dolor
-                  </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
-                    Board of director
+                    Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit

@@ -200,11 +200,11 @@ export default function Home() {
                 <span className='text-[12px] font-semibold text-primary-blue'>
                   Listing and Admission to Trading
                 </span>
-                <h1 className="text-black  text-[20px] lg:text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
+                <h1 className='text-black  text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
                   <span>ESX Listing Rules</span>
                   <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
                 </h1>
-                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
+                <p className='text-black text-sm font-light mt-[15px]   '>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -222,11 +222,11 @@ export default function Home() {
                 <span className='text-[12px] font-semibold text-primary-blue'>
                   Members
                 </span>
-                <h1 className="text-black text-[20px] lg:text-2xl mt-[5px] font-normal font-['Open Sans'] flex items-center gap-5 ">
+                <h1 className='text-black text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
                   <span>ESX Membership Rules</span>
                   <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
                 </h1>
-                <p className="text-black text-sm font-light mt-[15px] font-['Open Sans']">
+                <p className='text-black text-sm font-light mt-[15px]   '>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                   ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -358,10 +358,10 @@ export default function Home() {
                 For More Information
               </h1>
               <main className='pt-5 lg:pt-[52px] lg:pb-[10px] px-5 lg:px-[20px] flex flex-col gap-[10px]'>
-                <h1 className="text-black text-[20px] mb-[0px] font-normal font-['Open Sans']">
+                <h1 className='text-black text-[20px] mb-[0px] font-normal   '>
                   ESX Insights
                 </h1>
-                <p className="text-zinc-500 text-sm font-normal font-['Open Sans'] leading-snug ml-[0px]">
+                <p className='text-zinc-500 text-sm font-normal    leading-snug ml-[0px]'>
                   Read Our Latest Thinking
                 </p>
                 <Link
@@ -388,10 +388,10 @@ export default function Home() {
                 <hr className='mt-[5px] lg:mt-[10px]  border border-0.5 border-gray/30' />
               </main>
               <main className='pt-[5px] lg:pt-[22px] pb-5 lg:pb-[50px] px-[20px]  flex flex-col gap-[10px]'>
-                <h1 className="text-black text-[20px] mb-[5px] font-normal font-['Open Sans']">
+                <h1 className='text-black text-[20px] mb-[5px] font-normal   '>
                   Facts and Figures
                 </h1>
-                <p className="text-zinc-500 text-sm font-normal font-['Open Sans'] leading-snug ml-[0px]">
+                <p className='text-zinc-500 text-sm font-normal    leading-snug ml-[0px]'>
                   ESX and its subsidiaries recorded $21.9 billion in US revenues
                   in the fiscal year ended June 1,2023
                 </p>

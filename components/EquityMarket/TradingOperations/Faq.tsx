@@ -14,9 +14,9 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
   const items = [
     "Trading Market Structure",
     "Trading Rules",
-    "Procedures & Manuals",
+    // "Procedures & Manuals",
     "Trading FAQ",
-    "Trading Platform",
+    // "Trading Platform",
   ];
 
   return (
@@ -26,25 +26,24 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
         title='Frequently asked questions'
         description=''
       />
-      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+      <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
+        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]'>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
             </BackButton>{" "}
-            {"> FAQ"}
+            {"> Trading & Operations"}
           </h6>{" "}
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
                 fontWeight: step === index ? "400" : "300",
               }}
               onClick={() => {
-                if (index + 1 === items.length) return;
                 setStep(index);
               }}
             >
@@ -52,18 +51,17 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%] '>
-          <Card width='w-[100%] flex gap-4 flex-col  py-[20px] px-[20px]'>
-            <h1 className='text-black text-[24px] md:text-[40px] not-italic font-normal leading-[normal]'>
+        <div className='col-span-7 space-y-5 w-[100vw] lg:w-[auto] h-[auto]'>
+          <Card width='w-[100%] flex gap-4 flex-col  py-10 px-10'>
+            <h1 className='text-black text-[24px] md:text-subHeader not-italic font-normal leading-[normal]'>
               Frequently asked questions
             </h1>
 
-            <hr className='  border border-gray/30 ' />
+            <hr className='  border border-light-golden ' />
             <main className=' flex flex-col  '>
               <ExpandableCard question='What is a share?'>
-                Some of the benefits of investing include income earned through
-                dividends, protection of saving from the effects of inflation,
-                capital gains, and diversification.
+                A share is a “piece” of ownership of a company. Each time you
+                buy a share, you become part of the ownership of that company.
               </ExpandableCard>
               <ExpandableCard question='What are the benefits of investing?'>
                 Some of the benefits of investing include income earned through
@@ -71,14 +69,11 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
                 capital gains, and diversification.
               </ExpandableCard>
               <ExpandableCard question='How do I start trading?'>
-                Some of the benefits of investing include income earned through
-                dividends, protection of saving from the effects of inflation,
-                capital gains, and diversification.
+                Answer
               </ExpandableCard>
               <ExpandableCard question='What is meant by suspension of trading?'>
-                Some of the benefits of investing include income earned through
-                dividends, protection of saving from the effects of inflation,
-                capital gains, and diversification.
+                Suspension of trading is where the buying and selling activity
+                is put on a hold.
               </ExpandableCard>
             </main>
           </Card>
@@ -107,17 +102,11 @@ function ExpandableCard({
     <div
       onClick={() => setOpen((prev) => !prev)}
       className={` ${
-        open ? "bg-gray/10 pl-[20px]" : " "
-      } py-2  md:pt-[12px]  flex flex-col gap-4 transition-all md:pb-[30px] border-b border-gray/40  ${className}`}
+        open ? "bg-gray/10 " : " lg:pb-[0px] "
+      }  lg:px-[20px] lg:pt-[12px]  flex flex-col gap-4 transition-all  border-b border-gray   ${className}`}
     >
       <div className='rounded flex justify-between items-center'>
-        <h1
-          className={`${
-            open
-              ? "text-black text-[14px] md:text-base  font-['Open Sans'] leading-snug"
-              : "text-zinc-500 text-[14px] md:text-bas font-normal font-['Open Sans'] leading-snug "
-          } `}
-        >
+        <h1 className='text-black text-[14px] lg:text-paragraphSmall not-italic font-normal leading-[normal] '>
           {question}
         </h1>
         <ChevronDownIcon
@@ -126,11 +115,7 @@ function ExpandableCard({
           }`}
         />
       </div>
-      {open && (
-        <span className=" h-[fit-content] text-zinc-500 text-base font-normal font-['Open Sans'] leading-snug">
-          {children}
-        </span>
-      )}
+      {open && <span className='pb-[52px]'>{children}</span>}
     </div>
   );
 }

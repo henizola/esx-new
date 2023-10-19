@@ -19,15 +19,15 @@ interface WhoWeAreProps {
 }
 
 const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
-  const items = ["Trade on ESX", "Members Directory"];
+  const items = ["Invest on ESX", "Members Directory"];
   const spanItems = [
     "Direct Market Access",
-    "Listed Lecurities",
-    "Market Data",
-    "Indices",
-    "Market Announcements",
-    "Fees & Taxation",
-    "Tendor",
+    // "Listed Lecurities",
+    // "Market Data",
+    // "Indices",
+    // "Market Announcements",
+    // "Fees & Taxation",
+    // "Tendor",
   ];
 
   const slides = [
@@ -76,7 +76,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         description='ESX Equities Market is the division of ESX that allows issuers of equity securities to raise long-term capital.'
       />
       <div className='flex w-full  lg:px-28 py-7'>
-        <Card width='hidden w-[30%] mr-5 lg:flex flex-col text-left  py-10 px-5'>
+        <Card width='hidden w-[25%] mr-5 lg:flex flex-col text-left  py-10 pt-5 px-5'>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -86,7 +86,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -97,10 +97,10 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               {item}
             </button>
           ))}
-          {spanItems.map((item, index) => (
+          {/* {spanItems.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: "14px",
@@ -109,7 +109,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             >
               {item}
             </button>
-          ))}
+          ))} */}
         </Card>
         <div className='grid grid-cols-1 gap-5 w-[100%]'>
           <Card width='flex flex-col '>
@@ -122,37 +122,118 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               alt=''
               className='w-[100%] h-[200px] md:hidden aspect-square object-cover'
             />
-            <div className='flex '>
-              <div className='pt-[30px] pb-[20px]  px-[20px] md:w-[60%]  '>
-                <h1 className="text-primary-blue  text-xs font-semibold font-['Open Sans']">
+            <div className='flex px-10 py-10'>
+              <div className='   '>
+                {/* <h1 className='text-primary-blue  text-xs font-semibold   '>
                   Trade on ESX
-                </h1>
-                <h1 className='text-black text-[20px] md:text-[30px]  '>
-                  Why invest?
+                </h1> */}
+                <h1 className='text-black text-[20px] md:text-header  '>
+                  <span className=' border-b-[3px] border-light-golden'>
+                    {" "}
+                    W
+                  </span>
+                  hy invest?
                 </h1>
                 <div className='space-y-[10px] mt-[15px]'>
-                  <p className="text-zinc-500 text-[14px] lg:text-base lg:font-normal font-['Open Sans'] leading-snug ">
+                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      fill='currentColor'
+                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                    >
+                      <circle cx='12' cy='12' r='5' fill='currentColor' />
+                    </svg>{" "}
                     A benefit to investing and trading on ESX is price
                     transparency. As prices are publicly available, investors
                     are able to make informed decisions based on real-time
                     market data
                   </p>
-                  <p className="text-zinc-500 text-[14px] lg:text-base lg:font-normal font-['Open Sans'] leading-snug ">
+                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      fill='currentColor'
+                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                    >
+                      <circle cx='12' cy='12' r='5' fill='currentColor' />
+                    </svg>{" "}
+                    ESX allows investors to diversify their portfolios as they
+                    are able to invest in various asset classes according to
+                    their preferred risk tolerance.
+                  </p>
+                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      fill='currentColor'
+                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                    >
+                      <circle cx='12' cy='12' r='5' fill='currentColor' />
+                    </svg>{" "}
+                    A benefit to investing and trading on ESX is price
+                    transparency. As prices are publicly available, investors
+                    are able to make informed decisions based on real-time
+                    market data
+                  </p>
+                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      fill='currentColor'
+                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                    >
+                      <circle cx='12' cy='12' r='5' fill='currentColor' />
+                    </svg>{" "}
                     The regulatory oversight of ESX maintains market integrity.
                     This ensures that participants are adhering to trading
                     practices.
                   </p>
-                  <p className="text-zinc-500 text-[14px] lg:text-base lg:font-normal font-['Open Sans'] leading-snug ">
+                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      fill='currentColor'
+                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                    >
+                      <circle cx='12' cy='12' r='5' fill='currentColor' />
+                    </svg>{" "}
                     The ESX trading platform will be linked with a fully
                     electronic central securities depository (CSD) to ensure
                     efficient post-trade clearing and settlement processes from
                     the launch of the exchange.
                   </p>
                 </div>
+                <h1 className='text-black text-l lg:text-subHeader font-normal mt-7   leading-relaxed'>
+                  Central Securities Depository (CSD)
+                </h1>
 
-                <Link
+                <p className='text-paragraphSmall lg:font-light   pt-5 leading-snug '>
+                  The Central Securities Depoistory acts as the central place
+                  where securities traded on ESX are deposited in an electronic
+                  registrar. The CSD provides a safe custody for securities,
+                  provides securities identification number to investors and
+                  catters to the clearing and settlment of transactions.
+                </p>
+
+                <h1 className='text-black text-l lg:text-subHeader font-normal mt-7   leading-relaxed'>
+                  How do investors access the market ?
+                </h1>
+
+                <p className='text-paragraphSmall lg:font-light   pt-5 leading-snug '>
+                  ESX is a fully electronic and intermeidated market. To access
+                  the markets investors should have a CSD account, and select a
+                  licensed member of the exchange/ brokerage firm (Member)
+                </p>
+
+                <p className='text-paragraphSmall lg:font-light   pt-5 leading-snug '>
+                  Investors can choose and appoint a licensed member/ broker
+                  from members directory of ESX website
+                </p>
+
+                {/* <Link
                   href='#'
-                  className="flex text-black text-l lg:text-xl font-semibold font-['Open Sans'] mt-[20px] lg:mt-[57px] mb-[9px]"
+                  className='flex text-black text-l lg:text-xl font-semibold    mt-[20px] lg:mt-[57px] mb-[9px]'
                 >
                   View more{" "}
                   <svg
@@ -169,9 +250,9 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                       d='M8.25 4.5l7.5 7.5-7.5 7.5'
                     />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
-              <Image
+              {/* <Image
                 src={
                   "/images/Career Advancement Myths_ 10  Mistakes That Keep You From Getting Ahead 1.png"
                 }
@@ -179,22 +260,8 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 width={400}
                 alt=''
                 className='w-[40%] hidden lg:block  aspect-square object-cover'
-              />
+              /> */}
             </div>
-          </Card>
-
-          <Card width='pt-[30px] pb-[34px] px-[24px]  p-4 space-y-5'>
-            <h1 className="text-black text-l lg:text-xl font-normal font-['Open Sans'] leading-relaxed">
-              Central Securities Depository (CSD)
-            </h1>
-
-            <p className="text-zinc-500 text-[14px] lg:text-base lg:font-normal font-['Open Sans'] leading-snug ">
-              The Central Securities Depoistory acts as the central place where
-              securities traded on ESX are deposited in an electronic registrar.
-              The CSD provides a safe custody for securities, provides
-              securities identification number to investors and catters to the
-              clearing and settlment of transactions.
-            </p>
           </Card>
         </div>
       </div>

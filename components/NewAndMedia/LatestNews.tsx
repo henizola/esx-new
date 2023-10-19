@@ -67,13 +67,13 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=" text-black text-[20px] lg:text-[40px] font-light font-['Open Sans'] capitalize lg:leading-[50px] ">
+                  <h1 className=' text-black text-[20px] lg:text-[40px] font-light    capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
                   <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
                     Lorem ipsum
                   </h1>
-                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-2 lg:mt-[4px]">
+                  <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
                     Dolor sit
                   </h1>
                   <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
@@ -87,7 +87,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mb-[10px] mt-[25px]"
+                    className='flex text-justify text-black text-base font-semibold    mb-[10px] mt-[25px]'
                   >
                     View more
                     <svg
@@ -123,13 +123,13 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=" text-black text-[20px] lg:text-[40px] font-light font-['Open Sans'] capitalize lg:leading-[50px] ">
+                  <h1 className=' text-black text-[20px] lg:text-[40px] font-light    capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
                   <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
                     Lorem ipsum
                   </h1>
-                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-2 lg:mt-[4px]">
+                  <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
                     Dolor sit
                   </h1>
                   <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
@@ -143,7 +143,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mb-[10px] mt-[25px]"
+                    className='flex text-justify text-black text-base font-semibold    mb-[10px] mt-[25px]'
                   >
                     View more
                     <svg
@@ -179,13 +179,13 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=" text-black text-[20px] lg:text-[40px] font-light font-['Open Sans'] capitalize lg:leading-[50px] ">
+                  <h1 className=' text-black text-[20px] lg:text-[40px] font-light    capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
                   <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
                     Lorem ipsum
                   </h1>
-                  <h1 className="text-justify text-black text-xs font-normal font-['Open Sans'] mt-2 lg:mt-[4px]">
+                  <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
                     Dolor sit
                   </h1>
                   <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
@@ -199,7 +199,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mb-[10px] mt-[25px]"
+                    className='flex text-justify text-black text-base font-semibold    mb-[10px] mt-[25px]'
                   >
                     View more
                     <svg
@@ -224,7 +224,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
         </div>
       </div>
       <div className='bg-white py-5 lg:py-[68px]'>
-        <p className="max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-[14px] px-[20px] lg:text-base font-normal font-['Open Sans'] leading-snug">
+        <p className='max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-[14px] px-[20px] lg:text-base font-normal    leading-snug'>
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh

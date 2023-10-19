@@ -220,7 +220,7 @@ const navigation: MenuItem[] = [
         name: "Trade",
         href: "/equity-market/trade",
         current: false,
-        value: 1,
+        value: 0,
         submenu: [
           {
             name: "Trade on ESX",
@@ -259,7 +259,7 @@ const navigation: MenuItem[] = [
         name: "Members",
         href: "/equity-market/members",
         current: false,
-        value: 2,
+        value: 0,
         submenu: [
           {
             name: "How to Become a Member",
@@ -327,7 +327,7 @@ const navigation: MenuItem[] = [
             value: 0,
           },
           {
-            name: "Tax",
+            name: "ESX Rulebook ",
             value: 1,
             href: "/equity-market/regulatory-framework",
             current: false,
@@ -544,7 +544,7 @@ const navigation: MenuItem[] = [
             value: 0,
           },
           {
-            name: "Tax",
+            name: "ESX Rulebook ",
             value: 1,
             href: "equity-market/regulatory-framework",
             current: false,

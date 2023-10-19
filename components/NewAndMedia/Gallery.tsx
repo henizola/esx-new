@@ -73,7 +73,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -87,7 +87,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full   h-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -101,7 +101,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -115,7 +115,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -127,7 +127,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full   h-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -141,7 +141,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -155,7 +155,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -169,7 +169,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full   h-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -183,7 +183,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -197,7 +197,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -209,7 +209,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full   h-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -223,7 +223,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
                   alt=''
                   className=' bg-black w-full object-cover '
                 />
-                <span className="text-black text-base font-normal font-['Open Sans']">
+                <span className='text-black text-base font-normal   '>
                   Lorem, ipsum dolor.
                 </span>
               </div>
@@ -232,7 +232,7 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
         </div>
       </div>
       <div className='bg-white py-5 px-5 md:py-[68px]'>
-        <p className="max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-base font-normal font-['Open Sans'] leading-snug">
+        <p className='max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-base font-normal    leading-snug'>
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh

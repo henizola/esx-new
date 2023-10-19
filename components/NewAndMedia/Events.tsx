@@ -63,11 +63,11 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   alt=''
                   className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
                 />
-                <h1 className=" text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0 font-['Open Sans']">
+                <h1 className=' text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0   '>
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
-                  <p className="text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
+                  <p className='text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -79,7 +79,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex px-4 md:px-0 text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
+                    className='flex px-4 md:px-0 text-justify text-black text-base font-semibold    mt-[20px]'
                   >
                     View more
                     <svg
@@ -114,17 +114,17 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
 
             <div className='flex flex-col lg:flex-row gap-5'>
               <Card width='lg:w-[60%] flex  flex-col   p-[20px] pl-[20px] pr-[40] '>
-                <h1 className=" text-black text-2xl font-normal font-['Open Sans'] lowercase">
+                <h1 className=' text-black text-2xl font-normal    lowercase'>
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col mt-[6px] '>
-                  <p className="text-justify text-zinc-500 text-[15px] font-normal font-['Open Sans'] leading-snug">
+                  <p className='text-justify text-zinc-500 text-[15px] font-normal    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
                   <Link
                     href='#'
-                    className="flex text-justify text-black text-base font-semibold font-['Open Sans'] mt-3 md:mt-[29px]"
+                    className='flex text-justify text-black text-base font-semibold    mt-3 md:mt-[29px]'
                   >
                     View more
                     <svg
@@ -146,20 +146,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width='lg:w-[40%] flex  flex-col  pt-[30px] lg:pt-[120px] pb-[47px] px-[20px]  '>
                 <main className='flex flex-col  '>
-                  <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                  <h1 className=' text-black text-xl font-normal   '>
                     Lorem Ipsum
                   </h1>
-                  <p className="text-zinc-500 text-sm font-normal font-['Open Sans'] leading-snug">
+                  <p className='text-zinc-500 text-sm font-normal    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
                 </main>
                 <hr className='my-4 md:my-[40px] border border-gray/30' />
                 <main className='flex flex-col  '>
-                  <h1 className=" text-black text-xl font-normal font-['Open Sans']">
+                  <h1 className=' text-black text-xl font-normal   '>
                     Lorem Ipsum
                   </h1>
-                  <p className="text-zinc-500 text-sm font-normal font-['Open Sans'] leading-snug">
+                  <p className='text-zinc-500 text-sm font-normal    leading-snug'>
                     Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
                   </p>
                 </main>
@@ -177,11 +177,11 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   alt=''
                   className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
                 />
-                <h1 className=" text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0 font-['Open Sans']">
+                <h1 className=' text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0   '>
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
-                  <p className="text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal font-['Open Sans'] leading-snug mt-[15px]">
+                  <p className='text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -193,7 +193,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </p>
                   <Link
                     href='#'
-                    className="flex px-4 md:px-0 text-justify text-black text-base font-semibold font-['Open Sans'] mt-[20px]"
+                    className='flex px-4 md:px-0 text-justify text-black text-base font-semibold    mt-[20px]'
                   >
                     View more
                     <svg
@@ -227,27 +227,27 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
             </Card>
 
             <div className='w-[900px] pb-[32px] relative'>
-              <h1 className="left-4 lg:left-0 top-0 absolute text-black text-3xl font-normal font-['Open Sans']">
+              <h1 className='left-4 lg:left-0 top-0 absolute text-black text-3xl font-normal   '>
                 UPCOMING EVENTS
               </h1>
             </div>
             <div className='grid md:grid-cols-2 w-full gap-[32px] '>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
+                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -255,20 +255,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
+                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -276,20 +276,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
+                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -297,20 +297,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className="text-justify text-zinc-500 text-[14px] md:text-xl font-['Open Sans'] leading-snug">
+                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=" text-black text-[14px] md:text-xl font-normal font-['Open Sans'] mt-[25px]">
+                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className="text-center text-black  md:text-xl font-semibold font-['Open Sans'] mt-[20px]"
+                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -322,15 +322,15 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
       </div>
       {/* <div className='bg-white py-[68px]'>
         <div className='max-w-[980px] mx-auto w-full flex flex-col items-center'>
-          <h3 className="text-center text-black text-2xl font-bold font-['Open Sans']">
+          <h3 className="text-center text-black text-2xl font-bold   ">
             Contact the team
           </h3>
-          <p className="text-center text-black text-base font-normal mb-5 mt-[6px] font-['Open Sans']">
+          <p className="text-center text-black text-base font-normal mb-5 mt-[6px]   ">
             Get in touch with our dedicated team today! Whether you have
             questions, feedback, or collaboration ideas, were here to assist
             you. Contact us now for a prompt response.
           </p>
-          <button className="text-center w-fit rounded-md bg-primary-blue px-5 p-1 text-white text-base font-semibold font-['Open Sans']">
+          <button className="text-center w-fit rounded-md bg-primary-blue px-5 p-1 text-white text-base font-semibold   ">
             Contact us
           </button>
         </div>

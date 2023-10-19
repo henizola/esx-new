@@ -40,7 +40,7 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
       <div className='flex w-full  lg:px-28 py-7'>
-        <Card width='w-[30%] mr-5 hidden lg:flex flex-col text-left  py-10 px-5'>
+        <Card width='hidden w-[25%] mr-5 lg:flex flex-col text-left  py-10 pt-5 px-5'>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -50,7 +50,7 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -61,10 +61,10 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
               {item}
             </button>
           ))}
-          {spanItems.map((item, index) => (
+          {/* {spanItems.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: "14px",
@@ -73,13 +73,13 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
             >
               {item}
             </button>
-          ))}
+          ))} */}
         </Card>
         <div className='grid grid-cols-1 gap-3 w-[100%]'>
           <Card width='flex flex-col '>
             <div className='py-7 lg:pt-[32px] lg:pb-[36px] px-[20px] col-span-1 flex flex-col gap-4 order-1'>
               <h1 className='text-black text-xl lg:text-3xl '>Members</h1>
-              <p className="text-black text-base font-normal font-['Open Sans'] leading-snug lg:mt-2 ">
+              <p className='text-black text-base font-normal    leading-snug lg:mt-2 '>
                 ESX provides the following categories of membership license.
               </p>
               <hr className='  border border-0.5 border-primary-golden' />
@@ -90,7 +90,7 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
                     className='flex justify-between border-b border-primary-golden/40 items-center lg:py-[30px]'
                     key={i}
                   >
-                    <p className="text-zinc-500 text-[14px] lg:text-base lg:font-normal font-['Open Sans'] leading-snug">
+                    <p className='text-zinc-500 text-[14px] lg:text-base lg:font-normal    leading-snug'>
                       {member}
                     </p>
                     <ChevronRightIcon
