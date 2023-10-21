@@ -22,7 +22,11 @@ export const menus: Menu[] = [
     name: "Instruments",
     menu: [
       {
-        name: "T-Bills and Bonds",
+        name: "Instruments",
+        description: ``,
+      },
+      {
+        name: "Treasury Bills and Bonds",
         description: `- Treasury Bills (T-Bills) are safe , short-term debt securities issued by the Ethiopian government (Ministry of Finance) to investors with a maturity period of one year or less. \n -The National Bank of Ethiopia acts as an agent for the Ministry of Finance and issues T-bills through a market based auction process in the primary market.`,
       },
       {

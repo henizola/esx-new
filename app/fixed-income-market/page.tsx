@@ -1,25 +1,16 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import SideMenu from "@/components/SideMenu/SideMenu";
-import { useNumber } from "@/context/nav.context";
-import Overview from "@/components/FixedIncomeMarket/Overview/Overview";
-import Menu from "@/components/FixedIncomeMarket/Menu";
-import Instruments from "@/components/FixedIncomeMarket/Instruments";
-import CorporateBonds from "@/components/FixedIncomeMarket/Instruments/CorporateBonds";
-import bannerImage from "../../public/images/about-banner.png";
-import bannerImage2 from "../../public/images/instruments-banner.png";
-import bannerImage3 from "../../public/images/listing-banner.png";
 import Banner from "@/components/Banner/banner";
+import Instruments from "@/components/FixedIncomeMarket/Instruments";
 import ListingAndAdmission from "@/components/FixedIncomeMarket/ListingAndAdmission";
-import { menus } from "@/components/FixedIncomeMarket/menuData";
-import Trading from "@/components/FixedIncomeMarket/Trading";
 import Members from "@/components/FixedIncomeMarket/Members";
+import Menu from "@/components/FixedIncomeMarket/Menu";
+import Overview from "@/components/FixedIncomeMarket/Overview/Overview";
+import Trading from "@/components/FixedIncomeMarket/Trading";
 import TradingAndOperations from "@/components/FixedIncomeMarket/TradingAndOperations";
-
-type Page = {
-  menu: string[];
-  title: string;
-};
+import { menus } from "@/components/FixedIncomeMarket/menuData";
+import { useNumber } from "@/context/nav.context";
+import { useState } from "react";
+import bannerImage from "../../public/images/about-banner.png";
 
 export default function Home() {
   const { currentPage } = useNumber();
@@ -50,7 +41,7 @@ export default function Home() {
       case 5:
         return <TradingAndOperations index={subIndex} />;
       default:
-        return null;
+        return <Overview />;
     }
   };
 

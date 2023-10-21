@@ -1,18 +1,23 @@
 "use client";
-import React, { useState } from "react";
-import TbillsAndBonds from "./TbillsAndBonds";
+import CommercialPapers from "./CommercialPapers";
 import CorporateBonds from "./CorporateBonds";
+import OverView from "./OverView";
 import RepurchaseAgreement from "./RepurchaseAgreement";
+import TbillsAndBonds from "./TbillsAndBonds";
 
 const SelectedPage = ({ index }: { index: number }) => {
   switch (index) {
     case 0:
+      return <OverView />;
+    case 1:
       return <TbillsAndBonds />;
 
-    case 1:
-      return <CorporateBonds />;
     case 2:
+      return <CorporateBonds />;
+    case 3:
       return <RepurchaseAgreement />;
+    case 4:
+      return <CommercialPapers />;
     default:
       return null;
   }
