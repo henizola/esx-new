@@ -1,7 +1,6 @@
 "use client";
 
 import TradingFaqs from "@/components/EquityMarket/TradingOperations/Faq";
-import ProceduresManual from "@/components/EquityMarket/TradingOperations/ProceduresManual";
 import TradingRules from "@/components/EquityMarket/TradingOperations/TradingRules";
 import TradingSystem from "@/components/EquityMarket/TradingOperations/TradingSystem";
 import SideMenu from "@/components/SideMenu/SideMenu";

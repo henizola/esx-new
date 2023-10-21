@@ -21,9 +21,11 @@ function ListingFAQs() {
             </Accordion>
           </div>
           <div className='pb-7'>
-            <Accordion
-              title={"What is meant by suspension of listing?"}
-            ></Accordion>
+            <Accordion title={"What is meant by suspension of listing?"}>
+              <p className='text-[16px]   font-normal text-[#707377] pt-5 pb-3 px-5 bg-[#F0F0F0]'>
+                Trading in the shares of the company cannot take place
+              </p>
+            </Accordion>
           </div>
         </div>
       </div>

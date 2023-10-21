@@ -146,7 +146,7 @@ function TheAcademy() {
       </div>
       <Card width='w-[100%] my-5 mb-0 px-5 flex flex-col flex-grow justify-between'>
         <div>
-          <h2 className='text-[19px] font-normal pt-11'>
+          <h2 className='text-paragraphSmall font-normal pt-11'>
             The target audience includes{" "}
           </h2>
           <div className='pt-4'>

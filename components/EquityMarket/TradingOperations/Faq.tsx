@@ -65,15 +65,16 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
               </ExpandableCard>
               <ExpandableCard question='What are the benefits of investing?'>
                 Some of the benefits of investing include income earned through
-                dividends, protection of saving from the effects of inflation,
-                capital gains, and diversification.
+                dividends, capital gains, protection of saving from the effects
+                of inflation (i.e. capital preservation), capital gains, and
+                asset diversification.
               </ExpandableCard>
               <ExpandableCard question='How do I start trading?'>
                 Answer
               </ExpandableCard>
               <ExpandableCard question='What is meant by suspension of trading?'>
-                Suspension of trading is where the buying and selling activity
-                is put on a hold.
+                Suspension of trading is where buying and selling on a security
+                listed on the ESX is put on hold.
               </ExpandableCard>
             </main>
           </Card>

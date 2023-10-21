@@ -65,7 +65,7 @@ const Page: React.FC<InvestorsProps> = ({ setStep, step }) => {
                     Investors
                   </h1>
                   <hr className='  mt-3  mb-3' />
-                  <p className='w-[90%]  text-[16px]   font-normal mt-2 pt-0 leading-6 text-gray'>
+                  <p className='w-[90%]  text-[16px]   font-normal mt-2 pt-0 leading-6  '>
                     They have access to a new mechanism for getting funds that
                     is not dependent on the banking system, that does not
                     generate any dilution of their capital and that does not

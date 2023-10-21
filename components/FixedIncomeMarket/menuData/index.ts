@@ -27,8 +27,7 @@ export const menus: Menu[] = [
       },
       {
         name: "Corporate Bonds",
-        description:
-          "- Corporate bonds provide companies an alternative and more efficient source of long-term capital relative to traditional bank loans, providing a sustainable avenue to fund capital expenditure needs.",
+        description: "",
       },
       {
         name: "Repurchase Agreements",
@@ -36,7 +35,11 @@ export const menus: Menu[] = [
         description:
           "A repurchase agreement (repo) is a secured short-term form of borrowing (usually 1-7 day term) that involves selling a security with an agreement to repurchase it at a higher price later in the interbank market.",
       },
-      { name: "Other Instruments", disabled: true },
+      {
+        name: "Commercial Papers",
+        title: "Commercial Papers",
+      },
+      // { name: "Other Instruments", disabled: true },
     ],
   },
   {
@@ -48,7 +51,7 @@ export const menus: Menu[] = [
         title: "Bond IPO / Debt Public Issue",
       },
       {
-        name: "Listing rules",
+        name: "Listing Rules, Requirements, Benefits ",
         description:
           "“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse",
       },

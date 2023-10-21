@@ -11,8 +11,12 @@ interface ListingRulesProps {
 }
 
 const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
-  const items = ["Overview", "Market Segment", "Listing Rules", "Listing FAQs"];
-
+  const items = [
+    "Overview",
+    // "Market Segment",
+    "Listing Rules, Requirements, Benefits ",
+    "Listing FAQs",
+  ];
   return (
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
@@ -22,7 +26,7 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
-          <h6 className='ml-2 mb-4 text-lg text-gray-600'>
+          <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
             </BackButton>{" "}
@@ -96,22 +100,22 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 <div className='py-[20px]  pt-[5px] px-[20px] w-[100%] space-y-[30px]'>
                   <main className=' px-5 pt-0'>
                     <p className='text-black mt-[13px] text-paragraphSmall font-light   '>
-                      As an issuer, listing on ESX provides you with access to
+                      As an issuer, listing on ESX provides you with access to a
                       large pool of long-term capital that is critical to
-                      finance your growth ambitions
+                      finance your growth ambitions.
                     </p>
                     <p className='text-black mt-[15px] text-paragraphSmall font-light   '>
                       Listing provides access to a new source of finance that
                       compliments your other sources of capital, such as bank
                       lending, as it requires no guarantees or collateral to
-                      raise capital from the public, issuing share securities
+                      raise capital from the public, as issuing share securities
                       bears no interest payment.
                     </p>
                     <p className='text-black mt-[15px] text-paragraphSmall font-light  '>
                       Indeed, listing is more than just raising capital - it is
                       a strategic decision that boosts the company’s national
                       and global profile, improves the company’s overall
-                      governance, and standing as a sustainable business
+                      governance, and its standing as a sustainable business
                       enterprise.
                     </p>
                   </main>
@@ -121,36 +125,37 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
           </div>
           <Card width='lg:w-[100%] flex flex-col '>
             <h1 className='pt-[14px] pb-[12px] px-10   bg-primary-blue text-white text-subHeader not-italic font-normal leading-[normal]'>
-              Listing on ESX may take the following two main forms
+              Listing on ESX may take the following two main forms:
             </h1>
             <main className='pt-4 lg:pt-[15px] pb-[10px] flex flex-col gap-[10px] px-10'>
               <h1 className='text-black text-paragraphBig mb-[10px] font-normal   '>
-                Initial public offering (IPO)
+                Initial Public Offering (IPO)
               </h1>
               <p className=' text-paragraphSmall font-light    leading-snug '>
-                An IPO is the process when a private company offers its shares
-                of ownership to the public for the first time.
+                ○ An IPO is the process through which a private company offers
+                its shares of ownership to the public for the first time.
               </p>
               <p className=' text-paragraphSmall font-light    leading-snug '>
-                It is essentially the transition of a company from private to
-                public ownership.{" "}
+                ○ It is essentially the transition of a company from private to
+                public ownership.
               </p>
               <p className=' text-paragraphSmall font-light    leading-snug '>
-                May take the form of offer for sale or offer for subscription{" "}
+                ○ May take the form of offer for sale or offer for subscription
               </p>
               <hr className=' mt-[20px]  border border-0.5 border-gray/30' />
             </main>
             <main className='pt-4 lg:pt-[15px] pb-10 flex flex-col gap-[10px] px-10'>
               <h1 className='text-black text-paragraphBig mb-[10px] font-normal   '>
-                Listing by introduction (direct listing)
+                Listing by Introduction (Direct Listing)
               </h1>
               <p className=' text-paragraphSmall font-light    leading-snug '>
-                It is the most streamlined avenue to list on ESX, giving
-                companies an opportunity to introduce their securities to ESX’s
-                efficient and reliable secondary market infrastructures.
+                ○ Is the most streamlined avenue to list on the ESX, giving
+                existing public share companies with shares in circulation an
+                opportunity to introduce their securities to ESX’s efficient and
+                reliable secondary market infrastructures.
               </p>
               <p className=' text-paragraphSmall font-light    leading-snug '>
-                This method of listing is followed when a company does not
+                ○ This method of listing is followed when a company does not
                 intend to raise capital/issue additional shares up on listing
                 and rather aims to provide liquidity for investors in the
                 secondary market.

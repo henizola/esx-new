@@ -410,7 +410,7 @@ const navigation: MenuItem[] = [
             value: 0,
           },
           {
-            name: "Listing Rules",
+            name: "Listing Rules, Requirements, Benefits ",
             href: "/fixed-income-market",
             current: false,
             value: 1,
@@ -729,7 +729,7 @@ const Header: React.FC = () => {
             >
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:underline hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+                <Disclosure.Button className='relative inline-flex items-center justify-center rounded-md p-2  -400 hover:underline hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
                   <span className='absolute -inset-0.5' />
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
@@ -755,6 +755,16 @@ const Header: React.FC = () => {
                     </nav>
                   </div>
                 </div>
+                <MenuItem
+                  item={{
+                    name: "contactus@esxproject.com ",
+                    current: false,
+                    href: "mailto:contactus@esxproject.com ",
+                  }}
+                  openSubMenu={openSubMenu}
+                  closeSubMenu={closeSubMenu}
+                  showSubMenu={showSubMenu}
+                />
                 <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
                   <button type='button' className='relative '>
                     <span className='absolute -inset-1.5' />

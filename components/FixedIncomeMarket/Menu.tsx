@@ -26,9 +26,9 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
   return (
     <>
       <div className='flex w-full  px-28 py-7 justify-center gap-5 '>
-        <div className='flex w-full gap-5'>
-          <Card width='min-w-[300px] max-w-[300px] flex-1  flex flex-col text-left  pt-10 pb-5 px-5'>
-            <h6 className=' mb-4'>
+        <div className='grid sm:grid-cols-9 gap-8  '>
+          <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+            <h6 className='ml-2 mb-4 text-lg  -600'>
               <span
                 className='hover:cursor-pointer hover:scale-125'
                 onClick={returnHome}
@@ -51,7 +51,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
               {items.map((item: any, index: number) => (
                 <button
                   key={index}
-                  className={`text-left font-light border-b border-black py-2 ml-11`}
+                  className={`text-left font-light border-b border-black py-2 ml-5`}
                   style={{
                     borderBottom: "0.7px solid black",
                     fontSize: step === index ? "16px" : "14px",
@@ -71,7 +71,9 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
               ))}
             </div>
           </Card>
-          <div className='flex flex-col flex-grow min-h-full '>{children}</div>
+          <div className='col-span-7 space-y-5  w-[100vw] lg:w-[auto]'>
+            {children}
+          </div>
         </div>
       </div>
       {title === "Trading" && step === 0 && (

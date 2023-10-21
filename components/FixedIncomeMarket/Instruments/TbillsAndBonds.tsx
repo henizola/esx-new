@@ -1,8 +1,6 @@
-import React from "react";
-import Card from "../../Card/Card";
 import Image from "next/image";
 import tbills from "../../../public/images/tbills.png";
-import Link from "next/link";
+import Card from "../../Card/Card";
 
 function TbillsAndBonds() {
   const tbils = [
@@ -12,30 +10,47 @@ function TbillsAndBonds() {
     "Treasury Bonds are safe, long-term debt securities issued by the Ethiopian government to investors with a maturity period of more than one year.",
   ];
   return (
-    <Card width='flex flex-col  w-full h-full'>
-      <div className='bg-[#00205B] w-full h-full'>
-        <h1 className='text-[24px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
-          T-bills and bonds
-        </h1>
-      </div>
-      <div className='flex h-full '>
-        <div className='min-h-full bg-white pt-10 px-5 flex flex-col justify-between  '>
-          <div>
-            {tbils.map((tbil, index) => {
-              return (
-                <p
-                  key={index}
-                  className={` py-5 text-[14px]   font-normal ${
-                    tbils.length - 1 !== index && "border-b border-black "
-                  }`}
-                >
-                  {tbil}
-                </p>
-              );
-            })}
+    <div>
+      <Card width='flex flex-col  w-full h-full'>
+        <div className='flex h-full pb-5'>
+          <div className='min-h-full bg-white pt-5 px-10 flex flex-col justify-between  '>
+            <div>
+              <p className={` py-5 text-paragraphSmall   font-light `}>
+                Treasury Bills (T-Bills) are safe, short-term debt securities
+                issued by the Ethiopian government (Ministry of Finance) to
+                investors with a maturity period of one year or less. The
+                National Bank of Ethiopia acts as an agent for the Ministry of
+                Finance and issues T-bills through a market based auction
+                process in the primary market.
+              </p>
+            </div>
           </div>
         </div>
-        <div className='min-w-[38%] min-h-full '>
+      </Card>
+      <Card width='flex flex-col  w-full h-full mt-5'>
+        <div className='bg-[#00205B] w-full h-full'>
+          <h1 className='text-subHeader px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
+            T-bills and bonds
+          </h1>
+        </div>
+        <div className='flex h-full pb-5'>
+          <div className='min-h-full bg-white pt-5 px-10 flex flex-col justify-between  '>
+            <div>
+              {tbils.map((tbil, index) => {
+                return (
+                  <p
+                    key={index}
+                    className={` py-5 text-paragraphSmall   font-light ${
+                      tbils.length - 1 !== index && "border-b border-black "
+                    }`}
+                  >
+                    {tbil}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
+          {/* <div className='min-w-[38%] min-h-full '>
           <Image
             height={200}
             width={200}
@@ -43,9 +58,10 @@ function TbillsAndBonds() {
             alt='tbills'
             className='w-[100%] h-[100%] object-fill '
           />
+        </div> */}
         </div>
-      </div>
-    </Card>
+      </Card>
+    </div>
   );
 }
 

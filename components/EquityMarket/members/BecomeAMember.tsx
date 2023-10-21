@@ -1,15 +1,10 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import { BackButton } from "@/components/Button/BackButton";
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import React, { useState } from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
-import CustomSlider from "../../Slider/Slider";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
-import { BackButton } from "@/components/Button/BackButton";
+import bannerImage from "/public/images/about-banner.png";
 interface ListingRulesProps {
   setStep: (value: number) => void;
   step: number;
@@ -17,29 +12,30 @@ interface ListingRulesProps {
 
 const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
   const items = [
+    "Overview",
     "How to Become a Member",
     "Membership Rules",
     "List of Members",
   ];
   const evidence = [
-    "Proof of payment of the applicable fees prescribed by The Exchange",
-    "A copy of the certificate of commercial registration and/or investment permit issued by the relevant government body",
-    "Applicable incorporation documents",
-    "List of individuals and entities with significant influence in the applicant business organization",
+    "Proof of payment of the applicable fees prescribed by ESX",
+    "	A copy of the certificate of commercial registration and/or investment permit issued by the relevant government body",
+    " 	Applicable incorporation documents",
+    "	List of individuals and entities with significant influence in the applicant business organization;",
     "Board resolution approving the decision to obtain a Trading License",
-    "Corporate profile of the applicant, including the composition of its Board of Directors and other proposed Registered Individuals",
-    "A Business Plan which shall contain amongst others, the Business Strategy and Objectives of the applicant stating the Long term objectives of the business organization and services te be rendered",
-    "Organography of the applicant clearly delineating the reporting lines",
-    `Confirmation that Senior Executive Officers have the requisite qualifications and details of the proposed
-    Registered Individuals who meet the fit and proper criteria for their role or function as specified by the ESR
-    as may be in effect at the time of filing the application`,
-    `Attestation on the ethics and conduct of the applicant or its investors, Directors or Officers`,
-    "Audited Financial Statements as applicable",
-    `Address of the applicant's registered office and proposed Head Office (if different frorn its registered office)
-    and any other office the applicant intends to operate from`,
-    `Attestation Of willingness and capacity on the part Of the Trading Member to comply with the provisions of
-    the Proclamation, ECMA's Directives. The Exchanges Rules and Regulations and other appl.cable
-    regulations`,
+    " 	Corporate profile of the applicant, including the composition of its Board of Directors and other proposed Registered Individuals",
+    "A Business Plan which shall contain amongst others, the Business Strategy and Objectives of the applicant stating the long term objectives of the business organization and services to be rendered",
+    " Organogram of the applicant clearly delineating the reporting lines",
+    `	Confirmation that Senior Executive Officers have the requisite qualifications and details of the proposed Registered Individuals who meet the fit and proper criteria for their role or function as specified by the ESX as may be in effect at the time of filing the application; 
+    `,
+    `Attestation on the ethics and conduct of the applicant or its investors, Directors or Officers:
+    `,
+    "Audited Financial Statements  as applicable",
+    `
+    	Address of the applicant’s registered office and proposed Head Office (if different from its registered office) and any other office the applicant intends to operate from
+    `,
+    `	Attestation of willingness and capacity on the part of the Trading Member to comply with the provisions of the Proclamation, ECMA’s Directives, ESX’s Rules and Regulations, and other applicable regulations.
+    `,
   ];
   const [selectedIndex, setStelectedIndex] = useState(0);
   return (
@@ -79,8 +75,8 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
               <main className='pt-[20px] lg:pt-[44px] lg:pb-[45px]  px-10 '>
                 <p className='text-black text-paragraphSmall font-light    mb-5 lg:mb-[40px] '>
                   Only capital market service providers, registered in Ethiopia
-                  by the Ethiopian Capital Market Authority are eligible to
-                  become a trading member of the exchange.
+                  by the ECMA are eligible to become a trading member of the
+                  exchange.
                 </p>
                 <div className='grid lg:grid-cols-4 gap-4 mb-[30px]'>
                   <div
@@ -108,11 +104,7 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   <div className='flex lg:hidden gap-[11px]'>
                     <ChevronRightIcon className='w-6 h-6 ' />
 
-                    <p className='text-black text-base font-normal    flex-1 '>
-                      An application for a membership license shall be made in
-                      such a manner as prescribed by the exchange membership
-                      rules.
-                    </p>
+                    <p className='text-black text-base font-normal    flex-1 '></p>
                   </div>
                   <div
                     className='flex flex-col gap-2 cursor-pointer'
@@ -176,16 +168,16 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   {selectedIndex === 1 && (
                     <p className='text-black text-base font-light      flex-1 '>
                       Where an applicant has met the requirements for the grant
-                      of a Trading License, The Exchange will grant an Approval-
-                      In-Principle (AIP) to the applicant
+                      of a Trading License, ESX will grant an
+                      Approval-In-Principle (AIP) to the applicant
                     </p>
                   )}
                   {selectedIndex === 2 && (
                     <p className='text-black text-base font-light     flex-1 '>
                       An AIP shall be converted to a full Trading License only
-                      when The Exchange has conducted a Certification Inspection
-                      and the firm proves that it has met all the requirements
-                      for the commencement of operations.
+                      when ESX has conducted a Certification Inspection and the
+                      firm proves that it has met all the requirements for the
+                      commencement of operations.
                     </p>
                   )}
                   {selectedIndex === 3 && (
@@ -200,7 +192,7 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
             </Card>
             <Card width='py-10 px-10 space-y-4 col-span-5 flex flex-col'>
               <h1 className='text-black text-[20px] lg:text-subHeader font-normal   '>
-                The applicant shall provide the following in evidence
+                The applicant shall provide the following in evidence:
               </h1>
               <hr className='  border-b-1 border-gray/90' />
               <div className='flex flex-col '>

@@ -1,22 +1,22 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import { BackButton } from "@/components/Button/BackButton";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import React, { ReactNode, useState } from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
-import CustomSlider from "../../Slider/Slider";
-import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
-import { BackButton } from "@/components/Button/BackButton";
+import bannerImage from "/public/images/about-banner.png";
 interface ListingFaqsProps {
   setStep: (value: number) => void;
   step: number;
 }
 
 const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
-  const items = ["Overview", "Market Segment", "Listing Rules", "Listing FAQs"];
+  const items = [
+    "Overview",
+    // "Market Segment",
+    "Listing Rules, Requirements, Benefits ",
+    "Listing FAQs",
+  ];
 
   return (
     <div className='flex flex-col w-full p-0 m-0'>
@@ -27,7 +27,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
-          <h6 className='ml-2 mb-4 text-lg text-gray-600'>
+          <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
             </BackButton>{" "}
@@ -102,20 +102,21 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
                 first time.
               </ExpandableCard>
               <ExpandableCard question='How long is the IPO process?'>
-                typically 6-9 months - however this depends on the company’s IPO
+                Typically 6-9 months - however this depends on the company’s IPO
                 readiness (prepared financial statements, company documents
                 etc.).
               </ExpandableCard>
-              <ExpandableCard question='When is the best time to list / go public?'>
+              <ExpandableCard question='When is the best time to list/go public?'>
                 The right time varies for every company. Generally, a company
                 decides to go public when they are in need of funding for
                 expansion plans. However, the best time to prepare to go public
                 is now. This will allow the company to be ready once they decide
                 to go public.
               </ExpandableCard>
-              <ExpandableCard question='What is the secondary market?'>
+              <ExpandableCard question='	What is the secondary market'>
                 A secondary market is where investors trade/exchange securities
-                such as shares, bonds, ETFs etc.
+                such as shares, bonds, ETFs etc. from other investors, rather
+                than from issuing companies.
               </ExpandableCard>
             </main>
           </Card>

@@ -13,8 +13,22 @@ function CorporateBonds() {
 
   return (
     <div>
-      <Card width='w-[100%] h-full flex flex-row'>
-        <div className='w-[38%] min-h-full'>
+      <Card width='flex flex-col  w-full h-full'>
+        <div className='flex h-full pb-5'>
+          <div className='min-h-full bg-white pt-5 px-10 flex flex-col justify-between  '>
+            <div>
+              <p className={` py-5 text-paragraphSmall   font-light `}>
+                Corporate bonds provide companies an alternative and more
+                efficient source of long-term capital relative to traditional
+                bank loans, providing a sustainable avenue to fund capital
+                expenditure needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+      <Card width='w-[100%] h-full flex flex-row px-3 mt-5'>
+        {/* <div className='w-[38%] min-h-full'>
           <Image
             height={200}
             width={200}
@@ -22,13 +36,13 @@ function CorporateBonds() {
             alt='overview'
             className='w-full object-cover h-full'
           />
-        </div>
-        <div className='w-[62%] flex px-5 pt-10  flex-col'>
-          <h1 className='text-[30px]   font-light mt-0 pt-0 border-b border-[#A8965B]'>
+        </div> */}
+        <div className='w-[100%] flex  pt-5  flex-col'>
+          <h1 className='text-subHeader  mx-7 font-normal mt-0 pt-0 border-b border-[#A8965B]'>
             Corporate Bonds{" "}
           </h1>
 
-          <div className='pl-7 '>
+          <div className='px-7 pb-5'>
             {lists.map((item, index) => {
               return (
                 <div

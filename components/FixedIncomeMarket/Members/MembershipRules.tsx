@@ -56,7 +56,7 @@ function MembershipRules() {
       <div className='grid grid-cols-2 gap-5 mt-5 '>
         <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col  flex-grow justify-between '>
           <div>
-            <h2 className='text-[19px] font-normal'>
+            <h2 className='text-paragraphSmall font-normal'>
               Access to the trading platform{" "}
             </h2>
             <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
@@ -83,7 +83,7 @@ function MembershipRules() {
           </Link>
         </Card>
         <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] '>
-          <h2 className='text-[19px] font-normal'>
+          <h2 className='text-paragraphSmall font-normal'>
             Direct Market Access (DMA){" "}
           </h2>
           <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>

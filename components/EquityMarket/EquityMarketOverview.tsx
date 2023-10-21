@@ -1,6 +1,5 @@
 import Banner from "@/components/Banner/banner";
 import Card from "@/components/Card/Card";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import React from "react";
 import image from "/public/images/who-we-are.png";
@@ -116,13 +115,14 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 {/* <h1 className='text-primary-blue text-[12px] mb-[14px] '>
                   Overview
                 </h1> */}
-                <h1 className='text-black  text-[20px] lg:text-subHeader  mb-[20px]'>
-                  ESX’s Equity Market Provides
-                </h1>
                 <p className=' text-base my-[10px]   font-light    leading-tight'>
                   ESX Equities Market is the division of ESX that allows issuers
                   of equity securities to raise long-term capital.
                 </p>
+                <h1 className='text-black  text-[20px] lg:text-subHeader  mb-[20px]'>
+                  ESX’s Equity Market Provides:
+                </h1>
+
                 <div className='flex relative pl-7 gap-[10px] mb-[20px]'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -139,13 +139,13 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     registered by the Ethiopian Capital Market Authority
                     <div className='flex flex-col gap-[10px] px-6 pt-5'>
                       <p className=' text-base '>
-                        Shares and other forms of equity instruments
+                        ○ Shares and other forms of equity instruments
                       </p>
                       <p className=' text-base '>
-                        Real estate investment funds (REIFs) / ‘REITS’
+                        ○ Real Estate Investment Funds (REIFs) / ‘REITS’
                       </p>
                       <p className=' text-base '>
-                        Exchange traded funds (ETFs)
+                        ○ Exchange Traded Funds (ETFs)
                       </p>
                     </div>
                   </p>
@@ -162,7 +162,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   </svg>
 
                   <p className='text-black font-light text-base flex-1 '>
-                    Promotes market transparency, integrity, efficiency, and
+                    Increased market transparency, integrity, efficiency, and
                     reliability of the market with the aim to protect and
                     enhance confidence by local and international investors on
                     the Ethiopian capital markets.

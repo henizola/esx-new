@@ -11,7 +11,7 @@ const Pagination = () => {
   return (
     <div className='flex max-w-[90vw] justify-between items-center  lg:max-w-[40vw] mb-6 mt-6 w-[100%] bg-primary-blue py-4 px-8 bg-gray-200'>
       <button
-        className='flex items-center text-gray-600 hover:text-gray-900'
+        className='flex items-center  -600 hover: -900'
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
@@ -48,7 +48,7 @@ const Pagination = () => {
       </div>
 
       <button
-        className='flex items-center text-gray-600 hover:text-gray-900'
+        className='flex items-center  -600 hover: -900'
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage >= totalPages}
       >

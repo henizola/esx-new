@@ -81,7 +81,7 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Board of director
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -106,7 +106,7 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Board of director
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -131,7 +131,7 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Lorem ipsum dolor
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Board of director
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>

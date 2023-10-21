@@ -1,28 +1,18 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
+import { BackButton } from "@/components/Button/BackButton";
+import LinkButton from "@/components/Button/LinkButton";
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import React from "react";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
-import CustomSlider from "../../Slider/Slider";
-import {
-  ArrowDownIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/20/solid";
-import ExpandableCard from "@/components/Card/ExpandableCard";
-import LinkButton from "@/components/Button/LinkButton";
-import { BackButton } from "@/components/Button/BackButton";
+import bannerImage from "/public/images/about-banner.png";
 interface ESXRuleBookProps {
   setStep: (value: number) => void;
   step: number;
 }
 
 const ESXRuleBook: React.FC<ESXRuleBookProps> = ({ setStep, step }) => {
-  const items = ["Capital Market Regulatory Environment", "Tax"];
+  const items = ["Capital Market Regulatory Environment", "ESX Rulebook"];
 
   return (
     <div className='flex flex-col w-full p-0 m-0'>

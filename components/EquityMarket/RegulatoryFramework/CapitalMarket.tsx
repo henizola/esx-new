@@ -1,11 +1,11 @@
 "use client";
 import { BackButton } from "@/components/Button/BackButton";
-import LinkButton from "@/components/Button/LinkButton";
 import Image from "next/image";
 import React from "react";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import bannerImage from "/public/images/about-banner.png";
+import LinkButton from "@/components/Button/LinkButton";
 interface CapitalMarketProps {
   setStep: (value: number) => void;
   step: number;
@@ -62,25 +62,26 @@ const CapitalMarket: React.FC<CapitalMarketProps> = ({ setStep, step }) => {
               <div className='md:py-[10] px-[25px]  space-y-4 pb-10'>
                 <main className='flex flex-col pt-[39px] gap-5 h-full '>
                   <p className='text-black text-paragraphSmall font-light   '>
-                    ESX is licensed by the Ethiopian Capital Market Authority
-                    (“ECMA” or “the Authority”) as a securities exchange in line
+                    ESX is licensed by the ECMA as a securities exchange in line
                     with Article 30 and 31 of the Capital Market Proclamation
-                    No.1248/2021 (“the Proclamation”).
+                    No.1248/2021
                   </p>
                   <p className='text-black text-paragraphSmall font-light   '>
                     ECMA is the apex regulator of the capital markets in
-                    Ethiopia
+                    Ethiopia and is responsible for setting the legal framework
+                    and regulating entities interested in participating ESX
                   </p>
                   <p className='text-black text-paragraphSmall font-light   '>
                     ECMA is responsible for setting the legal framework and
                     regulating entities interested in participating ESX
                   </p>
-                  {/* <LinkButton
+                  <LinkButton
                     className='text-black mt-[18px] text-base font-semibold   '
-                    href='#'
+                    href='https://ecma.gov.et/'
+                    target='_blank'
                   >
-                    View More
-                  </LinkButton> */}
+                    ECMA directives
+                  </LinkButton>
                 </main>
               </div>
               {/* <Image

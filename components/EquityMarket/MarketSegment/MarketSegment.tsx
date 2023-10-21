@@ -16,8 +16,12 @@ interface ListingRulesProps {
 }
 
 const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
-  const items = ["Overview", "Market Segment", "Listing Rules", "Listing FAQs"];
-
+  const items = [
+    "Overview",
+    // "Market Segment",
+    "Listing Rules, Requirements, Benefits ",
+    "Listing FAQs",
+  ];
   return (
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
@@ -27,7 +31,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
-          <h6 className='ml-2 mb-4 text-lg text-gray-600'>
+          <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
             </BackButton>{" "}

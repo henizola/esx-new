@@ -22,7 +22,7 @@ const MobileHeader: React.FC<{ navigation: MenuItem[] }> = ({ navigation }) => {
               <ul className='pl-4'>
                 {item.submenu.map((subItem) => (
                   <li key={subItem.value}>
-                    <a href={subItem.href} className='block py-2 text-gray-600'>
+                    <a href={subItem.href} className='block py-2  -600'>
                       {subItem.name}
                     </a>
                   </li>

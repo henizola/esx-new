@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const BondIpo = () => {
   return (
-    <Card width='w-[100%] py-7 px-5'>
+    <Card width='w-[100%] py-7 pb-10 px-5'>
       <div className='flex'>
-        <div className='w-[60%] '>
+        <div className='w-[100%] '>
           <div className='w-[100%] flex  flex-col'>
             <p className='text-[12px]   font-normal mt-0 pb-6'>
               Listing and Admission to Trading{" "}
@@ -26,7 +26,7 @@ const BondIpo = () => {
             </p>
           </div>
         </div>
-        <div className='w-[38%] ml-[3%] flex items-center'>
+        {/* <div className='w-[38%] ml-[3%] flex items-center'>
           {" "}
           <Image
             height={300}
@@ -35,7 +35,7 @@ const BondIpo = () => {
             alt='manager'
             className='w-[100%] border object-cover rounded-full  border-'
           />
-        </div>
+        </div> */}
       </div>
     </Card>
   );

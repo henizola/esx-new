@@ -56,7 +56,7 @@ const Page: React.FC<AlternativeAndGrowthProps> = ({ setStep, step }) => {
                   </h1>
 
                   <div className='w-[100%] flex  flex-col  mt-0 px-5 lg:px-10 py-5'>
-                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6 text-gray'>
+                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6  '>
                       ESX’s CrownEX is a securities-based crowd-invest platform,
                       offering the SMEs not only a chance to raise equity and/or
                       to receive loans from specialized investors and from the
@@ -91,7 +91,7 @@ const Page: React.FC<AlternativeAndGrowthProps> = ({ setStep, step }) => {
                   <h1 className='text-[24px] h-[77px] px-5 lg:px-10 py-0  text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
                   <div className='w-[100%] flex  flex-col  mt-0 px-5 lg:px-10 py-5'>
-                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6 text-gray'>
+                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6  '>
                       The platform provides a safe and easier avenue to access
                       (equity and/or debt) to SMEs, it raises awareness amongst
                       investors and serves as a stepping stone to attract
@@ -193,7 +193,7 @@ const Page: React.FC<AlternativeAndGrowthProps> = ({ setStep, step }) => {
                   <h1 className='text-[24px] h-[77px] px-5 lg:px-10 py-0  text-left text-white  w-[100%] bg-primary-blue   font-normal '></h1>
 
                   <div className='w-[100%] flex  flex-col  mt-0 px-5 lg:px-10 py-5'>
-                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6 text-gray'>
+                    <p className='w-[100%]  text-[14px]   font-normal  pt-0 leading-6  '>
                       The platform provides a safe and easier avenue to access
                       (equity and/or debt) to SMEs, it raises awareness amongst
                       investors and serves as a stepping stone to attract

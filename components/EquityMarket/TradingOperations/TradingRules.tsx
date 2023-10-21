@@ -69,26 +69,26 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
             </h1>
             <hr className=' border border-primary-golden opacity-70 mt-[19px]' />
             <main className=''>
-              <div className='flex gap-2 mt-[30px]'>
-                <ChevronRightIcon className='w-6 h-6 text-stone-500 ' />
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
 
-                <p className=' text-paragraphSmall font-light     flex-1 '>
+                <span className='ml-2'>
                   Address investor protection obligations with respect to their
                   clients when they, acting on behalf of their clients, execute
-                  their orders on the exchange platform or system
-                </p>
-              </div>
-              <div className='flex gap-2 mt-[10px]'>
-                <ChevronRightIcon className='w-6 h-6 text-stone-500' />
+                  their orders on the exchange platform or system; and
+                </span>
+              </p>
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
 
-                <p className=' text-paragraphSmall font-light     flex-1 '>
+                <span className='ml-2'>
                   Adhere to the best execution principle by taking reasonable
                   steps to obtain the best available result for the client in a
                   timely manner, provided that the Trading Member shall at all
                   times act in accordance with the terms and conditions of the
-                  order from the client
-                </p>
-              </div>
+                  order from the client.
+                </span>
+              </p>
             </main>
           </Card>
           <h1 className='text-black text-[24px] lg:text-3xl mt-[10px] lg:mt-[40px] ml-[19px] font-normal   '>
@@ -140,16 +140,34 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
               </span>
             </div>
           </Card>
+          <div className='flex flex-col'>
+            <Card width='pb-7'>
+              <div className='h-[5px]  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
+              <main className='pt-5 px-[30px] flex flex-row gap-[10px]'>
+                <p className='text-justify text-zinc-500 text-base font-normal  pt-2  leading-snug'>
+                  For details of ESX trading rules, please refer to following
+                  documents
+                </p>
+
+                <Link
+                  href='#'
+                  className='px-[15px] mr-[80px] py-1 ml-auto text-white bg-primary-blue rounded-md text-base not-italic font-normal '
+                >
+                  ESX Trading Rules
+                </Link>
+              </main>
+            </Card>
+          </div>
         </div>
       </div>
-      <div className='bg-white py-[20px] px-[20px] lg:py-[68px] '>
+      {/* <div className='bg-white py-[20px] px-[20px] lg:py-[68px] '>
         <p className='max-w-[980px] mx-auto w-full  text-center text-black text-[14px] md:text-paragraphSmall font-light    leading-snug'>
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
           euismod tincidunt ut laoreet dolore magna aliquam erat
         </p>
-      </div>
+      </div> */}
       {/* <CustomSlider slides={slides} /> */}
     </div>
   );

@@ -59,11 +59,33 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
             <div className=' flex flex-col py-5 mx-10  p-2'>
               <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
-                <p className='text-[14px] md:text-[19px] w-[100%] mt-2'>
-                  ESX impliments a corporate organization and a governance
+                <p className='text-[14px] md:text-paragraphSmall w-[100%] mt-2'>
+                  The Ethiopian Securities Exchange is organized as a share
+                  company in accordance with the Commercial Code of Ethiopia
+                  (2021).
+                </p>
+                <p className='text-[14px] md:text-paragraphSmall w-[100%] mt-2'>
+                  ESX implements a corporate organization and governance
                   framework following international best practices.
                 </p>
-                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6  '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-2 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>
+
+                  <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
+                    Having a Board of directors, where at least 1/3 will be
+                    independent, including representatives from the financial
+                    and capital market ecosystem including issuers and investors
+                    etc.
+                  </p>
+                </div>{" "}
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6  '>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -79,7 +101,7 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                     enforcement functions of ESX.
                   </p>
                 </div>{" "}
-                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6  '>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -90,11 +112,11 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                   </svg>
 
                   <p className='pl-2 py-1 text-[14px] md:text-[16px] font-light'>
-                    Separates ‘ringfences’ operation and governance of the
-                    market from shareholders interest on the exchange.
+                    Separate by ‘ring fencing’ the operation and governance of
+                    the market from shareholders interest on the exchange.
                   </p>
-                </div>{" "}
-                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6 text-gray'>
+                </div>
+                <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 mx-2 md:px-8 leading-6  '>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'

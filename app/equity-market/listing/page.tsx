@@ -21,11 +21,11 @@ export default function Home() {
       <SideMenu state={currentPage}>
         {[
           <Overview setStep={setNumber} step={currentPage} key={currentPage} />,
-          <MarketSegment
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
+          // <MarketSegment
+          //   setStep={setNumber}
+          //   step={currentPage}
+          //   key={currentPage}
+          // />,
           <ListingRules
             setStep={setNumber}
             step={currentPage}
@@ -36,25 +36,6 @@ export default function Home() {
             step={currentPage}
             key={currentPage}
           />,
-          <Vision setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Organization
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <BoardMembers
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <Management
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
-          <Reports setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Careers setStep={setNumber} step={currentPage} key={currentPage} />,
-          <Tenders setStep={setNumber} step={currentPage} key={currentPage} />,
         ]}
       </SideMenu>
     </main>

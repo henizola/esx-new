@@ -12,17 +12,18 @@ interface MembershipRulesProps {
 
 const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
   const items = [
+    "Overview",
     "How to Become a Member",
     "Membership Rules",
-    "List of Members",
+    "Members Directory ",
   ];
   const evidence = [
-    "Rules of membership and conditions for approval and demission of members",
-    "The rights and liability of its members, investors, and u ers of their services",
-    "Standards of behavior of members",
-    "Disciplinary actions against members",
-    "Duels for settlement Of disputes",
-    "Duels for settlement of disputes",
+    "Rules of membership and conditions for approval and admission of members",
+    "The rights and liability of its members, investors, and users of their services",
+    "	Standards of behavior of members",
+    "	Disciplinary actions against members ",
+    "	Rules for settlement of disputes",
+    "	Payment of fees and commissions",
   ];
 
   return (
@@ -65,8 +66,9 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
 
               <main className='pt-[20px] pb-[30px] px-[20px] space-y-4'>
                 <h1 className='text-black text-[16px] lg:text-paragraphBig font-normal   px-10'>
-                  Members shall also comply with The Exchange’s membership rules
-                  that set out
+                  ESX licensed members shall comply with the provision of the
+                  Capital Market Proclamation, relevant directives issued by the
+                  ECMA, and other applicable rules and regulations.
                 </h1>
                 <div className='flex flex-col divide divide-y divide-gray/40 px-10'>
                   {evidence.map((text) => (
@@ -80,7 +82,7 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
                   ))}
                 </div>
 
-                <div className='bg-zinc-100  max-w-[580px] mx-auto text-gray flex flex-col items-center py-4'>
+                <div className='bg-zinc-100  max-w-[580px] mx-auto   flex flex-col items-center py-4'>
                   <p className='px-4 lg:p-0 text-center text-zinc-500 text-[15px] font-normal    leading-snug mb-[18px]'>
                     For details of ESX membership rules, please refer to
                     following documents
@@ -115,7 +117,7 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
               </h1>
               <p className='text-justify  text-[14px] lg:text-paragraphSmall font-light     mt-[8px]'>
                 ESX members can offer direct market access (DMA) to their
-                clinets, which allows clients to enter buy and sell side
+                clients, which allows clients to enter buy and sell side
                 instructions via the members third party trading platform.
               </p>
               {/* <LinkButton href='' className='pt-[20px] lg:pt-0 lg:mt-auto'>

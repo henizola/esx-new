@@ -36,7 +36,7 @@ export default function Home() {
       <div className='bg-primary-blue -mt-2 w-[100vw]'>
         <StockPriceAutoScroller />
       </div>
-      <MarketSummary />
+      {/* <MarketSummary /> */}
 
       <div className='flex w-full relative lg:px-28 py-7'>
         <Card width=' w-[23%] mr-5 sticky h-fit hidden lg:flex flex-col text-left  py-10 px-5'>

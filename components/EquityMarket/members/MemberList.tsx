@@ -1,16 +1,9 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import { BackButton } from "@/components/Button/BackButton";
 import React from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
-import CustomSlider from "../../Slider/Slider";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
-import LinkButton from "@/components/Button/LinkButton";
-import { BackButton } from "@/components/Button/BackButton";
+import bannerImage from "/public/images/about-banner.png";
 interface MemberListProps {
   setStep: (value: number) => void;
   step: number;
@@ -18,9 +11,10 @@ interface MemberListProps {
 
 const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
   const items = [
+    "Overview",
     "How to Become a Member",
     "Membership Rules",
-    "List of Members",
+    "Members Directory",
   ];
   const evidence = [
     "Rules of membership and conditions for approval and demission of members",

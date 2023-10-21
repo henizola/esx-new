@@ -19,7 +19,10 @@ interface WhoWeAreProps {
 }
 
 const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
-  const items = ["Invest on ESX", "Members Directory"];
+  const items = [
+    "Invest on ESX",
+    // "Members Directory"
+  ];
   const spanItems = [
     "Direct Market Access",
     // "Listed Lecurities",
@@ -122,7 +125,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               alt=''
               className='w-[100%] h-[200px] md:hidden aspect-square object-cover'
             />
-            <div className='flex px-10 py-10'>
+            <div className='flex px-10 py-10 pb-16'>
               <div className='   '>
                 {/* <h1 className='text-primary-blue  text-xs font-semibold   '>
                   Trade on ESX
@@ -132,7 +135,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     {" "}
                     W
                   </span>
-                  hy invest?
+                  hy Trade?
                 </h1>
                 <div className='space-y-[10px] mt-[15px]'>
                   <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
@@ -144,23 +147,9 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     >
                       <circle cx='12' cy='12' r='5' fill='currentColor' />
                     </svg>{" "}
-                    A benefit to investing and trading on ESX is price
-                    transparency. As prices are publicly available, investors
-                    are able to make informed decisions based on real-time
-                    market data
-                  </p>
-                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 24 24'
-                      fill='currentColor'
-                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
-                    >
-                      <circle cx='12' cy='12' r='5' fill='currentColor' />
-                    </svg>{" "}
                     ESX allows investors to diversify their portfolios as they
                     are able to invest in various asset classes according to
-                    their preferred risk tolerance.
+                    their preferred risk tolerance
                   </p>
                   <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
                     <svg
@@ -174,7 +163,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     A benefit to investing and trading on ESX is price
                     transparency. As prices are publicly available, investors
                     are able to make informed decisions based on real-time
-                    market data
+                    market data.
                   </p>
                   <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
                     <svg
@@ -198,6 +187,20 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     >
                       <circle cx='12' cy='12' r='5' fill='currentColor' />
                     </svg>{" "}
+                    The ESX trading platform will be linked to a fully
+                    electronic central securities depository (CSD) to ensure
+                    efficient post-trade clearing and settlement processes from
+                    the launch of the exchange.
+                  </p>
+                  <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      fill='currentColor'
+                      className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                    >
+                      <circle cx='12' cy='12' r='5' fill='currentColor' />
+                    </svg>{" "}
                     The ESX trading platform will be linked with a fully
                     electronic central securities depository (CSD) to ensure
                     efficient post-trade clearing and settlement processes from
@@ -209,11 +212,12 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 </h1>
 
                 <p className='text-paragraphSmall lg:font-light   pt-5 leading-snug '>
-                  The Central Securities Depoistory acts as the central place
+                  The Central Securities Depository acts as the central place
                   where securities traded on ESX are deposited in an electronic
-                  registrar. The CSD provides a safe custody for securities,
-                  provides securities identification number to investors and
-                  catters to the clearing and settlment of transactions.
+                  registrar. The CSD provides safe custody for securities,
+                  assigns a unique securities identification number to
+                  investors, and allows efficient clearing and settlement of
+                  securities transactions.
                 </p>
 
                 <h1 className='text-black text-l lg:text-subHeader font-normal mt-7   leading-relaxed'>
@@ -221,14 +225,89 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 </h1>
 
                 <p className='text-paragraphSmall lg:font-light   pt-5 leading-snug '>
-                  ESX is a fully electronic and intermeidated market. To access
-                  the markets investors should have a CSD account, and select a
-                  licensed member of the exchange/ brokerage firm (Member)
+                  ESX is a fully electronic and intermediated market. To access
+                  the markets investors should have a CSD account and select a
+                  licensed member of the exchange/brokerage firm (ESX Trading
+                  Member) to transact on the platform.
                 </p>
 
-                <p className='text-paragraphSmall lg:font-light   pt-5 leading-snug '>
-                  Investors can choose and appoint a licensed member/ broker
-                  from members directory of ESX website
+                <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>{" "}
+                  Investors can choose and appoint a licensed member/broker from
+                  members directory of ESX websites
+                </p>
+                <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>{" "}
+                  The licensed member will support the investor in acquiring the
+                  relevant CSD account number.
+                </p>
+                <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>{" "}
+                  Investors will be required by the licensed member to provide
+                  relevant KYC information and forms.
+                </p>
+                <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>{" "}
+                  After adding necessary funds to its investor account, in line
+                  with guidance provided by the member, the investor can start
+                  trading by placing orders to buy or sell securities through
+                  the licensed member of ESX.{" "}
+                </p>
+                <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>{" "}
+                  An investor can monitor market prices through information
+                  platforms provided by the exchange on its website, mobile
+                  application, trading tools, and other information gateways
+                  provided to the member.
+                </p>
+                <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'
+                    className='w-[60px] absolute -left-5 top-5 h-[20px]'
+                  >
+                    <circle cx='12' cy='12' r='5' fill='currentColor' />
+                  </svg>{" "}
+                  Investors may be able to have an intermediated direct market
+                  access through the licensed member’s website and mobile
+                  application, in line with the rules and procedures of the
+                  exchange.{" "}
                 </p>
 
                 {/* <Link

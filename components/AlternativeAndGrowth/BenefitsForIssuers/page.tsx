@@ -76,7 +76,7 @@ const Page: React.FC<BenefitsForIssuersProps> = ({ setStep, step }) => {
 
               <Card width='w-[100%] pb-10  md:mt-5 px-5 py-5 '>
                 <h1 className='text-[20px] '>Benefits for Issuers</h1>
-                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6 text-gray'>
+                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6  '>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>
@@ -96,7 +96,7 @@ const Page: React.FC<BenefitsForIssuersProps> = ({ setStep, step }) => {
 
               <Card width='w-[100%] pb-10  md:mt-5 px-5 py-5 '>
                 <h1 className='text-[20px] '>Benefits for Issuers</h1>
-                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6 text-gray'>
+                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6  '>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>
@@ -117,7 +117,7 @@ const Page: React.FC<BenefitsForIssuersProps> = ({ setStep, step }) => {
 
               <Card width='w-[100%] pb-10  md:mt-5 px-5 py-5 '>
                 <h1 className='text-[20px] '>Benefits for Issuers</h1>
-                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6 text-gray'>
+                <p className='w-[100%] mt-3 text-[14px]   font-normal  pt-0 leading-6  '>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>

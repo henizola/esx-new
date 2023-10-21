@@ -87,7 +87,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Helaway Tadesse
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Chairman
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -114,7 +114,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Zemedenh Nigatu
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -141,7 +141,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Dr. Eleni Gabremadhin
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -169,7 +169,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Yasmin Wohabrebbi
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -196,7 +196,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Fekadu Petros Member
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -223,7 +223,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Hinjat Shamil
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>
@@ -250,7 +250,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Dr. Tewodros Makonnen
                   </h1>
-                  <h1 className='text-[12px] lg:text-[14px] text-gray font-normal  p-5 pb-0 pt-2'>
+                  <h1 className='text-[12px] lg:text-[14px]   font-normal  p-5 pb-0 pt-2'>
                     Member
                   </h1>
                   <p className='text-[14px] lg:text-[16px]  p-5 pt-2'>

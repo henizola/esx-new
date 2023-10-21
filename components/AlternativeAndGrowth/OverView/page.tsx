@@ -62,7 +62,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                     Alternative and growth market
                   </h1>
 
-                  <p className='w-[100%]  md:w-[90%]  text-[14px] md:text-[16px]   font-normal mt-2 pt-0 leading-6 text-gray'>
+                  <p className='w-[100%]  md:w-[90%]  text-[14px] md:text-[16px]   font-normal mt-2 pt-0 leading-6  '>
                     The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s
                     first, and only organized securities exchange. ESX is
                     established as a public private partnership inline with
@@ -70,7 +70,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                     (No.1248/2021), and is licensed by the Ethiopian Capital
                     Market Authority (ECMA).
                   </p>
-                  <p className='w-[100%]  m md:w-[90%]  text-[14px] md:text-[16px]   font-normal mt-5 md:mt-2 pt-0 leading-6 text-gray'>
+                  <p className='w-[100%]  m md:w-[90%]  text-[14px] md:text-[16px]   font-normal mt-5 md:mt-2 pt-0 leading-6  '>
                     To investors, the alternative market offers investment
                     options to diversify their portfolios and reduce overall
                     risk
@@ -99,7 +99,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                       offering
                     </h1>
 
-                    <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 px-5 leading-6 text-gray'>
+                    <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 px-5 leading-6  '>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 24 24'
@@ -116,7 +116,7 @@ const Page: React.FC<PageProps> = ({ setStep, step }) => {
                         A Crowdfunding/crowd investment platform
                       </p>
                     </div>
-                    <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 px-5 leading-6 text-gray'>
+                    <div className='w-[100%] relative flex justify-between  text-[15px]   font-light mt-2 px-5 leading-6  '>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 24 24'

@@ -12,20 +12,22 @@ import Image from "next/image";
 
 // Dummy data for demonstration purposes (replace with actual stock data)
 const dummyStockData = [
-  { name: "Stock Ticker Comming  Soon", price: 100 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
-  { name: "Stock Ticker Comming  Soon", price: 150 },
+  { name: "Transparent", price: 100 },
+  { name: "Reliable", price: 150 },
+  { name: "	Innovative", price: 150 },
+  { name: "	Efficient", price: 150 },
+  { name: "Sustainable", price: 150 },
+  { name: "	Excellence", price: 150 },
+  { name: "	Fairness", price: 150 },
+  { name: "	Integrity", price: 150 },
+  { name: "Transparent", price: 100 },
+  { name: "Reliable", price: 150 },
+  { name: "	Innovative", price: 150 },
+  { name: "	Efficient", price: 150 },
+  { name: "Sustainable", price: 150 },
+  { name: "	Excellence", price: 150 },
+  { name: "	Fairness", price: 150 },
+  { name: "	Integrity", price: 150 },
 ];
 
 const StockPriceAutoScroller: React.FC = () => {
@@ -34,13 +36,14 @@ const StockPriceAutoScroller: React.FC = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 10,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
+    loop: true,
 
     responsive: [
       {

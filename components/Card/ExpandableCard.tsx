@@ -10,13 +10,17 @@ interface ExpandableCardProps {
 export default function ExpandableCard({
   question,
   children,
-  className
+  className,
 }: ExpandableCardProps) {
   const [open, setOpen] = useState(false);
   return (
-    <div className={` ${open  ? 'bg-gray/10 ' : ' '}  px-[20px] pt-[12px]  flex flex-col gap-4 transition-all   ${className}`}>
-      <div className="rounded flex justify-between items-center">
-        <h1 className="text-black text-[19px] not-italic font-normal leading-[normal] ">
+    <div
+      className={` ${
+        open ? "bg-gray/10 " : " "
+      }  px-[20px] pt-[12px]  flex flex-col gap-4 transition-all   ${className}`}
+    >
+      <div className='rounded flex justify-between items-center'>
+        <h1 className='text-black text-paragraphSmall not-italic font-normal leading-[normal] '>
           {question}
         </h1>
         <ChevronDownIcon
@@ -26,7 +30,7 @@ export default function ExpandableCard({
           }`}
         />
       </div>
-      {open && <span className="pb-[52px]">{children}</span>}
+      {open && <span className='pb-[52px]'>{children}</span>}
     </div>
   );
 }

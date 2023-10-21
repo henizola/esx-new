@@ -101,7 +101,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
           <div className='grid  md:grid-cols-2 gap-5 mt-3 '>
             <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] '>
               <h1 className='text-[12px] font-semibold '>Tenders </h1>
-              <h2 className='text-[19px] font-normal'>
+              <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
               <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
@@ -129,7 +129,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
             </Card>
             <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] '>
               <h1 className='text-[12px] font-semibold '>Tenders </h1>
-              <h2 className='text-[19px] font-normal'>
+              <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
               <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
@@ -157,7 +157,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
             </Card>
             <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] '>
               <h1 className='text-[12px] font-semibold '>Tenders </h1>
-              <h2 className='text-[19px] font-normal'>
+              <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
               <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
@@ -185,7 +185,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
             </Card>
             <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] '>
               <h1 className='text-[12px] font-semibold '>Tenders </h1>
-              <h2 className='text-[19px] font-normal'>
+              <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
               <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
