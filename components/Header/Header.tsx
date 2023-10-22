@@ -172,7 +172,7 @@ const navigation: MenuItem[] = [
     current: false,
     value: 0,
     submenu: [
-      { name: "Overview", value: 0, href: "/equity-market#", current: false },
+      { name: "Overview", value: 0, href: "/equity-market", current: false },
       {
         name: "Listing on ESX",
         href: "/equity-market",
@@ -186,7 +186,7 @@ const navigation: MenuItem[] = [
             current: false,
           },
           {
-            name: "Listing Rules, Requirements, Benefits",
+            name: " Listing Rules, Requirements, Benefits",
             href: "/equity-market/listing",
             value: 1,
             current: false,
@@ -197,23 +197,23 @@ const navigation: MenuItem[] = [
             href: "/equity-market/listing",
             current: false,
           },
-          {
-            name: "Listed Companies",
+          // {
+          //   name: "Listed Companies",
 
-            href: "/equity-market/listing",
-            current: false,
-          },
-          {
-            name: "Notice to Issuers",
+          //   href: "/equity-market/listing",
+          //   current: false,
+          // },
+          // {
+          //   name: "Notice to Issuers",
 
-            href: "/equity-market/listing",
-            current: false,
-          },
-          {
-            name: "Other products (REITs, ETFs)",
-            href: "/equity-market/listing",
-            current: false,
-          },
+          //   href: "/equity-market/listing",
+          //   current: false,
+          // },
+          // {
+          //   name: "Other products (REITs, ETFs)",
+          //   href: "/equity-market/listing",
+          //   current: false,
+          // },
         ],
       },
       {
@@ -223,36 +223,36 @@ const navigation: MenuItem[] = [
         value: 0,
         submenu: [
           {
-            name: "Trade on ESX",
+            name: "Invest on ESX ",
             value: 0,
             href: "/equity-market/trade",
             current: false,
           },
-          {
-            name: "Members Directory",
-            value: 1,
-            href: "/equity-market/trade",
-            current: false,
-          },
-          {
-            name: "Direct Market Access",
-            href: "",
-            current: false,
-          },
-          {
-            name: "Listed Securities",
-            href: "",
-            current: false,
-          },
-          { name: "Market Data", href: "", current: false },
-          { name: "Indices", href: "", current: false },
-          {
-            name: "Market Announcements",
-            href: "",
+          // {
+          //   name: "Members Directory",
+          //   value: 1,
+          //   href: "/equity-market/trade",
+          //   current: false,
+          // },
+          // {
+          //   name: "Direct Market Access",
+          //   href: "",
+          //   current: false,
+          // },
+          // {
+          //   name: "Listed Securities",
+          //   href: "",
+          //   current: false,
+          // },
+          // { name: "Market Data", href: "", current: false },
+          // { name: "Indices", href: "", current: false },
+          // {
+          //   name: "Market Announcements",
+          //   href: "",
 
-            current: false,
-          },
-          { name: "Fees and Taxation", href: "", current: false },
+          //   current: false,
+          // },
+          // { name: "Fees and Taxation", href: "", current: false },
         ],
       },
       {
@@ -273,12 +273,12 @@ const navigation: MenuItem[] = [
             href: "/equity-market/members",
             current: false,
           },
-          {
-            name: "List of Members",
-            value: 2,
-            href: "/equity-market/members",
-            current: false,
-          },
+          // {
+          //   name: "List of Members",
+          //   value: 2,
+          //   href: "/equity-market/members",
+          //   current: false,
+          // },
         ],
       },
       {
@@ -288,30 +288,30 @@ const navigation: MenuItem[] = [
         current: false,
         submenu: [
           {
-            name: "Trading Market Structure",
+            name: "Trading market structure",
             href: "/equity-market/trading-operations",
             value: 0,
             current: false,
           },
           {
-            name: "Trading Rules",
+            name: "Trading rules",
             value: 1,
             href: "/equity-market/trading-operations",
             current: false,
           },
-          {
-            name: "Procedures and Manuals",
-            href: "/equity-market/trading-operations",
-            current: false,
-            value: 2,
-          },
+          // {
+          //   name: "Procedures and Manuals",
+          //   href: "/equity-market/trading-operations",
+          //   current: false,
+          //   value: 2,
+          // },
           {
             name: "Trading FAQ",
-            value: 3,
+            value: 2,
             href: "/equity-market/trading-operations",
             current: false,
           },
-          { name: "Trading Platform", href: "", current: false },
+          // { name: "Trading Platform", href: "", current: false },
         ],
       },
       {
@@ -327,32 +327,32 @@ const navigation: MenuItem[] = [
             value: 0,
           },
           {
-            name: "ESX Rulebook ",
+            name: "ESX Rulebook",
             value: 1,
             href: "/equity-market/regulatory-framework",
             current: false,
           },
         ],
       },
-      {
-        name: "Market for Unlisted Securities",
-        href: "/equity-market",
-        current: false,
-        value: 0,
-        submenu: [
-          {
-            name: "Overview",
-            href: "/equity-market",
-            value: 0,
-            current: false,
-          },
-          {
-            name: "Admission to Trading",
-            href: "/equity-market",
-            current: false,
-          },
-        ],
-      },
+      // {
+      //   name: "Market for Unlisted Securities",
+      //   href: "/equity-market",
+      //   current: false,
+      //   value: 0,
+      //   submenu: [
+      //     {
+      //       name: "Overview",
+      //       href: "/equity-market",
+      //       value: 0,
+      //       current: false,
+      //     },
+      //     {
+      //       name: "Admission to Trading",
+      //       href: "/equity-market",
+      //       current: false,
+      //     },
+      //   ],
+      // },
     ],
   },
   {
@@ -391,7 +391,7 @@ const navigation: MenuItem[] = [
             value: 2,
           },
           {
-            name: "Other Instruments",
+            name: "Commercial Paper",
             href: "/fixed-income-market",
             current: false,
           },
@@ -410,7 +410,7 @@ const navigation: MenuItem[] = [
             value: 0,
           },
           {
-            name: "Listing Rules, Requirements, Benefits ",
+            name: "Listing rules",
             href: "/fixed-income-market",
             current: false,
             value: 1,
@@ -424,13 +424,13 @@ const navigation: MenuItem[] = [
         ],
       },
       {
-        name: "Trading",
+        name: "Trade",
         href: "/fixed-income-market",
         current: false,
         value: 3,
         submenu: [
           {
-            name: "Overview",
+            name: "Trading Overview ",
             href: "/fixed-income-market",
             current: false,
             value: 0,
@@ -470,87 +470,87 @@ const navigation: MenuItem[] = [
       },
       {
         name: "Members",
-        href: "/equity-market/members",
+        href: "/fixed-income-market",
         current: false,
         value: 4,
         submenu: [
           {
             name: "How to Become a Member",
             value: 0,
-            href: "/equity-market/members",
+            href: "/fixed-income-market",
             current: false,
           },
           {
             name: "Membership Rules",
             value: 1,
-            href: "/equity-market/members",
+            href: "/fixed-income-market",
             current: false,
           },
           {
             name: "List of Members",
             value: 2,
-            href: "/equity-market/members",
+            href: "/fixed-income-market",
             current: false,
           },
         ],
       },
       {
         name: "Trading and Operations",
-        href: "/equity-market/trading-operations",
+        href: "/fixed-income-market",
         current: false,
         value: 5,
         submenu: [
           {
             name: "Trading Market Structure",
-            href: "equity-market/trading-operations",
+            href: "/fixed-income-market",
             current: false,
             value: 0,
           },
           {
             name: "Trading Rules",
             value: 1,
-            href: "/equity-market/trading-operations",
+            href: "/fixed-income-market",
             current: false,
           },
           {
             name: "Procedures and Manuals",
             value: 2,
-            href: "/equity-market/trading-operations",
+            href: "/fixed-income-market",
             current: false,
           },
-          {
-            name: "Trading Platform",
-            href: "/equity-market/trading-operations",
-            current: false,
-          },
+          // {
+          //   name: "Trading Platform",
+          //   href: "/equity-market/trading-operations",
+          //   current: false,
+          // },
           {
             name: "Trading FAQ",
             value: 3,
-            href: "/equity-market/trading-operations",
+            href: "/fixed-income-market",
             current: false,
           },
         ],
       },
-      {
-        name: "Regulatory Framework",
-        href: "equity-market/regulatory-framework",
-        current: false,
-        value: 0,
-        submenu: [
-          {
-            name: "Capital Market Regulatory Environment",
-            href: "equity-market/regulatory-framework",
-            current: false,
-            value: 0,
-          },
-          {
-            name: "ESX Rulebook ",
-            value: 1,
-            href: "equity-market/regulatory-framework",
-            current: false,
-          },
-        ],
-      },
+      // {
+      //   name: "Regulatory Framework",
+      //   href: "equity-market/regulatory-framework",
+      //   current: false,
+      //   value: 0,
+      //   submenu: [
+      //     {
+      //       name: "Capital Market Regulatory Environment",
+      //       href: "equity-market/regulatory-framework",
+      //       current: false,
+      //       value: 0,
+      //     },
+      //     {
+      //       name: "ESX Rulebook ",
+      //       value: 1,
+      //       href: "equity-market/regulatory-framework",
+      //       current: false,
+      //     },
+      //   ],
+      // },
     ],
   },
 
@@ -672,23 +672,23 @@ const navigation: MenuItem[] = [
     href: "/esx-academy",
     current: false,
     value: 0,
-    submenu: [
-      { name: "Overview", value: 0, href: "/esx-academy", current: false },
-      {
-        name: "Courses and Programs",
-        value: 1,
-        href: "/esx-academy",
-        current: false,
-      },
-      {
-        name: "ESX Training Academy Calendar",
-        href: "/esx-academy",
-        value: 2,
-        current: false,
-      },
-      { name: "FAQs", href: "/esx-academy", current: false, value: 3 },
-      { name: "Downloads", href: "/esx-academy", current: false },
-    ],
+    // submenu: [
+    //   { name: "Overview", value: 0, href: "/esx-academy", current: false },
+    //   {
+    //     name: "Courses and Programs",
+    //     value: 1,
+    //     href: "/esx-academy",
+    //     current: false,
+    //   },
+    //   {
+    //     name: "ESX Training Academy Calendar",
+    //     href: "/esx-academy",
+    //     value: 2,
+    //     current: false,
+    //   },
+    //   { name: "FAQs", href: "/esx-academy", current: false, value: 3 },
+    //   { name: "Downloads", href: "/esx-academy", current: false },
+    // ],
   },
 ];
 
