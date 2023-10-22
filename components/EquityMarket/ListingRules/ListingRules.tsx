@@ -112,7 +112,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 ○ Be a share company with securities registered by the ECMA
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
-                ○ The issuer's minimum capital;{" "}
+                ○ The issuer&apos;s minimum capital;{" "}
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
                 ○ Minimum number of years in operation;

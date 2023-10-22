@@ -144,17 +144,17 @@ export default function Home() {
                 </span>
                 <h1 className='text-[20px] lg:text-[40px] mt-3'>Why invest?</h1>
                 <hr className='mr-10 border-[#A8965B]' />
-                <p className='text-[14px] lg:text-[16px] text-[#707377]  font-light mt-5 pr-16  w-[100%] '>
+                <p className='text-[14px] lg:text-[16px]     font-light mt-5 pr-16  w-[100%] '>
                   A benefit to investing and trading on ESX is price
                   transparency. As prices are publicly available, investors are
                   able to make informed decisions based on real-time market data
                 </p>
-                <p className='text-[14px] lg:text-[16px] text-[#707377]  font-light mt-4 pr-16  w-[100%] '>
+                <p className='text-[14px] lg:text-[16px]     font-light mt-4 pr-16  w-[100%] '>
                   The regulatory oversight of ESX maintains market integrity.
                   This ensures that participants are adhering to trading
                   practices.
                 </p>
-                <p className='text-[14px] lg:text-[16px] text-[#707377] font-light mt-4 pr-16  w-[100%] '>
+                <p className='text-[14px] lg:text-[16px]    font-light mt-4 pr-16  w-[100%] '>
                   The ESX trading platform will be linked with a fully
                   electronic central securities depository (CSD) to ensure
                   efficient post-trade clearing and settlement processes from

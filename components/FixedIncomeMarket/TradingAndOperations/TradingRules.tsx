@@ -57,7 +57,7 @@ function TradingRules() {
             return (
               <div
                 key={index}
-                className='relative flex items-center text-[16px]    text-[#707377] mt-2 pl-[180px] pr-16 leading-6 gap-2 font-normal'
+                className='relative flex items-center text-[16px]       mt-2 pl-[180px] pr-16 leading-6 gap-2 font-normal'
               >
                 <div>
                   <svg

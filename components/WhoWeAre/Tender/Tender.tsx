@@ -104,7 +104,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
               <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
-              <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+              <p className='text-[16px ] font-light my-2 mt-4   '>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 ipsum{" "}
@@ -132,7 +132,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
               <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
-              <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+              <p className='text-[16px ] font-light my-2 mt-4   '>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 ipsum{" "}
@@ -160,7 +160,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
               <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
-              <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+              <p className='text-[16px ] font-light my-2 mt-4   '>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 ipsum{" "}
@@ -188,7 +188,7 @@ const Tenders: React.FC<TendersProps> = ({ setStep, step }) => {
               <h2 className='text-paragraphSmall font-normal'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum
               </h2>
-              <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+              <p className='text-[16px ] font-light my-2 mt-4   '>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 ipsum{" "}

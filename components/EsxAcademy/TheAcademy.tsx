@@ -24,7 +24,7 @@ function TheAcademy() {
               <h1 className='text-[20px] md:text-[30px]   font-normal pt-5 md:pt-12'>
                 Overview{" "}
               </h1>
-              <p className='w-[90%] text-[14px] md:text-[16px]   font-light md:font-normal leading-6 text-[#707377] pt-4'>
+              <p className='w-[90%] text-[14px] md:text-[16px]   font-light md:font-normal leading-6    pt-4'>
                 ESX has observed capacity gaps across financial institutions and
                 government agencies on key aspects of capital market products,
                 services, and infrastructures. As ESX will be operating in a
@@ -85,11 +85,11 @@ function TheAcademy() {
                 The broad level objectives of the ESX Academy are:
               </h1>
               <div className='pt-3'>
-                <li className='text-[14px]   font-normal text-[#707377]'>
+                <li className='text-[14px]   font-normal   '>
                   To educate various stakeholders on the role of capital markets
                   in general and the role, functions, and operations of ESX.
                 </li>
-                <li className='text-[14px]   font-normal text-[#707377]'>
+                <li className='text-[14px]   font-normal   '>
                   To be a learning center that offers free and paid courses,
                   workshops, and training to equip issuers, investors, capital
                   market service providers, financial market professionals, and
@@ -105,7 +105,7 @@ function TheAcademy() {
                   general public, with the knowledge and skills to participate
                   in the Ethiopian Capital Markets ecosystem.
                 </li>
-                <li className='text-[14px]   font-normal text-[#707377]'>
+                <li className='text-[14px]   font-normal   '>
                   To fill the capacity and knowledge gaps of financial market
                   professionals, investors and the general public.
                 </li>
@@ -150,16 +150,16 @@ function TheAcademy() {
             The target audience includes{" "}
           </h2>
           <div className='pt-4'>
-            <li className='text-[14px] md:text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ] font-light my-2 mt-4   '>
               Entrepreneurs, business operators, investors
             </li>
-            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4   '>
               Finance professionals
             </li>
-            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4   '>
               High school and University students
             </li>
-            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4 text-[#707377]'>
+            <li className='text-[14px] md:text-[16px ]  font-light my-2 mt-4   '>
               Academic institutions
             </li>
           </div>

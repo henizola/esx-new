@@ -38,7 +38,7 @@ function FindBroker() {
             return (
               <div
                 key={index}
-                className='border-b border-[#A8965B] bg-white py-2 mb-2 text-[#707377]'
+                className='border-b border-[#A8965B] bg-white py-2 mb-2   '
               >
                 {users}
               </div>

@@ -16,49 +16,49 @@ function FAQs() {
             dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat
           </p>
-          <div className='w-full max-w-full text-[#707377] text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
+          <div className='w-full max-w-full    text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               background={"bg-[#F0F0F0]"}
             >
               {" "}
-              <p className='text-[14px] md:text-[16px]   font-normal text-[#707377] px-5'>
+              <p className='text-[14px] md:text-[16px]   font-normal    px-5'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               </p>
             </Accordion>
           </div>
-          <div className='w-full max-w-full text-[#707377] text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
+          <div className='w-full max-w-full    text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               background={"bg-[#F0F0F0]"}
             >
               {" "}
-              <p className='text-[14px] md:text-[16px]   font-normal text-[#707377] px-5'>
+              <p className='text-[14px] md:text-[16px]   font-normal    px-5'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               </p>
             </Accordion>
           </div>{" "}
-          <div className='w-full max-w-full text-[#707377] text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
+          <div className='w-full max-w-full    text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               background={"bg-[#F0F0F0]"}
             >
               {" "}
-              <p className='text-[14px] md:text-[16px]   font-normal text-[#707377] px-5'>
+              <p className='text-[14px] md:text-[16px]   font-normal    px-5'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               </p>
             </Accordion>
           </div>{" "}
-          <div className='w-full max-w-full text-[#707377] text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
+          <div className='w-full max-w-full    text-[16px]   font-normal border-[#707377] border-b md:py-4 md:my-4 py-2'>
             <Accordion
               title={"Lorem ipsum dolor sit amet?"}
               background={"bg-[#F0F0F0]"}
             >
               {" "}
-              <p className='text-[14px] md:text-[16px]   font-normal text-[#707377] px-5'>
+              <p className='text-[14px] md:text-[16px]   font-normal    px-5'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               </p>

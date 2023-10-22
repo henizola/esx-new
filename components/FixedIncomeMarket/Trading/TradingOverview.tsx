@@ -13,7 +13,7 @@ function TradingOverview() {
                 Overview
               </p>
               <h1 className='text-[30px]   font-normal  pt-5 pb-4'>Trading </h1>
-              <p className='w-[90%]  text-[16px]   font-normal leading-6 text-[#707377] '>
+              <p className='w-[90%]  text-[16px]   font-normal leading-6    '>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
                 ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

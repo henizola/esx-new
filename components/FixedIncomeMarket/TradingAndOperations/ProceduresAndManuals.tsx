@@ -12,7 +12,7 @@ function ProceduresAndManuals() {
             <h1 className='text-[30px]   font-normal border-b border-[#A8965B] pb-5'>
               Procedures & manuals{" "}
             </h1>
-            <p className='w-[90%]  text-[16px]   font-normal mt-2 pt-5 leading-6 text-[#707377]'>
+            <p className='w-[90%]  text-[16px]   font-normal mt-2 pt-5 leading-6   '>
               The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s first, and
               only organized securities exchange. ESX is established as a public
               private partnership inline with Article 31 of the Capital Market

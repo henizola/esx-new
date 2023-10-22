@@ -28,7 +28,7 @@ function MembershipRules() {
             return (
               <p
                 key={index}
-                className={` pb-[15px] text-[16px]   text-[#707377] ${
+                className={` pb-[15px] text-[16px]      ${
                   lists.length - 1 !== index && "border-b border-black "
                 }`}
               >
@@ -40,7 +40,7 @@ function MembershipRules() {
         <Card width='w-[100%] mr-0 flex flex-col text-left py-10 '>
           <div className='bg-[#F0F0F0] w-[70%] mx-auto'>
             <div className='mx-12 my-[28px]'>
-              <p className=' text-[#707377] text-[16px] font-normal   italic w-[100%] text-center'>
+              <p className='    text-[16px] font-normal   italic w-[100%] text-center'>
                 For details of ESX membership rules, please refer to following
                 documents
               </p>
@@ -59,7 +59,7 @@ function MembershipRules() {
             <h2 className='text-paragraphSmall font-normal'>
               Access to the trading platform{" "}
             </h2>
-            <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+            <p className='text-[16px ] font-light my-2 mt-4   '>
               Members can access ESX’s Automated Trading System by connecting
               directly or through third party backoffice and trading platforms.
             </p>
@@ -86,7 +86,7 @@ function MembershipRules() {
           <h2 className='text-paragraphSmall font-normal'>
             Direct Market Access (DMA){" "}
           </h2>
-          <p className='text-[16px ] font-light my-2 mt-4 text-[#707377]'>
+          <p className='text-[16px ] font-light my-2 mt-4   '>
             ESX members can offer direct market access (DMA) to their clinets,
             which allows clients to enter buy and sell side instructions via the
             members third party trading platform.

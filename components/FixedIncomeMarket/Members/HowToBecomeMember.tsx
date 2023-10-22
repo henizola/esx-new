@@ -91,7 +91,7 @@ function HowToBecomeMember() {
             return (
               <p
                 key={index}
-                className={` py-5 text-[14px]   text-[#707377] ${
+                className={` py-5 text-[14px]      ${
                   lists2.length - 1 !== index && "border-b border-black "
                 }`}
               >
