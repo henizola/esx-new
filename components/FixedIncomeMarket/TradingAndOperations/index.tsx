@@ -16,7 +16,7 @@ const SelectedPage = ({ index }: { index: number }) => {
     case 3:
       return <TradingFAQ />;
     default:
-      return null;
+      return <TradingMarketStructure />;
   }
 };
 

@@ -19,14 +19,14 @@ const SelectedPage = ({ index }: { index: number }) => {
     case 4:
       return <CommercialPapers />;
     default:
-      return null;
+      return <OverView />;
   }
 };
 
 const Instruments = ({ index }: { index: number }) => {
   console.log("instruments", SelectedPage({ index }));
   if (SelectedPage({ index })) return <SelectedPage index={index} />;
-  else return null;
+  else return <OverView />;
 };
 
 export default Instruments;

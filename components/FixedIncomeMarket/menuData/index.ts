@@ -67,16 +67,16 @@ export const menus: Menu[] = [
     name: "Trading",
     menu: [
       {
-        name: "Trading Overview",
+        name: "Overview",
         description:
           "“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse",
       },
       { name: "Find a Broker" },
-      { name: "Listed securities", disabled: true },
-      { name: " Market Data", disabled: true },
-      { name: "Indices", disabled: true },
-      { name: "Market announcements", disabled: true },
-      { name: "Fees and Taxation", disabled: true },
+      // { name: "Listed securities", disabled: true },
+      // { name: " Market Data", disabled: true },
+      // { name: "Indices", disabled: true },
+      // { name: "Market announcements", disabled: true },
+      // { name: "Fees and Taxation", disabled: true },
     ],
   },
   {
@@ -124,13 +124,13 @@ export const menus: Menu[] = [
         name: "Trading FAQ",
         title: "Frequently asked questions",
       },
-      { name: "Trading Platform", disabled: true },
+      // { name: "Trading Platform", disabled: true },
     ],
   },
-  {
-    index: 6,
-    name: "Regulatory Framework",
-    menu: [],
-    disabled: true,
-  },
+  // {
+  //   index: 6,
+  //   name: "Regulatory Framework",
+  //   menu: [],
+  //   disabled: true,
+  // },
 ];

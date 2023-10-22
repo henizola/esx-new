@@ -4,6 +4,7 @@ import listofmember1 from "@/public/images/list-of-member1.png";
 import listofmember2 from "@/public/images/list-of-member2.jpeg";
 import listofmember3 from "@/public/images/list-of-member3.jpeg";
 import Image from "next/image";
+import Card from "@/components/Card/Card";
 
 function ListOfMembers() {
   const members = [
@@ -37,51 +38,197 @@ function ListOfMembers() {
   ];
   return (
     <div>
-      <h1 className='text-[32px] px-5 py-5 text-left text-white w-[100%] bg-primary-blue   font-light '>
-        Membership rules{" "}
-      </h1>
-      <div className='max-h-[500px] overflow-scroll w-full'>
-        {members.map((member, index) => {
-          return (
-            <div className='flex w-full my-5' key={index}>
-              <div className='w-[26%] mr-1'>
-                {" "}
-                <Image
-                  height={200}
-                  width={200}
-                  src={member.img}
-                  alt='listofmembers'
-                  className='w-[100%] h-[100%] border object-cover'
-                />
-              </div>
-              <div className='bg-white ml-1 px-5 py-3 w-[74%]'>
-                <h1 className='font-normal text-[32px]  '>{member.title}</h1>
-                <div className='py-1 font-normal text-[14px]     '>
-                  <div className='flex'>
-                    <h4 className='text-black pr-2'>Email:</h4>
-                    <p>{member.email}</p>
+      <div className='grid gap-8'>
+        <Card width='flex flex-col bg-white/0  shadow-[0px] '>
+          <h1 className='py-[18px] px-10  bg-primary-blue  text-white text-[20px] lg:text-subHeader font-normal   '>
+            List of Members
+          </h1>
+          <main className='pt-[30px]  space-y-4 '>
+            <div className='grid lg:grid-cols-4 gap-4'>
+              <img
+                alt=''
+                className='aspect-square hidden lg:block lg:w-[230px] w-[100%] h-[230px] object-cover '
+                src='/images/Premium Vector _ Hand people care logo vector 1.png'
+              />
+              <Card width='px-[20px] py-[16px] pb-[14px] col-span-3 flex flex-col gap-4  shadow-[0px]'>
+                <div className='flex'>
+                  <img
+                    alt=''
+                    className='aspect-square lg:hidden w-[30%] h-[auto] object-cover '
+                    src='/images/Premium Vector _ Hand people care logo vector 1.png'
+                  />
+                  <h1 className='text-black text-[20px] lg:text-subHeader mt-14 lg:mt-0 font-normal   '>
+                    Lorem ipsum
+                  </h1>
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Email :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      theemail.gmail.com
+                    </span>
                   </div>
-                  <div className='flex'>
-                    <h4 className='text-black pr-2'>Website:</h4>
-                    <p>{member.website}</p>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Website :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      www.gmail.com
+                    </span>
                   </div>
-                  <div className='flex'>
-                    <h4 className='text-black pr-2'>Tel:</h4>
-                    <p>{member.tel}</p>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Tel :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      0987654321
+                    </span>
                   </div>
-                  <div className='flex'>
-                    <h4 className='text-black pr-2'>Services:</h4>
-                    <p>{member.services}</p>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Service :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </span>
                   </div>
-                  <div className='flex'>
-                    <h4 className='text-black pr-2'>Active Since:</h4>
-                    <p>{member.activeSince}</p>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Active Since :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      1990
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Card>
             </div>
-          );
-        })}
+            <div className='grid lg:grid-cols-4 gap-4'>
+              <img
+                alt=''
+                className='aspect-square hidden lg:block lg:w-[230px] w-[100%] h-[230px] object-cover '
+                src='/images/Premium Vector _ Hand people care logo vector 1.png'
+              />
+              <Card width='px-[20px] py-[16px] pb-[14px] col-span-3 flex flex-col gap-4  shadow-[0px]'>
+                <div className='flex'>
+                  <img
+                    alt=''
+                    className='aspect-square lg:hidden w-[30%] h-[auto] object-cover '
+                    src='/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png'
+                  />
+                  <h1 className='text-black text-[20px] lg:text-subHeader mt-14 lg:mt-0 font-normal   '>
+                    Lorem ipsum
+                  </h1>
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Email :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      theemail.gmail.com
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Website :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      www.gmail.com
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Tel :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      0987654321
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Service :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Active Since :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      1990
+                    </span>
+                  </div>
+                </div>
+              </Card>
+            </div>
+            <div className='grid lg:grid-cols-4 gap-4'>
+              <img
+                alt=''
+                className='aspect-square hidden lg:block lg:w-[230px] w-[100%] h-[230px] object-cover '
+                src='/images/Premium Vector _ Hand people care logo vector 1.png'
+              />
+              <Card width='px-[20px] py-[16px] pb-[14px] col-span-3 flex flex-col gap-4  shadow-[0px]'>
+                <div className='flex'>
+                  <img
+                    alt=''
+                    className='aspect-square lg:hidden w-[30%] h-[auto] object-cover '
+                    src='/images/Accounting and Finance Business Branding Complete Guide (1) 1.png'
+                  />
+                  <h1 className='text-black text-[20px] lg:text-[32px] mt-14 lg:mt-0 font-normal   '>
+                    Lorem ipsum
+                  </h1>
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Email :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      theemail.gmail.com
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Website :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      www.gmail.com
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Tel :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      0987654321
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Service :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </span>
+                  </div>
+                  <div className='flex gap-4'>
+                    <span className='text-black text-sm font-normal    leading-snug'>
+                      Active Since :
+                    </span>
+                    <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                      1990
+                    </span>
+                  </div>
+                </div>
+              </Card>
+            </div>{" "}
+          </main>
+        </Card>
       </div>
     </div>
   );

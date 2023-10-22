@@ -38,7 +38,7 @@ export default function Home() {
       case 3:
         return <FAQs />;
       default:
-        return null;
+        return <TheAcademy />;
     }
   };
 

@@ -13,13 +13,13 @@ const SelectedPage = ({ index }: { index: number }) => {
     case 2:
       return <ListingFAQs />;
     default:
-      return null;
+      return <BondIpo />;
   }
 };
 
 function ListingAndAdmission({ index }: { index: number }) {
   return (
-    <div className="h-full w-full">
+    <div className='h-full w-full'>
       <SelectedPage index={index} />
     </div>
   );

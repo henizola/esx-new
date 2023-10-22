@@ -14,13 +14,13 @@ const SelectedPage = ({ index }: { index: number }) => {
     // case 2:
     //   return <ListingFAQs />;
     default:
-      return null;
+      return <TradingOverview />;
   }
 };
 
 function Trading({ index }: { index: number }) {
   return (
-    <div className="h-full">
+    <div className='h-full'>
       <SelectedPage index={index} />
     </div>
   );

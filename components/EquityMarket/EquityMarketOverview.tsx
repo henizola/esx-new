@@ -87,7 +87,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           >
             Trading & Operations
           </Link>
-          <Link
+          {/* <Link
             href={"/equity-market/regulatory-framework"}
             className={`  text-left  ml-5 
  my-2 font-light border-b border-black `}
@@ -99,7 +99,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             // onClick={() => setStep(2)}
           >
             Regulatory Framework
-          </Link>
+          </Link> */}
         </Card>
         <div className='flex flex-col justify-between gap-[18px] h-full w-[100%]'>
           <Card width='flex flex-col '>

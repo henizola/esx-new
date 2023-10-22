@@ -49,7 +49,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
       {item.submenu && showSubMenu && (
         <div
           style={{ listStyle: "none" }}
-          className='fixed w-[75vw]  z-10  left-[13vw] p-7 mx-3 hidden mt--1 space-y-1 bg-[#ffff] primary-blue group-hover:block transform scale-x-0 group-hover:scale-x-100 '
+          className='fixed w-[80vw]  z-10  left-[10vw] p-7 mx-3 hidden mt--1 space-y-1 bg-[#ffff] primary-blue group-hover:block transform scale-x-0 group-hover:scale-x-100 '
           onMouseLeave={closeSubMenu}
         >
           <svg
@@ -430,7 +430,7 @@ const navigation: MenuItem[] = [
         value: 3,
         submenu: [
           {
-            name: "Trading Overview",
+            name: "Overview",
             href: "/fixed-income-market",
             current: false,
             value: 0,
@@ -441,31 +441,31 @@ const navigation: MenuItem[] = [
             current: false,
             value: 1,
           },
-          {
-            name: "Listed Securities",
-            href: "/fixed-income-market",
-            current: false,
-          },
-          {
-            name: "Market Data",
-            href: "/fixed-income-market",
-            current: false,
-          },
-          {
-            name: "Indices",
-            href: "/fixed-income-market",
-            current: false,
-          },
-          {
-            name: "Market Announcements",
-            href: "/fixed-income-market",
-            current: false,
-          },
-          {
-            name: "Fees and Taxation",
-            href: "/fixed-income-market",
-            current: false,
-          },
+          // {
+          //   name: "Listed Securities",
+          //   href: "/fixed-income-market",
+          //   current: false,
+          // },
+          // {
+          //   name: "Market Data",
+          //   href: "/fixed-income-market",
+          //   current: false,
+          // },
+          // {
+          //   name: "Indices",
+          //   href: "/fixed-income-market",
+          //   current: false,
+          // },
+          // {
+          //   name: "Market Announcements",
+          //   href: "/fixed-income-market",
+          //   current: false,
+          // },
+          // {
+          //   name: "Fees and Taxation",
+          //   href: "/fixed-income-market",
+          //   current: false,
+          // },
         ],
       },
       {

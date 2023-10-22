@@ -13,7 +13,7 @@ const SelectedPage = ({ index }: { index: number }) => {
     case 2:
       return <ListOfMembers />;
     default:
-      return null;
+      return <HowToBecomeMember />;
   }
 };
 

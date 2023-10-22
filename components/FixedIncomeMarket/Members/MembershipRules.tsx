@@ -3,111 +3,80 @@ import Link from "next/link";
 import React from "react";
 
 function MembershipRules() {
-  const lists = [
-    "● Rules of membership and conditions for approval and admission of members",
-    "● The rights and liability of its members, investors, and users of their services",
-    "● Standards of behavior of members",
-    "● Disciplinary actions against members",
-    "● Dules for settlement of disputes",
-    "● Dules for settlement of disputes",
+  const evidence = [
+    "Rules of membership and conditions for approval and admission of members",
+    "The rights and liability of its members, investors, and users of their services",
+    "	Standards of behavior of members",
+    "	Disciplinary actions against members ",
+    "	Rules for settlement of disputes",
+    "	Payment of fees and commissions",
   ];
   return (
     <div>
-      <div className='bg-white'>
-        <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-light '>
-            Membership rules{" "}
+      <div className='grid gap-5'>
+        <Card width='flex flex-col '>
+          <h1 className='py-[18px]   bg-primary-blue text-white text-[20px] lg:text-subHeader font-normal  px-10 '>
+            Membership Rules
           </h1>
-        </div>
-        <h1 className='font-normal text-[28px]   p-6'>
-          Members shall also comply with The Exchange’s membership rules that
-          set out{" "}
-        </h1>
-        <div className='flex flex-col gap-5 px-5'>
-          {lists.map((item, index) => {
-            return (
-              <p
-                key={index}
-                className={` pb-[15px] text-[16px]      ${
-                  lists.length - 1 !== index && "border-b border-black "
-                }`}
-              >
-                {item}
-              </p>
-            );
-          })}
-        </div>
-        <Card width='w-[100%] mr-0 flex flex-col text-left py-10 '>
-          <div className='bg-[#F0F0F0] w-[70%] mx-auto'>
-            <div className='mx-12 my-[28px]'>
-              <p className='    text-[16px] font-normal   italic w-[100%] text-center'>
+
+          <main className=' pb-[30px] px-[20px] pt-10 space-y-4'>
+            <h1 className='text-black text-[16px] lg:text-paragraphBig font-normal   px-10'>
+              ESX licensed members shall comply with the provision of the
+              Capital Market Proclamation, relevant directives issued by the
+              ECMA, and other applicable rules and regulations.
+            </h1>
+            <div className='flex flex-col divide divide-y divide-gray/40 px-10'>
+              {evidence.map((text) => (
+                <p
+                  key={text}
+                  className=' text-[14px] lg:text-paragraphSmall not-italic lg:font-light leading-[normal] py-2 lg:py-4 flex items-center gap-1'
+                >
+                  <div className='w-2 lg:w-2 h-2 lg:h-2 aspect-square rounded-full bg-gray ' />{" "}
+                  <span className='pl-3'>{text}</span>
+                </p>
+              ))}
+            </div>
+
+            <div className='bg-zinc-100  max-w-[580px] mx-auto   flex flex-col items-center py-4'>
+              <p className='px-4 lg:p-0 text-center text-zinc-500 text-[15px] font-normal    leading-snug mb-[18px]'>
                 For details of ESX membership rules, please refer to following
                 documents
               </p>
-              <div className='flex justify-center items-center '>
-                <button className=' rounded-lg text-white text-[16px] font-semibold w-fit justify-center align-middle text-center bg-primary-blue p-2 my-4 px-8'>
-                  ESX Membership Rules
-                </button>
-              </div>
+              <Link
+                href='#'
+                className='px-[18px] pt-[2px] pb-[3px] bg-primary-blue rounded-md text-center text-white text-base font-semibold   '
+              >
+                ESX Membership Rules
+              </Link>
             </div>
-          </div>
+          </main>
         </Card>
       </div>
-      <div className='grid grid-cols-2 gap-5 mt-5 '>
-        <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col  flex-grow justify-between '>
-          <div>
-            <h2 className='text-paragraphSmall font-normal'>
-              Access to the trading platform{" "}
-            </h2>
-            <p className='text-[16px ] font-light my-2 mt-4   '>
-              Members can access ESX’s Automated Trading System by connecting
-              directly or through third party backoffice and trading platforms.
-            </p>
-          </div>
-          <Link href='#' className='flex text-[16px] mt-5 px-0 '>
-            View more{" "}
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={1.5}
-              stroke='currentColor'
-              className='w-4 h-4 mt-1.5'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M8.25 4.5l7.5 7.5-7.5 7.5'
-              />
-            </svg>
-          </Link>
+      <div className='grid sm:grid-cols-2 gap-5 mt-5'>
+        <Card width='py-7 px-10 flex flex-col'>
+          <h1 className='text-black text-xl lg:text-paragraphBig font-normal   '>
+            Access to the trading platform
+          </h1>
+          <p className='text-justify  text-[14px] lg:text-paragraphSmall font-light   mt-[8px]'>
+            Members can access ESX’s Automated Trading System by connecting
+            directly or through third party back office and trading platforms.
+          </p>
+          {/* <LinkButton href='' className='pt-[20px] lg:pt-0 lg:mt-auto'>
+                View More
+              </LinkButton> */}
         </Card>
-        <Card width='w-[100%] mt-0 py-5 px-5 flex  flex-col h-[fit-content] '>
-          <h2 className='text-paragraphSmall font-normal'>
-            Direct Market Access (DMA){" "}
-          </h2>
-          <p className='text-[16px ] font-light my-2 mt-4   '>
-            ESX members can offer direct market access (DMA) to their clinets,
+        <Card width='py-7 px-10 flex flex-col'>
+          <h1 className='text-black text-xl lg:text-paragraphBig font-normal   '>
+            Direct Market Access (DMA)
+          </h1>
+          <p className='text-justify  text-[14px] lg:text-paragraphSmall font-light     mt-[8px]'>
+            ESX members can offer direct market access (DMA) to their clients,
             which allows clients to enter buy and sell side instructions via the
             members third party trading platform.
           </p>
-          <Link href='#' className='flex text-[16px] mt-5 px-0 '>
-            View more{" "}
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={1.5}
-              stroke='currentColor'
-              className='w-4 h-4 mt-1.5'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M8.25 4.5l7.5 7.5-7.5 7.5'
-              />
-            </svg>
-          </Link>
+          {/* <LinkButton href='' className='pt-[20px] lg:pt-0 lg:mt-auto'>
+                View More
+              </LinkButton> */}
         </Card>
       </div>
     </div>
