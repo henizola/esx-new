@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}>
         <NumberProvider>
           <Header />
-          {/* <MobileHeader /> */}
+          <MobileHeader />
 
           {children}
           <Footer />
