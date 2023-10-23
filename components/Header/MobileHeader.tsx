@@ -662,7 +662,7 @@ const MobileNav: React.FC = () => {
       >
         <ul className='mt-10'>
           {navigation.map((menu, index) => (
-            <li className='flex-col  mt-5  '>
+            <li className='flex-col  mt-5  ' key={index}>
               <div className='flex-row'>
                 <Link
                   href={menu.href}
@@ -702,7 +702,7 @@ const MobileNav: React.FC = () => {
               {openSubMenus === index && (
                 <ul>
                   {menu.submenu?.map((subMenu, ind) => (
-                    <li>
+                    <li key={ind}>
                       <Link
                         href={subMenu.href}
                         className='block text-gray-600 my-2 relative w-fit text-paragraphBig ml-2  hover:text-gray-800 md:inline-block'
@@ -741,7 +741,7 @@ const MobileNav: React.FC = () => {
                       {openSubSubMenus === ind && (
                         <ul>
                           {subMenu.submenu?.map((subMenu, ind) => (
-                            <li>
+                            <li key={ind}>
                               <Link
                                 href={subMenu.href}
                                 className='block text-gray-600 my-2 relative w-fit text-paragraphSmall ml-5  hover:text-gray-800 md:inline-block'
