@@ -97,7 +97,7 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
               </main>
             </Card>
           </div>
-          <div className='grid sm:grid-cols-2 gap-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
             <Card width='py-7 px-10 flex flex-col'>
               <h1 className='text-black text-xl lg:text-paragraphBig font-normal   '>
                 Access to the trading platform

@@ -25,7 +25,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
 
   return (
     <>
-      <div className='flex w-full  px-28 py-7 justify-center gap-5 '>
+      <div className='flex w-full  lg:px-28 py-7 justify-center gap-5 '>
         <div className='grid sm:grid-cols-9 gap-8  '>
           <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
             <h6 className='ml-2 mb-4 text-lg  -600'>
@@ -86,14 +86,14 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
         </div>
       )}
       {title === "Overview" && (
-        <div className=' relative w-full h-auto  '>
-          <div className='absolute w-full h-full inset-0 bg-[#A8965BD9] opacity-80 flex  items-center justify-center'>
-            <div className=' flex justify-between  '>
-              <h1 className='bg-transparent font-normal text-[30px] text-white w-[60%]'>
+        <div className=' relative w-full mt:10 h-auto  '>
+          <div className='absolute w-full h-full  inset-0 pt-10 bg-[#A8965BD9] opacity-80 flex  items-center justify-center'>
+            <div className=' flex flex-col lg:flex-row justify-between  '>
+              <h1 className='bg-transparent font-normal text-[12px] lg:text-[30px] text-white ml-10 lg:w-[60%]'>
                 Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                 consectetuer{" "}
               </h1>
-              <button className='bg-white text-[20px] py-3 px-6 font-medium  leading-6 rounded-[42px] h-min text-[#A8965B]'>
+              <button className='bg-white text-[20px] mt-5 lg:mt-0 py-3 px-6 font-medium  leading-6 rounded-[42px] w-[250px] ml-12 lg:h-min text-[#A8965B]'>
                 Learn More
               </button>
             </div>
@@ -103,6 +103,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
             width={10000}
             height={100000}
             alt='footer'
+            className='border h-[200px] object-cover'
           />
         </div>
       )}

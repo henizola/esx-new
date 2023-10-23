@@ -95,17 +95,15 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                       }`}
                     ></div>
 
-                    <div></div>
+                    {selectedIndex === 0 && (
+                      <p className='text-black text-base font-light   lg:hidden  flex-1 '>
+                        An application for a membership license shall be made in
+                        such a manner as prescribed by the exchange membership
+                        rules.
+                      </p>
+                    )}
                   </div>
-                  <h1 className='text-black lg:hidden text-[20px] font-normal    mb-[20px]'>
-                    How to Become a Member
-                  </h1>
 
-                  <div className='flex lg:hidden gap-[11px]'>
-                    <ChevronRightIcon className='w-6 h-6 ' />
-
-                    <p className='text-black text-base font-normal    flex-1 '></p>
-                  </div>
                   <div
                     className='flex flex-col gap-2 cursor-pointer'
                     onClick={() => setStelectedIndex(1)}
@@ -120,6 +118,13 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                           : "w-full py-0.5 bg-gray/40"
                       }`}
                     ></div>
+                    {selectedIndex === 1 && (
+                      <p className='text-black text-base font-light  lg:hidden    flex-1 '>
+                        Where an applicant has met the requirements for the
+                        grant of a Trading License, ESX will grant an
+                        Approval-In-Principle (AIP) to the applicant
+                      </p>
+                    )}
                   </div>
                   <div
                     className='flex flex-col gap-2 cursor-pointer'
@@ -135,6 +140,14 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                           : "w-full py-0.5 bg-gray/40"
                       }`}
                     ></div>
+                    {selectedIndex === 2 && (
+                      <p className='text-black text-base font-light  lg:hidden   flex-1 '>
+                        An AIP shall be converted to a full Trading License only
+                        when ESX has conducted a Certification Inspection and
+                        the firm proves that it has met all the requirements for
+                        the commencement of operations.
+                      </p>
+                    )}
                   </div>
                   <div
                     className='flex flex-col gap-2 cursor-pointer'
@@ -150,6 +163,13 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                           : "w-full py-0.5 bg-gray/40"
                       }`}
                     ></div>
+                    {selectedIndex === 3 && (
+                      <p className='text-black text-base lg:hidden font-light    flex-1 '>
+                        Upon fulfilling the requirements for commencement of
+                        operations as a Trading Member, a Trading License shall
+                        be granted.
+                      </p>
+                    )}
                   </div>
                 </div>
                 {/* <h1 className='hidden lg:block text-black text-[32px] font-normal    mb-[20px]'>
