@@ -1,19 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Menu from "@/components/EsxAcademy/Menu";
-import bannerImage from "@/public/images/about-banner.png";
 import Banner from "@/components/Banner/banner";
+import Menu from "@/components/EsxAcademy/Menu";
 import { menus } from "@/components/EsxAcademy/MenuData";
 import TheAcademy from "@/components/EsxAcademy/TheAcademy";
-import CoursesAndPrograms from "@/components/EsxAcademy/CoursesAndPrograms";
-import EsxTrainingAcademy from "@/components/EsxAcademy/EsxTrainingAcademy";
-import FAQs from "@/components/EsxAcademy/FAQs";
 import { useNumber } from "@/context/nav.context";
-
-type Page = {
-  menu: string[];
-  title: string;
-};
+import bannerImage from "@/public/images/about-banner.png";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [mainMenuIndex, setMainMenuIndex] = useState<number>(0);
@@ -31,12 +23,12 @@ export default function Home() {
     switch (mainIndex) {
       case 0:
         return <TheAcademy />;
-      case 1:
-        return <CoursesAndPrograms />;
-      case 2:
-        return <EsxTrainingAcademy />;
-      case 3:
-        return <FAQs />;
+      // case 1:
+      //   return <CoursesAndPrograms />;
+      // case 2:
+      //   return <EsxTrainingAcademy />;
+      // case 3:
+      //   return <FAQs />;
       default:
         return <TheAcademy />;
     }

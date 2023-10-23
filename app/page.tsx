@@ -361,7 +361,7 @@ export default function Home() {
                 <h1 className='text-black text-[20px] mb-[0px] font-normal   '>
                   ESX Insights
                 </h1>
-                <p className='text-zinc-500 text-sm font-normal    leading-snug ml-[0px]'>
+                <p className='     text-sm font-normal    leading-snug ml-[0px]'>
                   Read Our Latest Thinking
                 </p>
                 <Link
@@ -391,7 +391,7 @@ export default function Home() {
                 <h1 className='text-black text-[20px] mb-[5px] font-normal   '>
                   Facts and Figures
                 </h1>
-                <p className='text-zinc-500 text-sm font-normal    leading-snug ml-[0px]'>
+                <p className='     text-sm font-normal    leading-snug ml-[0px]'>
                   ESX and its subsidiaries recorded $21.9 billion in US revenues
                   in the fiscal year ended June 1,2023
                 </p>

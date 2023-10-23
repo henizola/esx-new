@@ -30,13 +30,13 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
         title='Latest News'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+      <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
           <h6 className='ml-2 mb-4 text-lg  -600'>{"News and Media Center"}</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -49,9 +49,9 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
           ))}
         </Card>
 
-        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
+        <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
-            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-[87px] lg:px-[48px] gap-[42px]  '>
+            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-10 lg:px-10 gap-[42px]  '>
               <div className='lg:w-[40%] '>
                 <Image
                   src={
@@ -60,21 +60,21 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                   height={500}
                   width={400}
                   alt=''
-                  className='h-[230px] bg-black lg:h-full object-cover'
+                  className='h-[200px] bg-black lg:h-auto object-cover'
                 />
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-[40px] font-light    capitalize lg:leading-[50px] '>
+                  <h1 className=' text-black text-[20px] lg:text-subHeader font-light    capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
-                  <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
+                  <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
                     Lorem ipsum
                   </h1>
                   <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
                     Dolor sit
                   </h1>
-                  <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
+                  <p className=' text-[14px] lg:text-base font-light    mt-3 lg:mt-5'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -107,7 +107,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
             </Card>
 
-            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-[87px] lg:px-[48px] gap-[42px]  '>
+            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-10 lg:px-10 gap-[42px]  '>
               <div className='lg:w-[40%] '>
                 <Image
                   src={
@@ -116,77 +116,21 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
                   height={500}
                   width={400}
                   alt=''
-                  className='h-[230px] bg-black lg:h-full object-cover'
+                  className='h-[200px] bg-black lg:h-auto object-cover'
                 />
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-[40px] font-light    capitalize lg:leading-[50px] '>
+                  <h1 className=' text-black text-[20px] lg:text-subHeader font-light    capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
-                  <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
+                  <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
                     Lorem ipsum
                   </h1>
                   <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
                     Dolor sit
                   </h1>
-                  <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                    veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis”
-                  </p>
-                  <Link
-                    href='#'
-                    className='flex text-justify text-black text-base font-semibold    mb-[10px] mt-[25px]'
-                  >
-                    View more
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='w-4 h-4 mt-1.5'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </div>
-            </Card>
-
-            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-[87px] lg:px-[48px] gap-[42px]  '>
-              <div className='lg:w-[40%] '>
-                <Image
-                  src={
-                    "/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"
-                  }
-                  height={500}
-                  width={400}
-                  alt=''
-                  className='h-[230px] bg-black lg:h-full object-cover'
-                />
-              </div>
-              <div className='lg:w-[60%] '>
-                <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-[40px] font-light    capitalize lg:leading-[50px] '>
-                    Lorem ipsum dolor sit
-                  </h1>
-                  <h1 className='text-black text-[12px] lg:text-[24px] not-italic font-normal leading-[normal] mt-2 lg:mt-[25px]'>
-                    Lorem ipsum
-                  </h1>
-                  <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
-                    Dolor sit
-                  </h1>
-                  <p className="text-zinc-500 text-[14px] lg:text-base font-normal font-['Roboto'] leading-snug mt-3 lg:mt-[25px]">
+                  <p className=' text-[14px] lg:text-base font-light    mt-3 lg:mt-5'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing

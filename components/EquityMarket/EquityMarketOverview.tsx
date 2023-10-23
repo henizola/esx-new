@@ -214,7 +214,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               consectetuer
             </h1>
             <Link
-              className="px-[29px] pt-[11px] pb-[13px] min-w-[104px] h-fit rounded-full bg-white text-center text-primary-golden text-xl font-medium font-['Roboto']"
+              className='px-[29px] pt-[11px] pb-[13px] min-w-[104px] h-fit rounded-full bg-white text-center text-primary-golden text-xl font-medium   '
               href={"#"}
             >
               Learn More

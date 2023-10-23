@@ -263,7 +263,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   <h1 className='text-black text-paragraphSmall not-italic font-normal leading-[normal]'>
                     How to become a listed company
                   </h1>
-                  <p className='text-zinc-500 text-base font-light    mt-[15px] mb-[20]'>
+                  <p className='     text-base font-light    mt-[15px] mb-[20]'>
                     To be listed on the ESX equity market, issuers will be
                     required to comply with pre-set listing rules and be subject
                     to continuous obligations.
@@ -278,7 +278,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   <h1 className='text-black text-paragraphSmall not-italic font-normal leading-[normal]'>
                     ESX Main Market Segment
                   </h1>
-                  <p className='text-zinc-500 text-base font-light    mt-[15px] mb-[20]'>
+                  <p className='     text-base font-light    mt-[15px] mb-[20]'>
                     An Issuer seeking to list its equity shares on ESX Main
                     Market Segment shall have;
                   </p>
@@ -292,7 +292,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   <h1 className='text-black text-paragraphSmall not-italic font-normal leading-[normal]'>
                     ESX Enterprise Growth Market
                   </h1>
-                  <p className='text-zinc-500 text-base font-light    mt-[15px] mb-[20]'>
+                  <p className='     text-base font-light    mt-[15px] mb-[20]'>
                     An Issuer seeking to list its equity shares on ESX Main
                     Market Segment shall have;
                   </p>
@@ -304,7 +304,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
             <Card width=' w'>
               <div className='h-[5px]  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
               <main className='pt-5 px-[30px] flex flex-row gap-[10px]'>
-                <p className='text-justify text-zinc-500 text-base font-normal    leading-snug'>
+                <p className='text-justify      text-base font-normal    leading-snug'>
                   For details of ESX listing rules, please refer to following
                   documents
                 </p>
@@ -317,11 +317,11 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 </Link>
               </main>
               <main className='py-5 px-[30px] flex flex-row gap-[10px]'>
-                <p className='text-justify text-zinc-500 text-base font-normal    leading-snug'>
+                <p className='text-justify      text-base font-normal    leading-snug'>
                   Are you considering going public and listing on ESX? Contact
                   our listing department
                 </p>
-                <p className='text-justify text-zinc-500 text-base font-normal    leading-snug'>
+                <p className='text-justify      text-base font-normal    leading-snug'>
                   contactus@esxproject.com
                 </p>
 

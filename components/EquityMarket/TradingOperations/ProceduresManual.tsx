@@ -78,7 +78,7 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
               </h1>
               <hr className=' px-5 lg:px-0 mt-[17px] border border-gray/30' />
               <main className='flex flex-col  px-5 lg:px-0'>
-                <p className='text-zinc-500  mt-[25px] text-base font-normal    leading-snug'>
+                <p className='      mt-[25px] text-base font-normal    leading-snug'>
                   The Ethiopian Securities Exchange (“ESX”) is Ethiopia’s first,
                   and only organized securities exchange. <br />
                   ESX is established as a public private partnership inline with

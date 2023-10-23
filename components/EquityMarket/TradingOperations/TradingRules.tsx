@@ -144,7 +144,7 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
             <Card width='pb-7'>
               <div className='h-[5px]  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
               <main className='pt-5 px-[30px] flex flex-row gap-[10px]'>
-                <p className='text-justify text-zinc-500 text-base font-normal  pt-2  leading-snug'>
+                <p className='text-justify      text-base font-normal  pt-2  leading-snug'>
                   For details of ESX trading rules, please refer to following
                   documents
                 </p>

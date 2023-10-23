@@ -26,13 +26,13 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
         title='Downloads'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+      <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
           <h6 className='ml-2 mb-4 text-lg  -600'>{"News and Media Center"}</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -44,45 +44,45 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className='col-span-5 space-y-[30px] w-[100vw] lg:w-[100%]'>
-          <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
+        <div className='col-span-7 space-y-[30px] w-[100vw] lg:w-[100%]'>
+          <Card width=' w-full py-[30px] pb-[31px] px-10 '>
+            <h1 className='text-black text-[24px] lg:text-subHeader font-normal   '>
               Lorem Ipsum
             </h1>
-            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
+            <p className='text-primary-blue text-paragraphSmall mt-3  font-light    '>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt
             </p>
           </Card>
-          <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
+          <Card width=' w-full py-[30px] pb-[31px] px-10 '>
+            <h1 className='text-black text-[24px] lg:text-subHeader font-normal  '>
               Lorem Ipsum
             </h1>
-            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
+            <p className='text-primary-blue text-paragraphSmall mt-3  font-light   '>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt
             </p>
           </Card>{" "}
-          <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
+          <Card width=' w-full py-[30px] pb-[31px] px-10 '>
+            <h1 className='text-black text-[24px] lg:text-subHeader font-normal  '>
               Lorem Ipsum
             </h1>
-            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
+            <p className='text-primary-blue text-paragraphSmall mt-3  font-light   '>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt
             </p>
           </Card>{" "}
-          <Card width=' w-full py-[30px] pb-[31px] px-[20px] '>
-            <h1 className='text-black text-[24px] lg:text-[40px] font-normal   '>
+          <Card width=' w-full py-[30px] pb-[31px] px-10 '>
+            <h1 className='text-black text-[24px] lg:text-subHeader font-normal  '>
               Lorem Ipsum
             </h1>
-            <p className='text-primary-blue text-[14px] lg:text-base font-normal    leading-snug'>
+            <p className='text-primary-blue text-paragraphSmall mt-3  font-light   '>
               Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
               consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
               ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

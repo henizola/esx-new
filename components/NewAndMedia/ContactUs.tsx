@@ -1,12 +1,8 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/Project-Procedure-2.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
+import bannerImage from "/public/images/Project-Procedure-2.png";
 
 interface ContactUsProps {
   setStep: (value: number) => void;
@@ -30,13 +26,13 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
         title='Contact Us'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+      <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
           <h6 className='ml-2 mb-4 text-lg  -600'>{"News and Media Center"}</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -48,7 +44,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
+        <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
             <Card width=' flex flex-col gap-[37px] pt-[30px] pb-[45px] pr-[46px] pl-[43px]    '>
               <h1 className=' text-black text-[40px] font-normal   '>

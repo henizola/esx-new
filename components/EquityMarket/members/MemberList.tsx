@@ -85,7 +85,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Email :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           theemail.gmail.com
                         </span>
                       </div>
@@ -93,7 +93,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Website :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           www.gmail.com
                         </span>
                       </div>
@@ -101,7 +101,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Tel :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           0987654321
                         </span>
                       </div>
@@ -109,7 +109,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Service :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           Lorem ipsum dolor sit amet consectetur adipisicing.
                         </span>
                       </div>
@@ -117,7 +117,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Active Since :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           1990
                         </span>
                       </div>
@@ -146,7 +146,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Email :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           theemail.gmail.com
                         </span>
                       </div>
@@ -154,7 +154,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Website :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           www.gmail.com
                         </span>
                       </div>
@@ -162,7 +162,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Tel :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           0987654321
                         </span>
                       </div>
@@ -170,7 +170,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Service :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           Lorem ipsum dolor sit amet consectetur adipisicing.
                         </span>
                       </div>
@@ -178,7 +178,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Active Since :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           1990
                         </span>
                       </div>
@@ -207,7 +207,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Email :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           theemail.gmail.com
                         </span>
                       </div>
@@ -215,7 +215,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Website :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           www.gmail.com
                         </span>
                       </div>
@@ -223,7 +223,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Tel :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           0987654321
                         </span>
                       </div>
@@ -231,7 +231,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Service :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           Lorem ipsum dolor sit amet consectetur adipisicing.
                         </span>
                       </div>
@@ -239,7 +239,7 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
                         <span className='text-black text-sm font-normal    leading-snug'>
                           Active Since :
                         </span>
-                        <span className='text-zinc-500 text-sm font-light    leading-snug'>
+                        <span className='     text-sm font-light    leading-snug'>
                           1990
                         </span>
                       </div>

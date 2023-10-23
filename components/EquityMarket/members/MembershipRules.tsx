@@ -83,7 +83,7 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
                 </div>
 
                 <div className='bg-zinc-100  max-w-[580px] mx-auto   flex flex-col items-center py-4'>
-                  <p className='px-4 lg:p-0 text-center text-zinc-500 text-[15px] font-normal    leading-snug mb-[18px]'>
+                  <p className='px-4 lg:p-0 text-center      text-[15px] font-normal    leading-snug mb-[18px]'>
                     For details of ESX membership rules, please refer to
                     following documents
                   </p>

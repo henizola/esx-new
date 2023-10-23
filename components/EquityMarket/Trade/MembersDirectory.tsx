@@ -90,7 +90,7 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
                     className='flex justify-between border-b border-primary-golden/40 items-center lg:py-[30px]'
                     key={i}
                   >
-                    <p className='text-zinc-500 text-[14px] lg:text-base lg:font-normal    leading-snug'>
+                    <p className='     text-[14px] lg:text-base lg:font-normal    leading-snug'>
                       {member}
                     </p>
                     <ChevronRightIcon

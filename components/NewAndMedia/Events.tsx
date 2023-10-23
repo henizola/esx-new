@@ -2,11 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/Addis-Ababa-Ethiopia-1.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
+import bannerImage from "/public/images/Addis-Ababa-Ethiopia-1.png";
 
 interface EventProps {
   setStep: (value: number) => void;
@@ -30,13 +28,13 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
         title='Event'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
-      <div className='grid sm:grid-cols-7 gap-8 lg:px-28 py-7'>
+      <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
           <h6 className='ml-2 mb-4 text-lg  -600'>{"News and Media Center"}</h6>
           {items.map((item, index) => (
             <button
               key={index}
-              className={`  text-left ml-10 my-2 font-light border-b border-black `}
+              className={`  text-left ml-5 my-2 font-light border-b border-black `}
               style={{
                 borderBottom: "0.7px solid black",
                 fontSize: step === index ? "16px" : "14px",
@@ -48,9 +46,9 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
             </button>
           ))}
         </Card>
-        <div className='col-span-5 space-y-8 w-[100vw] lg:w-[100%]'>
+        <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
-            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5 pt-[0] md:pt-[50px] pb-0 md:pb-[35px] md:pl-[20px] md:pr-[40px] items-end'>
+            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5 pt-[0] md:pt-[50px] pb-0 md:pb-[35px] md:pl-10 md:pr-[40px] items-end'>
               <div className='col-span-full md:col-span-3 h-fit'>
                 <Image
                   src={
@@ -65,7 +63,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
-                  <p className='text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
+                  <p className='     px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -116,7 +114,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col mt-[6px] '>
-                  <p className='text-justify text-zinc-500 text-[15px] font-normal    leading-snug'>
+                  <p className='text-justify      text-[15px] font-normal    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
@@ -142,12 +140,12 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </Link>
                 </main>
               </Card>
-              <Card width='lg:w-[40%] flex  flex-col  pt-[30px] lg:pt-[120px] pb-[47px] px-[20px]  '>
+              <Card width='lg:w-[40%] flex  flex-col  pt-[30px] lg:pt-5 pb-[47px] px-[20px]  '>
                 <main className='flex flex-col  '>
                   <h1 className=' text-black text-xl font-normal   '>
                     Lorem Ipsum
                   </h1>
-                  <p className='text-zinc-500 text-sm font-normal    leading-snug'>
+                  <p className='     text-sm font-normal    leading-snug'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy
                   </p>
@@ -157,7 +155,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   <h1 className=' text-black text-xl font-normal   '>
                     Lorem Ipsum
                   </h1>
-                  <p className='text-zinc-500 text-sm font-normal    leading-snug'>
+                  <p className='     text-sm font-normal    leading-snug'>
                     Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
                   </p>
                 </main>
@@ -175,11 +173,11 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   alt=''
                   className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
                 />
-                <h1 className=' text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0   '>
+                <h1 className=' text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-10 md:px-0   '>
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
-                  <p className='text-zinc-500 px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
+                  <p className='     px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euisLorem ipsum dolor sit amet, consectetuer adipiscing
@@ -232,20 +230,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
             <div className='grid md:grid-cols-2 w-full gap-[32px] '>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
+                  <p className='text-justify  text-[14px] md:text-paragraphSmall'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
+                  <h1 className=' text-black text-[14px] md:text-paragraphSmall font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
+                    className='text-center text-black  md:text-paragraphSmall font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -253,20 +251,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
+                  <p className='text-justify  text-[14px] md:text-paragraphSmall'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
+                  <h1 className=' text-black text-[14px] md:text-paragraphSmall font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
+                    className='text-center text-black  md:text-paragraphSmall font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -274,20 +272,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
+                  <p className='text-justify  text-[14px] md:text-paragraphSmall'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
+                  <h1 className=' text-black text-[14px] md:text-paragraphSmall font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
+                    className='text-center text-black  md:text-paragraphSmall font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
@@ -295,20 +293,20 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </Card>
               <Card width=' flex  flex-col pt-5 md:pt-[43px] pb-5 md:pb-[37px] px-5 md:pl-[43px] md:pr-[41px] '>
                 <main className='flex flex-col  '>
-                  <p className='text-justify text-zinc-500 text-[14px] md:text-xl    leading-snug'>
+                  <p className='text-justify  text-[14px] md:text-paragraphSmall'>
                     Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy Lorem
                     ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                     consectetuer adipiscing elit, sed diam nonummy
                   </p>
 
-                  <h1 className=' text-black text-[14px] md:text-xl font-normal    mt-[25px]'>
+                  <h1 className=' text-black text-[14px] md:text-paragraphSmall font-normal    mt-[25px]'>
                     08 Sept 2023
                   </h1>
                   <hr className='mt-[16px] md:mt-[24px] border border-gray/30 ' />
                   <Link
                     href='#'
-                    className='text-center text-black  md:text-xl font-semibold    mt-[20px]'
+                    className='text-center text-black  md:text-paragraphSmall font-semibold    mt-[20px]'
                   >
                     View more
                   </Link>
