@@ -611,7 +611,7 @@ const MobileNav: React.FC = () => {
   const { setNumber } = useNumber();
 
   return (
-    <div>
+    <div className='lg:hidden'>
       <div className='bg-white py-5 fixed z-30 top-0 w-[100vw] flex-row justify-between'>
         <Link
           href='/'
