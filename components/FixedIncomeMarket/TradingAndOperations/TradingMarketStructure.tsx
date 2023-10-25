@@ -84,7 +84,7 @@ function TradingMarketStructure() {
             {/* <LinkButton className='mt-auto' href='#'>
                   View More
                 </LinkButton> */}
-            <table className=' hidden lg:block w-[100vw] bg-white mt-5'>
+            <table className=' hidden lg:block  bg-white mt-5'>
               <thead>
                 <tr className='bg-gray-100'>
                   <th className='border text-left px-8 py-4'>Session</th>

@@ -1,9 +1,11 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import Card from "../../components/Card/Card";
 import footerImage from "../../public/images/footer1.png";
 import sliderbannerImage from "../../public/images/slider-background.png";
 import Banner from "../Banner/banner";
+import { useNumber } from "@/context/nav.context";
 
 type Props = {
   items: any;
@@ -15,13 +17,8 @@ type Props = {
 };
 
 const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
-  const hasChildren = React.Children.toArray(children).some((child) => {
-    // Filter out null, undefined, and empty string children
-    return (
-      React.isValidElement(child) ||
-      (typeof child === "string" && child.trim() !== "")
-    );
-  });
+  const router = useRouter();
+  const { setNumber } = useNumber();
 
   return (
     <>
@@ -31,7 +28,10 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
             <h6 className='ml-2 mb-4 text-lg  -600'>
               <span
                 className='hover:cursor-pointer hover:scale-125'
-                onClick={returnHome}
+                onClick={() => {
+                  router.push("/fixed-income-market");
+                  setNumber(0);
+                }}
               >
                 Fixed income market{" "}
               </span>
@@ -58,11 +58,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
                     fontWeight: step === index ? "400" : "300",
                   }}
                   onClick={() => {
-                    if (
-                      item?.disabled ||
-                      ["Regulatory Framework"].includes(item)
-                    )
-                      return;
+                    if (item.href) return router.push(item.href);
                     else setStep(index);
                   }}
                 >

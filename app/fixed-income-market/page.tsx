@@ -18,39 +18,12 @@ export default function Home() {
   const [mainMenuIndex, setMainMenuIndex] = useState<number>(currentPage);
   const [subMenuIndex, setSubMenuIndex] = useState<number>(0);
 
-  const mainMenuItems = menus.map((menu) => menu.name);
-
-  const SelectedPage = ({
-    mainIndex,
-    subIndex,
-  }: {
-    mainIndex: number;
-    subIndex: number;
-  }) => {
-    switch (mainIndex) {
-      case 0:
-        return <Overview />;
-      case 1:
-        return <Instruments index={subIndex} />;
-      case 2:
-        return <ListingAndAdmission index={subIndex} />;
-      case 3:
-        return <Trading index={subIndex} />;
-      case 4:
-        return <Members index={subIndex} />;
-      case 5:
-        return <TradingAndOperations index={subIndex} />;
-      default:
-        return <Overview />;
-    }
-  };
-
   const resetToHomePage = () => {
     setMainMenuIndex(0);
   };
   const currentMenu = menus[mainMenuIndex];
   const hasSubMenus = currentMenu?.menu && currentMenu.menu.length > 0;
-  const menuItems = hasSubMenus ? currentMenu.menu : mainMenuItems;
+  const menuItems = menus;
   const updateStep = hasSubMenus ? setSubMenuIndex : setMainMenuIndex;
   const selectedIndex = hasSubMenus ? subMenuIndex : mainMenuIndex;
   const bannerTitle = currentMenu?.menu
@@ -75,7 +48,7 @@ export default function Home() {
         title={currentMenu.name}
         returnHome={resetToHomePage}
       >
-        <SelectedPage mainIndex={mainMenuIndex} subIndex={subMenuIndex} />
+        <Overview />
       </Menu>
     </div>
   );
