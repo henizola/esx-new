@@ -22,7 +22,7 @@ export const menus: Menu[] = [
     name: "Instruments",
     menu: [
       {
-        name: "Instruments",
+        name: "Overview",
         description: ``,
       },
       {

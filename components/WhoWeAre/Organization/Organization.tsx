@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import stracture from "/public/images/stracture.png";
+import stracture from "/public/images/stracture.jpg";
 import member2 from "/public/images/member8.png";
 import member3 from "/public/images/member9.png";
 import member4 from "/public/images/member6.png";
@@ -132,7 +132,7 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
                   </p>
                 </div>
               </div>
-              <Image
+              <img
                 height={200}
                 width={200}
                 src={stracture.src}

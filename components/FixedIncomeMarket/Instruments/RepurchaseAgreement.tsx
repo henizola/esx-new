@@ -28,7 +28,7 @@ const RepurchaseAgreement = () => {
             </div> */}
             <div className='w-[100%] flex px-10 pt-5  flex-col'>
               <h1 className='text-subHeader    mt-0 pb-1  border-b border-[#A8965B]'>
-                Corporate Bonds{" "}
+                REPURCHASE AGREEMENTS / REPOS
               </h1>
 
               <div className='pb-5'>
