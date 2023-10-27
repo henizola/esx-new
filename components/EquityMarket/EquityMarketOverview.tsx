@@ -119,7 +119,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   ESX Equities Market is the division of ESX that allows issuers
                   of equity securities to raise long-term capital.
                 </p>
-                <h1 className='text-black  text-[20px] lg:text-subHeader  mb-[20px]'>
+                <h1 className='text-black  text-[20px] lg:text-paragraphSMmall font-light  mb-[20px]'>
                   ESX’s Equity Market Provides:
                 </h1>
 

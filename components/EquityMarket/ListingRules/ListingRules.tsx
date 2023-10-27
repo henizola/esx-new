@@ -12,8 +12,8 @@ interface ListingRulesProps {
 
 const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
   const items = [
-    "Overview",
-    // "Market Segment",
+    "Why List ?",
+    "Market Segment",
     "Listing Rules, Requirements, Benefits ",
     "Listing FAQs",
   ];
@@ -21,7 +21,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Listing Rules and Requirements '
+        title='Listing on ESX'
         description='As an issuer listing on ESX provides you Wlth access to large pool of long-term capital that IS critical to finance your growth ambitions'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>

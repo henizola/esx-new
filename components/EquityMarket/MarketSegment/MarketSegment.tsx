@@ -17,8 +17,8 @@ interface ListingRulesProps {
 
 const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
   const items = [
-    "Overview",
-    // "Market Segment",
+    "Why List ?",
+    "Market Segment",
     "Listing Rules, Requirements, Benefits ",
     "Listing FAQs",
   ];
@@ -26,7 +26,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Market Segment'
+        title='Listing On Esx'
         background='bg-light-blue'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>

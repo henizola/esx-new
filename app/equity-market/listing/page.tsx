@@ -21,11 +21,11 @@ export default function Home() {
       <SideMenu state={currentPage}>
         {[
           <Overview setStep={setNumber} step={currentPage} key={currentPage} />,
-          // <MarketSegment
-          //   setStep={setNumber}
-          //   step={currentPage}
-          //   key={currentPage}
-          // />,
+          <MarketSegment
+            setStep={setNumber}
+            step={currentPage}
+            key={currentPage}
+          />,
           <ListingRules
             setStep={setNumber}
             step={currentPage}

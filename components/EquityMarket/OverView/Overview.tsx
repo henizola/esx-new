@@ -12,8 +12,8 @@ interface ListingRulesProps {
 
 const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
   const items = [
-    "Overview",
-    // "Market Segment",
+    "Why List ?",
+    "Market Segment",
     "Listing Rules, Requirements, Benefits ",
     "Listing FAQs",
   ];
@@ -21,7 +21,7 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Market Segment'
+        title='Listing on ESX'
         background='bg-light-blue'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
@@ -85,8 +85,10 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
           <div className='grid sm:grid-cols-5 gap-5'>
             <Card width='col-span-5 flex flex-col pb-3'>
               <h1 className='text-black text-[24px] p-8 pt-5 pb-0 lg:text-header font-normal'>
-                <span className=' border-b-[3px] border-light-golden'> W</span>
-                hy list ?
+                <span className=' border-b-[3px] border-light-golden'>
+                  {" "}
+                  Why list ?
+                </span>
               </h1>
 
               {/* <Image

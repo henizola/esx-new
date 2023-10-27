@@ -168,32 +168,32 @@ const navigation: MenuItem[] = [
   },
   {
     name: "Equity Market",
-    href: "/equity-market/listing",
+    href: "/equity-market",
     current: false,
     value: 0,
     submenu: [
       { name: "Overview", value: 0, href: "/equity-market", current: false },
       {
         name: "Listing on ESX",
-        href: "/equity-market",
-        value: 1,
+        href: "/equity-market/listing",
+        value: 0,
         current: false,
         submenu: [
           {
             name: "Market Segments",
-            value: 0,
+            value: 1,
             href: "/equity-market/listing",
             current: false,
           },
           {
             name: " Listing Rules, Requirements, Benefits",
             href: "/equity-market/listing",
-            value: 1,
+            value: 2,
             current: false,
           },
           {
             name: "Listing FAQs",
-            value: 2,
+            value: 3,
             href: "/equity-market/listing",
             current: false,
           },

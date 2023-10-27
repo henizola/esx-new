@@ -12,8 +12,8 @@ interface ListingFaqsProps {
 
 const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
   const items = [
-    "Overview",
-    // "Market Segment",
+    "Why List ?",
+    "Market Segment",
     "Listing Rules, Requirements, Benefits ",
     "Listing FAQs",
   ];
@@ -22,7 +22,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Frequently asked questions'
+        title='Listing on ESX'
         description=''
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
