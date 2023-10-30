@@ -37,7 +37,7 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
         background='bg-light-blue'
       />
       <div className='flex w-full px-4 lg:px-28 py-7'>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -296,7 +296,7 @@ const Reports: React.FC<ReportsProps> = ({ setStep, step }) => {
       {/* 
       <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
         <div className=''>
-          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
+          <h1 className='text-primary-blue text-[20px] md:text-[24px] font-[500] w-[100%] text-center'>
             Contact the team
           </h1>
           <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>

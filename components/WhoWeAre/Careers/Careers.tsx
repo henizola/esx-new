@@ -50,7 +50,7 @@ const Careers: React.FC<CareersProps> = ({ setStep, step }) => {
         description="ESX is committed to fostering an inclusive, innovative, and collaborative work environment. Join us in shaping the nation's capital markets landscape by exploring a variety of exciting career pathways with us."
       />
       <div className='flex w-full px-0 lg:px-28 lg:py-7'>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button

@@ -318,7 +318,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
       </div>
       {/* <div className='bg-white py-[68px]'>
         <div className='max-w-[980px] mx-auto w-full flex flex-col items-center'>
-          <h3 className="text-center text-black text-2xl font-bold   ">
+          <h3 className="text-center text-black text-2xl font-[500]   ">
             Contact the team
           </h3>
           <p className="text-center text-black text-base font-normal mb-5 mt-[6px]   ">

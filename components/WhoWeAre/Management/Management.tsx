@@ -30,11 +30,11 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full'>
       <Banner
         backgroundImage={management}
-        title='Management'
+        title='About Us'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci '
       />
       <div className='flex w-full  px-4 lg:px-28 py-7'>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -55,7 +55,9 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
             <div className=' flex py-5 mx-5 md:mx-10  p-2'>
               <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
-                <h1 className='text-[28px] md:text-[40px]'>Management</h1>
+                <h1 className='text-[28px] md:text-header font-[500] border-b-[3px] border-light-golden w-fit'>
+                  Management
+                </h1>
                 <p className='text-[14px] md:text-[16px]  w-[100%] mt-2'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh euisLorem

@@ -38,7 +38,7 @@ const Pagination = () => {
             className={`px-4 py-2 rounded-full text-white ${
               index + 1 !== currentPage
                 ? "font-light text-[12px]"
-                : "font-bold text-[16px]"
+                : "font-[500] text-[16px]"
             }`}
             onClick={() => handlePageChange(index + 1)}
           >

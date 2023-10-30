@@ -19,10 +19,10 @@ const Footer: React.FC = () => {
     setIsChatboxOpen(false);
   };
   return (
-    <footer className='bg-primary-blue hidden lg:block text-white py-8 sm:px-4 lg:px-12 lg:px-20'>
+    <footer className='bg-primary-blue  bottom-0 w-[100vw] z-50 hidden lg:block text-white py-8 sm:px-4 lg:px-12 lg:px-20'>
       <div className='flex flex-col sm:flex-row'>
         <div className='flex-1 sm:w-1/3'>
-          <h1 className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>
+          <h1 className='font-[500] text-2xl sm:text-3xl lg:text-4xl mb-4'>
             ESX
           </h1>
           <div className='grid grid-cols-2 lg:flex justify-between  mt-12 '>

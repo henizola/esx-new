@@ -1,10 +1,9 @@
 "use client";
-import "./HomeSliderStyles.css";
-import Image from "next/image";
 import Slider from "react-slick";
 import slider1 from "../../public/images/home-slider-1.jpg";
 import slider2 from "../../public/images/home-slider-2.jpg";
 import slider3 from "../../public/images/home-slider-3.jpg";
+import "./HomeSliderStyles.css";
 
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -73,7 +72,7 @@ export default function HomeSlider() {
           <>
             <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
             <div className='relative'>
-              <h1 className='absolute top-[50%] px-5 lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-header font-bold  w-[100%] text-center z-50'>
+              <h1 className='absolute top-[50%] px-5 w-[40vw] left-[15vw] lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-header font-[500] text-center lg:text-left z-40'>
                 {slide.title}
               </h1>
               <img
@@ -81,7 +80,7 @@ export default function HomeSlider() {
                 alt={slide.alt}
                 height={100}
                 width={100}
-                className=' inset-0 h-[40vh] lg:h-[70vh]  w-[100vw] max-height-[90vh] z-0 object-cover'
+                className=' inset-0 h-[40vh] lg:h-[80vh]  w-[100vw] max-height-[90vh] z-0 object-cover'
               />
             </div>
           </>

@@ -1,16 +1,9 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import stracture from "/public/images/stracture.jpg";
-import member2 from "/public/images/member8.png";
-import member3 from "/public/images/member9.png";
-import member4 from "/public/images/member6.png";
-import member5 from "/public/images/member7.png";
-import member6 from "/public/images/member12.png";
-import member7 from "/public/images/member11.png";
-import organization from "/public/images/organization-banner.png";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
+import organization from "/public/images/organization-banner.png";
+import stracture from "/public/images/stracture.jpg";
 
 interface OrganizationProps {
   setStep: (value: number) => void;
@@ -34,11 +27,11 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full'>
       <Banner
         backgroundImage={organization}
-        title='Organizational structure'
+        title='About Us'
         description='The Ethiopian Securities Exchange is organized as a share company in accordance with the Commercial Code of Ethiopia (2021).'
       />
       <div className='flex w-full px-4 lg:px-28 py-7'>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button

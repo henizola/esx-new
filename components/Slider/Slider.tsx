@@ -71,7 +71,7 @@ const CustomSlider: React.FC<SliderProps> = ({ slides }) => {
             className='h-[350px] w-full relative  py-[7%] lg:py-[7%] px-5  lg:px-[20%]  '
             style={{ zIndex: "999999" }}
           >
-            <h1 className='w-full  text-center text-white font-bold text-2xl lg:text-4xl'>
+            <h1 className='w-full  text-center text-white font-[500] text-2xl lg:text-4xl'>
               {slide.title}
             </h1>
             <p className='w-full   text-center text-white font-normal text-sm mt-7'>

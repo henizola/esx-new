@@ -3,8 +3,9 @@ import { useNumber } from "@/context/nav.context";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-
+import styles from "./header.module.css";
 interface MenuItem {
   name: string;
   href: string;
@@ -16,6 +17,8 @@ interface MenuItem {
 interface MenuItemProps {
   item: MenuItem;
   showSubMenu: boolean;
+  transparent: boolean;
+  setTransparent: (value: boolean) => void;
   openSubMenu: () => void;
   closeSubMenu: () => void;
 }
@@ -25,6 +28,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
   showSubMenu,
   openSubMenu,
   closeSubMenu,
+  transparent,
+  setTransparent,
 }) => {
   const hasSubMenu = item.submenu && item.submenu.length > 0;
   const { setNumber } = useNumber();
@@ -32,14 +37,21 @@ const MenuItem: React.FC<MenuItemProps> = ({
     <div className={`group relative `} onMouseEnter={openSubMenu}>
       <Link
         href={item.href}
-        className={`group  flex items-center justify-between px-4 py-5 text-sm relative`}
+        className={`group ${
+          transparent ? "text-white" : ""
+        }  flex    items-center justify-between px-4 py-5 text-sm relative`}
         onMouseEnter={openSubMenu}
-        onClick={() => setNumber(0)}
+        onClick={() => {
+          setNumber(0);
+          item.href !== "/" ? setTransparent(false) : setTransparent(true);
+        }}
       >
         {item.name}
         {hasSubMenu && (
           <span
-            className={`${item.current ? "text-white" : "text-black"} ml-1`}
+            className={`${
+              transparent ? "text-primary-white" : "text-black"
+            } ml-2`}
           >
             &#9662;
           </span>
@@ -83,7 +95,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                     subItem.current ? "bg-blue-200" : ""
                   } px-4 py-2  block text-link w-fit  text-primary-blue`}
                 >
-                  <span className='hover:underline  text-l'>
+                  <span className='border-b border-primary-golden text-l'>
                     {" "}
                     {subItem.name}
                   </span>
@@ -665,7 +677,7 @@ const navigation: MenuItem[] = [
       },
       { name: "Gallery", value: 3, href: "/news-and-media", current: false },
       { name: "Downloads", value: 4, href: "/news-and-media", current: false },
-      { name: "Contact Us", value: 5, href: "/news-and-media", current: false },
+      // { name: "Contact Us", value: 5, href: "/news-and-media", current: false },
     ],
   },
   {
@@ -691,10 +703,34 @@ const navigation: MenuItem[] = [
     //   { name: "Downloads", href: "/esx-academy", current: false },
     // ],
   },
+  {
+    name: "Contact Us",
+    href: "/esx-academy",
+    current: false,
+    value: 0,
+    // submenu: [
+    //   { name: "Overview", value: 0, href: "/esx-academy", current: false },
+    //   {
+    //     name: "Courses and Programs",
+    //     value: 1,
+    //     href: "/esx-academy",
+    //     current: false,
+    //   },
+    //   {
+    //     name: "ESX Training Academy Calendar",
+    //     href: "/esx-academy",
+    //     value: 2,
+    //     current: false,
+    //   },
+    //   { name: "FAQs", href: "/esx-academy", current: false, value: 3 },
+    //   { name: "Downloads", href: "/esx-academy", current: false },
+    // ],
+  },
 ];
 
 const Header: React.FC = () => {
   const [showSubMenu, setShowSubMenu] = useState(false);
+  const [transparent, setTransparent] = useState(true);
 
   const openSubMenu = () => {
     setShowSubMenu(true);
@@ -707,19 +743,35 @@ const Header: React.FC = () => {
   useEffect(() => {
     function handleScroll() {
       closeSubMenu();
+      if (window.scrollY < 180 && window.location.pathname === "/") {
+        setTransparent(true);
+      } else {
+        setTransparent(false);
+      }
     }
-
+    if (window.location.pathname === "/") {
+      setTransparent(true);
+    } else {
+      setTransparent(false);
+    }
+    console.log("acted");
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [window.location.pathname]);
 
   return (
     <Disclosure
       as='nav'
-      className='bg-[#f0f0f0] hidden lg:block  z-50 mx-0 w-screen py-0 px-0 shadow-md fixed top-0'
+      className={`${
+        !transparent ? "bg-[#f0f0f0]" : ""
+      } hidden lg:block  z-50 mx-0 w-screen py-0 px-0
+       ${transparent ? "" : " shadow-md"}
+       fixed top-0
+       ${transparent ? "pt-5" : ""} 
+      `}
     >
       {({ open }) => (
         <>
@@ -748,6 +800,8 @@ const Header: React.FC = () => {
                         <MenuItem
                           key={item.name}
                           item={item}
+                          transparent={transparent}
+                          setTransparent={(value) => setTransparent(value)}
                           openSubMenu={openSubMenu}
                           closeSubMenu={closeSubMenu}
                           showSubMenu={showSubMenu}
@@ -756,16 +810,7 @@ const Header: React.FC = () => {
                     </nav>
                   </div>
                 </div>
-                <MenuItem
-                  item={{
-                    name: "contactus@esxproject.com ",
-                    current: false,
-                    href: "mailto:contactus@esxproject.com ",
-                  }}
-                  openSubMenu={openSubMenu}
-                  closeSubMenu={closeSubMenu}
-                  showSubMenu={showSubMenu}
-                />
+
                 <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
                   <button type='button' className='relative '>
                     <span className='absolute -inset-1.5' />
@@ -775,7 +820,7 @@ const Header: React.FC = () => {
                       fill='none'
                       viewBox='0 0 24 24'
                       strokeWidth={1.5}
-                      stroke='currentColor'
+                      stroke={transparent ? "white" : "black"}
                       className='w-6 h-6'
                     >
                       <path

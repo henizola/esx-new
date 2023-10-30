@@ -25,13 +25,16 @@ const Banner: React.FC<BannerProps> = ({
       style={bannerStyle}
     >
       <div
-        className={`absolute inset-0  ${
-          background ? background : "bg-light-golden"
-        }`}
+        className={
+          `absolute inset-0 bg-light-blue`
+          //  ${
+          //   background ? background : ""
+          // }`
+        }
       ></div>
       <div className='absolute inset-0 flex items-center justify-center text-white'>
         <div className='md:px-14 lg:px-28 mt-5  w-[100%]'>
-          <h1 className='text-center text-3xl md:text-4xl ld:text-header uppercase w-[100%] font-bold md:text-left text-white-900'>
+          <h1 className='text-center text-3xl md:text-header ld:text-header uppercase w-[100%] font-[500] md:text-left text-white-900'>
             {title}
           </h1>
           {/* <p className=' hidden md:flex text-sm mt-8 font-light w-[100%] lg:w-[50%] leading-6  text-left'>

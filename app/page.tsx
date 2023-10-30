@@ -15,6 +15,7 @@ import { useRouter } from "next/navigation";
 import phoneImage from "../public/images/overview.png";
 
 import youtube from "../public/images/youtube.png";
+import Footer from "@/components/Header/Footer";
 export default function Home() {
   const items = [
     { name: "About Us", link: "/about-us" },
@@ -30,7 +31,7 @@ export default function Home() {
 
   const router = useRouter();
   return (
-    <main className='flex  flex-col items-center p-0'>
+    <main className='flex absolute top-0 flex-col items-center p-0'>
       <HomeSlider />
 
       <div className='bg-primary-blue -mt-2 w-[100vw]'>
@@ -460,6 +461,7 @@ export default function Home() {
           </Card>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

@@ -33,8 +33,8 @@ export default function RootLayout({
         <NumberProvider>
           <Header />
           <MobileHeader />
-
           {children}
+
           <Footer />
           <MobileFooter />
         </NumberProvider>

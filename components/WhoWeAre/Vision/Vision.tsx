@@ -1,13 +1,8 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
-import mission from "/public/images/mission.png";
-import values from "/public/images/value.png";
 import image from "/public/images/vision-banner.png";
-import vision from "/public/images/vision.png";
 
 interface VisionProps {
   setStep: (value: number) => void;
@@ -31,11 +26,11 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full'>
       <Banner
         backgroundImage={image}
-        title='Our vision & mission'
+        title='About Us'
         background='bg-light-blue'
       />
       <div className='flex w-full border px-4 lg:px-28 py-7'>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -66,11 +61,10 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               </div> */}
               <div className=' w-[100%] flex md:py-5 mx-4 md:mx-10  p-4'>
                 <div className='w-[100%] flex  flex-col lg:mr-10  mt-0 pt-0'>
-                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
-                    <span className=' border-b-[3px] border-light-golden'>
-                      M
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]  font-[400] '>
+                    <span className='  border-b-[3px] border-light-golden'>
+                      Mission{" "}
                     </span>
-                    ission
                   </h1>
                   <div className='w-[100%] relative flex justify-between    text-paragraphSmall   font-light mt-2 px-5 leading-6   '>
                     <svg
@@ -137,11 +131,10 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               </div> */}
               <div className=' w-[100%] flex py-0 ml-4 md:mx-10  p-4'>
                 <div className='w-[100%] flex  flex-col lg:mr-10  mt-0 pt-0'>
-                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]  font-[400] '>
                     <span className=' border-b-[3px] border-light-golden'>
-                      V
+                      Vision{" "}
                     </span>
-                    ision
                   </h1>
 
                   <div className='w-[100%] relative flex justify-between    text-paragraphSmall   font-light mt-2 px-5 leading-6   '>
@@ -174,11 +167,10 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
               </div> */}
               <div className=' w-[910%] flex py-5 pt-0 ml-4 md:mx-10   p-4'>
                 <div className='w-[100%] flex  flex-col lg:mr-10  mt-0 pt-0'>
-                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]   font-normal '>
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]  font-[400] '>
                     <span className=' border-b-[3px] border-light-golden'>
-                      V
+                      Values
                     </span>
-                    alues
                   </h1>
 
                   <div className='w-[100%] relative flex justify-between    text-paragraphSmall   font-light mt-2 px-5 leading-6   '>

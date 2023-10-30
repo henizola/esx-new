@@ -7,7 +7,7 @@ const MobileFooter: React.FC = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col sm:flex-row'>
           <div className='flex-1 sm:w-1/3'>
-            <h1 className='font-bold text-center text-2xl sm:text-3xl lg:text-4xl mb-2'>
+            <h1 className='font-[500] text-center text-2xl sm:text-3xl lg:text-4xl mb-2'>
               ESX
             </h1>
             <div className='grid grid-cols-1 '>

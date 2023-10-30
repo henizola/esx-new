@@ -34,11 +34,11 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full'>
       <Banner
         backgroundImage={organization}
-        title='Board of directors'
+        title='About Us'
         background='bg-light-blue'
       />
       <div className='flex w-full px-4 lg:px-28 py-7'>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -59,7 +59,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
           <Card width='w-[100%] my-0 h-[100%] pb-5'>
             <div className=' flex py-5 mx-5 md:mx-10  p-2'>
               <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
-                <h1 className='text-[28px] md:text-[40px]'>
+                <h1 className='text-[28px] md:text-header font-[400] border-b-[3px] border-light-golden w-fit'>
                   Board of directors
                 </h1>
                 <p className='text-[14px] md:text-[16px]  w-[100%] mt-2'>
@@ -72,8 +72,8 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
             </div>
           </Card>
           <div className='w-[100%] grid   gap-4  grid-cols-1 md:grid-cols-3 h-[100%]  pt-4'>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-[300px] duration-1000'>
                 <div className='absolute backface-hidden  w-full h-full'>
                   <Image
                     height={200}
@@ -83,7 +83,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Helaway Tadesse
                   </h1>
@@ -99,9 +99,9 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
-                <div className='absolute backface-hidden  w-full h-full'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-[300px] duration-1000'>
+                <div className='absolute backface-hidden  w-full h-[300px]'>
                   <Image
                     height={200}
                     width={200}
@@ -110,7 +110,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Zemedenh Nigatu
                   </h1>
@@ -126,9 +126,9 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
-                <div className='absolute backface-hidden  w-full h-full'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-[300px] duration-1000'>
+                <div className='absolute backface-hidden  w-full h-[300px]'>
                   <Image
                     height={200}
                     width={200}
@@ -137,7 +137,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Dr. Eleni Gabremadhin
                   </h1>
@@ -154,8 +154,8 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
               </div>
             </div>
 
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective  h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180  w-full h-[300px] duration-1000'>
                 <div className='absolute backface-hidden  w-full h-full'>
                   <Image
                     height={200}
@@ -165,7 +165,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Yasmin Wohabrebbi
                   </h1>
@@ -181,9 +181,9 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
-                <div className='absolute backface-hidden  w-full h-full'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective   h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180  w-full h-[300px] duration-1000'>
+                <div className='absolute backface-hidden   w-full h-[300px]'>
                   <Image
                     height={200}
                     width={200}
@@ -192,7 +192,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Fekadu Petros Member
                   </h1>
@@ -208,8 +208,8 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180  w-full h-[300px] duration-1000'>
                 <div className='absolute backface-hidden  w-full h-full'>
                   <Image
                     height={200}
@@ -219,7 +219,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Hinjat Shamil
                   </h1>
@@ -235,8 +235,8 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </div>
-            <div className='w-[100%] my-0 group bg-transparent group perspective h-[400px]  cursor-pointer'>
-              <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+            <div className='w-[100%] my-0 group bg-transparent group perspective h-[300px]  cursor-pointer'>
+              <div className='relative preserve-3d group-hover:my-rotate-y-180  w-full h-[300px] duration-1000'>
                 <div className='absolute backface-hidden  w-full h-full'>
                   <Image
                     height={200}
@@ -246,7 +246,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
                     className='w-[100%]  lg:h-[100%] object-cover'
                   />
                 </div>
-                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-light-golden overflow-hidden'>
+                <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
                   <h1 className='text-[14px] lg:text-[16px] font-normal p-5 pb-0'>
                     Dr. Tewodros Makonnen
                   </h1>

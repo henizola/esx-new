@@ -117,7 +117,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                   className='py-[14px] px-5 bg-zinc-300 text-black text-base font-light   '
                 />
               </div>
-              <button className='w-full max-w-[255px] py-[15px] self-center bg-primary-blue text-center text-white text-xl font-bold   '>
+              <button className='w-full max-w-[255px] py-[15px] self-center bg-primary-blue text-center text-white text-xl font-[500]   '>
                 SUBMIT
               </button>
             </Card>

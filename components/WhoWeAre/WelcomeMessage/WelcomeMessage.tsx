@@ -70,11 +70,11 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Welcome to ESX'
+        title='About Us'
         background='bg-light-blue'
       />
       <div className='flex w-full lg:px-28 sm:pt-0 lg:py-7  '>
-        <Card width='w-[25%] hidden lg:flex mr-5  flex-col text-left  py-10 px-5'>
+        <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left h-fit  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
             <button
@@ -103,10 +103,10 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
               />
             </div>
             <div className='w-full  sm:w-[100%] lg:w-[62%] flex flex-col mt-12 lg:mt-0 px-5 pb-12'>
-              <h1 className=' text-center lg:text-left text-subHeader    font-light mt-0 pt-0'>
+              <h1 className=' text-center border-b-[3px] border-light-golden lg:text-left text-header   font-[400] mt-0 pt-0'>
                 Message from our CEO
               </h1>
-              <h1 className=' text-center lg:text-left text-subHeader sm:text-[24px]   font-normal mt-0 pt-0'>
+              <h1 className=' text-center lg:text-left text-subHeader sm:text-[24px]  mt-2 font-normal pt-0'>
                 Abebe Legese
               </h1>
               <p className=' text-center lg:text-left text-sm sm:text-[12px]   font-normal mt-0 pt-0'>
@@ -121,7 +121,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
                 erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                 tation ullamcorper suscipit lobortis”
               </p>
-              <Link href='#' className='flex text-base sm:text-[16px] mt-5'>
+              {/* <Link href='#' className='flex text-base sm:text-[16px] mt-5'>
                 View more{" "}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -137,11 +137,11 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
                     d='M8.25 4.5l7.5 7.5-7.5 7.5'
                   />
                 </svg>
-              </Link>
+              </Link> */}
             </div>
           </div>
 
-          <div className='w-full sm:w-[100%] lg:flex lg:flex-row sm:flex-col sm:pt-0 lg:py-10 lg:px-14'>
+          <div className='w-full sm:w-[100%] lg:flex lg:flex-row sm:flex-col sm:pt-0 lg:py-10 lg:pt-5 lg:px-14'>
             <div className='w-full lg:w-[38%] h-[200px] lg:h-[100%] '>
               <Image
                 height={200}
@@ -152,10 +152,10 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
               />
             </div>
             <div className='w-full  sm:w-[100%] lg:w-[62%] flex flex-col mt-12 lg:mt-0 px-5 pb-12'>
-              <h1 className=' text-center lg:text-left text-subHeader   font-normal mt-0 pt-0'>
+              <h1 className=' text-center  border-b-[3px] border-light-golden lg:text-left text-header   font-[400] mt-0 pt-0'>
                 Message from the Board of Directors
               </h1>
-              <h1 className=' text-center lg:text-left text-xl sm:text-[24px]   font-light mt-0 pt-0'>
+              <h1 className=' text-center lg:text-left text-xl sm:text-[24px]   font-light mt-2 pt-0'>
                 Helaway Tadesse
               </h1>
               <p className=' text-center lg:text-left text-sm sm:text-[12px]   font-normal mt-0 pt-0'>

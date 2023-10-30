@@ -43,7 +43,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
         <div className='w-full flex items-center'>
           <Card width='w-[100%] mr-0 flex flex-col text-left p-4 py-5 md:py-14 '>
             <div className=''>
-              <h1 className='text-primary-blue text-[20px] md:text-[24px] font-bold w-[100%] text-center'>
+              <h1 className='text-primary-blue text-[20px] md:text-[24px] font-[500] w-[100%] text-center'>
                 Contact the team
               </h1>
               <p className=' text-primary-black text-[14px] md:text-[16px] font-normal py-3 w-[100%] text-center'>
