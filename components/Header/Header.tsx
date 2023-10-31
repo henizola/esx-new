@@ -749,18 +749,20 @@ const Header: React.FC = () => {
         setTransparent(false);
       }
     }
-    if (window.location.pathname === "/") {
-      setTransparent(true);
-    } else {
-      setTransparent(false);
+    if (typeof window !== "undefined") {
+      if (window.location.pathname === "/") {
+        setTransparent(true);
+      } else {
+        setTransparent(false);
+      }
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [window.location.pathname]);
+  }, []);
 
   return (
     <Disclosure
