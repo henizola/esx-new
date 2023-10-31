@@ -23,11 +23,11 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Frequently asked questions'
+        title='Trading & Operations'
         description=''
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]'>
+        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0] h-fit '>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -53,11 +53,11 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
         </Card>
         <div className='col-span-7 space-y-5 w-[100vw] lg:w-[auto] h-[auto]'>
           <Card width='w-[100%] flex gap-4 flex-col  py-10 px-10'>
-            <h1 className='text-black text-[24px] md:text-subHeader not-italic font-normal leading-[normal]'>
+            <h1 className='text-black text-[24px] md:text-header not-italic font-normal leading-[normal] border-b-[3px] border-light-golden w-fit'>
               Frequently asked questions
             </h1>
 
-            <hr className='  border border-light-golden ' />
+            {/* <hr className='  border border-light-golden ' /> */}
             <main className=' flex flex-col  '>
               <ExpandableCard question='What is a share?'>
                 A share is a “piece” of ownership of a company. Each time you

@@ -19,7 +19,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         description='ESX Equities Market is the division of ESX that allows issuers of equity securities to raise long-term capital.'
       />
       <div className='flex w-full px-0 lg:px-28 pt-4 lg:py-[30px]'>
-        <Card width='hidden lg:flex w-[25%] mr-5 flex flex-col text-left  py-[20px] px-5'>
+        <Card width='hidden lg:flex w-[25%] mr-5 flex flex-col text-left  py-[20px] px-5 h-fit'>
           <h6 className='ml-2 mb-4'>Equity Market</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -83,11 +83,11 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               fontSize: step === 2 ? "16px" : "14px",
               fontWeight: step === 2 ? "400" : "300",
             }}
-            // onClick={() => setStep(2)}
+            onClick={() => setStep(0)}
           >
             Trading & Operations
           </Link>
-          {/* <Link
+          <Link
             href={"/equity-market/regulatory-framework"}
             className={`  text-left  ml-5 
  my-2 font-light border-b border-black `}
@@ -96,10 +96,10 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               fontSize: step === 2 ? "16px" : "14px",
               fontWeight: step === 2 ? "400" : "300",
             }}
-            // onClick={() => setStep(2)}
+            onClick={() => setStep(0)}
           >
             Regulatory Framework
-          </Link> */}
+          </Link>
         </Card>
         <div className='flex flex-col justify-between gap-[18px] h-full w-[100%]'>
           <Card width='flex flex-col '>

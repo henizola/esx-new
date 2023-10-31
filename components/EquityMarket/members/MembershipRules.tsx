@@ -30,12 +30,12 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='How to become a member'
+        title='Members'
         description='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas adipisci aliquid exercitationem dignissimos tempore similique sapiente, aliquam nisi repellendus.'
       />
 
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -60,11 +60,11 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
         <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='grid gap-5'>
             <Card width='flex flex-col '>
-              <h1 className='py-[18px]   bg-primary-blue text-white text-[20px] lg:text-subHeader font-normal  px-10 '>
+              <h1 className='py-[18px]   text-[20px] lg:text-header pb-0 font-[500]  mx-10 border-b-[3px] border-light-golden w-fit'>
                 Membership Rules
               </h1>
 
-              <main className='pt-[20px] pb-[30px] px-[20px] space-y-4'>
+              <main className='pt-[20px] pb-[30px] px-0 space-y-4'>
                 <h1 className='text-black text-[16px] lg:text-paragraphBig font-normal   px-10'>
                   ESX licensed members shall comply with the provision of the
                   Capital Market Proclamation, relevant directives issued by the

@@ -34,11 +34,11 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Trading rules'
+        title='Trading & Operations'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]'>
+        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0] h-fit '>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -64,10 +64,10 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
         </Card>
         <div className='col-span-7 space-y-5 w-[100vw] lg:w-[auto] h-[auto]'>
           <Card width='w-[100%] px-10 flex flex-col  py-[36px] '>
-            <h1 className='text-black text-[24px] lg:text-subHeader  font-normal   '>
+            <h1 className='text-black text-[24px] lg:text-subHeader  font-[500]  border-b-[3px] border-light-golden w-fit '>
               Every Trading Member shall be required at all times to:
             </h1>
-            <hr className=' border border-primary-golden opacity-70 mt-[19px]' />
+            {/* <hr className=' border border-primary-golden opacity-70 mt-[19px]' /> */}
             <main className=''>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
@@ -91,7 +91,7 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
               </p>
             </main>
           </Card>
-          <h1 className='text-black text-[24px] lg:text-3xl mt-[10px] lg:mt-[40px] ml-[19px] font-normal   '>
+          <h1 className='text-black text-[24px] md:text-header mt-[10px] lg:mt-[40px] ml-[19px] font-normal   '>
             Trading Fees
           </h1>
           <Card width='w-[100%] flex gap-3 mt-[10px] flex-col bg-white/0 '>

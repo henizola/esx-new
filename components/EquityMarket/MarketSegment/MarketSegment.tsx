@@ -30,7 +30,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         background='bg-light-blue'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
           <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -89,7 +89,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         <div className='col-span-7 space-y-8  w-[100vw] lg:w-[auto]'>
           <div className='grid sm:grid-cols-5 gap-5'>
             <Card width='col-span-5 flex flex-col pb-3'>
-              <h1 className='pt-[19px] pb-5 px-[20px]  bg-primary-blue text-white text-[24px] lg:text-header font-normal     leading-[normal]'>
+              <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-10 mb-0 border-b-[3px] border-light-golden'>
                 Market Segments
               </h1>
 
@@ -102,10 +102,10 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
               /> */}
               <div className='flex w-full'>
                 <div className='pt-[20px] px-[20px] w-[100%] space-y-[30px]'>
-                  <main className=' px-5 pt-5'>
+                  <main className=' px-5 pt-0'>
                     <h1 className='text-black text-[20px] lg:text-subHeader font-normal    flex items-center gap-5 '>
                       <span>Main Market</span>{" "}
-                      <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
+                      {/* <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' /> */}
                     </h1>
                     <p className='text-black mt-[13px] text-paragraphSmall font-light   '>
                       Serves as a platform for large and mature issuers that are
@@ -126,7 +126,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   <main className='px-5 pt-0'>
                     <h1 className='text-black text-[20px] lg:text-subHeader font-normal    flex items-center gap-5 '>
                       <span>Enterprise Growth Market</span>{" "}
-                      <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
+                      {/* <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' /> */}
                     </h1>
                     <p className='text-black mt-[15px] text-paragraphSmall font-light  '>
                       Market for small and medium sized companies with lighter

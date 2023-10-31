@@ -26,7 +26,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
         description=''
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
           <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -84,7 +84,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
         </Card>
         <div className='col-span-7 space-y-8  w-[100vw] lg:w-[auto]'>
           <Card width='w-[100%] flex gap-4 flex-col  py-[32px] px-10'>
-            <h1 className='text-black text-[20px]  lg:text-header font-normal   '>
+            <h1 className='text-black text-[20px]  lg:text-header font-[500]  border-b-[3px] border-light-golden w-fit '>
               Frequently asked questions
             </h1>
             {/* <p className='text-black text-[12px] lg:text-base lg:font-normal    leading-snug'>

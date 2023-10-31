@@ -25,7 +25,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         description='As an issuer listing on ESX provides you Wlth access to large pool of long-term capital that IS critical to finance your growth ambitions'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
           <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -82,10 +82,11 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
           </button> */}
         </Card>
         <div className='col-span-7 space-y-5  w-[100vw] lg:w-[auto]'>
-          <Card width='w-[100%]  flex  flex-col  py-[40px] px-[40px]'>
+          <Card width='w-[100%]  flex  flex-col  py-[40px] pt-5 px-[40px]'>
             <h1 className='text-black text-[24px] lg:text-header font-normal'>
-              <span className=' border-b-[3px] border-light-golden'>Ho</span>w
-              to become a listed company
+              <span className=' border-b-[3px] border-light-golden'>
+                How to become a listed company
+              </span>
             </h1>
 
             <p className=' text-black text-paragraphSmall font-normal   mt-5    mb-[15px]'>

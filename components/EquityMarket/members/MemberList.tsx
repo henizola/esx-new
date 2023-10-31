@@ -29,12 +29,12 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='List of members'
+        title='Members'
         description='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas adipisci aliquid exercitationem dignissimos tempore similique sapiente, aliquam nisi repellendus.'
       />
 
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -59,8 +59,10 @@ const MemberList: React.FC<MemberListProps> = ({ setStep, step }) => {
         <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='grid gap-8'>
             <Card width='flex flex-col bg-white/0  shadow-[0px] '>
-              <h1 className='py-[18px] px-10  bg-primary-blue  text-white text-[20px] lg:text-subHeader font-normal   '>
-                List of Members
+              <h1 className='py-[18px] bg-white w-[100%] px-10  text-[20px] lg:text-header font-[500]   '>
+                <span className='border-b-[3px] border-light-golden'>
+                  List of Members
+                </span>
               </h1>
               <main className='pt-[30px]  space-y-4 '>
                 <div className='grid lg:grid-cols-4 gap-2'>

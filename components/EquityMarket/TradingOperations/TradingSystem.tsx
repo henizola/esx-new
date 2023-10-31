@@ -16,9 +16,9 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
 
   return (
     <div className='flex flex-col w-full p-0 m-0'>
-      <Banner backgroundImage={bannerImage} title='Trading market structure' />
+      <Banner backgroundImage={bannerImage} title='Trading & Operations' />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]'>
+        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0] h-fit '>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -49,10 +49,10 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
               trading platform unless the Exchange grants an express exemption
               inline with its trading rules.
             </p>
-            <h1 className='text-black mt-5 text-[20px] md:text-subHeader ml-0 font-normal   '>
+            <h1 className='text-black mt-5 text-[20px] md:text-header ml-0 font-[500] border-b-[3px] border-light-golden w-fit  '>
               Trading System
             </h1>
-            <hr className=' border border-primary-golden opacity-70 mt-[12px]' />
+            {/* <hr className=' border border-primary-golden opacity-70 mt-[12px]' /> */}
             <main className=' space-y-[15px] pt-[30px]'>
               <p className=' text-black text-[14px] md:text-paragraphSmall font-light   '>
                 All trading activity on ESX listed securities (as well as ESX’s
@@ -78,7 +78,7 @@ const TradingSystem: React.FC<TradingSystemProps> = ({ setStep, step }) => {
             <Card width='w-[100%] flex gap-4 flex-col shadow-[0] '>
               <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
               <main className=' pt-2 pb-7 px-10 flex flex-col h-full'>
-                <h1 className='text-black text-[20px] md:text-subHeader font-normal    flex items-end gap-5 '>
+                <h1 className='text-black mt-0 text-[20px] md:text-header ml-0 font-[500] border-b-[3px] border-light-golden w-fit  '>
                   <span>Trading Calendar</span>
                   {/* <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' /> */}
                 </h1>

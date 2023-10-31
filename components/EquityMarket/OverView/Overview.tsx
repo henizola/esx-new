@@ -25,7 +25,7 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         background='bg-light-blue'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit  h-fit'>
           <h6 className='ml-2 mb-4 text-lg  -600'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -84,7 +84,7 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         <div className='col-span-7 space-y-8  w-[100vw] lg:w-[auto]'>
           <div className='grid sm:grid-cols-5 gap-5'>
             <Card width='col-span-5 flex flex-col pb-3'>
-              <h1 className='text-black text-[24px] p-8 pt-5 pb-0 lg:text-header font-normal'>
+              <h1 className='text-black text-[24px] p-8 pt-5 pb-0 lg:text-header font-[500]'>
                 <span className=' border-b-[3px] border-light-golden'>
                   {" "}
                   Why list ?
@@ -126,8 +126,8 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
             </Card>
           </div>
           <Card width='lg:w-[100%] flex flex-col '>
-            <h1 className='pt-[14px] pb-[12px] px-10   bg-primary-blue text-white text-subHeader not-italic font-normal leading-[normal]'>
-              Listing on ESX may take the following two main forms:
+            <h1 className='text-subHeader w-fit  font-[400] pt-0 mt-10 mx-10 mb-0'>
+              Listing on ESX may take the following two main forms
             </h1>
             <main className='pt-4 lg:pt-[15px] pb-[10px] flex flex-col gap-[10px] px-10'>
               <h1 className='text-black text-paragraphBig mb-[10px] font-normal   '>

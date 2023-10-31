@@ -79,7 +79,7 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
         description='ESX Equities Market is the division of ESX that allows issuers of equity securities to raise long-term capital.'
       />
       <div className='flex w-full  lg:px-28 py-7'>
-        <Card width='hidden w-[25%] mr-5 lg:flex flex-col text-left  py-10 pt-5 px-5'>
+        <Card width='hidden w-[25%] mr-5 lg:flex flex-col text-left  py-10 pt-5 px-5 h-fit'>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -132,10 +132,8 @@ const TradeOnESX: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 </h1> */}
                 <h1 className='text-black text-[20px] md:text-header  '>
                   <span className=' border-b-[3px] border-light-golden'>
-                    {" "}
-                    W
+                    Why Trade?{" "}
                   </span>
-                  hy Trade?
                 </h1>
                 <div className='space-y-[10px] mt-[15px]'>
                   <p className='text-paragraphSmall relative lg:font-light  pl-7 pt-5  leading-snug '>

@@ -544,26 +544,26 @@ const navigation: MenuItem[] = [
           },
         ],
       },
-      // {
-      //   name: "Regulatory Framework",
-      //   href: "equity-market/regulatory-framework",
-      //   current: false,
-      //   value: 0,
-      //   submenu: [
-      //     {
-      //       name: "Capital Market Regulatory Environment",
-      //       href: "equity-market/regulatory-framework",
-      //       current: false,
-      //       value: 0,
-      //     },
-      //     {
-      //       name: "ESX Rulebook ",
-      //       value: 1,
-      //       href: "equity-market/regulatory-framework",
-      //       current: false,
-      //     },
-      //   ],
-      // },
+      {
+        name: "Regulatory Framework",
+        href: "equity-market/regulatory-framework",
+        current: false,
+        value: 0,
+        submenu: [
+          {
+            name: "Capital Market Regulatory Environment",
+            href: "equity-market/regulatory-framework",
+            current: false,
+            value: 0,
+          },
+          {
+            name: "ESX Rulebook ",
+            value: 1,
+            href: "equity-market/regulatory-framework",
+            current: false,
+          },
+        ],
+      },
     ],
   },
 
@@ -793,7 +793,7 @@ const Header: React.FC = () => {
                 </Disclosure.Button>
               </div>
               <div className='flex flex-1 items-center  justify-center sm:items-stretch sm:justify-around'>
-                <div className='hidden sm:ml-6 sm:block   '>
+                <div className='hidden sm:ml-6 sm:block    '>
                   <div className='flex space-x-4  '>
                     <nav className='flex space-x-4 '>
                       {navigation.map((item) => (

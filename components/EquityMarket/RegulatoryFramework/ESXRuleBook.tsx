@@ -18,16 +18,16 @@ const ESXRuleBook: React.FC<ESXRuleBookProps> = ({ setStep, step }) => {
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='ESX Rule Book'
+        title='Regulatory Framework'
         description=''
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0]'>
+        <Card width='col-span-2  hidden lg:flex flex-col text-left  py-[20px] px-[20px]  shadow-[0] h-fit '>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
             </BackButton>{" "}
-            {"> Trading & Operations"}
+            {"> Regulatory Framework"}
           </h6>{" "}
           {items.map((item, index) => (
             <button

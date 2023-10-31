@@ -45,10 +45,11 @@ export const menus: Menu[] = [
     name: "Trading and Operations",
     href: "/fixed-income-market/trading-and-operations",
   },
-  // {
-  //   index: 6,
-  //   name: "Regulatory Framework",
-  //   menu: [],
-  //   disabled: true,
-  // },
+  {
+    index: 6,
+    name: "Regulatory Framework",
+    href: "/equity-market/regulatory-framework",
+    menu: [],
+    disabled: true,
+  },
 ];

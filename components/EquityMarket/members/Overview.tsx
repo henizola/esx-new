@@ -43,7 +43,7 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
       <Banner backgroundImage={bannerImage} title='Members' />
 
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px]'>
+        <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px] h-fit  h-fit'>
           <h6 className='ml-2 mb-4'>
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
@@ -68,11 +68,11 @@ const Overview: React.FC<ListingRulesProps> = ({ setStep, step }) => {
         <div className='col-span-7 space-y-8 w-[100vw] lg:w-[auto]'>
           <div className='grid sm:grid-cols-5 gap-8'>
             <Card width='col-span-5 flex flex-col '>
-              <h1 className='py-[18px] px-10  bg-primary-blue  text-white text-[20px] lg:text-subHeader font-normal   '>
+              <h1 className='py-10 px-10 pb-5    text-[20px] lg:text-paragraphBig    '>
                 ESX provides the following categories of membership license.
               </h1>
 
-              <main className='pt-[20px] lg:pt-[44px] lg:pb-5  px-10 '>
+              <main className='pt-[20px] lg:pt-[4px] lg:pb-5  px-10 '>
                 <p className='text-black text-paragraphSmall font-light    mb-5 lg:mb-[40px] '>
                   i. Securities Broker;2
                 </p>

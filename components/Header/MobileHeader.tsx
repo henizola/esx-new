@@ -437,26 +437,26 @@ const MobileNav: React.FC = () => {
             },
           ],
         },
-        // {
-        //   name: "Regulatory Framework",
-        //   href: "equity-market/regulatory-framework",
-        //   current: false,
-        //   value: 0,
-        //   submenu: [
-        //     {
-        //       name: "Capital Market Regulatory Environment",
-        //       href: "equity-market/regulatory-framework",
-        //       current: false,
-        //       value: 0,
-        //     },
-        //     {
-        //       name: "ESX Rulebook ",
-        //       value: 1,
-        //       href: "equity-market/regulatory-framework",
-        //       current: false,
-        //     },
-        //   ],
-        // },
+        {
+          name: "Regulatory Framework",
+          href: "equity-market/regulatory-framework",
+          current: false,
+          value: 0,
+          submenu: [
+            {
+              name: "Capital Market Regulatory Environment",
+              href: "equity-market/regulatory-framework",
+              current: false,
+              value: 0,
+            },
+            {
+              name: "ESX Rulebook ",
+              value: 1,
+              href: "equity-market/regulatory-framework",
+              current: false,
+            },
+          ],
+        },
       ],
     },
 
@@ -627,7 +627,7 @@ const MobileNav: React.FC = () => {
         </Link>
         <button
           onClick={toggleMenu}
-          className='block md:hidden  fixed  z-30  top-5 right-10 focus:outline-none'
+          className='block lg:hidden  fixed  z-30  top-5 right-10 focus:outline-none'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -655,135 +655,137 @@ const MobileNav: React.FC = () => {
         </button>
       </div>
 
-      <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } fixed top-0 z-10 pb-30 left-0 overflow-scroll pt-16 px-10 h-screen w-full md:relative md:flex md:items-center md:w-auto md:h-auto md:space-y-4 bg-white p-4  md:p-0`}
-      >
-        <ul className='mt-10'>
-          {navigation.map((menu, index) => (
-            <li className='flex-col  mt-5  ' key={index}>
-              <div className='flex-row'>
-                <Link
-                  href={menu.href}
-                  className='block text-gray-600 my-1 relative w-fit text-subHeader  hover:text-gray-800 md:inline-block'
-                  onClick={() => {
-                    !menu.submenu?.length && toggleMenu();
-                    !menu.submenu?.length && setNumber(0);
-                    menu.submenu?.length &&
-                      openSubMenus === index &&
-                      setOpenSubMenus(null);
-                    menu.submenu?.length &&
-                      openSubMenus !== index &&
-                      setOpenSubMenus(index);
-                  }}
-                >
-                  <span className='   '>{menu.name} </span>
-                  {menu.submenu?.length && (
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke-width='1'
-                      stroke='currentColor'
-                      className={`w-6 h-6 top-1 -right-10 absolute ${
-                        openSubMenus === index && " rotate-180"
-                      }`}
-                    >
-                      <path
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        d='M19.5 8.25l-7.5 7.5-7.5-7.5'
-                      />
-                    </svg>
-                  )}
-                </Link>
-              </div>
-              {openSubMenus === index && (
-                <ul>
-                  {menu.submenu?.map((subMenu, ind) => (
-                    <li key={ind}>
-                      <Link
-                        href={subMenu.href}
-                        className='block text-gray-600 my-2 relative w-fit text-paragraphBig ml-2  hover:text-gray-800 md:inline-block'
-                        onClick={() => {
-                          !subMenu.submenu?.length && toggleMenu();
-                          !subMenu.submenu?.length &&
-                            setNumber(subMenu.value ? subMenu.value : 0);
-                          subMenu.submenu?.length &&
-                            openSubSubMenus === ind &&
-                            setOpenSubSubMenus(null);
-                          subMenu.submenu?.length &&
-                            openSubSubMenus !== ind &&
-                            setOpenSubSubMenus(ind);
-                        }}
+      {isOpen && (
+        <div
+          className={` fixed top-0 z-10 pb-30 left-0 overflow-scroll pt-16 px-10 h-screen w-full md:relative md:flex md:items-center md:w-auto md:h-auto md:space-y-4 bg-white p-4  md:p-0`}
+        >
+          <ul className='mt-10'>
+            {navigation.map((menu, index) => (
+              <li className='flex-col  mt-5  ' key={index}>
+                <div className='flex-row'>
+                  <Link
+                    href={menu.href}
+                    className='block text-gray-600 my-1 relative w-fit text-subHeader  hover:text-gray-800 md:inline-block'
+                    onClick={() => {
+                      !menu.submenu?.length && toggleMenu();
+                      !menu.submenu?.length && setNumber(0);
+                      menu.submenu?.length &&
+                        openSubMenus === index &&
+                        setOpenSubMenus(null);
+                      menu.submenu?.length &&
+                        openSubMenus !== index &&
+                        setOpenSubMenus(index);
+                    }}
+                  >
+                    <span className='px-0  md:px-10 '>{menu.name} </span>
+                    {menu.submenu?.length && (
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke-width='1'
+                        stroke='currentColor'
+                        className={`w-6 h-6 top-1 -right-10 absolute ${
+                          openSubMenus === index && " rotate-180"
+                        }`}
                       >
-                        {subMenu.name}{" "}
-                        {subMenu.submenu?.length && (
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            stroke-width='1'
-                            stroke='currentColor'
-                            className={`w-6 h-6 top-1 -right-10 absolute ${
-                              openSubSubMenus === ind && " rotate-180"
-                            }`}
-                          >
-                            <path
-                              stroke-linecap='round'
-                              stroke-linejoin='round'
-                              d='M19.5 8.25l-7.5 7.5-7.5-7.5'
-                            />
-                          </svg>
+                        <path
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                          d='M19.5 8.25l-7.5 7.5-7.5-7.5'
+                        />
+                      </svg>
+                    )}
+                  </Link>
+                </div>
+                {openSubMenus === index && (
+                  <ul>
+                    {menu.submenu?.map((subMenu, ind) => (
+                      <li key={ind}>
+                        <Link
+                          href={subMenu.href}
+                          className='block text-gray-600 my-2 relative w-fit text-paragraphBig ml-2  hover:text-gray-800 md:inline-block'
+                          onClick={() => {
+                            !subMenu.submenu?.length && toggleMenu();
+                            !subMenu.submenu?.length &&
+                              setNumber(subMenu.value ? subMenu.value : 0);
+                            subMenu.submenu?.length &&
+                              openSubSubMenus === ind &&
+                              setOpenSubSubMenus(null);
+                            subMenu.submenu?.length &&
+                              openSubSubMenus !== ind &&
+                              setOpenSubSubMenus(ind);
+                          }}
+                        >
+                          {subMenu.name}{" "}
+                          {subMenu.submenu?.length && (
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              fill='none'
+                              viewBox='0 0 24 24'
+                              stroke-width='1'
+                              stroke='currentColor'
+                              className={`w-6 h-6 top-1 -right-10 absolute ${
+                                openSubSubMenus === ind && " rotate-180"
+                              }`}
+                            >
+                              <path
+                                stroke-linecap='round'
+                                stroke-linejoin='round'
+                                d='M19.5 8.25l-7.5 7.5-7.5-7.5'
+                              />
+                            </svg>
+                          )}
+                        </Link>
+                        {openSubSubMenus === ind && (
+                          <ul>
+                            {subMenu.submenu?.map((subMenu, ind) => (
+                              <li key={ind}>
+                                <Link
+                                  href={subMenu.href}
+                                  className='block text-gray-600 my-2 relative w-fit text-paragraphSmall ml-5  hover:text-gray-800 md:inline-block'
+                                  onClick={() => {
+                                    toggleMenu();
+                                    setOpenSubMenus(null);
+                                    setOpenSubSubMenus(null);
+                                    setNumber(
+                                      subMenu.value ? subMenu.value : 0
+                                    );
+                                  }}
+                                >
+                                  {subMenu.name}{" "}
+                                  {subMenu.submenu?.length && (
+                                    <svg
+                                      xmlns='http://www.w3.org/2000/svg'
+                                      fill='none'
+                                      viewBox='0 0 24 24'
+                                      stroke-width='1'
+                                      stroke='currentColor'
+                                      className={`w-6 h-6 top-1 -right-10 absolute ${
+                                        openSubSubMenus === ind && " rotate-180"
+                                      }`}
+                                    >
+                                      <path
+                                        stroke-linecap='round'
+                                        stroke-linejoin='round'
+                                        d='M19.5 8.25l-7.5 7.5-7.5-7.5'
+                                      />
+                                    </svg>
+                                  )}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
                         )}
-                      </Link>
-                      {openSubSubMenus === ind && (
-                        <ul>
-                          {subMenu.submenu?.map((subMenu, ind) => (
-                            <li key={ind}>
-                              <Link
-                                href={subMenu.href}
-                                className='block text-gray-600 my-2 relative w-fit text-paragraphSmall ml-5  hover:text-gray-800 md:inline-block'
-                                onClick={() => {
-                                  toggleMenu();
-                                  setOpenSubMenus(null);
-                                  setOpenSubSubMenus(null);
-                                  setNumber(subMenu.value ? subMenu.value : 0);
-                                }}
-                              >
-                                {subMenu.name}{" "}
-                                {subMenu.submenu?.length && (
-                                  <svg
-                                    xmlns='http://www.w3.org/2000/svg'
-                                    fill='none'
-                                    viewBox='0 0 24 24'
-                                    stroke-width='1'
-                                    stroke='currentColor'
-                                    className={`w-6 h-6 top-1 -right-10 absolute ${
-                                      openSubSubMenus === ind && " rotate-180"
-                                    }`}
-                                  >
-                                    <path
-                                      stroke-linecap='round'
-                                      stroke-linejoin='round'
-                                      d='M19.5 8.25l-7.5 7.5-7.5-7.5'
-                                    />
-                                  </svg>
-                                )}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

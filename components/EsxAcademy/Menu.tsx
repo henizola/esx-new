@@ -6,7 +6,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: any) => {
     <>
       <div className='flex w-full  lg:px-28 py-7 justify-center gap-5 '>
         <div className='grid sm:grid-cols-9 gap-8  '>
-          <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px]'>
+          <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
             <h6 className=' mb-4 ml-3'>
               <span
                 className='hover:cursor-pointer hover:scale-125'

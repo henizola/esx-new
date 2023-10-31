@@ -28,29 +28,30 @@ const Footer: React.FC = () => {
           <div className='grid grid-cols-2 lg:flex justify-between  mt-12 '>
             <div className='column span-4'>
               <ul>
-                <li className='border-b-2 mb-5 border-primary-golden pb-2 w-full   text-[18px]  font-light '>
+                <li className='border-b-2 mb-5 border-primary-golden pb-2 w-full   text-paragraphSmall text-left font-light '>
                   <button
                     onClick={() => {
                       setNumber(0);
                       router.push("/about-us");
                     }}
-                    className='text-left w-full font-light'
+                    className='text-left w-full'
                   >
-                    About ESX{" "}
+                    About ESX
                   </button>
                 </li>
 
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light'>
                   <button
                     onClick={() => {
                       setNumber(4);
                       router.push("/about-us");
                     }}
+                    className='text-paragraphSmall w-[100%] text-left font-light '
                   >
                     Management - Our Leadership Team{" "}
                   </button>
                 </li>
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light '>
                   <button
                     onClick={() => {
                       // setNumber(4);
@@ -60,7 +61,7 @@ const Footer: React.FC = () => {
                     Careers
                   </button>
                 </li>
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light'>
                   <button
                     onClick={() => {
                       // setNumber(4);
@@ -74,7 +75,7 @@ const Footer: React.FC = () => {
             </div>
             <div className='column span-4'>
               <ul>
-                <li className='border-b-2 mb-5 border-primary-golden pb-2 w-full   text-[18px]  font-light '>
+                <li className='border-b-2 mb-5 border-primary-golden pb-2 w-full   text-paragraphSmall text-left font-light '>
                   <button
                     onClick={() => {
                       setNumber(0);
@@ -87,7 +88,7 @@ const Footer: React.FC = () => {
                   </button>
                 </li>
 
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light '>
                   <button
                     onClick={() => {
                       // setNumber(4);
@@ -97,12 +98,13 @@ const Footer: React.FC = () => {
                     Disclaimer & Terms of use
                   </button>
                 </li>
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2   '>
                   <button
                     onClick={() => {
                       // setNumber(4);
                       // router.push("/about-us");
                     }}
+                    className='text-paragraphSmall w-[100%] text-left font-light '
                   >
                     Privacy and Cookie Statement{" "}
                   </button>
@@ -118,7 +120,7 @@ const Footer: React.FC = () => {
             </div>
             <div className='column span-4'>
               <ul>
-                <li className='border-b-2 mb-5 border-primary-golden pb-2 w-full   text-[18px]  font-light '>
+                <li className='border-b-2 mb-5 border-primary-golden pb-2 w-full   text-paragraphSmall text-left font-light'>
                   <button
                     onClick={() => {
                       // setNumber(0);
@@ -131,22 +133,22 @@ const Footer: React.FC = () => {
                   </button>
                 </li>
 
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light '>
                   <a href='phoneto:+251 900 000 000'>Tel : +251 900 000 000</a>
                 </li>
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light '>
                   <a href='mailto:contactus@esxproject.com'>
                     Email : contactus@esxproject.com
                   </a>
                 </li>
-                <li className=' py-2    text-[18px]  font-light '>
+                <li className=' py-2    text-paragraphSmall text-left font-light '>
                   <a href=''>Address : Minaye Corporate Office 18th floor</a>
                 </li>
               </ul>
             </div>
             <div className='column span-1'>
               <ul>
-                <li className='text-[18px] font-light'>
+                <li className='text-paragraphSmall text-left font-light'>
                   <button
                     onClick={() => {
                       // setNumber(0);
@@ -158,7 +160,7 @@ const Footer: React.FC = () => {
                   </button>
                 </li>
 
-                <li className='py-2 text-[18px] font-light'>
+                <li className='py-2 text-paragraphSmall text-left font-light'>
                   <button
                     className='border-white border px-10 py-1 mt-5'
                     onClick={openChatbox}
@@ -184,7 +186,7 @@ const Footer: React.FC = () => {
                   <div className='fixed bottom-0 left-0 m-4'>
                     <div className='bg-white p-4 w-[300px] rounded-lg shadow-md'>
                       <button
-                        className='absolute top-0 right-2 p-2 text-primary-golden text-paragraphBig text-gray-700'
+                        className='absolute top-0 right-2 p-2 text-primary-golden text-paragraphSmall text-left font-light'
                         onClick={closeChatbox}
                       >
                         &times;
