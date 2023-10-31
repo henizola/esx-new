@@ -7,6 +7,8 @@ import "./HomeSliderStyles.css";
 
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import { SliderProps } from "@mui/material";
+import React, { ReactNode } from "react";
 
 export default function HomeSlider() {
   const settings = {
@@ -67,24 +69,28 @@ export default function HomeSlider() {
   ];
   return (
     <div className='max-w-[100vw] '>
-      <Slider {...settings} className=' m-0 p-0 '>
-        {slides.map((slide, index) => (
-          <>
-            <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
-            <div className='relative'>
-              <h1 className='absolute top-[50%] px-5 w-[40vw] left-[15vw] lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-header font-[500] text-center lg:text-left z-40'>
-                {slide.title}
-              </h1>
-              <img
-                src={slide.image}
-                alt={slide.alt}
-                height={100}
-                width={100}
-                className=' inset-0 h-[40vh] lg:h-[80vh]  w-[100vw] max-height-[90vh] z-0 object-cover'
-              />
-            </div>
-          </>
-        ))}
+      <Slider {...settings} className=' mt-0  p-0'>
+        {
+          slides.map((slide, index) => (
+            <React.Fragment key={index}>
+              <div>
+                <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
+                <div className='relative'>
+                  <h1 className='absolute top-[50%] px-5 w-[40vw] left-[15vw] lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-header font-[500] text-center lg:text-left z-40'>
+                    {slide.title}
+                  </h1>
+                  <img
+                    src={slide.image}
+                    alt={slide.alt}
+                    height={100}
+                    width={100}
+                    className='inset-0 h-[40vh] lg:h-[80vh] w-[100vw] max-height-[90vh] z-0 object-cover'
+                  />
+                </div>
+              </div>
+            </React.Fragment>
+          )) as React.ReactNode[]
+        }
       </Slider>
     </div>
   );

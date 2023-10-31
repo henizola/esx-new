@@ -12,7 +12,7 @@ import Vision from "@/components/WhoWeAre/Vision/Vision";
 import WelcomeMessage from "@/components/WhoWeAre/WelcomeMessage/WelcomeMessage";
 import { useNumber } from "@/context/nav.context";
 
-export default function Home() {
+export default function Page() {
   const { currentPage, setNumber } = useNumber();
 
   return (

@@ -754,7 +754,7 @@ const Header: React.FC = () => {
     } else {
       setTransparent(false);
     }
-    console.log("acted");
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {

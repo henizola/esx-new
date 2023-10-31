@@ -7,7 +7,7 @@ import Overview from "@/components/EquityMarket/members/Overview";
 
 import SideMenu from "@/components/SideMenu/SideMenu";
 import { useNumber } from "@/context/nav.context";
-export default function Home() {
+export default function Page() {
   const { currentPage, setNumber } = useNumber();
 
   return (
