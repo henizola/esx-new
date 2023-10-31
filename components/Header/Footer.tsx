@@ -1,7 +1,7 @@
 "use client";
 import { useNumber } from "@/context/nav.context";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer: React.FC = () => {
@@ -18,8 +18,24 @@ const Footer: React.FC = () => {
   const closeChatbox = () => {
     setIsChatboxOpen(false);
   };
+
+  const [inOnHome, setIsOnHome] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (window.location.pathname === "/") {
+        setIsOnHome(true);
+      } else {
+        setIsOnHome(false);
+      }
+    }
+  }, []);
   return (
-    <footer className='bg-primary-blue  bottom-0 w-[100vw] z-50 hidden lg:block text-white py-8 sm:px-4 lg:px-12 lg:px-20'>
+    <footer
+      className={`${
+        inOnHome ? "hidden" : ""
+      } bg-primary-blue  bottom-0 w-[100vw] z-50 hidden lg:block text-white py-8 sm:px-4 lg:px-12 lg:px-20`}
+    >
       <div className='flex flex-col sm:flex-row'>
         <div className='flex-1 sm:w-1/3'>
           <h1 className='font-[500] text-2xl sm:text-3xl lg:text-4xl mb-4'>

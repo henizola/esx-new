@@ -68,7 +68,7 @@ export default function HomeSlider() {
     },
   ];
   return (
-    <div className='max-w-[100vw] '>
+    <div className='max-w-[100vw] bg-white'>
       <Slider {...settings} className=' mt-0  p-0'>
         {
           slides.map((slide, index) => (
