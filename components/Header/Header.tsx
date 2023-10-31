@@ -705,7 +705,7 @@ const navigation: MenuItem[] = [
   },
   {
     name: "Contact Us",
-    href: "/esx-academy",
+    href: "/contact-us",
     current: false,
     value: 0,
     // submenu: [

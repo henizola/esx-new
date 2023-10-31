@@ -32,8 +32,8 @@ function TbillsAndBonds() {
         </div>
       </Card>
       <Card width='flex flex-col  w-full h-full mt-5'>
-        <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-subHeader px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
+        <div className=' w-full h-full'>
+          <h1 className=' mx-10 py-5 pb-0  text-left  text-header border-b-[3px] border-light-golden w-fit '>
             Treasury Bills and Bonds
           </h1>
         </div>

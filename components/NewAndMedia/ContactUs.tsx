@@ -16,7 +16,6 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact Us",
   ];
 
   return (
@@ -27,24 +26,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
-          <h6 className='ml-2 mb-4 text-lg  -600'>{"News and Media Center"}</h6>
-          {items.map((item, index) => (
-            <button
-              key={index}
-              className={`  text-left ml-5 my-2 font-light border-b border-black `}
-              style={{
-                borderBottom: "0.7px solid black",
-                fontSize: step === index ? "16px" : "14px",
-                fontWeight: step === index ? "400" : "300",
-              }}
-              onClick={() => setStep(index)}
-            >
-              {item}
-            </button>
-          ))}
-        </Card>
-        <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
+        <div className='col-span-9 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
             <Card width=' flex flex-col gap-[37px] pt-[30px] pb-[45px] pr-[46px] pl-[43px]    '>
               <h1 className=' text-black text-[40px] font-normal   '>
@@ -121,71 +103,74 @@ const ContactUs: React.FC<ContactUsProps> = ({ setStep, step }) => {
                 SUBMIT
               </button>
             </Card>
-
-            <div className='pr-[46px] pl-[43px]'>
-              <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
-                Physical Address
-              </h2>
-              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
-              <div className=' text-black text-base font-light   '>
-                ESX
-                <br />
-                Bole
-                <br />
-                Flamingo
-                <br />
-                Addis Ababa
-                <br />
-                2196
-              </div>
-            </div>
-            <div className='pr-[46px] pl-[43px]'>
-              <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
-                GPS Coordinates
-              </h2>
-              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
-              <div className=' text-black text-base font-light   '>
-                Latitude: -26.1018
-                <br />
-                Longitude: 28.05671
-              </div>
-            </div>
-            <div className='pr-[46px] pl-[43px]'>
-              <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
-                Postal Address
-              </h2>
-              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
-              <div className=' text-black text-base font-light   '>
-                Private Bag <br /> X991174Sandton, 2196
-              </div>
-            </div>
-            <div className='pr-[46px] pl-[43px]'>
-              <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
-                Contact Information
-              </h2>
-              <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
-              {/* <div className=" text-black text-base font-light   ">Private Bag X991174Sandton, 2196</div> */}
-              <div className=''>
-                <span className='text-black text-base font-light   '>
-                  Tel:{" "}
-                </span>
-                <span className='underline'>
-                  +251 11 520 7000
+            <div className=' grid grid-cols-2'>
+              <div className='pr-[46px] pl-[43px]'>
+                <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
+                  Physical Address
+                </h2>
+                <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
+                <div className=' text-black text-base font-light   '>
+                  ESX
                   <br />
-                </span>
-                <span className='text-black text-base font-light   '>
-                  Email:{" "}
-                </span>
-                <span className='underline'>info@esx.com</span>
+                  Bole
+                  <br />
+                  Flamingo
+                  <br />
+                  Addis Ababa
+                  <br />
+                  2196
+                </div>
+              </div>
+              <div className='pr-[46px] pl-[43px]'>
+                <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
+                  GPS Coordinates
+                </h2>
+                <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
+                <div className=' text-black text-base font-light   '>
+                  Latitude: -26.1018
+                  <br />
+                  Longitude: 28.05671
+                </div>
+              </div>
+              <div className='pr-[46px] pl-[43px]'>
+                <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
+                  Postal Address
+                </h2>
+                <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
+                <div className=' text-black text-base font-light   '>
+                  Private Bag <br /> X991174Sandton, 2196
+                </div>
+              </div>
+
+              <div className='pr-[46px] pl-[43px]'>
+                <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
+                  Contact Information
+                </h2>
+                <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
+                {/* <div className=" text-black text-base font-light   ">Private Bag X991174Sandton, 2196</div> */}
+                <div className=''>
+                  <span className='text-black text-base font-light   '>
+                    Tel:{" "}
+                  </span>
+                  <span className='underline'>
+                    +251 11 520 7000
+                    <br />
+                  </span>
+                  <span className='text-black text-base font-light   '>
+                    Email:{" "}
+                  </span>
+                  <span className='underline'>info@esx.com</span>
+                </div>
               </div>
             </div>
+
             <div className='pr-[46px] pl-[43px]'>
               <h2 className=' text-black text-[24px] md:text-[40px] font-normal   '>
                 Media Enquiry
               </h2>
               <hr className=' mt-[18px] mb-[13px] border border-gray/30 ' />
               {/* <div className=" text-black text-base font-light   ">Private Bag X991174Sandton, 2196</div> */}
-              <div className=''>
+              <div className=' grid grid-cols-4'>
                 <span className='text-black text-base font-normal   '>
                   Addis Ababa, Ethiopia
                   <br />

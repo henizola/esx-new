@@ -18,8 +18,8 @@ function ListingRules() {
   return (
     <div className=' w-full h-[100%] flex '>
       <div className='w-[100%] flex flex-col  mt-0  bg-white py-9 pt-0 pb-0'>
-        <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-subHeader px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
+        <div className=' w-full h-full'>
+          <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left mx-10 py-5  pb-0  '>
             Listing Rules{" "}
           </h1>
         </div>

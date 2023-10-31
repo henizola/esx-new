@@ -17,7 +17,7 @@ function FindBroker() {
     <div className='flex flex-col gap-7 w-full'>
       <Card width='w-[100%] px-5 pt-5 pb-9'>
         <div className='flex flex-col gap-5 px-5'>
-          <h1 className='text-[40px] font-normal border-b border-black'>
+          <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left '>
             Find a Broker
           </h1>
           <p className='text-[16px] font-normal'>
@@ -28,8 +28,8 @@ function FindBroker() {
         </div>
       </Card>
       <div className='bg-white '>
-        <div className='bg-[#00205B] w-full h-full px-10'>
-          <h1 className='text-[32px]  py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
+        <div className=' w-full h-full px-10'>
+          <h1 className='text-header border-b-[3px] border-light-golden mt-5 w-fit text-left '>
             List of registered brokers
           </h1>
         </div>

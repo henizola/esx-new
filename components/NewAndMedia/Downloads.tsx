@@ -16,7 +16,6 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact Us",
   ];
 
   return (
@@ -46,7 +45,7 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
         </Card>
         <div className='col-span-7 space-y-[30px] w-[100vw] lg:w-[100%]'>
           <Card width=' w-full py-[30px] pb-[31px] px-10 '>
-            <h1 className='text-black text-[24px] lg:text-subHeader font-normal   '>
+            <h1 className='text-black text-[24px] lg:text-header border-b-[3px] border-light-golden w-fit text-left   '>
               Lorem Ipsum
             </h1>
             <p className='text-primary-blue text-paragraphSmall mt-3  font-light    '>
@@ -57,7 +56,7 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>
           <Card width=' w-full py-[30px] pb-[31px] px-10 '>
-            <h1 className='text-black text-[24px] lg:text-subHeader font-normal  '>
+            <h1 className='text-black text-[24px] lg:text-header border-b-[3px] border-light-golden w-fit text-left  '>
               Lorem Ipsum
             </h1>
             <p className='text-primary-blue text-paragraphSmall mt-3  font-light   '>
@@ -68,7 +67,7 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>{" "}
           <Card width=' w-full py-[30px] pb-[31px] px-10 '>
-            <h1 className='text-black text-[24px] lg:text-subHeader font-normal  '>
+            <h1 className='text-black text-[24px] lg:text-header border-b-[3px] border-light-golden w-fit text-left  '>
               Lorem Ipsum
             </h1>
             <p className='text-primary-blue text-paragraphSmall mt-3  font-light   '>
@@ -79,7 +78,7 @@ const Downloads: React.FC<DownloadsProps> = ({ setStep, step }) => {
             </p>
           </Card>{" "}
           <Card width=' w-full py-[30px] pb-[31px] px-10 '>
-            <h1 className='text-black text-[24px] lg:text-subHeader font-normal  '>
+            <h1 className='text-black text-[24px] lg:text-header border-b-[3px] border-light-golden w-fit text-left  '>
               Lorem Ipsum
             </h1>
             <p className='text-primary-blue text-paragraphSmall mt-3  font-light   '>

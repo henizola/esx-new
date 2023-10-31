@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const BondIpo = () => {
   return (
-    <Card width='w-[100%] py-7 pb-10 px-10'>
+    <Card width='w-[100%] py-5 pb-10 px-10'>
       <div className='flex'>
         <div className='w-[100%] '>
           <div className='w-[100%] flex  flex-col'>
             {/* <p className='text-[12px]   font-normal mt-0 pb-6'>
               Listing and Admission to Trading{" "}
             </p> */}
-            <h1 className='text-subHeader   font-normal mt-0 pt-0 pb-5 border-b'>
+            <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left  mt-0 pt-0 pb-0'>
               Bond IPO / Debt Public Issue
             </h1>
             <p className='w-[90%]  text-[16px]   font-light mt-2 pt-5 leading-6   '>

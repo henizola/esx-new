@@ -1,15 +1,12 @@
-import React from "react";
 import Card from "@/components/Card/Card";
-import whoweare from "../../../public/images/who-we-are-circle.png";
-import Image from "next/image";
 
 function ProceduresAndManuals() {
   return (
     <Card width='w-[100%] px-10'>
       <div className='flex items-center'>
-        <div className=' py-10'>
+        <div className=' py-10 pt-5'>
           <div className='w-[100%] flex flex-col'>
-            <h1 className='text-subHeader   font-normal border-b border-[#A8965B] pb-5'>
+            <h1 className='text-header   font-[500] border-b-[3px]   border-[#A8965B] pb-0 w-fit'>
               Procedures & manuals{" "}
             </h1>
             <p className='  text-paragraphSmall   font-light mt-2 pt-5 leading-6   '>

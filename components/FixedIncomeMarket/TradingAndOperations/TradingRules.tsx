@@ -17,8 +17,8 @@ function TradingRules() {
   return (
     <div className=' w-full h-[100%] flex-col '>
       {/* <div className='w-[100%] flex flex-col  mt-0 pt-0 bg-white py-9'> */}
-      <div className='bg-[#00205B] w-full'>
-        <h1 className='text-[32px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
+      <div className='   bg-white w-[100%] px-10 pt-5'>
+        <h1 className='text-black mt-0 text-[20px] md:text-header ml-0 font-[500] border-b-[3px] border-light-golden w-fit '>
           Trading rules{" "}
         </h1>
       </div>

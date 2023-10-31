@@ -7,7 +7,7 @@ function ListingFAQs() {
     <Card width='w-[100%]'>
       <div className='flex mx-10 pb-5'>
         <div className='w-[100%] flex flex-col border-b border-[#A8965B] mb-8'>
-          <h1 className='text-[32px]   font-normal border-b pt-8 pb-6 mb-0'>
+          <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left pt-5 pb-0 mb-5'>
             Frequently asked questions{" "}
           </h1>
           <div className='pb-0 border-b broder-gray'>

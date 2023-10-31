@@ -185,8 +185,8 @@ function TheAcademy() {
         <div className='flex ml-4 md:py-10  md:pt-5 md:mx-10'>
           {/* <div className='w-[100%] md:w-[60%] '> */}
           <div className='w-[100%]  '>
-            <div className='w-[100%] flex  flex-col  md:mt-6  pt-0'>
-              <h1 className='text-subHeader  font-normal mt-0 pt-0'>
+            <div className='w-[100%] flex  flex-col  md:mt-0  pt-0'>
+              <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left mt-0 pt-0'>
                 Overview
               </h1>
 

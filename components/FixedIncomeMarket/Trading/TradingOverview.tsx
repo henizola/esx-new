@@ -12,7 +12,7 @@ function TradingOverview() {
               {/* <p className='text-[12px]   font-normal text-[#001F59]'>
                 Overview
               </p> */}
-              <h1 className='text-subHeader  font-normal  pt-5 pb-4'>
+              <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left pt-0 pb-0 mb-5'>
                 Trading{" "}
               </h1>
               <p className='w-[100%]  text-[16px]   font-light leading-6    '>

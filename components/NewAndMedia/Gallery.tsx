@@ -17,7 +17,6 @@ const Gallery: React.FC<GalleryProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact Us",
   ];
 
   return (

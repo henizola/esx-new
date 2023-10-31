@@ -64,10 +64,7 @@ export default function Home() {
 
   return (
     <div>
-      <Banner
-        backgroundImage={bannerImage}
-        title={bannerTitle || "Fixed income market"}
-      />
+      <Banner backgroundImage={bannerImage} title={"Trading and Operations"} />
       <Menu
         items={menuItems}
         step={currentPage}

@@ -40,8 +40,10 @@ function ListOfMembers() {
     <div>
       <div className='grid gap-8'>
         <Card width='flex flex-col bg-white/0  shadow-[0px] '>
-          <h1 className='py-[18px] px-10  bg-primary-blue  text-white text-[20px] lg:text-subHeader font-normal   '>
-            List of Members
+          <h1 className='py-[18px] bg-white w-[100%] px-10  text-[20px] lg:text-header font-[500]   '>
+            <span className='border-b-[3px] border-light-golden'>
+              List of Members
+            </span>
           </h1>
           <main className='pt-[30px]  space-y-4 '>
             <div className='grid lg:grid-cols-4 gap-4'>

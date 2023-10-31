@@ -36,7 +36,7 @@ function CorporateBonds() {
           />
         </div> */}
         <div className='w-[100%] flex  pt-5  flex-col'>
-          <h1 className='text-subHeader  mx-7 font-normal mt-0 pt-0 border-b border-[#A8965B]'>
+          <h1 className='  mx-7 text-header border-b-[3px] border-light-golden w-fit text-left mt-0 pt-0  '>
             Corporate Bonds{" "}
           </h1>
 

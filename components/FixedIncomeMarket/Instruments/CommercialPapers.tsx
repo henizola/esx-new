@@ -28,8 +28,8 @@ the CP instrument at maturity.`,
                 className='w-full object-cover h-[100%]'
               />
             </div> */}
-            <div className='w-[100%] flex px-10 pt-5  flex-col'>
-              <h1 className='text-subHeader    mt-0 pb-1  border-b border-[#A8965B]'>
+            <div className='w-[100%] flex px-10 pt-0  flex-col'>
+              <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left   mt-0 pb-1 '>
                 Commercial Papers
               </h1>
 

@@ -4,13 +4,13 @@ function OverView() {
   return (
     <div>
       <Card width='flex flex-col  w-full h-full mt-0'>
-        <div className='bg-[#00205B] w-full h-full'>
-          <h1 className='text-subHeader px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
+        <div className=' w-full h-full'>
+          <h1 className='text-header border-b-[3px]  border-light-golden w-fit text-left mx-10 py-5 pb-0   font-normal '>
             Overview
           </h1>
         </div>
         <div className='flex h-full pb-5'>
-          <div className='min-h-full bg-white pt-5 px-10 flex flex-col justify-between  '>
+          <div className='min-h-full bg-white pt-0 px-10 flex flex-col justify-between  '>
             <div>
               <p className={` py-5 text-paragraphSmall   font-light `}>
                 Fixed income instruments such as government and corporate bonds

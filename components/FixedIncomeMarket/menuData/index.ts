@@ -48,7 +48,7 @@ export const menus: Menu[] = [
   {
     index: 6,
     name: "Regulatory Framework",
-    href: "/equity-market/regulatory-framework",
+    href: "/fixed-income-market/regulatory-framework",
     menu: [],
     disabled: true,
   },

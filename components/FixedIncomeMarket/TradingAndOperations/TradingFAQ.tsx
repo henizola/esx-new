@@ -5,8 +5,8 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 function TradingFAQ() {
   return (
-    <Card width='w-[100%] flex gap-4 flex-col  py-[32px] px-10'>
-      <h1 className='text-black text-[20px]  lg:text-header font-normal   '>
+    <Card width='w-[100%] flex gap-4 flex-col  py-[32px] pt-5 px-10'>
+      <h1 className='text-black text-[20px]  lg:text-header font-[500]  border-b-[3px] border-light-golden w-fit text-left '>
         Frequently asked questions
       </h1>
       {/* <p className='text-black text-[12px] lg:text-base lg:font-normal    leading-snug'>

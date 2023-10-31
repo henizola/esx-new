@@ -19,7 +19,7 @@ type Props = {
 const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
   const router = useRouter();
   const { setNumber } = useNumber();
-
+  console.log("hrnok", title);
   return (
     <>
       <div className='flex w-full  lg:px-28 py-7 justify-center gap-5 '>
@@ -40,7 +40,8 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
                 title === "Listing" ||
                 title === "Members" ||
                 title === "Trading and Operations" ||
-                title === "Trading") && (
+                title === "Trading" ||
+                title === "Regulatory Framework") && (
                 <span className='font-semibold'>
                   {" > "}
                   {title}

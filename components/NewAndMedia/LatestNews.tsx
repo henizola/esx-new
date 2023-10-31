@@ -2,11 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import manager from "/public/images/manager.png";
-import sliderbannerImage from "/public/images/slider-background.png";
-import bannerImage from "/public/images/about-banner.png";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
+import bannerImage from "/public/images/about-banner.png";
 
 interface LatestNewsProps {
   setStep: (value: number) => void;
@@ -20,14 +18,13 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact Us",
   ];
 
   return (
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Latest News'
+        title='News and Media Center'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
@@ -65,7 +62,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-subHeader font-light    capitalize lg:leading-[50px] '>
+                  <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
                   <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
@@ -121,7 +118,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
               </div>
               <div className='lg:w-[60%] '>
                 <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-subHeader font-light    capitalize lg:leading-[50px] '>
+                  <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
                     Lorem ipsum dolor sit
                   </h1>
                   <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>

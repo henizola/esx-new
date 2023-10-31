@@ -15,7 +15,7 @@ function MembershipRules() {
     <div>
       <div className='grid gap-5'>
         <Card width='flex flex-col '>
-          <h1 className='py-[18px]   bg-primary-blue text-white text-[20px] lg:text-subHeader font-normal  px-10 '>
+          <h1 className='py-[18px]   text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left  mx-10 pb-0 '>
             Membership Rules
           </h1>
 

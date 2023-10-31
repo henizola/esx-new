@@ -18,14 +18,13 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact Us",
   ];
 
   return (
     <div className='flex flex-col w-full p-0 m-0'>
       <Banner
         backgroundImage={bannerImage}
-        title='Event'
+        title='News and Media Center'
         description='“Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse'
       />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
@@ -59,7 +58,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   alt=''
                   className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
                 />
-                <h1 className=' text-black text-xl md:text-3xl font-normal mt-4 md:mt-0 px-4 md:px-0   '>
+                <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
                   Lorem Ipsum
                 </h1>
                 <main className='flex flex-col '>
@@ -222,8 +221,8 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
               </div>
             </Card>
 
-            <div className='w-[900px] pb-[32px] relative'>
-              <h1 className='left-4 lg:left-0 top-0 absolute text-black text-3xl font-normal   '>
+            <div className='w-[900px] pb-0 relative'>
+              <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-0  capitalize lg:leading-[50px] '>
                 UPCOMING EVENTS
               </h1>
             </div>

@@ -15,15 +15,15 @@ const Overview = () => {
               className='w-full object-cover h-[30%]'
             /> */}
             <div className='w-[38%] h-[100%]'></div>
-            <div className=' flex  flex-col py-10 px-10'>
+            <div className=' flex  flex-col py-10 pt-5 px-10'>
               {/* <p className='text-[12px] text-[#001F59]   font-semibold '>
                 Overview{" "}
               </p> */}
-              <h1 className='text-subHeader   font-normal pb-1'>
+              <h1 className='text-header border-b-[3px] border-light-golden w-fit text-left pb-1'>
                 Fixed income market{" "}
               </h1>
 
-              <p className='text-[16px] mt-2  font-light mt-0 pt-0 leading-6  pb-0'>
+              <p className='text-[16px]   font-light mt-5 pt-0 leading-6  pb-0'>
                 The ESX Fixed Income Market is a market where participants buy
                 and sell debt securities, either directly from the issuer
                 through the primary market, or afterwards through the secondary

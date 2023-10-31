@@ -17,7 +17,6 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
     "Press Releases",
     "Gallery",
     "Downloads",
-    "Contact Us",
   ];
 
   return (
@@ -155,10 +154,10 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
               </Card>
             </div>
             <Card width='lg:w-[40%] h-[350px] lg:h-fit flex  pb-10 flex-col    '>
-              <h1 className='pt-[20px] pb-[27px] px-[20px]  bg-primary-blue text-white text-subHeader font-normal   '>
+              <h1 className='pt-[20px] pb-[0px] mx-[20px]   text-subHeader border-b-[3px] border-light-golden w-fit text-left '>
                 For More Information
               </h1>
-              <main className='flex flex-col gap-2 pt-[40px]  px-[20px] '>
+              <main className='flex flex-col gap-2 pt-[20px]  px-[20px] '>
                 <h1 className=' text-black text-paragraphBig font-normal   '>
                   ESX Insights
                 </h1>
@@ -166,7 +165,7 @@ const PressReleases: React.FC<PressReleasesProps> = ({ setStep, step }) => {
                   Read Our Latest Thinking
                 </p>
               </main>
-              <hr className=' mt-3 lg:mt-[37px] mx-[20px] mb-3 lg:mb-[40px] border border-gray/30' />
+              <hr className=' mt03 lg:mt-[37px] mx-[20px] mb-3 lg:mb-[40px] border border-gray/30' />
               <main className='flex flex-col gap-2  px-[20px] '>
                 <h1 className=' text-black text-xl font-normal   '>
                   ESX Facts and Figures

@@ -46,7 +46,7 @@ function HowToBecomeMember() {
     <div>
       <div className='grid sm:grid-cols-5 gap-8'>
         <Card width='col-span-5 flex flex-col '>
-          <h1 className='py-[18px] px-10  bg-primary-blue  text-white text-[20px] lg:text-subHeader font-normal   '>
+          <h1 className='py-[18px] mx-10 text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left  pb-0 '>
             How to become a member
           </h1>
 
@@ -187,10 +187,10 @@ function HowToBecomeMember() {
           </main>
         </Card>
         <Card width='py-10 px-10 space-y-4 col-span-5 flex flex-col'>
-          <h1 className='text-black text-[20px] lg:text-subHeader font-normal   '>
-            The applicant shall provide the following in evidence:
+          <h1 className='text-black text-[20px] lg:text-subHeader border-b-[3px] border-light-golden w-fit text-left  '>
+            The applicant shall provide the following in evidence
           </h1>
-          <hr className='  border-b-1 border-gray/90' />
+          {/* <hr className='  border-b-1 border-gra .y/90' /> */}
           <div className='flex flex-col '>
             {evidence.map((text, index) => (
               <p
