@@ -12,7 +12,7 @@ import React, { ReactNode } from "react";
 
 export default function HomeSlider() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
 
