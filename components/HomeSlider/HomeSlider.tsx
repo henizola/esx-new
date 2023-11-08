@@ -18,7 +18,7 @@ export default function HomeSlider() {
 
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     nextArrow: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -54,7 +54,7 @@ export default function HomeSlider() {
     {
       image: slider2.src,
       alt: "image",
-      title: "Attracting new issuers and investors to the market",
+      title: "We Connect Brilliance To Opportunity",
     },
     {
       image: slider1.src,
@@ -76,9 +76,30 @@ export default function HomeSlider() {
               <div>
                 <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
                 <div className='relative'>
-                  <h1 className='absolute top-[50%] px-5 w-[40vw] left-[15vw] lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-header font-[500] text-center lg:text-left z-40'>
-                    {slide.title}
-                  </h1>
+                  <div className='absolute flex flex-col h-fit top-[35%] left-[7vw] z-40'>
+                    <h1
+                      style={{ lineHeight: "68px" }}
+                      className=' px-5 m-0 p-0  lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-[60px]  font-[500] text-center lg:text-left'
+                    >
+                      We Connect Brilliance
+                    </h1>
+                    <h1
+                      style={{ lineHeight: "58px" }}
+                      className=' px-5 m-0 p-0  lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-[60px]  font-[500] text-center lg:text-left'
+                    >
+                      To Opportunity
+                    </h1>
+                    <p className='mt-0 pt-0 text-[20px] font-normal text-white'>
+                      Join a community of global technology talent and find your
+                    </p>
+                    <p className='mt-0 pt-0 text-[20px] text-white'>
+                      next possible.
+                    </p>
+                    <button className='text-[18px] font-normal text-white w-[240px] h-[56px] border  mt-7 border-white background-transparent'>
+                      Contact Us
+                    </button>
+                  </div>
+
                   <img
                     src={slide.image}
                     alt={slide.alt}

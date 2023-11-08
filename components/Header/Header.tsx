@@ -777,7 +777,7 @@ const Header: React.FC = () => {
     >
       {({ open }) => (
         <>
-          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  py-0'>
+          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 lg:pl-0  py-0'>
             <div
               className='relative flex h-16 items-center justify-between'
               style={{ height: "fit-content" }}
@@ -794,7 +794,7 @@ const Header: React.FC = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex flex-1 items-center  justify-center sm:items-stretch sm:justify-around'>
+              <div className='flex flex-1 items-center  justify-between sm:items-stretch sm:justify-between'>
                 <div className='hidden sm:ml-6 sm:block    '>
                   <div className='flex space-x-4  '>
                     <nav className='flex space-x-4 '>
