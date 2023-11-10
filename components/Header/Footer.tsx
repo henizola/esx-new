@@ -55,7 +55,6 @@ const Footer: React.FC = () => {
                     About ESX
                   </button>
                 </li>
-
                 <li className=' py-2    text-paragraphSmall text-left font-light'>
                   <button
                     onClick={() => {
@@ -71,13 +70,13 @@ const Footer: React.FC = () => {
                   <button
                     onClick={() => {
                       // setNumber(4);
-                      // router.push("/about-us");
+                      router.push("/about-us");
                     }}
                   >
                     Careers
                   </button>
                 </li>
-                <li className=' py-2    text-paragraphSmall text-left font-light'>
+                {/* <li className=' py-2    text-paragraphSmall text-left font-light'>
                   <button
                     onClick={() => {
                       // setNumber(4);
@@ -85,6 +84,16 @@ const Footer: React.FC = () => {
                     }}
                   >
                     Tenders
+                  </button>
+                </li>{" "} */}
+                <li className=' py-2    text-paragraphSmall text-left font-light'>
+                  <button
+                    onClick={() => {
+                      // setNumber(4);
+                      // router.push("/about-us");
+                    }}
+                  >
+                    FAQs
                   </button>
                 </li>
               </ul>
@@ -95,7 +104,7 @@ const Footer: React.FC = () => {
                   <button
                     onClick={() => {
                       setNumber(0);
-                      router.push("/about-us");
+                      // router.push("/about-us");
                     }}
                     className='text-left w-full'
                   >

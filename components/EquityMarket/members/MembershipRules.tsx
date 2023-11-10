@@ -15,7 +15,7 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
     "Overview",
     "How to Become a Member",
     "Membership Rules",
-    "Members Directory ",
+    // "Members Directory ",
   ];
   const evidence = [
     "Rules of membership and conditions for approval and admission of members",
@@ -37,10 +37,10 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
         <Card width='col-span-2 hidden  lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
           <h6 className='ml-2 mb-4'>
-            <BackButton setStep={setStep} link='/equity-market'>
+            {/* <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
-            </BackButton>{" "}
-            {"> Members"}
+            </BackButton>{" "} */}
+            {" Members"}
           </h6>
           {items.map((item, index) => (
             <button
