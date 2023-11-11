@@ -7,8 +7,8 @@ import StockPriceAutoScroller from "@/components/priceScroller/priceSlider";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
-import chart from "../public/images/chart.png";
-import down from "../public/images/down.svg";
+import Reports6 from "../public/images/Reports6.png";
+import organizationbanner from "../public/images/organization-banner.png";
 import home from "../public/images/home-banner.png";
 import up from "../public/images/up.svg";
 import { useRouter } from "next/navigation";
@@ -40,7 +40,7 @@ export default function Home() {
       {/* <MarketSummary /> */}
 
       <div className='flex w-full relative lg:px-28 py-7'>
-        <Card width=' w-[23%] mr-5 sticky h-fit hidden lg:flex flex-col text-left  py-10 px-5'>
+        {/* <Card width=' w-[23%] mr-5 sticky h-fit hidden lg:flex flex-col text-left  py-10 px-5'>
           <h6 className='ml-2 mb-4'>ESX</h6>{" "}
           {items.map((item, index) => (
             <button
@@ -54,13 +54,13 @@ export default function Home() {
               {item.name}
             </button>
           ))}
-        </Card>
+        </Card> */}
         <div
-          className='lg:w-[70%]  w-[100vw]'
+          className='lg:w-[100%]  w-[100vw]'
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <div className='flex flex-col lg:flex-row gap-3 w-[100%]'>
-            <Card width='lg:w-[67%] mr-[0%] pb-10 h-[100%]'>
+          {/* <div className='flex flex-col lg:flex-row gap-3 w-[100%]'> */}
+          {/* <Card width='lg:w-[67%] mr-[0%] pb-10 h-[100%]'>
               <div className='flex p-0 mx-0'>
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
                   <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
@@ -76,8 +76,8 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </Card>
-            <Card width=' lg:w-[40%] pb-10 h-[100%]'>
+            </Card> */}
+          {/* <Card width=' lg:w-[40%] pb-10 h-[100%]'>
               <div className='flex p-0 mx-0'>
                 <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
                   <h1 className='text-[24px] px-10 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
@@ -126,64 +126,32 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Card>
-          </div>
-          <Card width='w-[100%] my-6 mb-0  h-[100%] '>
+            </Card> */}
+          {/* </div> */}
+          <Card width='w-[100%] py-6 mt-0 mb-0  h-[100%] '>
             <div className=' flex flex-col lg:flex-row p-0  mx-0 '>
-              <div className='lg:hidden  w-[100%] '>
-                <Image
-                  height={200}
-                  width={200}
-                  src={home.src}
-                  alt='manager'
-                  className='w-[100%] h-[200px] object-cover'
-                />
-              </div>
-              <div className='lg:w-[60%] flex  flex-col  p-5  lg:px-10 pr-0 '>
-                <span className='text-[12px] font-semibold text-primary-blue'>
-                  Trade on ESX
-                </span>
-                <h1 className='text-[20px] lg:text-[40px] mt-3'>Why invest?</h1>
-                <hr className='mr-10 border-[#A8965B]' />
-                <p className='text-[14px] lg:text-[16px]     font-light mt-5 pr-16  w-[100%] '>
-                  A benefit to investing and trading on ESX is price
-                  transparency. As prices are publicly available, investors are
-                  able to make informed decisions based on real-time market data
+              <div className='lg:w-[100%] flex  flex-col  p-5 pt-0 lg:px-10 pr-0 '>
+                <h1 className='text-[20px] lg:text-[40px] border-primary-golden  w-fit border-b-[3px]'>
+                  Our Mission
+                </h1>
+
+                <p className='text-black text-paragraphSmall  font-light mt-5   '>
+                  To provide a modern, reliable, transparent, and efficient
+                  environment for securities trading in Ethiopia, through
+                  adaptation of modern exchange business operations, skill,
+                  technology, and trust.{" "}
                 </p>
                 <p className='text-[14px] lg:text-[16px]     font-light mt-4 pr-16  w-[100%] '>
-                  The regulatory oversight of ESX maintains market integrity.
-                  This ensures that participants are adhering to trading
-                  practices.
+                  Contribute to the economic development of Ethiopia by
+                  promoting savings and the efficient aggregation of capital for
+                  long term investment.
                 </p>
                 <p className='text-[14px] lg:text-[16px]    font-light mt-4 pr-16  w-[100%] '>
-                  The ESX trading platform will be linked with a fully
-                  electronic central securities depository (CSD) to ensure
-                  efficient post-trade clearing and settlement processes from
-                  the launch of the exchange.
+                  Building a sustainable institution that is dynamic and fitting
+                  to both Ethiopian and regional issuers and investors.
                 </p>
-
-                <Link
-                  href='#'
-                  className='flex text-[14px] lg:text-[16px] mt-5 px-0 '
-                >
-                  View more{" "}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-4 h-4 mt-1.5'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                    />
-                  </svg>
-                </Link>
               </div>
-              <div className='hidden lg:block w-[40%] '>
+              {/* <div className='hidden lg:block w-[40%] '>
                 <Image
                   height={200}
                   width={200}
@@ -191,54 +159,85 @@ export default function Home() {
                   alt='manager'
                   className='w-[100%] h-[100%] object-cover'
                 />
-              </div>
+              </div> */}
             </div>
           </Card>
-          <div className='mt-5 flex flex-col lg:flex-row'>
-            <Card width='lg:w-[50%] flex gap-4 flex-col shadow-[0] '>
-              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
-              <main className='pb-[20px] px-[20px] flex flex-col h-full'>
-                <span className='text-[12px] font-semibold text-primary-blue'>
-                  Listing and Admission to Trading
-                </span>
-                <h1 className='text-black  text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
-                  <span>ESX Listing Rules</span>
-                  <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
-                </h1>
-                <p className='text-black text-sm font-light mt-[15px]   '>
-                  Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
-                  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                  nonummy nibh euismod tincidunt ut
-                </p>
-
-                <Link className='mt-2 lg:mt-auto' href='#'>
-                  View More
-                </Link>
+          <div className='mt-5 flex flex-col gap-4 lg:flex-row'>
+            <Card width='lg:w-[33.3%] flex gap-0 flex-col shadow-[0] '>
+              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold ' />
+              <main className='  flex flex-col h-full'>
+                <Image
+                  height={200}
+                  width={200}
+                  src={Reports6.src}
+                  alt='manager'
+                  className='w-[100%] object-cover h-[250px]'
+                />
+                <div className='p-6'>
+                  <h1 className='text-black  text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
+                    <span>List on ESX</span>
+                  </h1>
+                  <p className='text-black text-paragraphSmall mb-4 font-light mt-[15px]   '>
+                    ESX provides a modern and regulated platform for companies
+                    to raise long term finance by issuing equity and debt
+                    instruments
+                  </p>
+                  <button className='text-paragraphSmall font-normal text-primary-blue w-fit px-10 py-2 h-fit border  mt-1 border-primary-blue background-transparent'>
+                    Learn More
+                  </button>
+                </div>
               </main>
             </Card>
-            <Card width='lg:w-[50%] mt-5 lg:mt-0 lg:ml-5 flex gap-4 flex-col shadow-[0] '>
-              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold leading-[normal]' />
-              <main className='pb-[20px] px-[20px] flex flex-col h-full'>
-                <span className='text-[12px] font-semibold text-primary-blue'>
-                  Members
-                </span>
-                <h1 className='text-black text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
-                  <span>ESX Membership Rules</span>
-                  <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' />
-                </h1>
-                <p className='text-black text-sm font-light mt-[15px]   '>
-                  Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh euisLorem
-                  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                  nonummy nibh euismod tincidunt ut
-                </p>
-
-                <Link className='mt-2 lg:mt-auto' href='#'>
-                  View More
-                </Link>
+            <Card width='lg:w-[33.3%] flex gap-0 flex-col shadow-[0] '>
+              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold ' />
+              <main className='  flex flex-col h-full'>
+                <Image
+                  height={200}
+                  width={200}
+                  src={organizationbanner.src}
+                  alt='manager'
+                  className='w-[100%] object-cover h-[250px]'
+                />
+                <div className='p-6'>
+                  <h1 className='text-black  text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
+                    <span>Invest on ESX</span>
+                  </h1>
+                  <p className='text-black text-paragraphSmall mb-4 font-light mt-[15px]   '>
+                    As a modern and fully electronic marketplace, ESX creates an
+                    environment whereby Ethiopians across the country, Ethiopian
+                    Diaspora as well as foreign investors, can easily invest in
+                    listed equity and debt instruments
+                  </p>
+                  <button className='text-paragraphSmall font-normal text-primary-blue w-fit px-10 py-2 h-fit border  mt-1 border-primary-blue background-transparent'>
+                    Learn More
+                  </button>
+                </div>
               </main>
             </Card>
+            <Card width='lg:w-[33.3%] flex gap-0 flex-col shadow-[0] '>
+              <div className='p-0.5  bg-primary-golden text-white text-sm not-italic font-semibold ' />
+              <main className='  flex flex-col h-full'>
+                <Image
+                  height={200}
+                  width={200}
+                  src={phoneImage.src}
+                  alt='manager'
+                  className='w-[100%] object-cover h-[250px]'
+                />
+                <div className='p-6'>
+                  <h1 className='text-black  text-[20px] lg:text-2xl mt-[5px] font-normal    flex items-center gap-5 '>
+                    <span>Become a trading member</span>
+                  </h1>
+                  <p className='text-black text-paragraphSmall mb-4 font-light mt-[15px]   '>
+                    ESX provides various types of membership opportunities for
+                    capital market service providers
+                  </p>
+                  <button className='text-paragraphSmall font-normal text-primary-blue w-fit px-10 py-2 h-fit border  mt-1 border-primary-blue background-transparent'>
+                    Learn More
+                  </button>
+                </div>
+              </main>
+            </Card>{" "}
           </div>
           <Card width='flex flex-col  w-full h-full mt-5'>
             <div className='bg-[#00205B] w-full h-full'>

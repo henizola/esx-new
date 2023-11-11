@@ -1,7 +1,7 @@
 "use client";
 import Slider from "react-slick";
 import slider1 from "../../public/images/home-slider-1.jpg";
-import slider2 from "../../public/images/home-slider-2.jpg";
+import slider2 from "../../public/images/dwaan.jpg";
 import slider3 from "../../public/images/home-slider-3.jpg";
 import "./HomeSliderStyles.css";
 
@@ -74,7 +74,7 @@ export default function HomeSlider() {
           slides.map((slide, index) => (
             <React.Fragment key={index}>
               <div>
-                <div className='absolute inset-0 opacity-10 bg-light-blue '></div>
+                {/* <div className='absolute inset-0 opacity-10 bg-light-blue '></div> */}
                 <div className='relative'>
                   <div className='absolute flex flex-col h-fit top-[35%] left-[15vw] z-40'>
                     <h1
