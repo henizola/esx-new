@@ -16,6 +16,7 @@ import phoneImage from "../public/images/overview.png";
 
 import youtube from "../public/images/youtube.png";
 import Footer from "@/components/Header/Footer";
+import NewsSlider from "@/components/NewsSlider/NewsSlider";
 export default function Home() {
   const items = [
     { name: "About Us", link: "/about-us" },
@@ -239,7 +240,8 @@ export default function Home() {
               </main>
             </Card>{" "}
           </div>
-          <Card width='flex flex-col  w-full h-full mt-5'>
+          <div></div>
+          {/* <Card width='flex flex-col  w-full h-full mt-5'>
             <div className='bg-[#00205B] w-full h-full'>
               <h1 className='text-[18px] lg:text-[32px] px-5 py-5  text-left text-white  w-[100%] bg-primary-blue   font-normal '>
                 Capital market regulatory environment
@@ -301,39 +303,43 @@ export default function Home() {
                 />
               </div>
             </div>
-          </Card>
+          </Card> */}
           <div className='mt-5 w-[100%] flex flex-col lg:flex-row'>
             <Card width='lg:w-[58%] my-0 mr-[2%] h-[100%] pb-5'>
               <div className=' flex py-5 mx-5 lg:mx-10 h-[100%]   lg:p-2'>
                 <div className='w-[100%] flex  flex-col h-[100%]   mt-0 pt-0'>
                   <div className='flex flex-col justify-between h-[100%] '>
                     <div>
-                      <span className='text-[12px] font-semibold text-primary-blue'>
-                        Press Releases
-                      </span>
-                      <p className='text-[14px] lg:text-[16px] w-[100%] mt-2'>
-                        Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                        amet, consectetuer adipiscing elit, sed diam nonummy
-                        nibh euisLorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit,
+                      <p className=' my-6 mb-2 text-[12px] font-semibold text-primary-blue'>
+                        ESX Held Capital Raise Roadshow in Addis Ababa – May 16,
+                        2023
+                      </p>
+                      <h1 className='text-subHeader '>
+                        Ethiopia Begins Fundraising for First-Ever Securities
+                        Exchange
+                        <hr className='w-[65%] border-primary-golden border-[1.5px]' />
+                      </h1>
+                      <p className='text-paragraphSmall   font-light  w-[100%] my-4'>
+                        Ethiopia began selling shares to raise funds required to
+                        set up its first-ever securities exchange as Prime
+                        Minister
+                      </p>
+                      <p className='text-paragraphSmall   font-light  w-[100%] my-0 mt-2'>
+                        The sale, which kicked off in the capital, Addis Ababa,
+                        on Tuesday aims to mobilize 75% of the required funding,
+                        said Michael Habte, a project manager for the planned
+                        Ethiopia Securities Exchange, or ESX. The remaining 25%
+                        of the shares will be held by Ethiopian Investment
+                        Holdings, the nation’s sovereign wealth fund.
                       </p>
                     </div>
-                    <h1 className='font-semibold text-[16px] lg:text-[20px] my-5 mb-0'>
-                      Read More
-                    </h1>
 
-                    <Image
-                      height={200}
-                      width={200}
-                      src={youtube.src}
-                      alt='tbills'
-                      className='w-[100%] mr-[0%] h-[177px] my-5 object-fill '
-                    />
                     <Link
-                      href='#'
+                      href='https://www.bloomberg.com/news/articles/2023-05-16/ethiopia-begins-fundraising-for-first-ever-securities-exchange?utm_medium=cpc_search&utm_campaign=NB_ENG_DSAXX_DSAXXXXXXXXXX_EVG_XXXX_XXX_Y0469_EN_EN_X_BLOM_GO_SE_XXX_XXXXXXXXXX&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhBwFK7UxzehKaR9eqcWZ6u-VUoJFa9lTyHDsjv6QBCmK3DNTUnB5AaAt3TEALw_wcB&gclsrc=aw.ds'
+                      target='_blank'
                       className='flex text-[14px] lg:text-[16px] mt-5 px-0 '
                     >
-                      View more{" "}
+                      Read more{" "}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         fill='none'
@@ -353,113 +359,64 @@ export default function Home() {
                 </div>
               </div>
             </Card>{" "}
-            <Card width='lg:w-[40%] mt-5 lg:mt-0 flex flex-col '>
-              <h1 className='py-[20px] text-[20px] lg:text-[24px]  px-[20px]   bg-primary-blue text-white text-xl not-italic font-normal leading-[normal]'>
-                For More Information
-              </h1>
-              <main className='pt-5 lg:pt-[52px] lg:pb-[10px] px-5 lg:px-[20px] flex flex-col gap-[10px]'>
-                <h1 className='text-black text-[20px] mb-[0px] font-normal   '>
-                  ESX Insights
-                </h1>
-                <p className='     text-sm font-normal    leading-snug ml-[0px]'>
-                  Read Our Latest Thinking
-                </p>
-                <Link
-                  href='#'
-                  className='flex px-0 my-0 mt-2 lg:mt-5 
-                text-[14px] lg:text-[16px] '
-                >
-                  View more{" "}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-4 h-4 mt-1.5'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                    />
-                  </svg>
-                </Link>
-                <hr className='mt-[5px] lg:mt-[10px]  border border-0.5 border-gray/30' />
-              </main>
-              <main className='pt-[5px] lg:pt-[22px] pb-5 lg:pb-[50px] px-[20px]  flex flex-col gap-[10px]'>
-                <h1 className='text-black text-[20px] mb-[5px] font-normal   '>
-                  Facts and Figures
-                </h1>
-                <p className='     text-sm font-normal    leading-snug ml-[0px]'>
-                  ESX and its subsidiaries recorded $21.9 billion in US revenues
-                  in the fiscal year ended June 1,2023
-                </p>
-                <Link
-                  href='#'
-                  className='flex text-[14px] lg:text-[16px] mt-2 lg:mt-5 px-0 '
-                >
-                  View more{" "}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-4 h-4 mt-1.5'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                    />
-                  </svg>
-                </Link>
-              </main>
-            </Card>
-          </div>
-          <Card width='w-[100%] my-5 my-0 py-5 lg:py-10  h-[fit-content] mb-[140px]'>
-            <div className='w-[100%] flex p-0  mx-0 '>
-              <div className='flex  flex-col  p-5 px-4 md:px-10 pt-0 pr-0 relative'>
-                <h1 className='text-[30px] lg:text-[40px] w-[100%] '>
-                  Join us
-                </h1>
-                <hr className='mr-10 lg:mr-0 lg:w-[60%] ' />
-                <p className='text-[16px] font-light mt-4 pr-16  w-[100%] '>
-                  Are you Interested in working at ESX? Please click here to see
-                  what jobs are currently available.
-                </p>
-                <div className='absolute grid grid-cols-3 py-10 w-[90%] left-[5%] lg:left-[10%] -bottom-[150px] lg:-bottom-[160px] bg-primary-blue'>
-                  <div className='border-right flex flex-col border-r border-white text-center'>
-                    <h1 className='text-white font-semibold text-[24px] lg:text-[40px]'>
-                      150 +
-                    </h1>
-                    <h1 className='text-white font-normal text-[12px]'>
-                      Employees
-                    </h1>
-                  </div>
-                  <div className='border-right flex flex-col border-r border-white text-center'>
-                    <h1 className='text-white font-semibold text-[24px] lg:text-[40px]'>
-                      20 +
-                    </h1>
-                    <h1 className='text-white font-normal text-[12px]'>
-                      Offices
-                    </h1>
-                  </div>{" "}
-                  <div className='flex flex-col border-r text-center'>
-                    <h1 className='text-white font-semibold text-[24px] lg:text-[40px]'>
-                      50 +
-                    </h1>
-                    <h1 className='text-white font-normal text-[12px]'>
-                      Clients <br className='flex lg:hidden' /> represented
-                    </h1>
+            <Card width='lg:w-[58%] my-0 mr-[2%] h-[100%] pb-5'>
+              <div className=' flex py-5 mx-5 lg:mx-10 h-[100%]   lg:p-2'>
+                <div className='w-[100%] flex  flex-col h-[100%]   mt-0 pt-0'>
+                  <div className='flex flex-col justify-between h-[100%] '>
+                    <div>
+                      <p className=' my-6 mb-2 text-[12px] font-semibold text-primary-blue'>
+                        ESX Held Capital Raise Roadshow in Addis Ababa – May 16,
+                        2023
+                      </p>
+                      <h1 className='text-subHeader '>
+                        Ethiopia Begins Fundraising for First-Ever Securities
+                        Exchange
+                        <hr className='w-[65%] border-primary-golden border-[1.5px]' />
+                      </h1>
+                      <p className='text-paragraphSmall   font-light  w-[100%] my-4'>
+                        Ethiopia began selling shares to raise funds required to
+                        set up its first-ever securities exchange as Prime
+                        Minister
+                      </p>
+                      <p className='text-paragraphSmall   font-light  w-[100%] my-0 mt-2'>
+                        The sale, which kicked off in the capital, Addis Ababa,
+                        on Tuesday aims to mobilize 75% of the required funding,
+                        said Michael Habte, a project manager for the planned
+                        Ethiopia Securities Exchange, or ESX. The remaining 25%
+                        of the shares will be held by Ethiopian Investment
+                        Holdings, the nation’s sovereign wealth fund.
+                      </p>
+                    </div>
+
+                    <Link
+                      href='https://www.bloomberg.com/news/articles/2023-05-16/ethiopia-begins-fundraising-for-first-ever-securities-exchange?utm_medium=cpc_search&utm_campaign=NB_ENG_DSAXX_DSAXXXXXXXXXX_EVG_XXXX_XXX_Y0469_EN_EN_X_BLOM_GO_SE_XXX_XXXXXXXXXX&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhBwFK7UxzehKaR9eqcWZ6u-VUoJFa9lTyHDsjv6QBCmK3DNTUnB5AaAt3TEALw_wcB&gclsrc=aw.ds'
+                      target='_blank'
+                      className='flex text-[14px] lg:text-[16px] mt-5 px-0 '
+                    >
+                      Read more{" "}
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        strokeWidth={1.5}
+                        stroke='currentColor'
+                        className='w-4 h-4 mt-1.5'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                        />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-          </Card>
+            </Card>{" "}
+          </div>
         </div>
       </div>
+
       <Footer />
     </main>
   );
