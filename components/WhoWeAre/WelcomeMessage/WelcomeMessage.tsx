@@ -116,7 +116,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
                 stand at this point in history to mark a new chapter in the
                 evolution of the Ethiopian capital market as we work diligently
                 to prepare for the launch of the ESX, the first modern
-                securities exchange in the nation’s history.
+                securities exchange in the nation&apos;s history.
               </p>
             </div>
           </div>
@@ -179,7 +179,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
                 journey with you.
               </p>
               <p className=' text-base text-[14px] text-justify  lg:text-paragraphSmall font-roboto font-light mt-4 pt-0 leading-6  '>
-                The ESX will form a key part of Ethiopia's capital market
+                The ESX will form a key part of Ethiopia&apos;s capital market
                 ecosystem, fostering innovation, channeling investments, and
                 providing a platform for businesses to flourish. Our mission is
                 to drive economic progress and inclusivity by facilitating the
@@ -203,7 +203,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
               The success of the ESX relies on the active participation of all
               stakeholders. I encourage open communication, collaboration, and
               the sharing of ideas as we navigate the exciting journey ahead.
-              Together, we can make ESX a vital instrument for Ethiopia's
+              Together, we can make ESX a vital instrument for Ethiopia&apos;s
               economic prosperity.
             </p>
             <p className=' text-base text-[14px] text-justify lg:text-paragraphSmall font-roboto font-light mt-2 pt-0 leading-6  '>
