@@ -71,36 +71,42 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             <div className='flex ml-4 md:py-10   md:pt-5 md:mx-10'>
               {/* <div className='w-[100%] md:w-[60%] '> */}
               <div className='w-[100%]  '>
-                <div className='w-[100%] flex  flex-col  md:mt-6  pt-0'>
+                <div className='w-[100%] flex  flex-col  md:mt-4  pt-0'>
                   <h1 className='text-header w-fit mb-4 font-[400] mt-0 pt-0 border-b-[3px] border-light-golden'>
                     Who We Are
                   </h1>
 
                   <p className='w-[100%]  text-paragraphSmall  font-light mt-4 pt-0 leading-6 '>
                     The Ethiopian Securities Exchange (ESX) is Ethiopia’s first,
-                    and only organized securities exchange. ESX is established
-                    as a public private partnership in line with Article 31 of
-                    the Capital Market Proclamation (No.1248/2021), and is
-                    licensed by the Ethiopian Capital Market Authority (ECMA).
+                    and only organized securities exchange.
                   </p>
-                  <p className='w-[100%]  text-paragraphSmall  font-light my-4 pt-0 leading-6 '>
+                  <p className='w-[100%]  text-paragraphSmall  font-light my-0 pt-2 leading-6 '>
+                    ESX is established as a public private partnership in line
+                    with Article 31 of the Capital Market Proclamation
+                    (No.1248/2021), to be licensed by the Ethiopian Capital
+                    Market Authority (ECMA).
+                  </p>
+                  <p className='w-[100%]  text-paragraphSmall  font-light mt-2 pt-0 leading-6 '>
                     ESX operates the business of a securities exchange,
-                    functions as a Self-Regulatory Organization (“SRO”), and
+                    functions as a Self-Regulatory Organization (“SRO”) and
                     serves as the central market organizer providing an
                     integrated product suite covering the equities, fixed
-                    income, and money market segments of the capital markets.{" "}
+                    income, and money market segments of the capital markets.
                   </p>
                   <p className='w-[100%]  text-paragraphSmall  font-light mt-2 pt-0 leading-6 '>
                     As the pioneer securities exchange, ESX aims to play a
                     critical role in the development and growth of the Ethiopian
-                    capital markets. ESX’s core objective is to facilitate
-                    access to capital and support effective capital allocation
-                    in a manner that supports Ethiopia’s economic growth. By
-                    developing a well-regulated and efficient capital market
-                    ecosystem, ESX will enable mobilization of financial
-                    resources for both public and private sector institutions
-                    while providing investors a reliable platform to invest in a
-                    reliable and efficient environment.{" "}
+                    capital markets.{" "}
+                  </p>
+                  <p className='w-[100%]  text-paragraphSmall  font-light mt-2 pt-0 leading-6 '>
+                    ESX’s core objective is to facilitate access to capital and
+                    support effective capital allocation in a manner that
+                    supports Ethiopia’s economic growth. By developing a
+                    well-regulated and efficient capital market ecosystem, ESX
+                    will enable mobilization of financial resources for both
+                    public and private sector institutions while providing
+                    investors a reliable platform to invest in a reliable and
+                    efficient environment.
                   </p>
                 </div>
               </div>
@@ -119,18 +125,18 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
           <div className='flex-col my-0 justify-between'>
             <div className='w-[100%] flex flex-col '>
               <Card width='w-[100%]  p-4'>
-                <div className='flex mx-4 my-2 md:py-5 md:mx-10'>
+                <div className='flex mx-4 my-2 mt-0 md:py-5 md:mx-10'>
                   <div className='w-[100%] flex  flex-col  mt-0 pt-0'>
                     <h1 className='text-header w-fit mb-4 font-[400] mt-0 pt-0 border-b-[3px] border-light-golden'>
                       ESX markets
                     </h1>
+                    <h1 className='text-subHeader w-fit mb-4 font-[400] mt-0 pt-0 '>
+                      Our Main Markets
+                    </h1>
 
                     <p className='w-[100%]  text-paragraphSmall  font-light mt-2 pt-0 leading-6 '>
                       ESX is organized as having two main markets - ESX Equity
-                      Market and ESX Fixed Income Market - and an Alternative
-                      Market that hosts various capital market products and
-                      services geared towards supporting the growth of Small and
-                      Medium Enterprises (SMEs).
+                      Market and ESX Fixed Income Market.
                     </p>
 
                     {/* <p className='w-[100%]  text-paragraphSmall  font-light mt-2 pt-0 leading-6 '>
@@ -144,11 +150,11 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
               <Card width='w-[100%] pb-0 h-[100%]'>
                 <div className='flex p-0 mx-0'>
                   <div className='w-[100%] flex   flex-col  mt-0 pt-0'>
-                    <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-12 mb-0 border-b-[3px] border-light-golden'>
+                    <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-10 mb-0 border-b-[3px] border-light-golden'>
                       ESX Equity Market
                     </h1>
 
-                    <div className='w-[100%] flex  flex-col  mt-0 px-12 py-10'>
+                    <div className='w-[100%] flex  flex-col  mt-0 px-10 py-10 pt-5'>
                       <p className='w-[100%]  text-paragraphSmall  font-light  pt-0 leading-6 '>
                         ESX Equity Market is composed of a main market segment
                         for large companies and a growth market segment for
@@ -165,31 +171,30 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 </div>
               </Card>
               <Card width='w-[100%] pb-0 h-[100%]'>
-                <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-12 mb-0 border-b-[3px] border-light-golden'>
+                <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-10 mb-0 border-b-[3px] border-light-golden'>
                   ESX Fixed Income Market
                 </h1>
 
-                <div className='w-[100%] flex  flex-col  mt-0 px-12 py-10'>
+                <div className='w-[100%] flex  flex-col  mt-0 px-10 py-10 pt-5'>
                   <p className='w-[100%]  text-paragraphSmall  font-light  pt-0 leading-6 '>
-                    ESX Fixed Income Market facilitates the trading of debt
-                    securities with the aim to increase the efficiency,
-                    transparency, and liquidity of the fixed income market. The
-                    fixed income segment will include a quotation and trading
-                    platform for short-term money market instruments such as
-                    Government T-Bills, Commercial Papers, and the interbank
-                    market including Repurchase Agreements (Repos) as well as
-                    long term debt instruments such as Treasury and Corporate
-                    Bonds.
+                    Facilitates the trading of debt securities with the aim to
+                    increase the efficiency, transparency, and liquidity of the
+                    fixed income market. The fixed income segment will include a
+                    quotation and trading platform for short-term money market
+                    instruments such as Government T-Bills, Commercial Papers,
+                    and the interbank market including Repurchase Agreements
+                    (Repos) as well as long term debt instruments such as
+                    Treasury and Corporate Bonds.
                   </p>
                 </div>
               </Card>
 
-              <Card width='w-[100%] pb-0 h-[100%]'>
-                <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-12 mb-0 border-b-[3px] border-light-golden'>
+              {/* <Card width='w-[100%] pb-0 h-[100%]'>
+                <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-10 mb-0 border-b-[3px] border-light-golden'>
                   ESX Alternative Market
                 </h1>
 
-                <div className='w-[100%] flex  flex-col  mt-0 px-12 py-10'>
+                <div className='w-[100%] flex  flex-col  mt-0 px-10 py-10'>
                   <p className='w-[100%]  text-paragraphSmall  font-light  pt-0 leading-6 '>
                     ESX Alternative Market segment provides a platform for SME’s
                     to raise growth and working capital via dedicated equity
@@ -197,7 +202,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     platforms.
                   </p>
                 </div>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>

@@ -49,7 +49,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
         </Card>
         <div className='grid grid-cols-1 mt-0 gap-3 w-[100%]'>
           <div className='grid grid-cols-1 gap-3 lg:gap-0 w-[100%]'>
-            <Card width='w-[100%] my-0 h-[100%] pb-2 pt-5 md:pb-5'>
+            <Card width='w-[100%] my-0 h-[100%] pb-2 pt-5 md:pb-0'>
               {/* <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  md:mt-5 float-right'>
                 <Image
                   height={200}
@@ -119,7 +119,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
                 </div>
               </div>
             </Card>
-            <Card width='w-[100%] my-0 h-[100%] pb-5 md:pb-10'>
+            <Card width='w-[100%] my-0 h-[100%] pb-5 md:pb-5'>
               {/* <div className=' bg-primary-blue h-[68px] w-[100%] lg:w-[94%] mt-0  float-right'>
                 <Image
                   height={200}
@@ -197,9 +197,11 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
             <Card width='w-[100%] my-0 h-[100%] pb-5'>
               <div className=' flex py-5 pb-0 mx-4 md:mx-10  p-2'>
                 <div className='w-[100%] flex  flex-col  mt-0 pt-3'>
-                  <span className='text-[12px] font-semibold text-primary-blue'>
-                    Market Development
-                  </span>
+                  <h1 className='text-header   py-0 mb-0 pl-0 mt-0 text-left  w-[100%]  font-[400] '>
+                    <span className=' border-b-[3px] border-light-golden'>
+                      Our Market Development Role
+                    </span>
+                  </h1>
                   <p className='text-[14px] md:text-paragraphSmall w-[100%] mt-5'>
                     ESX will play a critical role in the market development,
                     policy advocacy, institutional reform, in cooperation and
