@@ -25,7 +25,7 @@ const ProceduresManual: React.FC<ProceduresManualProps> = ({
     "Trading Market Structure",
     "Trading Rules",
     // "Procedures & Manuals",
-    "Trading FAQ",
+    // "Trading FAQ",
     // "Trading Platform",
   ];
 

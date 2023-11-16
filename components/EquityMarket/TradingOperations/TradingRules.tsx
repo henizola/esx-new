@@ -26,7 +26,7 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
     "Trading Market Structure",
     "Trading Rules",
     // // "Procedures & Manuals",
-    "Trading FAQ",
+    // "Trading FAQ",
     //     // "Trading Platform",
   ];
 
@@ -63,35 +63,110 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className='col-span-7 space-y-5 w-[100vw] lg:w-[auto] h-[auto]'>
-          <Card width='w-[100%] px-10 flex flex-col  py-[36px] '>
+          <Card width='w-[100%] px-10 flex flex-col  py-[36px] pb-15'>
             <h1 className='text-black text-[24px] lg:text-subHeader  font-[500]  border-b-[3px] border-light-golden w-fit '>
-              Every Trading Member shall be required at all times to:
+              {/* Every Trading Member shall be required at all times to: */}
+              Trading rules
             </h1>
+            <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+              ESX Trading rules set out specific guidelines and regulations that
+              govern trading activities of trading members. These rules are
+              designed to ensure fairness, transparency, and the orderly
+              functioning of the market while protecting the interests of market
+              participants. ESX trading members are at all times require to
+              abide by the rules as they contribute to:
+            </p>
             {/* <hr className=' border border-primary-golden opacity-70 mt-[19px]' /> */}
             <main className=''>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
 
                 <span className='ml-2'>
-                  Address investor protection obligations with respect to their
-                  clients when they, acting on behalf of their clients, execute
-                  their orders on the exchange platform or system; and
+                  <strong> Orderly Trading: </strong>Rules help maintain order
+                  in the market by specifying how orders should be placed,
+                  executed, and canceled. They establish guidelines for trading
+                  hours, circuit breakers, and trading halts in case of extreme
+                  market volatility.
+                </span>
+              </p>
+
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
+
+                <span className='ml-2'>
+                  <strong> Market Integrity: </strong>ESX trading rules are
+                  designed to maintain the integrity of the market by preventing
+                  fraudulent and manipulative activities. They establish
+                  guidelines to prevent market abuse, insider trading, and other
+                  illicit practices.
+                </span>
+              </p>
+
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
+
+                <span className='ml-2'>
+                  <strong> Fairness: </strong>The rules promote a level playing
+                  field for all market participants, ensuring that no one has an
+                  unfair advantage. They help prevent market manipulation and
+                  create an environment where investors can trade with
+                  confidence.
                 </span>
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
 
                 <span className='ml-2'>
-                  Adhere to the best execution principle by taking reasonable
-                  steps to obtain the best available result for the client in a
-                  timely manner, provided that the Trading Member shall at all
-                  times act in accordance with the terms and conditions of the
-                  order from the client.
+                  <strong> Investor Protection: </strong>The rules provide
+                  safeguards to protect the interests of investors. They among
+                  others require trading members to have certain financial
+                  resources and risk management procedures in place to protect
+                  clients&apos; assets.
+                </span>
+              </p>
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
+
+                <span className='ml-2'>
+                  <strong> Risk Management: </strong> The rules incorporate risk
+                  management measures to mitigate the potential for excessive
+                  market volatility or sudden market crashes. These measures
+                  include price limits, circuit breakers, and other types of
+                  similar measures.
+                </span>
+              </p>
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
+
+                <span className='ml-2'>
+                  <strong> Investor Confidence:</strong> Clear and consistently
+                  applied rules enhance investor confidence in the market. When
+                  investors believe that the market is well-regulated and
+                  follows established rules, they are more likely to
+                  participate.
+                </span>
+              </p>
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
+
+                <span className='ml-2'>
+                  <strong> Standardization:</strong> Rules help standardize
+                  trading procedures and ensure that everyone follows the same
+                  set of guidelines, which simplifies trading and reduces the
+                  potential for disputes.
+                </span>
+              </p>
+              <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
+                <span>○ </span>
+
+                <span className='ml-2 mb-2'>
+                  <strong>Dispute Resolution: </strong>ESX rules provide a
+                  framework for resolving disputes between market participants.
                 </span>
               </p>
             </main>
           </Card>
-          <h1 className='text-black text-[24px] md:text-header mt-[10px] lg:mt-[40px] ml-[19px] font-normal   '>
+          {/* <h1 className='text-black text-[24px] md:text-header mt-[10px] lg:mt-[40px] ml-[19px] font-normal   '>
             Trading Fees
           </h1>
           <Card width='w-[100%] flex gap-3 mt-[10px] flex-col bg-white/0 '>
@@ -157,7 +232,7 @@ const TradingRules: React.FC<TradingRulesProps> = ({ setStep, step }) => {
                 </Link>
               </main>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className='bg-white py-[20px] px-[20px] lg:py-[68px] '>

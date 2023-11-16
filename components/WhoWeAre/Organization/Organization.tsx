@@ -19,7 +19,7 @@ const Organization: React.FC<OrganizationProps> = ({ setStep, step }) => {
     "Board of Directors",
     "Management",
     // "ESX Reports",
-    // "Careers",
+    "Careers",
     // "Tender",
   ];
 

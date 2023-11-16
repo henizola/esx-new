@@ -15,7 +15,7 @@ const TradingFaqs: React.FC<TradingFaqsProps> = ({ setStep, step }) => {
     "Trading Market Structure",
     "Trading Rules",
     // "Procedures & Manuals",
-    "Trading FAQ",
+    // "Trading FAQ",
     // "Trading Platform",
   ];
 

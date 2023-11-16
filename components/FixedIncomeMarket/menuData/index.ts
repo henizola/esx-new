@@ -35,18 +35,18 @@ export const menus: Menu[] = [
     name: "Trading",
     href: "/fixed-income-market/trading",
   },
+  // {
+  //   index: 4,
+  //   name: "Members",
+  //   href: "/fixed-income-market/members",
+  // },
   {
     index: 4,
-    name: "Members",
-    href: "/fixed-income-market/members",
-  },
-  {
-    index: 5,
     name: "Trading and Operations",
     href: "/fixed-income-market/trading-and-operations",
   },
   {
-    index: 6,
+    index: 5,
     name: "Regulatory Framework",
     href: "/fixed-income-market/regulatory-framework",
     menu: [],

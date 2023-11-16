@@ -24,7 +24,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ setStep, step }) => {
     "Board of Directors",
     "Management",
     // "ESX Reports",
-    // "Careers",
+    "Careers",
     // "Tender",
   ];
 

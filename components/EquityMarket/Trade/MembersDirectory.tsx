@@ -45,7 +45,7 @@ const MembersDirectory: React.FC<MembersDirectoryProps> = ({
             <BackButton setStep={setStep} link='/equity-market'>
               Equity Market
             </BackButton>{" "}
-            {"> Trade"}
+            {"> Invest"}
           </h6>{" "}
           {items.map((item, index) => (
             <button

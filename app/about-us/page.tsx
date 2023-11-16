@@ -41,6 +41,8 @@ export default function Page() {
             step={currentPage}
             key={currentPage}
           />,
+          <Careers setStep={setNumber} step={currentPage} key={currentPage} />,
+
           <Reports setStep={setNumber} step={currentPage} key={currentPage} />,
           <Careers setStep={setNumber} step={currentPage} key={currentPage} />,
           <Tenders setStep={setNumber} step={currentPage} key={currentPage} />,

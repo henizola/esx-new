@@ -18,7 +18,7 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
     "Board of Directors",
     "Management",
     // "ESX Reports",
-    // "Careers",
+    "Careers",
     // "Tender",
   ];
 

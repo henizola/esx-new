@@ -1,6 +1,7 @@
 "use client";
 
 import ListingFaqs from "@/components/EquityMarket/ListingFaqs/ListingFaqs";
+import ListingForms from "@/components/EquityMarket/ListingForms/ListingForms";
 import ListingRules from "@/components/EquityMarket/ListingRules/ListingRules";
 import MarketSegment from "@/components/EquityMarket/MarketSegment/MarketSegment";
 import Overview from "@/components/EquityMarket/OverView/Overview";
@@ -24,7 +25,7 @@ export default function Page() {
             step={currentPage}
             key={currentPage}
           />,
-          <ListingFaqs
+          <ListingForms
             setStep={setNumber}
             step={currentPage}
             key={currentPage}

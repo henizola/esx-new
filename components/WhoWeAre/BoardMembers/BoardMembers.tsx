@@ -26,7 +26,7 @@ const BoardMembers: React.FC<BoardMembersProps> = ({ setStep, step }) => {
     "Board of Directors",
     "Management",
     // "ESX Reports",
-    // "Careers",
+    "Careers",
     // "Tender",
   ];
 

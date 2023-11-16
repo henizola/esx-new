@@ -22,7 +22,7 @@ const Management: React.FC<ManagementProps> = ({ setStep, step }) => {
     "Board of Directors",
     "Management",
     // "ESX Reports",
-    // "Careers",
+    "Careers",
     // "Tender",
   ];
 

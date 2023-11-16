@@ -21,7 +21,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
     "Board of Directors",
     "Management",
     // "ESX Reports",
-    // "Careers",
+    "Careers",
     // "Tender",
   ];
 

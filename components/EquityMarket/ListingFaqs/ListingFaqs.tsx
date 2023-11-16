@@ -15,7 +15,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
     "Why List ?",
     "Market Segment",
     "Listing Rules, Requirements, Benefits ",
-    "Listing FAQs",
+    "Listing Forms",
   ];
 
   return (

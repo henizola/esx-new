@@ -179,7 +179,7 @@ const navigation: MenuItem[] = [
         ],
       },
       // { name: "ESX Reports", href: "/about-us", current: false, value: 6 },
-      { name: "Careers", href: "/about-us", current: false, value: 7 },
+      { name: "Careers", href: "/about-us", current: false, value: 6 },
       // { name: "Tenders", href: "/about-us", current: false, value: 8 },
     ],
   },

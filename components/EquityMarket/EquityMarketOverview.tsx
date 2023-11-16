@@ -59,9 +59,9 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             }}
             // onClick={() => setStep(2)}
           >
-            Trade
+            Invest
           </Link>
-          <Link
+          {/* <Link
             href={"/equity-market/members"}
             className={`  text-left  ml-5 
  my-2 font-light border-b border-black `}
@@ -73,7 +73,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
             // onClick={() => setStep(2)}
           >
             Members
-          </Link>
+          </Link> */}
           <Link
             href={"/equity-market/trading-operations"}
             className={`  text-left  ml-5 
@@ -111,19 +111,56 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                 alt=''
                 className='w-[100%] lg:w-[40%] h-[30vh] lg:h-auto  aspect-square object-cover'
               /> */}
-              <div className='pt-[30px] pb-[20px]  px-[20px]   '>
-                {/* <h1 className='text-primary-blue text-[12px] mb-[14px] '>
+              <div className='pt-[30px] pb-[20px]  px-[20px]  '>
+                <h1 className='text-header w-fit border-primary-golden border-b-[3px] mb-5'>
                   Overview
-                </h1> */}
-                <p className=' text-base my-[10px]   font-light    leading-tight'>
-                  ESX Equities Market is the division of ESX that allows issuers
-                  of equity securities to raise long-term capital.
-                </p>
-                <h1 className='text-black  text-[20px] lg:text-paragraphSMmall font-light  mb-[20px]'>
-                  ESX’s Equity Market Provides:
                 </h1>
+                <p className=' text-base my-[15px]   font-light text-justify'>
+                  ESX Equities Market is the division of ESX that allows issuers
+                  of equity securities to raise long-term, patient, capital
+                  through the issuance of equity securities, i.e., most known
+                  form being shares. ESX provides the link between companies in
+                  need of finance and investors seeking profitable investment
+                  opportunities. This process involves the issuing, listing, and
+                  trading of securities. Companies in need of capital to start,
+                  grow and expand their business would issue their securities on
+                  the exchange, while investors would buy them as investment.
+                </p>
+                <p className=' text-base my-[15px]   font-light text-justify'>
+                  ESX’s Equity Market Provides a regulated listing and trading
+                  venue for issuance and trading of various equity instruments
+                  that are approved and registered by the Ethiopian Capital
+                  Market Authority (ECMA). These include shares and other forms
+                  of equity instruments, real Estate Investment Funds (REIFs) /
+                  ‘REITS’, exchange traded funds (ETFs).
+                </p>
 
-                <div className='flex relative pl-7 gap-[10px] mb-[20px]'>
+                <p className=' text-base my-[15px]   font-light text-justify'>
+                  ESX Equity Market offers issuers and investors an organized
+                  and supervised marketplace where trades are made based on an
+                  approved set of rules and regulations. This ensures the
+                  transparency, integrity, efficiency, and reliability of the
+                  market with the aim to protect and enhance confidence by local
+                  and international investors on the Ethiopian capital markets.
+                </p>
+
+                <p className=' text-base my-[15px]   font-light text-justify'>
+                  ESX enhances the overall liquidity of the equities market by
+                  ensuring investor risks are managed through strict listing and
+                  trading rules and procedures, and adopting state of the art
+                  trading, clearing and settlement technologies.
+                </p>
+
+                <p className=' text-base my-[15px]   font-light text-justify'>
+                  As an intermediated market, whereby broker-dealers play a key
+                  role in facilitating access to the market, ESX also regulates
+                  and enforces actions on trading members.
+                </p>
+                {/* <h1 className='text-black  text-[20px] lg:text-paragraphSMmall font-light  mb-[20px]'>
+                  ESX’s Equity Market Provides:
+                </h1> */}
+
+                {/* <div className='flex relative pl-7 gap-[10px] mb-[20px]'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -149,9 +186,9 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                       </p>
                     </div>
                   </p>
-                </div>
+                </div> */}
 
-                <div className='flex relative pl-7 gap-[10px] mb-[20px]'>
+                {/* <div className='flex relative pl-7 gap-[10px] mb-[20px]'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -167,8 +204,8 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                     enhance confidence by local and international investors on
                     the Ethiopian capital markets.
                   </p>
-                </div>
-                <div className='flex relative  pl-7 gap-[10px] mb-[20px]'>
+                </div> */}
+                {/* <div className='flex relative  pl-7 gap-[10px] mb-[20px]'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -180,8 +217,8 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   <p className='text-black font-light text-base flex-1 '>
                     Enhances the overall liquidity of the equities market.
                   </p>
-                </div>
-                <div className='flex relative  pl-7 gap-[10px] mb-[20px]'>
+                </div> */}
+                {/* <div className='flex relative  pl-7 gap-[10px] mb-[20px]'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -194,7 +231,7 @@ const EquityMarketOverview: React.FC<WhoWeAreProps> = ({ setStep, step }) => {
                   <p className='text-black font-light text-base flex-1 '>
                     Regulates and enforces actions on trading members.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </Card>

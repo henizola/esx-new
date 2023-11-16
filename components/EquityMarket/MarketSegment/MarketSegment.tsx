@@ -20,7 +20,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
     "Why List ?",
     "Market Segment",
     "Listing Rules, Requirements, Benefits ",
-    "Listing FAQs",
+    "Listing Forms",
   ];
   return (
     <div className='flex flex-col w-full p-0 m-0'>
@@ -92,7 +92,12 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
               <h1 className='text-header w-fit  font-[400] pt-0 mt-5 mx-10 mb-0 border-b-[3px] border-light-golden'>
                 Market Segments
               </h1>
-
+              <p className='text-black mt-[13px] text-paragraphSmall font-light  pt-0  mx-10 mb-0   '>
+                ESX Equities Market has two distinct market segments: 1. Main
+                Market and 2. SME/Growth Market. Both markets provide businesses
+                the platform to list and trade securities in an efficient and
+                reliable manner.
+              </p>
               {/* <Image
                 src={"/images/behnam.png"}
                 height={500}
@@ -100,7 +105,7 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 alt=''
                 className='col-span-1 lg:hidden block w-[100%] h-[200px] object-cover'
               /> */}
-              <div className='flex w-full'>
+              <div className='flex w-full pb-7'>
                 <div className='pt-[20px] px-[20px] w-[100%] space-y-[30px]'>
                   <main className=' px-5 pt-0'>
                     <h1 className='text-black text-[20px] lg:text-subHeader font-normal    flex items-center gap-5 '>
@@ -108,35 +113,60 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                       {/* <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' /> */}
                     </h1>
                     <p className='text-black mt-[13px] text-paragraphSmall font-light   '>
-                      Serves as a platform for large and mature issuers that are
-                      capable of meeting ESX’s listing requirements
+                      ESX’s Main market serves as a platform for large and
+                      mature issuers that are capable of meeting ESX’s listing
+                      requirements. The market is reserved for outstanding
+                      companies with a high level of assurance in liquidity,
+                      size, and transparency. The main market is designed as a
+                      platform to showcase the investment quality to investors
+                      and place the issuer among the best companies in its
+                      industry.
                     </p>
                     <p className='text-black mt-[15px] text-paragraphSmall font-light   '>
-                      Listing on ESX is a testament of commitment by companies
-                      to transparency and integrity
+                      The primary candidates for the main market include large
+                      financial institutions such as banks, insurance and
+                      microfinance companies, other large private companies that
+                      may be established as family owned PLCs or share companies
+                      that would like to grow their business. The main market is
+                      also a platform for listing of some of the largest
+                      state-owned enterprises, which in line with the Government
+                      of Ethiopia’s strategic direction, will be listed on ESX.
                     </p>
-                    <p className='text-black mt-[15px] text-paragraphSmall font-light  '>
+                    {/* <p className='text-black mt-[15px] text-paragraphSmall font-light  '>
                       ESX’s full fledged market infrastructure provides the
                       professional guidance, innovation and reliability, and
                       opportunity companies need to create wealth, growth and
                       prosperity
-                    </p>
+                    </p> */}
                     <hr className=' mt-[25px] border border-gray/30 ' />
                   </main>
                   <main className='px-5 pt-0'>
                     <h1 className='text-black text-[20px] lg:text-subHeader font-normal    flex items-center gap-5 '>
-                      <span>Enterprise Growth Market</span>{" "}
+                      <span> Growth Market</span>{" "}
                       {/* <ChevronRightIcon className='w-8 h-8 mt-1 text-primary-golden' /> */}
                     </h1>
                     <p className='text-black mt-[15px] text-paragraphSmall font-light  '>
-                      Market for small and medium sized companies with lighter
-                      listing requirements adopted to SMEs and high growth, high
-                      potential equity issuers
+                      ESX Growth market is a regulated segment for small and
+                      medium sized companies SMEs) with high levels of growth
+                      and appetite to raise substantial capital. Listing on ESX
+                      Growth Market provides issuers with access to a wide range
+                      of capital to accelerate their growth and development to
+                      serve as a springboard into ESX’s Main Market.
                     </p>
                     <p className='text-black mt-[15px] text-paragraphSmall font-light   '>
-                      Provides issuers access with a wide range of capital to
-                      accelerate their growth and development and serve as a
-                      springboard into ESX’s Main Market
+                      ESX growth market offers companies a regulatory
+                      environment designed specifically to meet the needs of
+                      Ethiopian SMEs. The segment offers lighter listing
+                      requirements (in particular, total capitalization, free
+                      float and reporting obligations) that’s adapted to high
+                      growth, high potential equity issuers.
+                    </p>
+                    <p className='text-black mt-[15px] text-paragraphSmall font-light   '>
+                      Growth companies will also enjoy the full complement of
+                      support provided by ESX and designated advisors, reduced
+                      fee structure, relaxed entry criteria, reduced
+                      post-listing obligations and increased turnaround time for
+                      approvals and time to market.
                     </p>
                   </main>
                 </div>
@@ -148,13 +178,9 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   className='col-span-1 hidden lg:block h-full w-[45%] object-cover'
                 /> */}
               </div>
-              <h1 className='col-span-5 pb-[20px]  lg:py-[30px] px-[40px] text-black  text-paragraphSmall font-light    '>
-                Both markets provide businesses the platform to list and trade
-                securities in an efficient and reliable manner.
-              </h1>
             </Card>
-            <div className='col-span-5 grid sm:grid-cols-2 gap-5'>
-              <Card width='py-[23px] px-[20px] '>
+            {/* <div className='col-span-5 grid sm:grid-cols-2 gap-5'> */}
+            {/* <Card width='py-[23px] px-[20px] '>
                 <h1 className='text-black text-[20px] lg:text-subHeader font-normal    flex items-center gap-5 '>
                   Listing on ESX
                 </h1>
@@ -162,16 +188,16 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
                 </p>
-              </Card>
-              <Card width='py-[23px] px-[20px] '>
+              </Card> */}
+            {/* <Card width='py-[23px] px-[20px] '>
                 <h1 className='text-black text-[20px] lg:text-subHeader font-normal    flex items-center gap-5 '>
                   Trading and operations on ESX
                 </h1>
                 <p className='text-justify mt-[8px]   text-paragraphSmall font-light    leading-snug'>
                   Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy
-                </p>
-                {/* <Link href='#' className='flex text-[16px] mt-[15px]'>
+                </p> */}
+            {/* <Link href='#' className='flex text-[16px] mt-[15px]'>
                   View more
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -188,8 +214,8 @@ const MarketSegment: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                     />
                   </svg>
                 </Link> */}
-              </Card>
-            </div>
+            {/* </Card> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
     "Why List ?",
     "Market Segment",
     "Listing Rules, Requirements, Benefits ",
-    "Listing FAQs",
+    "Listing Forms",
   ];
   return (
     <div className='flex flex-col w-full p-0 m-0'>
@@ -110,31 +110,35 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
 
             <div className='pl-5'>
               <p className='text-black text-paragraphSmall font-light   '>
-                ○ Be a share company with securities registered by the ECMA
+                ○ Be a share company with securities registered by the ECMA.
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
-                ○ The issuer&apos;s minimum capital;{" "}
+                ○ The issuer&apos;s minimum capital.
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
-                ○ Minimum number of years in operation;
+                ○ Minimum number of years in operation.
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
                 ○ Proven profitability over identified number of years of
-                operation;
+                operation
               </p>
 
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
                 ○ The minimum size of capital the issuer must issue/float to the
-                public on the first day of listing;{" "}
+                public on the first day of listing.
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 '>
-                ○ The minimum number of shareholders.{" "}
+                ○ The minimum number of shareholders
+              </p>
+              <p className='text-black text-paragraphSmall font-light  mt-4 '>
+                ○ Shares must be fully paid and free from any liens or
+                restrictions on transfer.
               </p>
             </div>
 
             <p className=' text-black text-paragraphSmall font-normal       my-[15px]'>
-              An Issuer seeking to list its equity shares on the{" "}
-              <strong>ESX Main Market Segment</strong> shall have;
+              An Issuer seeking to list its equity shares on the
+              <strong> ESX Main Market Segment</strong> shall have:
             </p>
 
             <div className='pl-5'>
@@ -173,7 +177,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   The financial statements shall be prepared in accordance with
                   International Financial Reporting Standards (IFRS) or
                   applicable accounting standards in Ethiopia and shall be
-                  compliant with the applicable Directives of the ECMA.
+                  compliant with other applicable Directives issued by ECMA.
                 </span>
               </p>
 
@@ -181,9 +185,9 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 <span>5.</span>
 
                 <span className='ml-2'>
-                  An Issuer shall have a minimum of fifteen percent (15%) of the
-                  total number of shares for which listing is sought in the
-                  hands of a minimum number of three hundred (300) public
+                  An Issuer shall have a minimum free float of fifteen percent
+                  (15%) of the total number of shares for which listing is
+                  sought in the hands of at least three hundred (300) public
                   security holders.
                 </span>
               </p>
@@ -191,15 +195,15 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 <span>6.</span>
 
                 <span className='ml-2'>
-                  An Issuer shall submit all the applicable documents as
-                  prescribed by The Exchange from time to time.
+                  An issuer shall submit all the applicable documents as
+                  prescribed by the Exchange from time to time.
                 </span>
               </p>
             </div>
 
             <p className=' text-black text-paragraphSmall font-normal       my-[15px]'>
-              An Issuer seeking to list its equity shares on{" "}
-              <strong>ESX Growth Market </strong>
+              An Issuer seeking to list its equity shares on
+              <strong> ESX Growth Market </strong>
               Segment shall have;
             </p>
 
@@ -208,19 +212,19 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                 <span>1.</span>
                 <span className='ml-2'>
                   An operating track record of at least two (2) years. Where the
-                  Issuer does not have three (2) years’ operating track record
-                  the Issuer shall provide evidence of a core investor/technical
-                  partner who has at least three (2) years’ operating track
-                  record with substantial equity and involvement in management
-                  of the Issuer.
+                  Issuer does not have two (2) years’ operating track record, it
+                  shall provide evidence of a core investor/technical partner
+                  who has at least two (2) years’ operating track record with
+                  substantial equity and involvement in management of the
+                  Issuer.
                 </span>
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>2.</span>
 
                 <span className='ml-2'>
-                  Total market capitalization of at least ETB 100,000,000
-                  million (one hundred million) Birr upon listing.
+                  Total market capitalization of at least ETB 50,000,000 million
+                  (fifty million) post listing.
                 </span>
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
@@ -230,7 +234,7 @@ const ListingRules: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                   The financial statements shall be prepared in accordance with
                   International Financial Reporting Standards (IFRS) or
                   applicable accounting standards in Ethiopia and shall be
-                  compliant with the applicable Directives of the ECMA.
+                  compliant with other applicable Directives of the ECMA.
                 </span>
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>

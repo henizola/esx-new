@@ -47,34 +47,23 @@ const CapitalMarket: React.FC<CapitalMarketProps> = ({ setStep, step }) => {
           ))}
         </Card>
         <div className='col-span-7 space-y-5 w-[100vw] lg:w-[auto] h-[auto]'>
-          <Card width='col-span-5 flex flex-col '>
-            <h1 className='py-[18px] px-[19px]  bg-primary-blue text-white text-[20px] md:text-subHeader font-normal   '>
+          <Card width='col-span-5 flex flex-col  px-10 pt-7'>
+            <h1 className='text-header w-fit border-primary-golden border-b-[3px] mb-5'>
               Capital market regulatory environment
             </h1>
-            <Image
-              src={"/images/austin-distel-EMPZ7yRZoGw-unsplash 1.png"}
-              height={500}
-              width={400}
-              alt=''
-              className='aspect-square md:hidden  w-[100%] h-[200px] object-cover'
-            />
+
             <div className='flex flex-col md:flex-row pb-10 md:pb-0  '>
-              <div className='md:py-[10] px-[25px]  space-y-4 pb-10'>
-                <main className='flex flex-col pt-[39px] gap-5 h-full '>
+              <div className='  space-y-4 pb-10'>
+                <main className='flex flex-col pt-2 gap-5 h-full '>
                   <p className='text-black text-paragraphSmall font-light   '>
-                    ESX is licensed by the ECMA as a securities exchange in line
-                    with Article 30 and 31 of the Capital Market Proclamation
-                    No.1248/2021
+                    ESX will serve as a licensed securities exchange platform by
+                    the ECMA in line with Article 30 and 31 of the Capital
+                    Market Proclamation No.1248/2021. ECMA is the apex regulator
+                    of the capital markets in Ethiopia and is responsible for
+                    setting the legal framework and regulating entities
+                    interested in participating ESX
                   </p>
-                  <p className='text-black text-paragraphSmall font-light   '>
-                    ECMA is the apex regulator of the capital markets in
-                    Ethiopia and is responsible for setting the legal framework
-                    and regulating entities interested in participating ESX
-                  </p>
-                  <p className='text-black text-paragraphSmall font-light   '>
-                    ECMA is responsible for setting the legal framework and
-                    regulating entities interested in participating ESX
-                  </p>
+
                   <LinkButton
                     className='text-black mt-[18px] text-base font-semibold   '
                     href='https://ecma.gov.et/'
