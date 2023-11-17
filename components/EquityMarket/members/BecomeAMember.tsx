@@ -19,24 +19,20 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
   ];
   const evidence = [
     "Proof of payment of the applicable fees prescribed by ESX",
-    "	A copy of the certificate of commercial registration and/or investment permit issued by the relevant government body",
-    " 	Applicable incorporation documents",
-    "	List of individuals and entities with significant influence in the applicant business organization;",
+    "A copy of the certificate of commercial registration and/or investment permit issued by the relevant government body",
+    "Applicable incorporation documents",
+    "List of individuals and entities with significant influence in the applicant business organization;",
     "Board resolution approving the decision to obtain a Trading License",
-    " 	Corporate profile of the applicant, including the composition of its Board of Directors and other proposed Registered Individuals",
+    "Corporate profile of the applicant, including the composition of its Board of Directors and other proposed Registered Individuals",
     "A Business Plan which shall contain amongst others, the Business Strategy and Objectives of the applicant stating the long term objectives of the business organization and services to be rendered",
-    " Organogram of the applicant clearly delineating the reporting lines",
-    `	Confirmation that Senior Executive Officers have the requisite qualifications and details of the proposed Registered Individuals who meet the fit and proper criteria for their role or function as specified by the ESX as may be in effect at the time of filing the application; 
-    `,
-    `Attestation on the ethics and conduct of the applicant or its investors, Directors or Officers:
-    `,
+    "Organogram of the applicant clearly delineating the reporting lines",
+    "Confirmation that Senior Executive Officers have the requisite qualifications and details of the proposed Registered Individuals who meet the fit and proper criteria for their role or function as specified by the ESX as may be in effect at the time of filing the application;",
+    "Attestation on the ethics and conduct of the applicant or its investors, Directors or Officers:",
     "Audited Financial Statements  as applicable",
-    `
-    	Address of the applicant’s registered office and proposed Head Office (if different from its registered office) and any other office the applicant intends to operate from
-    `,
-    `	Attestation of willingness and capacity on the part of the Trading Member to comply with the provisions of the Proclamation, ECMA’s Directives, ESX’s Rules and Regulations, and other applicable regulations.
-    `,
+    "Address of the applicant’s registered office and proposed Head Office (if different from its registered office) and any other office the applicant intends to operate from",
+    "Attestation of willingness and capacity on the part of the Trading Member to comply with the provisions of the Proclamation, ECMA’s Directives, ESX’s Rules and Regulations, and other applicable regulations.",
   ];
+
   const [selectedIndex, setStelectedIndex] = useState(0);
   return (
     <div className='flex flex-col w-full p-0 m-0'>
@@ -122,7 +118,7 @@ const BecomeAMember: React.FC<ListingRulesProps> = ({ setStep, step }) => {
                       <p className='text-black text-base font-light  lg:hidden    flex-1 '>
                         Where an applicant has met the requirements for the
                         grant of a Trading License, ESX will grant an
-                        Approval-In-Principle (AIP) to the applicant
+                        Approval-In-Principle (AIP) to the applicant .
                       </p>
                     )}
                   </div>

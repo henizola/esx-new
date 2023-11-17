@@ -27,9 +27,13 @@ const Overview = () => {
                 The ESX Fixed Income Market is a market where participants buy
                 and sell debt securities, either directly from the issuer
                 through the primary market, or afterwards through the secondary
-                market following the initial debt security issuance. Investors
-                who purchase fixed income securities receive a return in the
-                form of fixed periodic payments and the return of principal at
+                market following the initial debt security issuance. Fixed
+                income securities represent a form of borrowing, with the issuer
+                (which can be a government, corporation, or other entity)
+                raising funds by selling securities such as bonds to investors.
+                In return for purchasing these securities, investors receive
+                periodic interest payments (often referred to as coupons) and
+                the return of the instruments face value (principal) at
                 maturity.
               </p>
 
@@ -106,7 +110,7 @@ const Overview = () => {
                   <span className='ml-2'>
                     Improves the availability of long-term capital and provides
                     a substitute for bank loans for companies, possibly helping
-                    lower their cost of capital.{" "}
+                    lower their cost of capital.
                   </span>
                 </p>
                 <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
@@ -116,16 +120,16 @@ const Overview = () => {
                     A way for companies to access short-term finance to fund
                     working capital needs through money market commercial paper
                     instruments that can be quoted and traded on the secondary
-                    market in a relatively short period of time.{" "}
+                    market in a relatively short period of time.
                   </span>
                 </p>
                 <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                   <span>○ </span>
 
                   <span className='ml-2'>
-                    Provides a well tested avenue for the public sector to
+                    Provides a well-tested avenue for the public sector to
                     finance long-term infrastructure investments using local
-                    currency debt financing.{" "}
+                    currency debt financing.
                   </span>
                 </p>
               </div>

@@ -13,14 +13,28 @@ function OverView() {
           <div className='min-h-full bg-white pt-0 px-10 flex flex-col justify-between  '>
             <div>
               <p className={` py-5 text-paragraphSmall   font-light `}>
-                Fixed income instruments such as government and corporate bonds
-                are assets that can be traded by investors on the secondary
-                market at the ESX. There are a diverse set of financial market
-                instruments that fall within the fixed income space that cater
-                to the unique risk preferences and time horizons of different
-                investors. Short-term debt securities such as federal government
-                Treasury Bills are considered to be very safe low-risk
-                investments
+                Raising debt capital on ESX allows both the public sector and
+                corporations access to a wider pool of investors to raise
+                capital efficiently in a regulated market. Debt capital markets
+                provide governments with a sustainable means to finance
+                budgetary needs as well as invest in productivity boosting long
+                term infrastructure projects that tend to benefit the general
+                population in the long run through the issuance of government
+                bonds.
+              </p>
+              <p className={` py-5 text-paragraphSmall   font-light pt-0`}>
+                Corporations issue bonds to the public in the fixed income
+                market to raise capital for their operations and long-term
+                capital expenditures as an alternative to issuing equity and
+                without having to pledge collateral. Effective debt markets are
+                especially useful for companies when high-cost, large-scale
+                projects that are traditionally long term - and usually out of
+                scope for bank loans - need financing. Additionally, the
+                presence of an organized fixed income market adds another
+                funding option for firms in addition to listing equity shares
+                and can help improve their capital structure through an optimal
+                mix of debt and equity to minimize the cost of capital while
+                enhancing shareholder value.
               </p>
             </div>
           </div>

@@ -304,7 +304,7 @@ const MobileNav: React.FC = () => {
           ],
         },
         {
-          name: "Listing and Admission to Trading",
+          name: "Raise Capital",
           href: "/fixed-income-market",
           current: false,
           value: 2,
@@ -342,10 +342,17 @@ const MobileNav: React.FC = () => {
               value: 0,
             },
             {
-              name: "Find a Broker",
+              name: "   Trading Mechanism",
               href: "/fixed-income-market",
               current: false,
               value: 1,
+            },
+
+            {
+              name: "Trading Rules",
+              href: "/fixed-income-market",
+              current: false,
+              value: 2,
             },
             // {
             //   name: "Listed Securities",

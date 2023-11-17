@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
-import BondIpo from "./BondIpo";
+import BondIpo from "./Overview";
 import ListingRules from "./ListingRules";
 import ListingFAQs from "./ListingFAQs";
+import Overview from "./Overview";
 
 const SelectedPage = ({ index }: { index: number }) => {
   switch (index) {
     case 0:
-      return <BondIpo />;
+      return <Overview />;
     case 1:
       return <ListingRules />;
     case 2:
@@ -17,7 +18,7 @@ const SelectedPage = ({ index }: { index: number }) => {
   }
 };
 
-function ListingAndAdmission({ index }: { index: number }) {
+function RaiseCapital({ index }: { index: number }) {
   return (
     <div className='h-full w-full'>
       <SelectedPage index={index} />
@@ -25,4 +26,4 @@ function ListingAndAdmission({ index }: { index: number }) {
   );
 }
 
-export default ListingAndAdmission;
+export default RaiseCapital;

@@ -27,8 +27,8 @@ export const menus: Menu[] = [
   },
   {
     index: 2,
-    name: "Listing and Admission to Trading",
-    href: "/fixed-income-market/listing-and-admission-to-trading",
+    name: "Raise Capital",
+    href: "/fixed-income-market/raise-capital",
   },
   {
     index: 3,

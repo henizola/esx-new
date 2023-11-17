@@ -3,17 +3,11 @@ import Card from "../../Card/Card";
 
 const CommercialPapers = () => {
   const papers = [
-    `  Commercial papers (CPs) are short-term debt obligations issued
-    by large corporations with a maturity period of less than 270
-    days.`,
-    `CPs are usually sold to investors at a discount to face value
-and primarily issued by corporates to fund working capital or
-finance short term assets. Investors receive the face value of
-the CP instrument at maturity.`,
-    ` Corporates can efficiently issue which can then be quoted and
-    traded on the secondary market by market participants on the
-    ESX platform.`,
+    "Commercial papers (CPs) are short-term debt obligations issued by large corporations with a maturity period of less than 270 days.",
+    "CPs are usually sold to investors at a discount to face value and primarily issued by corporates to fund working capital or finance short term assets. Investors receive the face value of the CP instrument at maturity.",
+    "Corporates can efficiently issue which can then be quoted and traded on the secondary market by market participants on the ESX platform.",
   ];
+
   return (
     <div className='flex flex-col w-full p-0 m-0'>
       <div className='flex w-full '>

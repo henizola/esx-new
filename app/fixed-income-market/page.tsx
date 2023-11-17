@@ -1,12 +1,7 @@
 "use client";
 import Banner from "@/components/Banner/banner";
-import Instruments from "@/components/FixedIncomeMarket/Instruments";
-import ListingAndAdmission from "@/components/FixedIncomeMarket/ListingAndAdmission";
-import Members from "@/components/FixedIncomeMarket/Members";
 import Menu from "@/components/FixedIncomeMarket/Menu";
 import Overview from "@/components/FixedIncomeMarket/Overview/Overview";
-import Trading from "@/components/FixedIncomeMarket/Trading";
-import TradingAndOperations from "@/components/FixedIncomeMarket/TradingAndOperations";
 import { menus } from "@/components/FixedIncomeMarket/menuData";
 import { useNumber } from "@/context/nav.context";
 import { useState } from "react";

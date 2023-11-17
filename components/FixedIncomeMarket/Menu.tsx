@@ -36,7 +36,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
                 Fixed income market{" "}
               </span>
               {(title === "Instruments" ||
-                title === "Listing and Admission to Trading" ||
+                title === "Raise Capital" ||
                 title === "Listing" ||
                 title === "Members" ||
                 title === "Trading and Operations" ||
@@ -73,7 +73,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
           </div>
         </div>
       </div>
-      {title === "Trading" && step === 0 && (
+      {/* {title === "Trading" && step === 0 && (
         <div className='w-full flex items-center'>
           <Banner
             backgroundImage={sliderbannerImage}
@@ -83,14 +83,18 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
         </div>
       )}
       {title === "Overview" && (
-        <div className=' relative w-full mt:10 h-auto  '>
-          <div className='absolute w-full h-full  inset-0 pt-10 bg-[#A8965BD9] opacity-80 flex  items-center justify-center'>
-            <div className=' flex flex-col lg:flex-row justify-between  '>
-              <h1 className='bg-transparent font-normal text-[12px] lg:text-[30px] text-white ml-10 lg:w-[60%]'>
-                Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
-                consectetuer{" "}
+        <div className=' relative w-full mt:0 h-auto  '>
+          <div className='absolute w-full h-full  inset-0 pt-0 bg-[#a8965ba3] flex  items-center justify-center'>
+            <div className=' flex flex-col lg:flex-row justify-between px-20 '>
+              <h1 className='bg-transparent font-normal text-[12px] lg:text-paragraphSmall text-white ml-10 lg:w-[60%]'>
+                The fixed income market is essential for the government and
+                companies to raise capital, and it provides investors with
+                opportunities to generate income and manage risk within their
+                investment portfolios. It plays a crucial role in the broader
+                financial system and is closely interconnected with other
+                financial markets.
               </h1>
-              <button className='bg-white text-[20px] mt-5 lg:mt-0 py-3 px-6 font-medium  leading-6 rounded-[42px] w-[250px] ml-12 lg:h-min text-[#A8965B]'>
+              <button className='bg-white text-[20px] mt-5 lg:mt-3 py-3 px-6 font-medium  leading-6 rounded-[42px] w-[250px] ml-12 lg:h-min text-[#A8965B]'>
                 Learn More
               </button>
             </div>
@@ -103,7 +107,7 @@ const Menu = ({ items, step, setStep, title, returnHome, children }: Props) => {
             className='border h-[200px] object-cover'
           />
         </div>
-      )}
+      )} */}
     </>
   );
 };

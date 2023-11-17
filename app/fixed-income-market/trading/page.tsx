@@ -1,13 +1,11 @@
 "use client";
 import Banner from "@/components/Banner/banner";
-import BondIpo from "@/components/FixedIncomeMarket/ListingAndAdmission/BondIpo";
-import ListingFAQs from "@/components/FixedIncomeMarket/ListingAndAdmission/ListingFAQs";
-import ListingRules from "@/components/FixedIncomeMarket/ListingAndAdmission/ListingRules";
 import Menu from "@/components/FixedIncomeMarket/Menu";
+import TradingMechanism from "@/components/FixedIncomeMarket/Trading/TradingMechanism";
+import TradingOverview from "@/components/FixedIncomeMarket/Trading/TradingOverview";
+import TradingRules from "@/components/FixedIncomeMarket/Trading/TradingRules";
 import { useNumber } from "@/context/nav.context";
 import bannerImage from "../../../public/images/about-banner.png";
-import TradingOverview from "@/components/FixedIncomeMarket/Trading/TradingOverview";
-import FindBroker from "@/components/FixedIncomeMarket/Trading/FindBroker";
 
 export default function Home() {
   const { currentPage, setNumber } = useNumber();
@@ -17,9 +15,9 @@ export default function Home() {
       case 0:
         return <TradingOverview />;
       case 1:
-        return <FindBroker />;
-      // case 2:
-      //   return <ListingFAQs />;
+        return <TradingMechanism />;
+      case 2:
+        return <TradingRules />;
       default:
         return <TradingOverview />;
     }
@@ -35,7 +33,9 @@ export default function Home() {
       {
         name: "Overview",
       },
-      { name: "Find a Broker" },
+      { name: "Trading Mechanism" },
+
+      { name: "Trading Rules" },
       // { name: "Listed securities", disabled: true },
       // { name: " Market Data", disabled: true },
       // { name: "Indices", disabled: true },
@@ -45,16 +45,10 @@ export default function Home() {
   };
 
   const menuItems = currentMenu.menu;
-  const bannerTitle = currentMenu?.menu
-    ? currentMenu.menu[currentPage]?.name
-    : "";
 
   return (
     <div>
-      <Banner
-        backgroundImage={bannerImage}
-        title={bannerTitle || "Fixed income market"}
-      />
+      <Banner backgroundImage={bannerImage} title={"Trading "} />
       <Menu
         items={menuItems}
         step={currentPage}

@@ -20,10 +20,10 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
   const evidence = [
     "Rules of membership and conditions for approval and admission of members",
     "The rights and liability of its members, investors, and users of their services",
-    "	Standards of behavior of members",
-    "	Disciplinary actions against members ",
-    "	Rules for settlement of disputes",
-    "	Payment of fees and commissions",
+    "Standards of behavior of members",
+    "Disciplinary actions against members ",
+    "Rules for settlement of disputes",
+    "Payment of fees and commissions",
   ];
 
   return (
@@ -64,12 +64,19 @@ const MembershipRules: React.FC<MembershipRulesProps> = ({ setStep, step }) => {
                 Membership Rules
               </h1>
 
-              <main className='pt-[20px] pb-[30px] px-0 space-y-4'>
+              <main className='pt-[20px] pb-[0px] px-0 space-y-4'>
                 <h1 className='text-black text-[16px] lg:text-paragraphBig font-normal   px-10'>
                   ESX licensed members shall comply with the provision of the
                   Capital Market Proclamation, relevant directives issued by the
                   ECMA, and other applicable rules and regulations.
                 </h1>
+                <p className=' text-[14px] lg:text-paragraphSmall lg:font-light leading-[normal] py-2 lg:py-0 flex items-center gap-1'>
+                  <span className='pl-10'>
+                    Members shall also comply with ESX’s membership rules that
+                    set out:
+                  </span>
+                </p>
+
                 <div className='flex flex-col divide divide-y divide-gray/40 px-10'>
                   {evidence.map((text) => (
                     <p
