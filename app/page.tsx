@@ -28,7 +28,7 @@ export default function Home() {
         <StockPriceAutoScroller />
       </div>
 
-      <div className='flex w-full relative lg:px-28 py-7'>
+      <div className='flex w-full relative lg:px-28 py-7 bg-[#f0f0f0]'>
         <div
           className='lg:w-[100%]  w-[100vw]'
           style={{ display: "flex", flexDirection: "column" }}
