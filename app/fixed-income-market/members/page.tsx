@@ -1,16 +1,11 @@
 "use client";
 import Banner from "@/components/Banner/banner";
-import BondIpo from "@/components/FixedIncomeMarket/ListingAndAdmission/BondIpo";
-import ListingFAQs from "@/components/FixedIncomeMarket/ListingAndAdmission/ListingFAQs";
-import ListingRules from "@/components/FixedIncomeMarket/ListingAndAdmission/ListingRules";
+import HowToBecomeMember from "@/components/FixedIncomeMarket/Members/HowToBecomeMember";
+import ListOfMembers from "@/components/FixedIncomeMarket/Members/ListOfMembers";
+import MembershipRules from "@/components/FixedIncomeMarket/Members/MembershipRules";
 import Menu from "@/components/FixedIncomeMarket/Menu";
 import { useNumber } from "@/context/nav.context";
 import bannerImage from "../../../public/images/about-banner.png";
-import TradingOverview from "@/components/FixedIncomeMarket/Trading/TradingOverview";
-import FindBroker from "@/components/FixedIncomeMarket/Trading/FindBroker";
-import HowToBecomeMember from "@/components/FixedIncomeMarket/Members/HowToBecomeMember";
-import MembershipRules from "@/components/FixedIncomeMarket/Members/MembershipRules";
-import ListOfMembers from "@/components/FixedIncomeMarket/Members/ListOfMembers";
 
 export default function Home() {
   const { currentPage, setNumber } = useNumber();

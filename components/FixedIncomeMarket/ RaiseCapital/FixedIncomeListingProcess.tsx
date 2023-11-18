@@ -107,7 +107,7 @@ const FixedIncomeListingProcess = () => {
                 <span>6)</span>
                 <span className='ml-2 tex-justify'>
                   {" "}
-                  Due Diligence: ESX conducts due diligence on the issuer's
+                  Due Diligence: ESX conducts due diligence on the issuer&apos;s
                   financial standing, legal structure, and the terms of the bond
                   issuance. This is essential for transparency and investor
                   protection.
@@ -120,7 +120,7 @@ const FixedIncomeListingProcess = () => {
                   Approval: If the review is successful, the application goes
                   before the Fixed Income Market Committee of ESX for approval.
                   The committee assesses whether the issuer and the bond
-                  issuance meet the exchange's listing standards.
+                  issuance meet the exchange&apos;s listing standards.
                 </span>
               </p>
               <p className='mt-5 text-black text-paragraphSmall font-light flex  '>

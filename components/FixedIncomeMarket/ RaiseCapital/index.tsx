@@ -2,7 +2,7 @@
 import React from "react";
 import BondIpo from "./Overview";
 import ListingRules from "./ListingRules";
-import ListingFAQs from "./ListingFAQs";
+// import ListingFAQs from "./ListingFAQs";
 import Overview from "./Overview";
 
 const SelectedPage = ({ index }: { index: number }) => {
@@ -11,8 +11,8 @@ const SelectedPage = ({ index }: { index: number }) => {
       return <Overview />;
     case 1:
       return <ListingRules />;
-    case 2:
-      return <ListingFAQs />;
+    // case 2:
+    // return <ListingFAQs />;
     default:
       return <BondIpo />;
   }
