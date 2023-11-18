@@ -191,27 +191,21 @@ function TheAcademy() {
               </h1>
 
               <p className='w-[100%]  text-paragraphSmall  font-light mt-4 pt-0 leading-6 '>
-                ESX has observed capacity gaps across financial institutions and
-                government agencies on key aspects of capital market products,
-                services, and infrastructures. As ESX will be operating in a
-                market where the development of the Ethiopian Capital Markets
-                ecosystem is just beginning, it is crucial for ESX to play a
-                leading role in investor education, capacity development, and
-                financial literacy and inclusion in Ethiopia.
+                As ESX will be operating in a market where the development of
+                the Ethiopian Capital Markets ecosystem is just beginning, it
+                aims to play a leading role in investor education, capacity
+                development, and financial literacy and inclusion in Ethiopia.
               </p>
               <p className='w-[100%]  text-paragraphSmall  font-light my-4 pt-0 leading-6 '>
                 In addition to various levels of communication and awareness
                 efforts, e.g., consultation workshops, media and public
                 relations activities, ESX aims to set up an academy to provide
                 continuous education and capacity building activities to various
-                stakeholders.
+                stakeholders. The broad level objectives of the ESX Academy are:
               </p>
-              <p className='w-[100%]  text-paragraphBig  font-normal mt-2 pt-0 leading-6 '>
-                The broad level objectives of the ESX Academy are:
-              </p>
+
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>
                   To educate various stakeholders on the role of capital markets
                   in general and the role, functions, and operations of ESX.
@@ -219,18 +213,16 @@ function TheAcademy() {
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>
                   To be a learning center that offers free and paid courses,
                   workshops, and training to equip issuers, investors, capital
                   market service providers, financial market professionals, and
                   the general public, with the knowledge and skills to
-                  participate in the Ethiopian Capital Markets ecosystem.{" "}
+                  participate in the Ethiopian Capital Markets ecosystem.
                 </span>
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>
                   To fill the capacity and knowledge gaps of financial market
                   professionals, investors and the general public.
@@ -238,7 +230,6 @@ function TheAcademy() {
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>
                   To promote financial literacy, financial inclusion, and job
                   creation in Ethiopia.
@@ -248,12 +239,11 @@ function TheAcademy() {
                 <span>○ </span>
                 <span className='ml-2'>
                   To offer customized electronic learning (e-learning) options
-                  via pre-recorded educational content.{" "}
-                </span>{" "}
+                  via pre-recorded educational content.
+                </span>
               </p>
               <p className='text-black text-paragraphSmall font-light  mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>
                   The importance of building a strong and knowledgeable
                   stakeholder base for the long run sustainability of the
@@ -264,52 +254,45 @@ function TheAcademy() {
               <p className='w-[100%]  text-paragraphBig  ml-5 font-normal mt-5 pt-0 leading-6 '>
                 The target audience includes:{" "}
               </p>
-              <p className='text-black text-paragraphSmall  font-light ml-10  mt-4 flex'>
-                <span>○ </span>
 
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
+                <span>○ </span>
                 <span className='ml-2'>
                   Entrepreneurs, business operators, investors
                 </span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
-                <span className='ml-2'>Finance professionals </span>
+                <span className='ml-2'>Finance professionals</span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>
-                  High school and University students{" "}
+                  High school and University students
                 </span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>Academic institutions</span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-                <span className='ml-2'>The Ethiopian Diaspora</span>{" "}
+                <span className='ml-2'>The Ethiopian Diaspora</span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
-                <span className='ml-2'>Government agencies </span>
+                <span className='ml-2'>Government agencies</span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
-                <span className='ml-2'>Legal professionals </span>
+                <span className='ml-2'>Legal professionals</span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
-                <span className='ml-2'>Capital markets service providers </span>
+                <span className='ml-2'>Capital markets service providers</span>
               </p>
-              <p className='text-black text-paragraphSmall font-light ml-10  mt-4 flex'>
+              <p className='text-black text-paragraphSmall font-light ml-10 mt-4 flex'>
                 <span>○ </span>
-
                 <span className='ml-2'>General public</span>
               </p>
             </div>
