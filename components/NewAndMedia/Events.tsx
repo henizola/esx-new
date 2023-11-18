@@ -47,9 +47,15 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
         </Card>
         <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
-            <Card width='w-[100%] flex gap-10 flex-col grid grid-cols-5 pt-[0] md:pt-[50px] pb-0 md:pb-[35px] md:pl-10 md:pr-[40px] items-end'>
+            <Card width='w-[100%] flex flex-col pt-[0] md:pt-[50px] pb-0 md:pb-[35px] md:pl-10 md:pr-[40px] items-end'>
+              <img
+                src={"/images/event1.png"}
+                alt=''
+                className='w-[100%] h-auto object-cover '
+              />
+
               <div className='col-span-full md:col-span-3 h-fit'>
-                <Image
+                {/* <Image
                   src={
                     "/images/Mistakes That Keep You From Getting Ahead 1.png"
                   }
@@ -57,23 +63,21 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   width={400}
                   alt=''
                   className='w-full md:hidden h-[200px] object-top aspect-square object-cover '
-                />
-                <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
-                  Lorem Ipsum
+                /> */}
+                <h1 className='mt-5 text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
+                  ESX Held Capacity Building Workshop
                 </h1>
                 <main className='flex flex-col '>
-                  <p className='     px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-[15px]'>
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                    veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-                    vel eum iriure dolor
+                  <p className='     px-4 md:px-0 text-[14px] md:text-base font-normal    leading-snug mt-0'>
+                    ESX held a two-day workshop aimed at strengthening the
+                    capabilities of key market participants, preparing potential
+                    issuers and investors for the ESX&apos;s portfolio of
+                    instruments, and garnering support from key policy-making
+                    institutions and regulators.
                   </p>
                   <Link
-                    href='#'
+                    href='https://www.uneca.org/stories/ethiopia-gears-up-for-launch-of-first-ever-securities-exchange'
+                    target='_blank'
                     className='flex px-4 md:px-0 text-justify text-black text-base font-semibold    mt-[20px]'
                   >
                     View more
@@ -94,20 +98,9 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </Link>
                 </main>
               </div>
-              <div className='col-span-2 self-end order-2'>
-                <Image
-                  src={
-                    "/images/Mistakes That Keep You From Getting Ahead 1.png"
-                  }
-                  height={100}
-                  width={400}
-                  alt=''
-                  className='w-full hidden md:block aspect-square object-cover rounded-full'
-                />
-              </div>
             </Card>
 
-            <div className='flex flex-col lg:flex-row gap-5'>
+            {/* <div className='flex flex-col lg:flex-row gap-5'>
               <Card width='lg:w-[60%] flex  flex-col   p-[20px] pl-[20px] pr-[40] '>
                 <h1 className=' text-black text-2xl font-normal    lowercase'>
                   Lorem Ipsum
@@ -311,7 +304,7 @@ const Event: React.FC<EventProps> = ({ setStep, step }) => {
                   </Link>
                 </main>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

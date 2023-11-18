@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
                   <button
                     onClick={() => {
                       // setNumber(4);
-                      // router.push("/about-us");
+                      router.push("/faq");
                     }}
                   >
                     FAQs

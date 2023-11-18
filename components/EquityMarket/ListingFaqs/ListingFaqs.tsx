@@ -1,88 +1,16 @@
 "use client";
-import { BackButton } from "@/components/Button/BackButton";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import React, { ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 import Banner from "../../Banner/banner";
 import Card from "../../Card/Card";
 import bannerImage from "/public/images/about-banner.png";
-interface ListingFaqsProps {
-  setStep: (value: number) => void;
-  step: number;
-}
 
-const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
-  const items = [
-    "Why List ?",
-    "Market Segment",
-    "Listing Rules, Requirements, Benefits ",
-    "Listing Forms",
-  ];
-
+const FAQ: React.FC = () => {
   return (
     <div className='flex flex-col w-full p-0 m-0'>
-      <Banner
-        backgroundImage={bannerImage}
-        title='Listing on ESX'
-        description=''
-      />
+      <Banner backgroundImage={bannerImage} title='FAQ' description='' />
       <div className='grid sm:grid-cols-9 gap-8 lg:px-28 py-7'>
-        <Card width='col-span-2 hidden lg:flex flex-col text-left  py-[20px] px-[20px] h-fit '>
-          <h6 className='ml-2 mb-4 text-lg  -600'>
-            <BackButton setStep={setStep} link='/equity-market'>
-              Equity Market
-            </BackButton>{" "}
-            {"> Listing"}
-          </h6>
-          {items.map((item, index) => (
-            <button
-              key={index}
-              className={`  text-left  ml-5 
- my-2 font-light border-b border-black `}
-              style={{
-                borderBottom: "0.7px solid black",
-                fontSize: step === index ? "16px" : "14px",
-                fontWeight: step === index ? "400" : "300",
-              }}
-              onClick={() => setStep(index)}
-            >
-              {item}
-            </button>
-          ))}
-          {/*  {/* <button
-            className={`  text-left  ml-5 
- my-2 font-light border-b border-black `}
-            style={{
-              borderBottom: "0.7px solid black",
-              fontSize: "14px",
-              fontWeight: "300",
-            }}
-          >
-            Listing Companies
-          </button>
-          <button
-            className={`  text-left  ml-5 
- my-2 font-light border-b border-black `}
-            style={{
-              borderBottom: "0.7px solid black",
-              fontSize: "14px",
-              fontWeight: "300",
-            }}
-          >
-            Notice to Issuers
-          </button>
-          <button
-            className={`  text-left  ml-5 
- my-2 font-light border-b border-black `}
-            style={{
-              borderBottom: "0.7px solid black",
-              fontSize: "14px",
-              fontWeight: "300",
-            }}
-          >
-            Other Products
-          </button> */}
-        </Card>
-        <div className='col-span-7 space-y-8  w-[100vw] lg:w-[auto]'>
+        <div className='col-span-9 space-y-8  w-[100vw] lg:w-[auto]'>
           <Card width='w-[100%] flex gap-4 flex-col  py-[32px] px-10'>
             <h1 className='text-black text-[20px]  lg:text-header font-[500]  border-b-[3px] border-light-golden w-fit '>
               Frequently asked questions
@@ -127,7 +55,7 @@ const ListingFaqs: React.FC<ListingFaqsProps> = ({ setStep, step }) => {
   );
 };
 
-export default ListingFaqs;
+export default FAQ;
 
 interface ExpandableCardProps {
   question: string;

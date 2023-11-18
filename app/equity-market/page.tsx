@@ -1,7 +1,6 @@
 "use client";
 
 import EquityMarketOverview from "@/components/EquityMarket/EquityMarketOverview";
-import ListingFaqs from "@/components/EquityMarket/ListingFaqs/ListingFaqs";
 import ListingRules from "@/components/EquityMarket/ListingRules/ListingRules";
 import SideMenu from "@/components/SideMenu/SideMenu";
 import { useNumber } from "@/context/nav.context";
@@ -22,11 +21,12 @@ export default function Home() {
             step={currentPage}
             key={currentPage}
           />,
-          <ListingFaqs
-            setStep={setNumber}
-            step={currentPage}
-            key={currentPage}
-          />,
+
+          // <ListingFaqs
+          //   setStep={setNumber}
+          //   step={currentPage}
+          //   key={currentPage}
+          // />,
         ]}
       </SideMenu>
     </main>

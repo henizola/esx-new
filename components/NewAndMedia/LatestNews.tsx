@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Banner from "../Banner/banner";
 import Card from "../Card/Card";
@@ -48,128 +47,185 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
 
         <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
-            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-10 lg:px-10 gap-[42px]  '>
-              <div className='lg:w-[40%] '>
-                <Image
-                  src={
-                    "/images/Winston Salem Corporate Headshots & Personal Branding Photographer 1.png"
-                  }
-                  height={500}
-                  width={400}
-                  alt=''
-                  className='h-[200px] bg-black lg:h-auto object-cover'
-                />
+            <span id='SecuritiesExchange'></span>
+            <Card width=' flex flex-col   py-4 px-4 lg:py-10 lg:px-10  '>
+              <div className='flex gap-[42px]  flex-row'>
+                <div className='lg:w-[40%] '>
+                  <Image
+                    src={"/images/news1.jpeg"}
+                    height={500}
+                    width={400}
+                    alt=''
+                    className='h-[200px] bg-black lg:h-auto object-cover'
+                  />
+                </div>
+                <div className='lg:w-[60%] '>
+                  <main className=' '>
+                    <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
+                      Ethiopia Begins Fundraising for First-Ever Securities
+                      Exchange
+                    </h1>
+                    <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
+                      ESX Held Capital Raise Roadshow in Addis Ababa
+                    </h1>
+                    <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
+                      May 16, 2023
+                    </h1>
+                  </main>
+                </div>
               </div>
-              <div className='lg:w-[60%] '>
-                <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
-                    Lorem ipsum dolor sit
-                  </h1>
-                  <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
-                    Lorem ipsum
-                  </h1>
-                  <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
-                    Dolor sit
-                  </h1>
-                  <p className=' text-[14px] lg:text-base font-light    mt-3 lg:mt-5'>
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                    veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis”
-                  </p>
-                  <Link
-                    href='#'
-                    className='flex text-justify text-black text-base font-semibold    mb-[10px] mt-[25px]'
-                  >
-                    View more
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='w-4 h-4 mt-1.5'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                      />
-                    </svg>
-                  </Link>
-                </main>
-              </div>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                Ethiopia began selling shares to raise funds required to set up
+                its first-ever securities exchange as Prime Minister Abiy Ahmed
+                pushes to modernize eastern Africa’s largest economy.
+              </p>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                The sale, which kicked off in the capital, Addis Ababa, on
+                Tuesday aims to mobilize 75% of the required funding, said
+                Michael Habte, a project manager for the planned Ethiopia
+                Securities Exchange, or ESX. The remaining 25% of the shares
+                will be held by Ethiopian Investment Holdings, the nation’s
+                sovereign wealth fund.
+              </p>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                The authorities want the bourse to be fully operational by 2024,
+                and at least five state-owned enterprises to be listed soon
+                after. The ESX stake is on offer to local and foreign investors,
+                according to Michael who didn’t say how much money is being
+                raised. The government expects local banks and insurance
+                companies to invest.
+              </p>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                Introducing a securities exchange is in line with Abiy’s plan to
+                boost Ethiopia’s financial sector to rival African peers
+                including South Africa, Nigeria, Kenya and Morocco. The Horn of
+                Africa nation’s economy was one of the world’s fastest growing
+                before it was disrupted by a civil war and the coronavirus
+                pandemic.
+              </p>
+              <span id='2ndroadshow'></span>
             </Card>
 
-            <Card width=' flex flex-col lg:flex-row  py-4 px-4 lg:py-10 lg:px-10 gap-[42px]  '>
-              <div className='lg:w-[40%] '>
-                <Image
-                  src={
-                    "/images/Salem Corporate Headshots & Personal Branding Photographer 1.png"
-                  }
-                  height={500}
-                  width={400}
-                  alt=''
-                  className='h-[200px] bg-black lg:h-auto object-cover'
-                />
+            <Card width=' flex flex-col   py-4 px-4 lg:py-10 lg:px-10  '>
+              <div className='flex gap-[42px]  flex-row'>
+                <div className='lg:w-[40%] '>
+                  <Image
+                    src={"/images/course6.jpeg"}
+                    height={500}
+                    width={400}
+                    alt=''
+                    className='h-[200px] bg-black lg:h-[100%] w-[100%] object-cover'
+                  />
+                </div>
+                <div className='lg:w-[60%] '>
+                  <main className=' '>
+                    <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
+                      ESX successfully completed its 2nd roadshow and
+                      market-sounding activities in Nairobi
+                    </h1>
+                    {/* <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
+                      ESX Held Capital Raise Roadshow in Addis Ababa
+                    </h1> */}
+                    <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
+                      4-8th Sep 2023
+                    </h1>
+                  </main>
+                </div>
               </div>
-              <div className='lg:w-[60%] '>
-                <main className=' '>
-                  <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
-                    Lorem ipsum dolor sit
-                  </h1>
-                  <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
-                    Lorem ipsum
-                  </h1>
-                  <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
-                    Dolor sit
-                  </h1>
-                  <p className=' text-[14px] lg:text-base font-light    mt-3 lg:mt-5'>
-                    Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euisLorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                    veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis”
-                  </p>
-                  <Link
-                    href='#'
-                    className='flex text-justify text-black text-base font-semibold    mb-[10px] mt-[25px]'
-                  >
-                    View more
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='w-4 h-4 mt-1.5'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                      />
-                    </svg>
-                  </Link>
-                </main>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                held several bilateral meetings with key capital market players
+              </p>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                participated in deal room sessions alongside Africa Climate
+                Week- held a successful market-sounding session alongside ECMA.
+              </p>
+              <span id='3rdCapital'></span>
+            </Card>
+            <Card width=' flex flex-col   py-4 px-4 lg:py-10 lg:px-10  '>
+              <div className='flex gap-[42px]  flex-row'>
+                <div className='lg:w-[40%] '>
+                  <Image
+                    src={"/images/news2.png"}
+                    height={500}
+                    width={400}
+                    alt=''
+                    className='h-[200px] bg-black lg:h-[100%] object-cover'
+                  />
+                </div>
+                <div className='lg:w-[60%] '>
+                  <main className=' '>
+                    <h1 className=' text-black text-[20px] lg:text-header border-b-[3px] border-light-golden w-fit text-left mb-5  capitalize lg:leading-[50px] '>
+                      ESX held its 3rd capital raise investor roadshow in London
+                      - AfSIC
+                    </h1>
+                    {/* <h1 className='text-black text-[12px] lg:text-paragraphBig not-italic font-normal leading-[normal] mt-2 lg:mt-0'>
+                      ESX Held Capital Raise Roadshow in Addis Ababa
+                    </h1> */}
+                    <h1 className='text-justify text-black text-xs font-normal    mt-2 lg:mt-[4px]'>
+                      September 28, 2023
+                    </h1>
+                  </main>
+                </div>
               </div>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                LONDON, United Kingdom, 28 September 2022, /African Media
+                Agency/- FSD Ethiopia is coordinating a delegation from Ethiopia
+                to attend AFSIC 2023 and will be sponsoring the Ethiopian
+                Investment Summit scheduled for Monday, 9th October 2023. FSD
+                Ethiopia is a development agency that aims to support the
+                development of accessible, inclusive, and sustainable financial
+                markets for economic growth with a vision to contribute to a
+                thriving financial system that delivers real value to the
+                broader economy and to the people of Ethiopia.{" "}
+              </p>
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                The Ethiopian delegation includes the key financial sector
+                actors, including the Ministry of Finance, Ethiopian Capital
+                Market Authority, Ethiopian Investment Holdings, Ethiopian
+                Securities Exchange, and Ethiopian Investment Commission– a
+                truly comprehensive grouping and an exciting agenda item to look
+                forward to.{" "}
+              </p>
+
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                The Ethiopian summit is organized under the theme “Ethiopia –
+                The New Frontier Market, Opening Doors and Creating
+                Opportunities”. The summit aims to provide a comprehensive
+                overview of Ethiopia’s emerging opportunities and highlight
+                Ethiopia’s recent economic reforms, favorable investment
+                climate, and growing investment opportunities. The high-level
+                officials in the panel will discuss significant developments
+                strengthening Ethiopia’s financial architecture. The event will
+                feature a road show to raise capital for the recently
+                established Ethiopian Securities Exchange (ESX). ESX will
+                highlight opportunities for forming strategic partnerships with
+                financial actors in Africa and beyond. Ethiopia investment
+                holding aims to attract investors and inform global finance
+                practitioners of Ethiopia’s capital market and opportunities.
+              </p>
+
+              <p className=' text-[14px] lg:text-base text-justify font-light    mt-3 lg:mt-5'>
+                The Ministry of Finance will promote its far-reaching reforms to
+                mobilize resources for sustainable and inclusive development,
+                key to Ethiopia’s Homegrown Economic Reform agenda. Ethiopian
+                Investment Commission will exhibit the various investment
+                opportunities and a favorable business environment within the
+                country, accomplished through a comprehensive and strategic
+                approach that highlights the unique advantages of investing in
+                Ethiopia.
+              </p>
             </Card>
           </div>
         </div>
       </div>
-      <div className='bg-white py-5 lg:py-[68px]'>
+      {/* <div className='bg-white py-5 lg:py-[68px]'>
         <p className='max-w-[980px] mx-auto w-full lg:h-16 text-center text-black text-[14px] px-[20px] lg:text-base font-normal    leading-snug'>
           Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet,
           consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum
           dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
           euismod tincidunt ut laoreet dolore magna aliquam erat{" "}
         </p>
-      </div>
+      </div> */}
       {/* <CustomSlider slides={slides} /> */}
     </div>
   );
