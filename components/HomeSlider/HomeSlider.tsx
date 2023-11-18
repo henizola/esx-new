@@ -78,24 +78,26 @@ export default function HomeSlider() {
                 <div className='relative'>
                   <div className='absolute flex flex-col h-fit top-[35%] left-[15vw] z-40'>
                     <h1
-                      style={{ lineHeight: "68px" }}
-                      className=' px-5 m-0 p-0  lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-[63px]  font-[500] text-center lg:text-left'
+                      // style={{ lineHeight: "68px" }}
+                      className='px-5 m-0 p-0 lg:px-0  text-white text-[20px] lg:text-[63px] font-[500] text-left lg:text-left leading-[50px] lg:leading-[68px]'
                     >
                       We Connect Entrepreneurs
                     </h1>
-                    <h1
-                      style={{ lineHeight: "58px" }}
-                      className=' px-5 m-0 p-0  lg:px-0 -translate-y-[50%] text-white text-[20px] lg:text-[63px]  font-[500] text-center lg:text-left'
-                    >
+
+                    <h1 className='px-5 m-0 p-0 lg:px-0  text-white text-[20px] lg:text-[63px] font-[500] text-left lg:text-left  lg:leading-[68px]'>
                       To Capital
                     </h1>
-                    <p className='mt-0 pt-0 text-[20px] font-normal text-white'>
+                    <p className='mt-0 pt-0 px-5 pr-10  md:hidden  lg:text-[20px]  font-normal text-white'>
+                      List on ESX main and growth market to raise capital you
+                      need to make your vision a reality.
+                    </p>
+                    <p className='mt-0 pt-0 hidden md:block  lg:text-[20px]  font-normal text-white'>
                       List on ESX main and growth market to raise capital{" "}
                     </p>
-                    <p className='mt-0 pt-0 text-[20px] text-white'>
+                    <p className='mt-0 pt-0 hidden md:block  lg:text-[20px]  font-normal text-white'>
                       you need to make your vision a reality.
                     </p>
-                    <button className='text-[18px] font-normal text-white w-[200px] h-[46px] border  mt-7 border-white background-transparent'>
+                    <button className='md:text-[18px] text-[13px] font-normal text-white w-fit px-7 py-3 lg:py-0 ml-5 lg:w-[200px] lg:h-[46px] border  mt-7 border-white background-transparent'>
                       Contact Us
                     </button>
                   </div>
@@ -105,7 +107,7 @@ export default function HomeSlider() {
                     alt={slide.alt}
                     height={100}
                     width={100}
-                    className='inset-0 h-[40vh] lg:h-[80vh] w-[100vw] max-height-[90vh] z-0 object-cover'
+                    className='inset-0 h-[55vh] lg:h-[80vh] w-[100vw] max-height-[90vh] z-0 object-cover'
                   />
                 </div>
               </div>

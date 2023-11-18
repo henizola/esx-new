@@ -47,7 +47,6 @@ const LatestNews: React.FC<LatestNewsProps> = ({ setStep, step }) => {
 
         <div className='col-span-7 space-y-8 w-[100vw] lg:w-[100%]'>
           <div className='col-span-3 flex flex-col gap-8'>
-            <span id='SecuritiesExchange'></span>
             <Card width=' flex flex-col   py-4 px-4 lg:py-10 lg:px-10  '>
               <div className='flex gap-[42px]  flex-row'>
                 <div className='lg:w-[40%] '>
