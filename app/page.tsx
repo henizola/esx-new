@@ -15,6 +15,7 @@ import news3 from "../public/images/course6.jpeg";
 
 import Footer from "@/components/Header/Footer";
 import { useNumber } from "@/context/nav.context";
+import HomeMobileFooter from "@/components/Header/HomeMobileFooter";
 export default function Home() {
   const { setNumber } = useNumber();
 
@@ -310,8 +311,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Footer />
+      <HomeMobileFooter />
     </main>
   );
 }

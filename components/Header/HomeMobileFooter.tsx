@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 // ... (imports)
 
-const MobileFooter: React.FC = () => {
+const HomeMobileFooter: React.FC = () => {
   const [isChatboxOpen, setIsChatboxOpen] = useState(false);
 
   const openChatbox = () => {
@@ -14,23 +14,10 @@ const MobileFooter: React.FC = () => {
   const closeChatbox = () => {
     setIsChatboxOpen(false);
   };
-  const [inOnHome, setIsOnHome] = useState(true);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (window.location.pathname === "/") {
-        setIsOnHome(true);
-      } else {
-        setIsOnHome(false);
-      }
-    }
-  }, []);
-  console.log(inOnHome);
   return (
     <footer
-      className={`${
-        inOnHome ? "hidden h-0" : "h-fit block bg-primary-blue"
-      } lg:hidden  text-white py-8 sm:px-4`}
+      className={` bg-primary-blue lg:hidden  w-[100vw] text-white py-8 sm:px-4`}
     >
       <div className='container mx-auto'>
         <div className='flex flex-col sm:flex-row'>
@@ -189,4 +176,4 @@ const MobileFooter: React.FC = () => {
   );
 };
 
-export default MobileFooter;
+export default HomeMobileFooter;

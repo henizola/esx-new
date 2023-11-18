@@ -23,13 +23,13 @@ const Vision: React.FC<VisionProps> = ({ setStep, step }) => {
   ];
 
   return (
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full h-fit'>
       <Banner
         backgroundImage={image}
         title='About Us'
         background='bg-light-blue'
       />
-      <div className='flex w-full border px-4 lg:px-28 py-7'>
+      <div className='h-fit flex w-full  px-4 lg:px-28 py-7'>
         <Card width='w-[25%] hidden lg:flex mr-5 h-fit   flex-col text-left  py-10 px-5'>
           <h6 className='ml-7 mb-4'>About Us</h6>
           {items.map((item, index) => (
