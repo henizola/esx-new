@@ -28,6 +28,22 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
           rel='stylesheet'
         />
+
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-LBX1XELGRK'
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LBX1XELGRK',{page_path:window.location.pathname});
+  
+  `,
+          }}
+        />
       </head>
       <body className={`  relative   min-h-[101vh]   min-w-[100vw] p-0 m-0`}>
         <NumberProvider>
