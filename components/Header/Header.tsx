@@ -43,7 +43,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
         onMouseEnter={openSubMenu}
         onClick={() => {
           setNumber(0);
-          item.href !== "/" ? setTransparent(false) : setTransparent(true);
+          item.href !== "/" && item.href !== "/home"
+            ? setTransparent(false)
+            : setTransparent(true);
         }}
       >
         {item.name}
@@ -798,14 +800,21 @@ const Header: React.FC = () => {
   useEffect(() => {
     function handleScroll() {
       closeSubMenu();
-      if (window.scrollY < 180 && window.location.pathname === "/") {
+      if (
+        window.scrollY < 180 &&
+        (window.location.pathname === "/" ||
+          window.location.pathname === "/home")
+      ) {
         setTransparent(true);
       } else {
         setTransparent(false);
       }
     }
     if (typeof window !== "undefined") {
-      if (window.location.pathname === "/") {
+      if (
+        window.location.pathname === "/" ||
+        window.location.pathname === "/home"
+      ) {
         setTransparent(true);
       } else {
         setTransparent(false);
